@@ -6,11 +6,9 @@ Diseña una página, construye su interfaz y prepara su publicación. Empieza po
 
 76 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/frontend).
 
-## Opciones para empezar
+## Qué usar para tu web
 
-[penpot](../fichas/penpot.md), [ui](../fichas/ui.md), [tailwindcss](../fichas/tailwindcss.md)
-
-Son opciones para comparar. No es necesario instalar todas.
+[Elige una combinación para una página informativa, un panel o un chat con IA](../elegir-web.md).
 
 ## Subcategorías
 

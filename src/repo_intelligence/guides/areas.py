@@ -41,8 +41,12 @@ def render_area_guides(root: Path, catalog: Catalog) -> list[dict]:
             for n, step in enumerate(area['guide'], 1):
                 lines += [f'{n}. **{step["title"]}.** {step["text"]}']
             lines += ['', f'[Fuente oficial del cliente]({area["official_url"]})', '', area['scope'], '']
-        lines += ['## Opciones para empezar', '', ', '.join(f'[{by_id[rid]["name"]}](../fichas/{slug(rid)}.md)' for rid in area['starters']), '',
-                  'Son opciones para comparar. No es necesario instalar todas.', '', '## Subcategorías', '']
+        if area["id"] == "frontend":
+            lines += ['## Qué usar para tu web', '', '[Elige una combinación para una página informativa, un panel o un chat con IA](../elegir-web.md).', '']
+        else:
+            lines += ['## Opciones para empezar', '', ', '.join(f'[{by_id[rid]["name"]}](../fichas/{slug(rid)}.md)' for rid in area['starters']), '',
+                      'Son opciones para comparar. No es necesario instalar todas.', '']
+        lines += ['## Subcategorías', '']
         for topic in area['topics']:
             lines += ['### '+topic['title'], '', topic['description'], '',
                 f'[Explorar {topic["count"]} repos](../../docs/index.html#/explorar?area={area["id"]}&topic={topic["id"]})', '',

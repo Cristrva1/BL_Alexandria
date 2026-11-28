@@ -4,7 +4,7 @@
 
 Skills y plugins para diseño, escritura, marketing, ciencia y negocio. Se añaden a un agente compatible; generar imágenes, publicar o consultar servicios puede requerir cuentas adicionales.
 
-40 repos · 3 secciones
+38 repos · 3 secciones
 
 ## Puntos de partida
 
@@ -19,8 +19,8 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 ## Secciones
 
 - [Skills de diseño para agentes](#skills-de-diseño-para-agentes) — 22 repos
-- [Escritura y calidad de texto](#escritura-y-calidad-de-texto) — 4 repos
-- [Skills de dominio: marketing, SEO y negocio](#skills-de-dominio-marketing-seo-y-negocio) — 14 repos
+- [Escritura y calidad de texto](#escritura-y-calidad-de-texto) — 3 repos
+- [Skills de dominio: marketing, SEO y negocio](#skills-de-dominio-marketing-seo-y-negocio) — 13 repos
 
 ## Skills de diseño para agentes
 
@@ -56,7 +56,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [Humanizer](../fichas/humanizer.md) | Skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana. | Tu objetivo encaja con estos ejemplos: Mejorar claridad de un correo; Revisar prosa repetitiva | Sin clave propia de API de IA en la ruta básica |
 | [i-have-adhd](../fichas/i-have-adhd.md) | Skill para que un agente presente primero la respuesta y organice su salida con menos distracciones y rodeos. | Tu objetivo encaja con estos ejemplos: Reducir distracciones en instrucciones; Organizar una explicación de trabajo | Sin clave propia de API de IA en la ruta básica |
 | [Stop Slop](../fichas/stop-slop.md) | Skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbrica de calidad. | Tu objetivo encaja con estos ejemplos: Reducir frases vagas; Revisar un borrador antes de publicarlo | Sin clave propia de API de IA en la ruta básica |
-| [no-ai-slop](../fichas/no-ai-slop.md) | Skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA. | Tu objetivo encaja con estos ejemplos: Editar una publicación; Mejorar claridad de un informe | Sin clave propia de API de IA en la ruta básica |
 
 ## Skills de dominio: marketing, SEO y negocio
 
@@ -68,7 +67,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [financial-services](../fichas/financial-services.md) | Plugins, skills y conectores de Anthropic para flujos de investigación y trabajo en servicios financieros. | Tu objetivo encaja con estos ejemplos: Preparar un análisis de empresa; Estudiar conciliación de registros ficticios | API de IA opcional |
 | [Knowledge Work Plugins](../fichas/knowledge-work-plugins.md) | Añade a Claude flujos de trabajo por especialidad, como preparar reuniones de ventas, revisar datos y organizar soporte. | Tu objetivo encaja con estos ejemplos: Preparar preguntas para una reunión ficticia.; Clasificar tres tickets inventados sin abrir un CRM. | Sin clave propia de API de IA en la ruta básica |
 | [claude-seo](../fichas/claude-seo.md) | Skills de Claude Code para revisar SEO técnico, contenido, presencia en buscadores de IA y otros aspectos de una web. | Tu objetivo encaja con estos ejemplos: Preparar una auditoría SEO inicial; Revisar indexabilidad de una landing | API de IA opcional |
-| [GEO-SEO Claude](../fichas/geo-seo-claude.md) | Skill de Claude Code que audita webs para buscadores con IA (GEO) y SEO clásico, con citabilidad, schema, llms.txt e informes PDF. | Tu objetivo encaja con estos ejemplos: Revisar schema de una web; Preparar un informe GEO inicial | API de IA opcional |
 | [Claude Ads](../fichas/claude-ads.md) | Audita campañas de publicidad con Claude Code y organiza los hallazgos por plataforma, evidencia y prioridad. | Tu objetivo encaja con estos ejemplos: Crear una lista de comprobaciones para una campaña ficticia.; Preparar un informe a partir de un CSV de métricas inventadas. | Sin clave propia de API de IA en la ruta básica |
 | [skills](../fichas/minimalist-entrepreneur-skills.md) | Skills basadas en ideas de The Minimalist Entrepreneur para orientar trabajo de negocio y emprendimiento con un agente. | Tu objetivo encaja con estos ejemplos: Explorar un problema de cliente; Preparar preguntas de validación | Sin clave propia de API de IA en la ruta básica |
 | [instagram-agent-skill](../fichas/instagram-agent-skill.md) | Skills de Claude para investigar ideas, preparar guiones y revisar contenido y publicaciones de una cuenta de Instagram. | Tu objetivo encaja con estos ejemplos: Preparar un Reel; Revisar un caption | Sin clave propia de API de IA en la ruta básica |

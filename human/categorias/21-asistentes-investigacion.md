@@ -4,7 +4,7 @@
 
 Asistentes personales, equipos de agentes e investigación con fuentes. Compara la tarea que completan, las herramientas que pueden usar y la revisión que necesitas hacer del resultado.
 
-18 repos · 2 secciones
+17 repos · 2 secciones
 
 ## Puntos de partida
 
@@ -17,7 +17,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [Asistentes autónomos y equipos de agentes](#asistentes-autónomos-y-equipos-de-agentes) — 13 repos
+- [Asistentes autónomos y equipos de agentes](#asistentes-autónomos-y-equipos-de-agentes) — 12 repos
 - [Agentes de research autónomo](#agentes-de-research-autónomo) — 5 repos
 
 ## Asistentes autónomos y equipos de agentes
@@ -32,7 +32,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [multica](../fichas/multica.md) | Workspace para asignar y revisar trabajo de agentes de código mediante sus CLI y cuentas propias. | Tu objetivo encaja con estos ejemplos: Organizar trabajo entre agentes; Revisar entregas en un espacio compartido | API de IA opcional |
 | [OpenJarvis](../fichas/openjarvis.md) | Crea un asistente personal con chat y flujos que pueden usar modelos locales, con conectores opcionales para tus servicios. | Tu objetivo encaja con estos ejemplos: Conversar con un modelo descargado sin conectar cuentas.; Probar búsqueda sobre un pequeño conjunto de documentos ficticios. | API de IA opcional |
 | [OpenBot](../fichas/openbot.md) | Espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y auditoría, conectables por AG-UI. | Tu objetivo encaja con estos ejemplos: Dar a un asistente un navegador propio con aprobaciones; Conectar un agente existente por AG-UI a un espacio común | Depende de la ruta elegida |
-| [OpenDots](../fichas/opendots.md) | Interfaz abierta de asistentes persistentes que requiere CopilotKit Intelligence, alojado, evaluado localmente o con licencia. | Tu objetivo encaja con estos ejemplos: Probar un asistente persistente; Estudiar aprobación de acciones conectadas | API de IA necesaria |
 | [Mercury Agent](../fichas/mercury-agent.md) | Agente personal 24/7 con permisos estrictos, presupuesto de tokens y acceso por CLI, Telegram o web. | Tu objetivo encaja con estos ejemplos: Probar un asistente persistente; Estudiar presupuestos de tokens | API de IA opcional |
 | [social-media-agent](../fichas/social-media-agent.md) | Agente de LangChain que convierte enlaces en publicaciones para redes sociales con revisión humana antes de publicarlas. | Tu objetivo encaja con estos ejemplos: Preparar una propuesta para LinkedIn; Convertir un artículo en un borrador corto | API de IA necesaria |
 | [hello-halo](../fichas/hello-halo.md) | Asistente de escritorio con manejo de archivos, navegador y rutas de acceso con cuentas de IA o proveedores API. | Tu objetivo encaja con estos ejemplos: Explorar un asistente de escritorio; Revisar tareas de código visualmente | API de IA opcional |

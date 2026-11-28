@@ -3,39 +3,6 @@
 > Abre este archivo SOLO si tienes finalistas en esta categoría.
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
-## `backdoor`
-role=runtime · exec=hybrid · setup=medium · mcp=False · prov=— · tags=serving,ai,anthropic,claude,claude-code,deepseek,llm,ollama
-
-**Qué es:** Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code.
-**Stack:** Sistema compatible; Claude Code; proveedor u Ollama; carpeta de prueba
-**Acceso y costes:**
-- API de IA: API de IA opcional. Modelo local o API del proveedor según elección; no aporta una suscripción ni créditos de Anthropic
-- Claude Code: Integración documentada por el proyecto
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. Es un adaptador independiente; afirmar privacidad local requiere revisar también búsquedas, telemetría y otras herramientas y no solo el endpoint del modelo
-- Coste: El coste depende del proveedor o la ruta. Modelo local o API del proveedor según elección; no aporta una suscripción ni créditos de Anthropic
-- Equipo: Preparación según la ruta elegida. Sistema compatible; Claude Code; proveedor u Ollama; carpeta de prueba
-**Repo:** https://github.com/ajsai47/backdoor
-
-**Instalación** [+]:
-
-```
-git clone https://github.com/ajsai47/backdoor
-cd backdoor
-./backdoor   # animated setup wizard — picks your provider, writes your config, launches Claude Code
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Probar un backend local con Claude Code; Comparar proveedores compatibles
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Revisa la configuración que propone el asistente y solicita una explicación corta sin herramientas externas
-**Qué comprobar:** Puedes identificar el proveedor detrás del proxy
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `ollama`, `vllm`
-**Alternativas (elige una):** `omniroute`, `claude-code-router`, `litellm`
-
 ## `bentoml`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=serving,python,ml,docker
 
@@ -126,7 +93,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes identificar endpoint, modelo y ruta efectiva
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `opencode`, `claude-code-hooks-mastery`
-**Alternativas (elige una):** `omniroute`, `backdoor`, `litellm`
+**Alternativas (elige una):** `omniroute`, `litellm`
 
 ## `claude-code-usage-monitor`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=observabilidad,app,python
@@ -409,7 +376,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes identificar el proveedor real y su consumo
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ollama`, `open-webui`, `langfuse`, `claude-code`
-**Alternativas (elige una):** `omniroute`, `claude-code-router`, `backdoor`
+**Alternativas (elige una):** `omniroute`, `claude-code-router`
 
 ## `llmlingua`
 role=library · exec=local · setup=medium · mcp=False · prov=—
@@ -560,7 +527,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes identificar qué cuenta y modelo atendieron la petición
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `cline`, `ollama`
-**Alternativas (elige una):** `claude-code-router`, `backdoor`, `litellm`
+**Alternativas (elige una):** `claude-code-router`, `litellm`
 
 ## `openllmetry`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=observability,python,llm,opentelemetry

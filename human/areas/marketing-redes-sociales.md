@@ -4,7 +4,7 @@
 
 Prepara campañas, crea contenido, gestiona publicaciones y mide resultados. Encuentra herramientas para redes sociales, SEO, email y anuncios.
 
-25 repos únicos · 7 subcategorías. [Ver en el explorador](../../docs/index.html#/area/marketing-redes-sociales).
+24 repos únicos · 7 subcategorías. [Ver en el explorador](../../docs/index.html#/area/marketing-redes-sociales).
 
 ## Opciones para empezar
 
@@ -55,12 +55,11 @@ Investigar publicaciones, comentarios, tendencias y competidores para fundamenta
 
 Revisar la visibilidad de una web en buscadores y respuestas de IA, y consultar datos para orientar el contenido.
 
-[Explorar 3 repos](../../docs/index.html#/explorar?area=marketing-redes-sociales&topic=marketing-seo)
+[Explorar 2 repos](../../docs/index.html#/explorar?area=marketing-redes-sociales&topic=marketing-seo)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [claude-seo](../fichas/claude-seo.md) | Skills de Claude Code para revisar SEO técnico, contenido, presencia en buscadores de IA y otros aspectos de una web. | API de IA opcional |
-| [GEO-SEO Claude](../fichas/geo-seo-claude.md) | Skill de Claude Code que audita webs para buscadores con IA (GEO) y SEO clásico, con citabilidad, schema, llms.txt e informes PDF. | API de IA opcional |
 | [open-seo](../fichas/open-seo.md) | Aplicación de análisis SEO que consulta datos de buscadores mediante DataForSEO y permite alojamiento propio. | Sin clave propia de API de IA en la ruta básica |
 
 ### Email, newsletters y campañas

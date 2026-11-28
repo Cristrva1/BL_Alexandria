@@ -1703,7 +1703,6 @@
    "cat": 23,
    "sub": "serving",
    "miembros": [
-    "backdoor",
     "claude-code-router",
     "litellm",
     "omniroute"
@@ -1735,22 +1734,12 @@
      "cuando": "Si quieres usar Claude Code con otros proveedores o modelos y enrutar por tarea.",
      "cuando_origen": "curado",
      "caso_unico": false
-    },
-    {
-     "id": "backdoor",
-     "posicion": 4,
-     "puntuacion": 33.6,
-     "papel": "alternativa",
-     "cuando": "Si quieres adaptar otro proveedor al flujo de herramientas de Claude Code (proyecto pequeño de terceros).",
-     "cuando_origen": "curado",
-     "caso_unico": false
     }
    ],
    "recomendado": "litellm",
    "alternativas": [
     "omniroute",
-    "claude-code-router",
-    "backdoor"
+    "claude-code-router"
    ]
   },
   {
@@ -3063,7 +3052,6 @@
    "sub": "escritura",
    "miembros": [
     "humanizer",
-    "no-ai-slop",
     "stop-slop"
    ],
    "ranking": [
@@ -3077,17 +3065,8 @@
      "caso_unico": false
     },
     {
-     "id": "no-ai-slop",
-     "posicion": 2,
-     "puntuacion": 55.2,
-     "papel": "alternativa",
-     "cuando": "Si buscas esto: skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA.",
-     "cuando_origen": "plantilla",
-     "caso_unico": false
-    },
-    {
      "id": "stop-slop",
-     "posicion": 3,
+     "posicion": 2,
      "puntuacion": 40.4,
      "papel": "alternativa",
      "cuando": "Si buscas esto: skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbrica de calidad.",
@@ -3097,7 +3076,6 @@
    ],
    "recomendado": "humanizer",
    "alternativas": [
-    "no-ai-slop",
     "stop-slop"
    ]
   },
@@ -4308,40 +4286,6 @@
    "recomendado": "obsidian-second-brain",
    "alternativas": [
     "claude-obsidian"
-   ]
-  },
-  {
-   "id": "g-skills-de-seo-para-agentes",
-   "titulo": "Skills de SEO para agentes",
-   "cat": 27,
-   "sub": "dominio",
-   "miembros": [
-    "claude-seo",
-    "geo-seo-claude"
-   ],
-   "ranking": [
-    {
-     "id": "claude-seo",
-     "posicion": 1,
-     "puntuacion": 70.2,
-     "papel": "recomendado",
-     "cuando": "Si buscas esto: skills de Claude Code para revisar SEO técnico, contenido, presencia en buscadores de IA y otros aspectos de una web.",
-     "cuando_origen": "plantilla",
-     "caso_unico": false
-    },
-    {
-     "id": "geo-seo-claude",
-     "posicion": 2,
-     "puntuacion": 49.3,
-     "papel": "alternativa",
-     "cuando": "Si buscas esto: skill de Claude Code que audita webs para buscadores con IA (GEO) y SEO clásico, con citabilidad, schema, llms.txt e informes PDF.",
-     "cuando_origen": "plantilla",
-     "caso_unico": false
-    }
-   ],
-   "recomendado": "claude-seo",
-   "alternativas": [
-    "geo-seo-claude"
    ]
   },
   {
@@ -5634,40 +5578,6 @@
    "recomendado": "open-notebook",
    "alternativas": [
     "surfsense"
-   ]
-  },
-  {
-   "id": "g-espacios-de-asistentes-de-copilotkit",
-   "titulo": "Espacios de asistentes de CopilotKit",
-   "cat": 21,
-   "sub": "asistentes",
-   "miembros": [
-    "openbot",
-    "opendots"
-   ],
-   "ranking": [
-    {
-     "id": "openbot",
-     "posicion": 1,
-     "puntuacion": 70.4,
-     "papel": "recomendado",
-     "cuando": "Si buscas esto: espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y auditoría, conectables por AG-UI.",
-     "cuando_origen": "plantilla",
-     "caso_unico": false
-    },
-    {
-     "id": "opendots",
-     "posicion": 2,
-     "puntuacion": 48.1,
-     "papel": "alternativa",
-     "cuando": "Si buscas esto: interfaz abierta de asistentes persistentes que requiere CopilotKit Intelligence, alojado, evaluado localmente o con licencia.",
-     "cuando_origen": "plantilla",
-     "caso_unico": false
-    }
-   ],
-   "recomendado": "openbot",
-   "alternativas": [
-    "opendots"
    ]
   },
   {

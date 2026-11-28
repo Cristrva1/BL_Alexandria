@@ -1,6 +1,6 @@
 # Alexandría para agentes · Skills de dominio: marketing, SEO y negocio
 
-Categoría 27 «Skills de diseño, contenido y especialidades» › subcategoría `dominio`. 14 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 27 «Skills de diseño, contenido y especialidades» › subcategoría `dominio`. 13 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=27&sub=dominio · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -20,14 +20,13 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 |---|---|---|---:|---|---|
 | `scientific-agent-skills` | Colección de skills y recursos para que agentes realicen tareas de… | 2 Intermedio | 73 | MIT (OSI permisiva) | sin grupo |
 | `marketingskills` | Colección de más de 50 skills de marketing (CRO, copy, SEO, ads, email… | 1 Básico | 72 | MIT (OSI permisiva) | sin grupo |
-| `claude-seo` | Skills de Claude Code para revisar SEO técnico, contenido, presencia en… | 2 Intermedio | 70 | MIT (OSI permisiva) | recomendado |
+| `claude-seo` | Skills de Claude Code para revisar SEO técnico, contenido, presencia en… | 2 Intermedio | 70 | MIT (OSI permisiva) | sin grupo |
 | `agency-agents` | Colección de más de 230 agentes especialistas (ingeniería, diseño, marketing… | 1 Básico | 66 | MIT (OSI permisiva) | sin grupo |
 | `knowledge-work-plugins` | Añade a Claude flujos de trabajo por especialidad, como preparar reuniones de… | 2 Intermedio | 62 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `financial-services` | Plugins, skills y conectores de Anthropic para flujos de investigación y… | 2 Intermedio | 58 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `claude-ads` | Audita campañas de publicidad con Claude Code y organiza los hallazgos por… | 2 Intermedio | 57 | MIT (OSI permisiva) | sin grupo |
 | `instagram-agent-skill` | Skills de Claude para investigar ideas, preparar guiones y revisar contenido y… | 2 Intermedio | 56 | MIT (OSI permisiva) | recomendado |
 | `social-media-research-skills` | Skills para investigar publicaciones, comentarios, competidores y anuncios en… | 2 Intermedio | 52 | MIT (OSI permisiva) | sin grupo |
-| `geo-seo-claude` | Skill de Claude Code que audita webs para buscadores con IA (GEO) y SEO… | 1 Básico | 49 | MIT (OSI permisiva) | alternativa |
 | `shopify-ai-toolkit` | Aporta guías y herramientas de Shopify para asistir el desarrollo de temas y… | 2 Intermedio | 48 | MIT (OSI permisiva) | sin grupo |
 | `linkedin-agent-skill` | Skills de Claude para preparar publicaciones, comentarios y planificación de… | 2 Intermedio | 47 | MIT (OSI permisiva) | alternativa |
 | `arcads-claude-code` | Pack de skills para Claude Code y Cursor que crea anuncios en video e imagen… | 2 Intermedio | 37 | MIT (OSI permisiva) | sin grupo |
@@ -61,7 +60,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### claude-seo (`claude-seo`)
 
-- **Repo:** https://github.com/AgriciDaniel/claude-seo · MIT · nivel 2 · 70/100 · recomendado en «Skills de SEO para agentes»
+- **Repo:** https://github.com/AgriciDaniel/claude-seo · MIT · nivel 2 · 70/100
 - **Qué es:** Plugin SEO gratuito y de código abierto (MIT) para Claude Code, de AgriciDaniel. Activo (v2.6.2), con 29 subskills y 20 agentes especialistas.
 - **Cuándo elegirlo:** Casos: Preparar una auditoría SEO inicial; Revisar indexabilidad de una landing.
 - **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Claude Code; Python 3.11–3.14; web propia; dependencias de navegador; hardware prerequisites; API de IA: opcional; Claude Code; Python 3.11–3.14; web propia; dependencias de navegador.
@@ -74,8 +73,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   ```
 - **Primera prueba propuesta (no ejecutada):** Usa setup y revisa una página de prueba para comprobar los hallazgos técnicos Éxito: Puedes contrastar títulos, enlaces o schema con la página
 - **Combina con:** `claude-code` [20/terminal], `posthog` [10/producto], `open-seo` [18/marketing]
-- **Alternativas:** `geo-seo-claude`
-- **Riesgos y avisos:** Alternativa (elige una): geo-seo-claude. No promete mejorar ranking ni sustituir una auditoría humana; las funciones de datos en vivo requieren configuración adicional.
+- **Riesgos y avisos:** No promete mejorar ranking ni sustituir una auditoría humana; las funciones de datos en vivo requieren configuración adicional.
 
 ### The Agency (agency-agents) (`agency-agents`)
 
@@ -156,24 +154,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `postiz-app` [18/marketing], `instagram-agent-skill`
 - **Alternativas:** `last30days-skill`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativa (elige una): last30days-skill. Cada consulta consume créditos de ScrapeCreators. La API externa es de datos y no necesariamente una segunda API LLM; el estándar Agent Skills admite los hosts compatibles pero las redes imponen sus límites.
-
-### GEO-SEO Claude (`geo-seo-claude`)
-
-- **Repo:** https://github.com/zubair-trabzada/geo-seo-claude · MIT · nivel 1 · 49/100 · alternativa en «Skills de SEO para agentes»
-- **Qué es:** Skill para Claude Code de zubair-trabzada (MIT) que optimiza sitios para buscadores con IA (GEO) sin descuidar el SEO tradicional. Activa, sin releases.
-- **Cuándo elegirlo:** Casos: Revisar schema de una web; Preparar un informe GEO inicial.
-- **Requisitos:** nivel 1: preparación sencilla, se instala dentro de un agente (skill, plugin o MCP); Claude Code; Python; Git Bash en Windows; web propia de prueba; hardware prerequisites; API de IA: opcional; Claude Code; Python; Git Bash en Windows; web propia de prueba.
-- **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/zubair-trabzada/geo-seo-claude/blob/main/README.md
-
-  ```bash
-  git clone https://github.com/zubair-trabzada/geo-seo-claude.git
-  cd geo-seo-claude
-  ./install.sh
-  ```
-- **Primera prueba propuesta (no ejecutada):** Ejecuta una revisión de una página propia y contrasta dos hallazgos con el HTML Éxito: Puedes separar observación, heurística y propuesta
-- **Combina con:** `claude-code` [20/terminal], `playwright` [32/bibliotecas], `open-seo` [18/marketing]
-- **Alternativas:** `claude-seo`
-- **Riesgos y avisos:** Revisa el script antes de ejecutar `curl | bash`. Alternativa (elige una): claude-seo. Optimizar citabilidad no garantiza aparecer en resultados AI; la instalación Windows documentada usa Git Bash y no PowerShell.
 
 ### Shopify AI Toolkit (`shopify-ai-toolkit`)
 

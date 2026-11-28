@@ -387,12 +387,10 @@ grupos:
 - id: g-pasarelas-y-routers-de-proveedores-llm
   titulo: Pasarelas y routers de proveedores LLM
   miembros:
-  - backdoor
   - claude-code-router
   - litellm
   - omniroute
   cuando:
-    backdoor: Si quieres adaptar otro proveedor al flujo de herramientas de Claude Code (proyecto pequeño de terceros).
     claude-code-router: Si quieres usar Claude Code con otros proveedores o modelos y enrutar por tarea.
     litellm: Si necesitas una pasarela estándar para 100+ proveedores con presupuestos y claves.
     omniroute: Si quieres una pasarela local que reparta cuotas y alternativas entre proveedores.
@@ -616,7 +614,6 @@ grupos:
   titulo: Skills para quitar el tono de IA a los textos
   miembros:
   - humanizer
-  - no-ai-slop
   - stop-slop
 - id: g-modelos-abiertos-de-video-generativo
   titulo: Modelos abiertos de video generativo
@@ -789,11 +786,6 @@ grupos:
   miembros:
   - claude-obsidian
   - obsidian-second-brain
-- id: g-skills-de-seo-para-agentes
-  titulo: Skills de SEO para agentes
-  miembros:
-  - claude-seo
-  - geo-seo-claude
 - id: g-agentes-de-codigo-en-el-editor
   titulo: Agentes de código en el editor
   miembros:
@@ -984,11 +976,6 @@ grupos:
   miembros:
   - open-notebook
   - surfsense
-- id: g-espacios-de-asistentes-de-copilotkit
-  titulo: Espacios de asistentes de CopilotKit
-  miembros:
-  - openbot
-  - opendots
 - id: g-gestores-de-sesiones-de-agentes-de-codigo
   titulo: Gestores de sesiones de agentes de código
   miembros:

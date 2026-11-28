@@ -2,7 +2,7 @@
 
 [Explorar por áreas prácticas y configuración de asistentes](REPO_AREAS.md).
 
-> Revisión del índice: 2026-11-27 · 970 repos curados · Documento 100% para IA.
+> Revisión del índice: 2026-11-27 · 966 repos curados · Documento 100% para IA.
 > COPIA esta carpeta (`menu_portable/`) a la raíz de tu proyecto y
 > referencia este archivo desde tu AGENTS.md / system prompt.
 
@@ -11,7 +11,7 @@
 ## INSTRUCCIONES PARA EL AGENTE (léeme entero, soy corto)
 
 Eres un agente que debe elegir qué repositorios instalar/usar para un
-proyecto concreto. Tienes un menú curado de **970 repos** de IA y
+proyecto concreto. Tienes un menú curado de **966 repos** de IA y
 automatización. Objeto: gastar MÍNIMOS tokens y NO visitar la web.
 
 PROTOCOLO (en orden):
@@ -52,7 +52,7 @@ LEYENDA de columnas del índice:
 
 | Herramienta | Repos que le sirven |
 |---|---|
-| Claude Code | `claude-code`, `anthropic-skills`, `claude-plugins-official`, `superpowers`, `awesome-claude-code`, `awesome-claude-skills`, `claude-mem`, `geo-seo-claude`, `agency-agents` |
+| Claude Code | `claude-code`, `anthropic-skills`, `claude-plugins-official`, `superpowers`, `awesome-claude-code`, `awesome-claude-skills`, `claude-mem`, `claude-seo`, `agency-agents` |
 | Codex | `codex`, `agent-skills`, `antigravity-awesome-skills`, `awesome-agent-skills`, `spec-kit`, `marketingskills`, `taste-skill` |
 | Antigravity | `antigravity-awesome-skills`, `awesome-agent-skills`, `prompt-master`, `stitch-skills` |
 | gemini-cli | `gemini-cli`, `awesome-agent-skills`, `antigravity-awesome-skills`, `stitch-skills` |
@@ -948,7 +948,7 @@ Detalle: `REPO_MENU_cats/20-programar-con-agentes-de-c-digo.md`
 - `t3code` [A|loc|E|+] — Interfaz para controlar desde web, móvil o escritorio los agentes de código que ya corren en tu máquina. — tags: coding-agent,ui,typescript — alt: opencode-manager
 - `zed` [A|hyb|E|+] — Editor de código de alto rendimiento y multijugador, de los creadores de Atom y Tree-sitter, con IA integrada — tags: editor,rust,coding,app
 
-### 21. Asistentes e investigación con agentes (18)
+### 21. Asistentes e investigación con agentes (17)
 Detalle: `REPO_MENU_cats/21-asistentes-e-investigaci-n-con-agentes.md`
 
 - `agentes-chat` [A|hyb|M|+] — Espacio de trabajo autoalojado con canales, mensajes y agentes de IA que colaboran con personas y herramientas — tags: asistentes,agent,typescript
@@ -961,9 +961,8 @@ Detalle: `REPO_MENU_cats/21-asistentes-e-investigaci-n-con-agentes.md`
 - `local-deep-research` [P|hyb|M|+] — Agente de investigación que combina buscadores, documentos y modelos locales o remotos para elaborar informes — tags: research,academia,anthropic,arxiv,brave,deep-research,encryption,home-automation — alt: gpt-researcher
 - `mercury-agent` [A|hyb|E|+] — Agente personal 24/7 con permisos estrictos, presupuesto de tokens y acceso por CLI, Telegram o web. — tags: agents,chatbot,typescript — alt: openclaw,hermes-agent
 - `multica` [P|hyb|M|+] — Workspace para asignar y revisar trabajo de agentes de código mediante sus CLI y cuentas propias. — tags: agents,go — alt: paperclip
-- `openbot` [A|hyb|H|+] — Espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y audito — tags: agents,computer-use,ag-ui,mcp,typescript — prov: openai,anthropic,google,local — alt: opendots
+- `openbot` [A|hyb|H|+] — Espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y audito — tags: agents,computer-use,ag-ui,mcp,typescript — prov: openai,anthropic,google,local
 - `openclaw` [A|hyb|M|+] — Asistente personal de IA que corre en tus dispositivos y te atiende por WhatsApp, Telegram, Slack y más. — tags: agents,chatbot,typescript — prov: anthropic,openai,local — alt: hermes-agent,mercury-agent
-- `opendots` [A|hyb|M|+] — Interfaz abierta de asistentes persistentes que requiere CopilotKit Intelligence, alojado, evaluado localmente — tags: asistentes,agent,typescript — alt: openbot
 - `openjarvis` [A|hyb|M|?] — Crea un asistente personal con chat y flujos que pueden usar modelos locales, con conectores opcionales para t
 - `paperclip` [P|hyb|H|+] — Servidor y panel para organizar equipos de agentes con objetivos, tareas, presupuestos e historial de trabajo. — tags: asistentes,acpx,agent-orchestration,agent-skills,agentic-ai,ai-agents,ai-engineering,ai-governance — alt: multica
 - `ruflo` [P|hyb|H|+] — Harness multiagente en Rust para Claude Code y Codex que coordina 100+ agentes con memoria federada (ex-Claude — tags: automation,agents,typescript
@@ -1006,13 +1005,12 @@ Detalle: `REPO_MENU_cats/22-infraestructura-despliegue-y-herramientas-para-agent
 - `uptime-kuma` [P|loc|E|+] — Monitor de disponibilidad autoalojado y fácil de usar: comprueba webs y servicios, envía alertas a más de 90 c — tags: monitoring,self-hosted,javascript,docker
 - `wg-easy` [P|loc|E|+] — La forma más sencilla de ejecutar WireGuard VPN con interfaz web para gestionar clientes, códigos QR, estadíst — tags: network,self-hosted,docker,vpn
 
-### 23. Operar, evaluar y medir modelos de IA (31)
+### 23. Operar, evaluar y medir modelos de IA (30)
 Detalle: `REPO_MENU_cats/23-operar-evaluar-y-medir-modelos-de-ia.md`
 
-- `backdoor` [R|hyb|M|+] — Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code. — tags: serving,ai,anthropic,claude,claude-code,deepseek,llm,ollama — alt: omniroute,claude-code-router,litellm
 - `bentoml` [L|loc|M|+] — Framework Python para convertir modelos y pipelines de IA en APIs de producción, con empaquetado en imágenes D — tags: serving,python,ml,docker
 - `ccusage` [A|loc|M|+] — Resume los tokens y estima el coste de tus sesiones de asistentes a partir de los registros locales de sus ter — tags: consumo,tokens,costos
-- `claude-code-router` [P|hyb|H|+] — Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control lo — tags: serving,server,typescript — alt: omniroute,backdoor,litellm
+- `claude-code-router` [P|hyb|H|+] — Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control lo — tags: serving,server,typescript — alt: omniroute,litellm
 - `claude-code-usage-monitor` [A|loc|M|+] — Monitor de uso de Claude Code que presenta consumo, previsiones y avisos a partir de la información disponible — tags: observabilidad,app,python
 - `deepeval` [L|hyb|E|+] — Framework de evaluación de LLM al estilo pytest, con decenas de métricas listas. — tags: evaluation,python — prov: openai — alt: ragas,promptfoo
 - `gptcache` [L|hyb|M|?] — Reutiliza respuestas de consultas parecidas a un modelo mediante una caché semántica con reglas de comparación
@@ -1021,12 +1019,12 @@ Detalle: `REPO_MENU_cats/23-operar-evaluar-y-medir-modelos-de-ia.md`
 - `headroom` [L|hyb|E|+] — Utilidad para compactar contexto y aprovechar mejor la ventana del modelo, condensando texto largo sin perder — tags: automation,llmops,python — alt: rtk
 - `helicone` [P|loc|M|+] — Pasarela de IA y plataforma de observabilidad de LLM abierta: registra peticiones, costes y latencias, gestion — tags: observability,typescript,llm,self-hosted — alt: langfuse
 - `langfuse` [P|hyb|M|+] — Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llama — tags: automation,observability,typescript,docker — alt: phoenix,opik,mlflow,helicone
-- `litellm` [L|hyb|E|+] — Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato d — tags: inference,llmops,python,docker — alt: omniroute,claude-code-router,backdoor
+- `litellm` [L|hyb|E|+] — Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato d — tags: inference,llmops,python,docker — alt: omniroute,claude-code-router
 - `llmlingua` [L|loc|M|?] — Acorta texto de entrada para modelos de lenguaje y permite medir cuánto contexto conservas antes de enviar el
 - `lm-eval-harness` [L|hyb|M|+] — Arnés estándar de EleutherAI para evaluar modelos de lenguaje en cientos de benchmarks académicos con backends — tags: evaluation,python,llm,benchmark
 - `loguru` [L|loc|E|+] — Librería de logging para Python centrada en la simplicidad ("logging that doesn't suck"), lista para usar sin — tags: observability,evaluation,python
 - `mlflow` [P|loc|E|+] — Plataforma open source para el ciclo de vida de modelos de ML y apps de LLM: experimentos, trazas y registro. — tags: observability,training,evaluation,python — alt: langfuse
-- `omniroute` [P|hyb|H|+] — Pasarela local para conectar proveedores de IA, enrutar solicitudes y gestionar cuotas y alternativas de acces — tags: serving,server,typescript — prov: local — alt: claude-code-router,backdoor,litellm
+- `omniroute` [P|hyb|H|+] — Pasarela local para conectar proveedores de IA, enrutar solicitudes y gestionar cuotas y alternativas de acces — tags: serving,server,typescript — prov: local — alt: claude-code-router,litellm
 - `openllmetry` [L|loc|E|+] — Instrumentación abierta basada en OpenTelemetry para aplicaciones de LLM: traza llamadas a modelos, bases vect — tags: observability,python,llm,opentelemetry
 - `opik` [P|loc|M|+] — Plataforma de Comet para depurar, evaluar y monitorear apps de LLM, RAG y agentes. — tags: observability,evaluation,python — alt: langfuse,phoenix
 - `phoenix` [P|loc|E|+] — Plataforma open source de Arize para observar, trazar y evaluar apps de LLM, con OpenTelemetry. — tags: observability,evaluation,python — alt: langfuse,opik
@@ -1133,7 +1131,7 @@ Detalle: `REPO_MENU_cats/26-animaci-n-gr-ficos-y-creaci-n-3d.md`
 - `webgl-noise` [L|loc|M|?] — Rutinas de ruido procedural para shaders de WebGL, útiles para crear texturas y efectos visuales en tiempo rea — tags: animacion,library,c
 - `zdog` [L|loc|M|+] — Motor de gráficos pseudo-3D que permite dibujar y animar ilustraciones sencillas mediante canvas o SVG. — tags: animacion,library,javascript
 
-### 27. Skills de diseño, contenido y especialidades (40)
+### 27. Skills de diseño, contenido y especialidades (38)
 Detalle: `REPO_MENU_cats/27-skills-de-dise-o-contenido-y-especialidades.md`
 
 - `3dviz-pro-max` [S|loc|M|+] — Skill para convertir ideas en escenas y visualizaciones 3D con Three.js o Blender desde un agente de código. — tags: skills,skill,javascript — alt: threejs-skills
@@ -1143,7 +1141,7 @@ Detalle: `REPO_MENU_cats/27-skills-de-dise-o-contenido-y-especialidades.md`
 - `arcads-claude-code` [S|cld|M|+] — Pack de skills para Claude Code y Cursor que crea anuncios en video e imagen con la API de Arcads (Seedance, S — tags: video,image,skills,python
 - `blender-skills` [S|loc|M|+] — Skills para guiar a un agente por modelado y preparación de escenas en Blender mediante herramientas y conexio — tags: creacion-3d,skill,typescript
 - `claude-ads` [S|loc|M|?] — Audita campañas de publicidad con Claude Code y organiza los hallazgos por plataforma, evidencia y prioridad.
-- `claude-seo` [S|loc|M|+] — Skills de Claude Code para revisar SEO técnico, contenido, presencia en buscadores de IA y otros aspectos de u — tags: dominio,skill,python — alt: geo-seo-claude
+- `claude-seo` [S|loc|M|+] — Skills de Claude Code para revisar SEO técnico, contenido, presencia en buscadores de IA y otros aspectos de u — tags: dominio,skill,python
 - `creative-architect` [S|hyb|E|+] — Plugin de dirección de arte para Claude Code: prepara fotos de producto, UGC y anuncios con proveedores de ima — tags: direccion-de-arte,fotos-producto,ugc,claude-code,creative-architect — prov: anthropic,openai
 - `design-dna` [S|loc|M|+] — Skill para analizar referencias visuales, extraer decisiones de diseño y generar interfaces con un estilo cohe — tags: skills,skill,javascript
 - `design.md` [L|cld|E|+] — Especificación y CLI para documentar identidad visual en DESIGN.md,validar tokens y comparar versiones. — tags: skills,design,typescript
@@ -1151,10 +1149,9 @@ Detalle: `REPO_MENU_cats/27-skills-de-dise-o-contenido-y-especialidades.md`
 - `financial-services` [S|cld|M|+] — Plugins, skills y conectores de Anthropic para flujos de investigación y trabajo en servicios financieros. — tags: dominio,python — prov: anthropic
 - `front-end-checklist` [D|loc|E|?] — Checklist y recursos para revisar aspectos de calidad de un frontend antes de entregarlo. — tags: skills,ai-agent,ai-agents,checklist,css,front-end-developer-tool,front-end-development,frontend
 - `genjutsu` [S|loc|M|+] — Skills de diseño y animación para agentes que trabajan con interfaces web, Android y plataformas de Apple. — tags: skills,skill,python
-- `geo-seo-claude` [S|cld|E|+] — Skill de Claude Code que audita webs para buscadores con IA (GEO) y SEO clásico, con citabilidad, schema, llms — tags: skills,search,pdf,python — prov: anthropic — alt: claude-seo
 - `gsap-skills` [S|loc|M|+] — Skills oficiales con instrucciones y ejemplos para que agentes creen animaciones y utilicen plugins de GSAP. — tags: skills,skill,reference
 - `hallmark` [S|loc|M|+] — Skill de diseño para agentes que ayuda a construir interfaces con decisiones visuales más específicas y cohere — tags: skills,skill,css — alt: ui-ux-pro-max-skill,taste-skill,impeccable
-- `humanizer` [S|hyb|E|+] — Skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana. — tags: skills,prompts,docs — alt: stop-slop,no-ai-slop
+- `humanizer` [S|hyb|E|+] — Skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana. — tags: skills,prompts,docs — alt: stop-slop
 - `i-have-adhd` [S|loc|M|+] — Skill para que un agente presente primero la respuesta y organice su salida con menos distracciones y rodeos. — tags: escritura,skill,python
 - `impeccable` [S|cld|E|+] — Vocabulario y playbooks de diseño para agentes, con detector determinista y hooks según herramienta. — tags: skills,design,rust — alt: ui-ux-pro-max-skill,taste-skill,hallmark
 - `instagram-agent-skill` [S|loc|M|+] — Skills de Claude para investigar ideas, preparar guiones y revisar contenido y publicaciones de una cuenta de — tags: dominio,skill,python
@@ -1165,13 +1162,12 @@ Detalle: `REPO_MENU_cats/27-skills-de-dise-o-contenido-y-especialidades.md`
 - `minimalist-entrepreneur-skills` [S|loc|M|+] — Skills basadas en ideas de The Minimalist Entrepreneur para orientar trabajo de negocio y emprendimiento con u — tags: dominio,skill,reference
 - `modern-web-guidance` [S|loc|M|+] — Herramienta y skill para que un agente consulte documentación actual sobre prácticas y APIs de desarrollo web. — tags: skills,skill,reference
 - `motion-design-skill` [S|loc|M|+] — Skill con principios de ritmo, transiciones y composición del movimiento para diseñar animaciones de interface — tags: skills,skill,reference
-- `no-ai-slop` [S|loc|M|+] — Skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con — tags: escritura,skill,python — alt: humanizer,stop-slop
 - `scientific-agent-skills` [S|loc|M|+] — Colección de skills y recursos para que agentes realicen tareas de investigación científica con herramientas d — tags: dominio,skill,python
 - `shopify-ai-toolkit` [S|loc|M|?] — Aporta guías y herramientas de Shopify para asistir el desarrollo de temas y aplicaciones con fuentes del fabr
 - `skills-emil` [S|cld|E|+] — Colección de skills enfocada en diseño de interfaces y en mejorar la colaboración entre diseñador y desarrolla — tags: skills,design
 - `social-media-research-skills` [S|cld|M|+] — Skills para investigar publicaciones, comentarios, competidores y anuncios en redes mediante ScrapeCreators. — tags: dominio,agent-skills,ai-agents,claude-code,claude-skills,competitor-analysis,content-marketing,cursor — tools: claude-code,codex — alt: last30days-skill
 - `stitch-skills` [S|cld|E|+] — Colección de skills de agente para trabajar con el servidor MCP de Google Stitch. — tags: skills,design,ui
-- `stop-slop` [S|hyb|E|?] — Skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbric — tags: skills,prompts,docs — alt: humanizer,no-ai-slop
+- `stop-slop` [S|hyb|E|?] — Skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbric — tags: skills,prompts,docs — alt: humanizer
 - `taste-skill` [S|cld|E|+] — Skill design-taste-frontend para dirección visual y revisión de sitios; otros skills del pack antiguo se movie — tags: skills,design,javascript — alt: ui-ux-pro-max-skill,impeccable,hallmark
 - `threejs-game-skills` [S|loc|M|+] — Skills para que un agente construya juegos de navegador con Three.js, interfaz y recursos visuales o sonoros o — tags: skills,skill,python
 - `threejs-skills` [S|loc|M|+] — Colección de instrucciones para que agentes programen escenas y experiencias 3D en la web con Three.js. — tags: skills,skill,reference — alt: 3dviz-pro-max

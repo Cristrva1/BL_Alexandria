@@ -35,7 +35,7 @@ Se usa como app de escritorio (Electron) o con `npm install -g @musistudio/claud
 | [OpenCode](opencode.md) | Cliente soportado según el README. | Apunta OpenCode a la pasarela de CCR. |
 | [claude-code-hooks-mastery](claude-code-hooks-mastery.md) | Combinación recíproca: claude-code-hooks-mastery lo enlaza como «Enrutar Claude Code a otros modelos mientras experimentas con hooks (combinación por arquitectura)». | Orden indicado desde claude-code-hooks-mastery: Independientes. |
 
-**Notas:** Alternativas (elige una): omniroute, backdoor, litellm. Usar modelos de terceros con Claude Code puede no estar soportado por Anthropic.
+**Notas:** Alternativas (elige una): omniroute, litellm. Usar modelos de terceros con Claude Code puede no estar soportado por Anthropic.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v3.1.4 (2026-11-16) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -43,14 +43,13 @@ Estado en GitHub: activo · último push 2026-11-16 · última versión publicad
 
 ## Ver similares
 
-Grupo **Pasarelas y routers de proveedores LLM**: claude-code-router ocupa la posición 3 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+Grupo **Pasarelas y routers de proveedores LLM**: claude-code-router ocupa la posición 3 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [litellm](litellm.md) ⭐ recomendado | 78 | Si necesitas una pasarela estándar para 100+ proveedores con presupuestos y claves. |
 | 2 | [OmniRoute](omniroute.md) | 76 | Si quieres una pasarela local que reparta cuotas y alternativas entre proveedores. |
 | 3 | **claude-code-router** (esta ficha) | 58 | Si quieres usar Claude Code con otros proveedores o modelos y enrutar por tarea. |
-| 4 | [backdoor](backdoor.md) | 34 | Si quieres adaptar otro proveedor al flujo de herramientas de Claude Code (proyecto pequeño de terceros). |
 
 ## Acceso, coste y equipo
 
@@ -130,7 +129,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [OmniRoute](omniroute.md) | 87.5k | Pasarela local para conectar proveedores de IA, enrutar solicitudes y gestionar cuotas y alternativas de acceso. |
-| [backdoor](backdoor.md) | 302 | Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code. |
 | [litellm](litellm.md) | 63.3k | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. |
 
 ## Enlaces

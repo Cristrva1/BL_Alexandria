@@ -533,7 +533,7 @@ input[type="checkbox"], input[type="radio"] { accent-color: var(--green); width:
 .reading-details summary, .comparison-details summary, .guided-help summary, .technical-details summary { cursor: pointer; padding-block: 0.5rem; font-weight: 600; }
 .reading-details p { max-width: 75ch; }
 .guided-help, .technical-details { border: 1px solid var(--rule); border-radius: var(--radius); padding: 0.5rem 1.1rem; margin-block: 1.5rem; background: var(--surface); }
-.guided-help textarea, .handbook-prompts textarea, .prompt-card textarea, .guided-recommendations textarea {
+.guided-help textarea, .handbook-prompts textarea, .prompt-card textarea {
   display: block; width: 100%; min-height: 12rem; margin-block: 0.6rem 0.9rem; resize: vertical;
   font-family: var(--mono); font-size: 0.86rem; line-height: 1.6;
   background: var(--surface-2); border: 1px solid var(--rule); border-radius: 10px; padding: 0.8rem;
@@ -663,15 +663,9 @@ input[type="checkbox"], input[type="radio"] { accent-color: var(--green); width:
 .guided-summary > div { display: grid; grid-template-columns: 8rem minmax(0, 1fr); gap: 1rem; padding-block: 0.4rem; }
 .guided-summary dt { font-weight: 600; }
 .guided-summary dd { margin: 0; }
-.guided-recommendations { padding-left: 0; list-style: none; display: grid; gap: 1rem; counter-reset: rec; }
-.guided-recommendations > li { counter-increment: rec; background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius-lg); padding: 1.3rem 1.4rem; box-shadow: var(--shadow-sm); }
-.guided-recommendations > li > article > h3::before { content: counter(rec) ". "; color: var(--terra); }
-.guided-recommendations h3 { font-size: 1.7rem; overflow-wrap: anywhere; }
-.guided-recommendations h4 { font-family: var(--sans); font-weight: 600; letter-spacing: 0; font-size: 1.02rem; margin-block: 1.3rem 0.5rem; }
-.guided-recommendations p, .guided-recommendations li { max-width: 78ch; }
-.guided-start-steps { padding-left: 1.4rem; }
-.guided-start-steps li { margin-block: 0.7rem; }
-.guided-caution { color: var(--ink-soft); background: var(--gold-soft); border-radius: var(--radius-sm); padding: 0.6rem 0.8rem; }
+.guided-primary h3 { font-size: 1.7rem; margin-top: 0; overflow-wrap: anywhere; }
+.guided-primary h4 { font-family: var(--sans); font-weight: 600; font-size: 1.02rem; margin-block: 1.3rem 0.5rem; }
+.guided-primary p, .guided-primary li { max-width: 78ch; }
 .guided-picks { padding-left: 1.6rem; }
 #guided-results, #guided-result-title { scroll-margin-top: 1rem; }
 .mobile-hint { display: none; }

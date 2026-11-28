@@ -344,7 +344,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** La acción queda pendiente de tu aprobación y aparece en la auditoría
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `copilotkit`, `langgraph`, `mastra`, `crewai`, `firecrawl`, `composio`
-**Alternativas (elige una):** `opendots`
 
 ## `openclaw`
 role=app · exec=hybrid · setup=medium · mcp=True · prov=anthropic,openai,local · tags=agents,chatbot,typescript
@@ -376,41 +375,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `nemoclaw`, `claude-mem`, `claude-code`, `ollama`
 **Alternativas (elige una):** `hermes-agent`, `mercury-agent`
-
-## `opendots`
-role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=asistentes,agent,typescript
-
-**Qué es:** Interfaz abierta de asistentes persistentes que requiere CopilotKit Intelligence, alojado, evaluado localmente o con licencia.
-**Stack:** Node; CopilotKit Intelligence; proveedores y conectores elegidos
-**Acceso y costes:**
-- API de IA: API de IA necesaria. La UI MIT requiere Intelligence hospedado, evaluación Docker local o despliegue autoalojado con licencia; modelos y voz pueden cobrar aparte
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelo local no documentado. Autoalojar OpenDots no incluye automáticamente el servicio Intelligence ni una pila enteramente local
-- Coste: El coste depende del proveedor o la ruta. La UI MIT requiere Intelligence hospedado, evaluación Docker local o despliegue autoalojado con licencia; modelos y voz pueden cobrar aparte
-- Equipo: Preparación según la ruta elegida. Node; CopilotKit Intelligence; proveedores y conectores elegidos
-**Repo:** https://github.com/CopilotKit/OpenDots
-
-**Instalación** [+]:
-
-```
-git clone https://github.com/CopilotKit/OpenDots.git
-cd OpenDots
-npm ci
-cp .env.example .env
-npm run dev
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Probar un asistente persistente; Estudiar aprobación de acciones conectadas
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Configura un Dot de prueba y haz una pregunta sin conceder herramientas de escritura
-**Qué comprobar:** Puedes comprobar la respuesta y el panel de conexiones
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `copilotkit`, `composio`, `servers`
-**Alternativas (elige una):** `openbot`
 
 ## `openjarvis`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=—

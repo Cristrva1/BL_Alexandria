@@ -29,7 +29,7 @@
      "orden_instalacion": "Humaniza primero; programa después."
     }
    ],
-   "notas": "Alternativas (elige una): no-ai-slop, stop-slop.",
+   "notas": "Alternativa (elige una): stop-slop.",
    "fuentes": [
     "https://github.com/blader/humanizer/blob/main/README.md"
    ],
@@ -64,7 +64,7 @@
      "orden_instalacion": "Igual que arriba."
     }
    ],
-   "notas": "Alternativas (elige una): no-ai-slop, humanizer. Sus reglas son estrictas (por ejemplo, elimina todos los adverbios) y pueden aplanar el estilo.",
+   "notas": "Alternativa (elige una): humanizer. Sus reglas son estrictas (por ejemplo, elimina todos los adverbios) y pueden aplanar el estilo.",
    "fuentes": [
     "https://github.com/hardikpandya/stop-slop/blob/main/README.md"
    ],
@@ -159,40 +159,6 @@
     "pushed_at": "2026-11-09",
     "license": "MIT",
     "primary_language": "Shell",
-    "checked_at": "2026-11-15"
-   }
-  },
-  "geo-seo-claude": {
-   "que_es": "Skill para Claude Code de zubair-trabzada (MIT) que optimiza sitios para buscadores con IA (GEO) sin descuidar el SEO tradicional. Activa, sin releases.",
-   "que_hace": "Comandos `/geo` para auditoría completa GEO+SEO con subagentes en paralelo, instantánea rápida, puntuación de «citabilidad», acceso de rastreadores de IA (robots.txt), análisis o generación de llms.txt, menciones de marca en plataformas citadas por IA, datos estructurados, SEO técnico, calidad de contenido (E-E-A-T) e informes para clientes, también en PDF con gráficos.",
-   "como_lo_hace": "Se instala con un script (macOS/Linux o Git Bash en Windows) que copia la skill y crea un entorno virtual aislado en `~/.claude/skills/geo/.venv/`. Requiere Python 3.10+, Claude Code y Git; uv acelera la instalación y Playwright es opcional para capturas.",
-   "combina_con": [
-    {
-     "id": "claude-code",
-     "motivo": "Requisito: los comandos se ejecutan dentro de Claude Code.",
-     "orden_instalacion": "Claude Code primero; luego el script de instalación."
-    },
-    {
-     "id": "playwright",
-     "motivo": "Dependencia opcional para capturas de pantalla.",
-     "orden_instalacion": "Instala Playwright y sus navegadores si quieres capturas en los informes."
-    },
-    {
-     "id": "open-seo",
-     "motivo": "Datos de palabras clave y backlinks como complemento a la auditoría (combinación por arquitectura).",
-     "orden_instalacion": "Conecta el MCP de OpenSEO al mismo agente."
-    }
-   ],
-   "notas": "Revisa el script antes de ejecutar `curl | bash`. Alternativa (elige una): claude-seo.",
-   "fuentes": [
-    "https://github.com/zubair-trabzada/geo-seo-claude/blob/main/README.md"
-   ],
-   "github": {
-    "name_with_owner": "zubair-trabzada/geo-seo-claude",
-    "archived": false,
-    "pushed_at": "2026-11-15",
-    "license": "MIT",
-    "primary_language": "Python",
     "checked_at": "2026-11-15"
    }
   },
@@ -330,7 +296,6 @@
      "orden_instalacion": "Conecta el MCP de OpenSEO al mismo agente."
     }
    ],
-   "notas": "Alternativa (elige una): geo-seo-claude.",
    "fuentes": [
     "https://github.com/AgriciDaniel/claude-seo/blob/main/README.md"
    ],
@@ -477,41 +442,6 @@
     "license": "MIT",
     "primary_language": "Python",
     "latest_release": "v2.72.0 (2026-10-01)",
-    "checked_at": "2026-11-15"
-   }
-  },
-  "no-ai-slop": {
-   "que_es": "Skill de escritura de código abierto (MIT) de Peter Yang. Activa (v1.0.6).",
-   "que_hace": "Quita más de 20 patrones de «slop» de IA (como «No es X. Es Y.» o «Lo que nadie te cuenta…») sin aplanar tu voz personal, y lista lo que cambió. También detecta y cita patrones sin juzgar si lo escribió una IA, y genera «slop» exagerado como sátira.",
-   "como_lo_hace": "Skill instalable pidiéndoselo a ChatGPT, Claude Code o Codex, o con `npx skills add petergyang/no-ai-slop --skill no-ai-slop --global --yes`; se usa con `/no-ai-slop`.",
-   "combina_con": [
-    {
-     "id": "claude-code",
-     "motivo": "Agente compatible documentado.",
-     "orden_instalacion": "Instala con npx skills de forma global."
-    },
-    {
-     "id": "codex",
-     "motivo": "Agente compatible documentado.",
-     "orden_instalacion": "Igual que arriba."
-    },
-    {
-     "id": "marketingskills",
-     "motivo": "Revisar los textos de marketing generados (combinación por arquitectura).",
-     "orden_instalacion": "Genera primero y revisa después."
-    }
-   ],
-   "notas": "Alternativas (elige una): humanizer, stop-slop.",
-   "fuentes": [
-    "https://github.com/petergyang/no-ai-slop/blob/main/README.md"
-   ],
-   "github": {
-    "name_with_owner": "petergyang/no-ai-slop",
-    "archived": false,
-    "pushed_at": "2026-09-02",
-    "license": "MIT",
-    "primary_language": "Python",
-    "latest_release": "v1.0.6 (2026-08-01)",
     "checked_at": "2026-11-15"
    }
   },

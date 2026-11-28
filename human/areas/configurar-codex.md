@@ -4,7 +4,7 @@
 
 Prepara el cliente de Codex y reúne skills, contexto y conexiones que tienen compatibilidad documentada.
 
-215 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/configurar-codex).
+214 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/configurar-codex).
 
 ## Primera configuración, paso a paso
 
@@ -39,7 +39,7 @@ Cliente oficial y formas de empezar con un proyecto.
 
 Instrucciones y plugins documentados para Codex.
 
-[Explorar 86 repos](../../docs/index.html#/explorar?area=configurar-codex&topic=codex-skills)
+[Explorar 85 repos](../../docs/index.html#/explorar?area=configurar-codex&topic=codex-skills)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -92,7 +92,6 @@ Instrucciones y plugins documentados para Codex.
 | [modern-web-guidance](../fichas/modern-web-guidance.md) | Herramienta y skill para que un agente consulte documentación actual sobre prácticas y APIs de desarrollo web. | Sin clave propia de API de IA en la ruta básica |
 | [motion-design-skill](../fichas/motion-design-skill.md) | Skill con principios de ritmo, transiciones y composición del movimiento para diseñar animaciones de interfaces. | Sin clave propia de API de IA en la ruta básica |
 | [motionmaxxing](../fichas/motionmaxxing.md) | Skill para mejorar composición, ritmo y movimiento de videos creados con agentes y herramientas de código. | API de IA opcional |
-| [no-ai-slop](../fichas/no-ai-slop.md) | Skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA. | Sin clave propia de API de IA en la ruta básica |
 | [obsidian-second-brain](../fichas/obsidian-second-brain.md) | Sistema de memoria y notas en Markdown para compartir contexto de trabajo entre agentes y una bóveda de Obsidian. | API de IA opcional |
 | [obsidian-skills](../fichas/obsidian-skills.md) | Skills para que un agente trabaje con Obsidian y sus formatos de notas, bases de datos y lienzos. | Sin clave propia de API de IA en la ruta básica |
 | [Open Code Review](../fichas/open-code-review.md) | Revisa cambios de código con reglas y un informe guiado, usando su propio proveedor de IA o el asistente de programación que ya tienes. | API de IA opcional |
@@ -438,7 +437,6 @@ Adaptadores del proyecto para modelos,sesiones o servicios; revisa qué función
 - [motionmaxxing](https://github.com/Tejashmakwana/motionmaxxing/blob/main/README.md), revisado el 2026-11-15.
 - [Material UI](https://github.com/mui/material-ui/blob/master/README.md), revisado el 2026-11-15.
 - [multica](https://github.com/multica-ai/multica/blob/main/README.md), revisado el 2026-11-15.
-- [no-ai-slop](https://github.com/petergyang/no-ai-slop/blob/main/README.md), revisado el 2026-11-15.
 - [nodeterm](https://github.com/eneskirca/nodeterm/blob/main/README.md), revisado el 2026-11-15.
 - [notebooklm-mcp-cli](https://github.com/jacob-bd/gemini-notebook-mcp-cli/blob/main/README.md), revisado el 2026-11-15.
 - [notebooklm-py](https://github.com/teng-lin/notebooklm-py/blob/main/README.md), revisado el 2026-11-15.

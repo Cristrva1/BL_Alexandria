@@ -4,7 +4,7 @@
 
 Distingue el cliente de Google, las skills compatibles y los recursos para diseño y prompting.
 
-164 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/configurar-antigravity).
+163 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/configurar-antigravity).
 
 ## Primera configuración, paso a paso
 
@@ -29,7 +29,7 @@ Son opciones para comparar. No es necesario instalar todas.
 
 El catálogo Agentic Awesome Skills documenta destinos Antigravity 2.0 y CLI.
 
-[Explorar 67 repos](../../docs/index.html#/explorar?area=configurar-antigravity&topic=antigravity-skills)
+[Explorar 66 repos](../../docs/index.html#/explorar?area=configurar-antigravity&topic=antigravity-skills)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -67,7 +67,6 @@ El catálogo Agentic Awesome Skills documenta destinos Antigravity 2.0 y CLI.
 | [modern-web-guidance](../fichas/modern-web-guidance.md) | Herramienta y skill para que un agente consulte documentación actual sobre prácticas y APIs de desarrollo web. | Sin clave propia de API de IA en la ruta básica |
 | [motion-design-skill](../fichas/motion-design-skill.md) | Skill con principios de ritmo, transiciones y composición del movimiento para diseñar animaciones de interfaces. | Sin clave propia de API de IA en la ruta básica |
 | [motionmaxxing](../fichas/motionmaxxing.md) | Skill para mejorar composición, ritmo y movimiento de videos creados con agentes y herramientas de código. | API de IA opcional |
-| [no-ai-slop](../fichas/no-ai-slop.md) | Skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA. | Sin clave propia de API de IA en la ruta básica |
 | [obsidian-skills](../fichas/obsidian-skills.md) | Skills para que un agente trabaje con Obsidian y sus formatos de notas, bases de datos y lienzos. | Sin clave propia de API de IA en la ruta básica |
 | [openfilm](../fichas/openfilm.md) | Herramientas y skill para que un agente cree proyectos de video y permita editar después sus elementos. | API de IA opcional |
 | [OpenMAIC](../fichas/openmaic.md) | Aplicación educativa con varios agentes que prepara clases y actividades mediante modelos y recursos configurables. | Depende de la ruta elegida |
@@ -324,7 +323,6 @@ Adaptadores del proyecto para modelos,sesiones o servicios; revisa qué función
 - [motion-design-skill](https://github.com/LottieFiles/motion-design-skill/blob/main/README.md), revisado el 2026-11-15.
 - [motionmaxxing](https://github.com/Tejashmakwana/motionmaxxing/blob/main/README.md), revisado el 2026-11-15.
 - [Material UI](https://github.com/mui/material-ui/blob/master/README.md), revisado el 2026-11-15.
-- [no-ai-slop](https://github.com/petergyang/no-ai-slop/blob/main/README.md), revisado el 2026-11-15.
 - [nodeterm](https://github.com/eneskirca/nodeterm/blob/main/README.md), revisado el 2026-11-15.
 - [notebooklm-mcp-cli](https://github.com/jacob-bd/gemini-notebook-mcp-cli/blob/main/README.md), revisado el 2026-11-15.
 - [notebooklm-py](https://github.com/teng-lin/notebooklm-py/blob/main/README.md), revisado el 2026-11-15.

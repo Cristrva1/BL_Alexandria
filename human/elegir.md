@@ -16,9 +16,13 @@ Las colecciones Configuración de Claude Code, Configuración de Codex y Configu
 
 Un mismo repo puede ayudarte en desarrollo web y en la configuración de tu agente. Conserva una sola ficha, identidad y perfil de acceso. Por eso las cifras de las áreas pueden solaparse: no se suman para contar proyectos distintos.
 
-## Describe el resultado
+## Empieza por una tarea
 
-Piensa en una tarea concreta: transcribir un audio, preguntar a PDFs, atender WhatsApp o crear una presentación. Las rutas por objetivo te llevan a un conjunto pequeño y explican qué pieza cumple cada función.
+En Guíame puedes describir lo que quieres hacer o elegir una tarea del catálogo. Verás una primera opción que toma en cuenta tu equipo y acceso, y cuándo conviene considerar otras. Si ya estás explorando una subcategoría, abre «Ayúdame a elegir para esta tarea» para saltar a la recomendación.
+
+## Para qué hay tantas herramientas
+
+La biblioteca conserva opciones para distintos equipos, cuentas, licencias y formas de trabajar. Guíame usa la opción principal de la revisión editorial cuando encaja con tu perfil. Las alternativas explican qué necesidad puede cambiar la elección. En los grupos pendientes de curación, la puntuación de calidad sirve para desempatar entre opciones de encaje equivalente.
 
 ## Elige tu forma de acceso
 

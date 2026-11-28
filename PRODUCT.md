@@ -12,7 +12,7 @@ Personas sin experiencia técnica que necesitan pasos guiados. La entrada debe e
 
 En Comparar, las funciones y diferencias técnicas tienen prioridad. La preparación, los costes, la compatibilidad y las fuentes se consultan después, sin convertir coincidencias de categoría en afirmaciones de equivalencia ni elegir un ganador automático.
 
-Guíame reúne todas las preguntas en una pantalla: proyecto, experiencia, equipo y herramientas de IA disponibles. Recomienda hasta tres puntos de partida documentados con motivos, requisitos, costes y pasos para una primera prueba. Permite corregir el objetivo interpretado y dejar los datos de equipo por confirmar. Las respuestas permanecen en memoria de la pestaña y se borran al recargar.
+Guíame reúne las preguntas sobre la tarea, experiencia, equipo y herramientas de IA en una pantalla. Se puede abrir desde cualquier subcategoría práctica o desde la revisión editorial de una ficha. Dentro de un grupo revisado, favorece la opción principal y muestra las alternativas aprobadas que encajan con el perfil. Explica cómo empezar, qué comprobar y cuándo elegir otra opción. Las fichas pendientes conservan su registro en el catálogo. Las respuestas permanecen en memoria de la pestaña y se borran al recargar.
 
 ## Product Purpose
 

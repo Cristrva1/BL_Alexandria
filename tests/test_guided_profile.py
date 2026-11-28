@@ -20,6 +20,8 @@ const assert=require('node:assert/strict'),g=require(process.argv[1]);
 const c=JSON.parse(require('node:fs').readFileSync(0,'utf8'));
 const goals=c.discovery.goals;
 assert.equal(g.inferGoal('Quiero crear una presentación a partir de un PDF',goals).goal.id,'presentaciones');
+assert.equal(g.inferGoal('Quiero hacer una página web',goals).goal.id,'web');
+assert.equal(g.inferGoal('Quiero crear una web app con chat con IA',goals).goal.id,'web');
 assert.equal(g.inferGoal('Quiero transcribir una entrevista y obtener subtítulos',goals).goal.id,'voz');
 assert.equal(g.inferGoal('Quiero generar imágenes con IA local',goals).goal.id,'imagenes');
 assert.equal(g.inferGoal('Quiero crear una presentación',goals,'diagramas').goal.id,'diagramas');
@@ -106,8 +108,9 @@ const browser=g.recommend(c,{project:'Quiero dibujar un diagrama de mi proceso',
 assert.ok(browser.picks.length>0 && browser.picks.length<=3);
 assert.ok(browser.picks.every(p=>p.item.getting_started.browser_url));
 assert.ok(!browser.picks.some(p=>p.item.id==='mermaid'));
-const tldraw=browser.picks.find(p=>p.item.id==='tldraw');
-assert.ok(tldraw);
+assert.ok(browser.picks.some(p=>p.item.id==='excalidraw'));
+assert.ok(!browser.picks.some(p=>p.item.id==='tldraw'));
+const tldraw={item:c.repos.find(r=>r.id==='tldraw'),useBrowser:true,matched:[]};
 assert.equal(g.startSteps(tldraw,browser.profile)[2].text,tldraw.item.getting_started.browser_first_try.action);
 assert.ok(!/proyecto de prueba/.test(g.startSteps(tldraw,browser.profile)[2].text));
 assert.ok(g.firstTry(tldraw).success.includes('sin crear un proyecto de código'));
@@ -127,6 +130,61 @@ const assert=require('node:assert/strict'),g=require(process.argv[1]);
 const p=g.normalize({project:'x'.repeat(2000),experience:'expert!',os:'ios?',ram:'9999',clients:['web','web','fake'],mode:'free-forever'});
 assert.equal(p.project.length,800);assert.equal(p.experience,'unknown');assert.equal(p.os,'unknown');
 assert.equal(p.ram,'unknown');assert.equal(p.mode,'any');assert.deepEqual(p.clients,['web']);
+''')
+
+
+def test_explicit_topic_prioritizes_fit_then_quality_and_comparable_alternatives():
+    run_js(FIXTURE+r'''
+const group={grupo:'graphics'};
+const first=item('a-general',{similares:group,calidad:{puntuacion:60},lead:'Gráficos básicos para React'});
+const best=item('b-quality',{similares:group,calidad:{puntuacion:85},alt_refs:[{id:first.id}],lead:'Graficas en canvas'});
+const other=item('c-unrelated',{calidad:{puntuacion:99}});
+const outside=item('x-outside',{lead:'Gráficos básicos para React',calidad:{puntuacion:100}});
+const c=catalog([first,best,other,outside]);
+c.discovery.areas=[{id:'datos',topics:[{id:'charts',title:'Gráficos',repo_ids:[first.id,best.id,other.id]}]}];
+const base={topic:'charts',experience:'developer'};
+const tied=g.recommend(c,base);
+assert.equal(tied.intent.kind,'topic');
+assert.deepEqual(tied.picks.map(p=>p.item.id),[best.id,first.id,other.id]);
+assert.ok(tied.picks[0].reasons.some(reason=>reason.includes('desempat')));
+const specific=g.recommend(c,{...base,project:'Necesito gráficos para React'});
+assert.equal(specific.picks[0].item.id,first.id);
+assert.ok(specific.picks.every(p=>p.item.id!==outside.id));
+''')
+
+
+def test_every_practical_topic_can_be_selected_as_a_task():
+    run_js(r'''
+const assert=require('node:assert/strict'),g=require(process.argv[1]);
+const c=JSON.parse(require('node:fs').readFileSync(0,'utf8'));
+for(const area of c.discovery.areas) for(const topic of area.topics){
+  const result=g.recommend(c,{topic:topic.id,clients:['codex','claude','antigravity']});
+  assert.equal(result.intent.goal.id,topic.id);
+  assert.ok(result.picks.length<=3,topic.id);
+  assert.ok(result.picks.every(p=>topic.repo_ids.includes(p.item.id)));
+  if(!result.picks.length)assert.ok(Object.values(result.excluded).some(Boolean),topic.id);
+}
+''',build_catalog(ROOT))
+
+
+def test_guided_editorial_order_respects_access_and_excludes_pending():
+    run_js(FIXTURE+r'''
+const group='graphics';
+const entry=(id,role,extra={})=>item(id,{guided_editorial:{group,role,note:'Razón del informe'},...extra});
+const primary=entry('z-principal','principal',{setup:'medium',lead:'Tablero de visualización'});
+const alternative=entry('a-alternative','alternative',{setup:'easy',lead:'Gráficas con canvas'});
+const pending=entry('b-pending','pending',{setup:'easy',lead:'Gráficas con canvas'});
+const reference=entry('c-reference','reference',{setup:'easy'});
+const c=catalog([primary,alternative,pending,reference]);
+c.guided_groups=[{id:group,title:'Gráficos',members:c.repos.map(r=>r.id)}];
+const chooseGroup=(input={})=>g.recommend(c,{group,...input});
+assert.deepEqual(chooseGroup().picks.map(p=>p.item.id),[primary.id,alternative.id]);
+assert.equal(chooseGroup({project:'Quiero gráficos en canvas'}).picks[0].item.id,alternative.id);
+primary.access.api='required';
+assert.deepEqual(chooseGroup({mode:'no_api'}).picks.map(p=>p.item.id),[alternative.id]);
+c.guided_groups[0].reference_only=true;
+assert.ok(chooseGroup().referenceOnly);
+assert.equal(chooseGroup().picks.length,0);
 ''')
 
 

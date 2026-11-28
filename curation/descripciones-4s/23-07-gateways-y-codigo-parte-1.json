@@ -24,7 +24,7 @@
      "orden_instalacion": "Conecta tu instancia de Ollama como proveedor local."
     }
    ],
-   "notas": "Alternativas (elige una): claude-code-router, backdoor, litellm. Combinar cuentas gratuitas puede incumplir las condiciones de algunos proveedores; el MITM implica confiar en una CA local.",
+   "notas": "Alternativas (elige una): claude-code-router, litellm. Combinar cuentas gratuitas puede incumplir las condiciones de algunos proveedores; el MITM implica confiar en una CA local.",
    "fuentes": [
     "https://github.com/cheaper-inference/OmniRoute/blob/release/v3.8.54/README.md"
    ],
@@ -65,7 +65,7 @@
      "reciproca_de": "claude-code-hooks-mastery"
     }
    ],
-   "notas": "Alternativas (elige una): omniroute, backdoor, litellm. Usar modelos de terceros con Claude Code puede no estar soportado por Anthropic.",
+   "notas": "Alternativas (elige una): omniroute, litellm. Usar modelos de terceros con Claude Code puede no estar soportado por Anthropic.",
    "fuentes": [
     "https://github.com/musistudio/claude-code-router/blob/main/README.md"
    ],
@@ -76,40 +76,6 @@
     "license": "MIT",
     "primary_language": "TypeScript",
     "latest_release": "v3.1.4 (2026-11-16)",
-    "checked_at": "2026-11-15"
-   }
-  },
-  "backdoor": {
-   "que_es": "Backdoor, proxy de terceros de @ajsai47 que permite usar Claude Code con otros proveedores de modelos. Licencia MIT. Es pequeño (~300 estrellas, sin releases) y su último cambio es de mayo de 2026.",
-   "que_hace": "Intercepta las llamadas de Claude Code a la API de Anthropic, traduce el formato y las reenvía a cualquier proveedor compatible con OpenAI (DeepSeek, Groq, OpenRouter, Ollama o un modelo local). Permite cambiar de proveedor con una línea. El README presenta una comparación de costes propia que no se ha verificado.",
-   "como_lo_hace": "Es un proyecto en Python de menos de 600 líneas (servidor, asistente de configuración y scripts) que se ejecuta en local con uv y un archivo `.env`. Requiere tener Claude Code instalado. Con Ollama no salen datos de tu máquina.",
-   "combina_con": [
-    {
-     "id": "claude-code",
-     "motivo": "Es el cliente que Backdoor redirige.",
-     "orden_instalacion": "Instala Claude Code y luego configura Backdoor."
-    },
-    {
-     "id": "ollama",
-     "motivo": "Proveedor local documentado en el README.",
-     "orden_instalacion": "Arranca Ollama y elígelo como backend."
-    },
-    {
-     "id": "vllm",
-     "motivo": "vLLM sirve modelos propios con API compatible con OpenAI, el tipo de proveedor al que Backdoor redirige Claude Code. (combinación por arquitectura)",
-     "orden_instalacion": "Levanta vLLM primero y apunta Backdoor a su URL base."
-    }
-   ],
-   "notas": "Alternativas (elige una): omniroute, claude-code-router, litellm. Proyecto pequeño y sin mantenimiento reciente. La calidad del agente depende mucho del modelo y de su soporte de herramientas. Cifras de ahorro del README sin verificar.",
-   "fuentes": [
-    "https://github.com/ajsai47/backdoor/blob/main/README.md"
-   ],
-   "github": {
-    "name_with_owner": "ajsai47/backdoor",
-    "archived": false,
-    "pushed_at": "2026-05-22",
-    "license": "MIT",
-    "primary_language": "Python",
     "checked_at": "2026-11-15"
    }
   },

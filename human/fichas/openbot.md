@@ -37,20 +37,11 @@ Para una persona, la app de escritorio (Mac/Windows) incluye el backend en Docke
 | [firecrawl](firecrawl.md) | Firecrawl figura entre los proveedores de investigación web que el catálogo MCP de OpenBot incluye de serie. | Añade la clave de Firecrawl en la configuración de herramientas. |
 | [Composio](composio.md) | Composio actúa como intermediario de cientos de apps detrás de una sola cuenta en el catálogo MCP gobernado. | Prepara `setup:composio` y concede solo las apps necesarias. |
 
-**Notas:** Alternativa (elige una): opendots. OpenDots es ahora una «skin» de OpenBot y su repositorio queda como starter mantenido por la comunidad. El agente navegador maneja sesiones reales: mantén los puertos en loopback.
+**Notas:** El tema de OpenDots se incorporó a OpenBot. El agente navegador maneja sesiones reales: mantén los puertos en loopback.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.0.3 (2026-11-14) · licencia declarada MIT (plantilla; Intelligence con licencia aparte) (consultado el 2026-11-16).
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/CopilotKit/OpenBot/blob/main/README.md) · [2](https://github.com/CopilotKit/OpenDots/blob/main/README.md)</sub>
-
-## Ver similares
-
-Grupo **Espacios de asistentes de CopilotKit**: OpenBot ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
-
-| # | Repo | Puntuación | Cuándo elegirlo |
-|---:|---|---:|---|
-| 1 | **OpenBot** (esta ficha) ⭐ recomendado | 70 | Si buscas esto: espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y auditoría, conectables por AG-UI. |
-| 2 | [OpenDots](opendots.md) | 48 | Si buscas esto: interfaz abierta de asistentes persistentes que requiere CopilotKit Intelligence, alojado, evaluado localmente o con licencia. |
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/CopilotKit/OpenBot/blob/main/README.md)</sub>
 
 ## Acceso, coste y equipo
 
@@ -122,12 +113,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** TypeScript, docker-compose.yml, package.json
 - **Etiquetas:** `agents` `computer-use` `ag-ui` `mcp` `typescript`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
-
-## Alternativas (elige una)
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [OpenDots](opendots.md) | 6.6k | Interfaz abierta de asistentes persistentes que requiere CopilotKit Intelligence, alojado, evaluado localmente o con licencia. |
 
 ## Enlaces
 

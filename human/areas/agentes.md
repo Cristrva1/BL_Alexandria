@@ -4,7 +4,7 @@
 
 Construye un agente, delega investigación o dale acceso a páginas y herramientas. Distingue el asistente listo del framework que debes integrar.
 
-130 repos únicos · 7 subcategorías. [Ver en el explorador](../../docs/index.html#/area/agentes).
+129 repos únicos · 7 subcategorías. [Ver en el explorador](../../docs/index.html#/area/agentes).
 
 ## Opciones para empezar
 
@@ -72,7 +72,7 @@ Plataformas que permiten diseñar flujos de IA con una interfaz.
 
 Asistentes listos o adaptables para tareas de varias etapas.
 
-[Explorar 13 repos](../../docs/index.html#/explorar?area=agentes&topic=agentes-asistentes)
+[Explorar 12 repos](../../docs/index.html#/explorar?area=agentes&topic=agentes-asistentes)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -84,7 +84,6 @@ Asistentes listos o adaptables para tareas de varias etapas.
 | [multica](../fichas/multica.md) | Workspace para asignar y revisar trabajo de agentes de código mediante sus CLI y cuentas propias. | API de IA opcional |
 | [OpenBot](../fichas/openbot.md) | Espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y auditoría, conectables por AG-UI. | Depende de la ruta elegida |
 | [OpenClaw](../fichas/openclaw.md) | Asistente personal de IA que corre en tus dispositivos y te atiende por WhatsApp, Telegram, Slack y más. | API de IA opcional |
-| [OpenDots](../fichas/opendots.md) | Interfaz abierta de asistentes persistentes que requiere CopilotKit Intelligence, alojado, evaluado localmente o con licencia. | API de IA necesaria |
 | [OpenJarvis](../fichas/openjarvis.md) | Crea un asistente personal con chat y flujos que pueden usar modelos locales, con conectores opcionales para tus servicios. | API de IA opcional |
 | [paperclip](../fichas/paperclip.md) | Servidor y panel para organizar equipos de agentes con objetivos, tareas, presupuestos e historial de trabajo. | API de IA opcional |
 | [ruflo](../fichas/ruflo.md) | Harness multiagente en Rust para Claude Code y Codex que coordina 100+ agentes con memoria federada (ex-Claude Flow). | API de IA opcional |

@@ -1,3 +1,4 @@
+import shutil
 from pathlib import Path
 
 from repo_intelligence.analysis.recommend import _infer_required_capabilities, recommend
@@ -97,7 +98,6 @@ def test_infer_required_capabilities_detects_product_needs() -> None:
 
 
 def test_complex_projects_respect_limit_and_alternatives(tmp_path: Path) -> None:
-    import shutil
     root = Path(__file__).resolve().parents[1]
     for name in ("INDICE_IA.json", "INDICE_IA.detalle.json"):
         shutil.copy(root / name, tmp_path / name)
@@ -108,6 +108,45 @@ def test_complex_projects_respect_limit_and_alternatives(tmp_path: Path) -> None
         assert 0 < len(rows) <= limit
         ids = {repo["id"] for repo in rows}
         assert all(not ids.intersection(repo["alt"]) for repo in rows)
+
+
+def test_web_projects_start_with_the_pieces_the_first_version_needs(tmp_path: Path) -> None:
+    root = Path(__file__).resolve().parents[1]
+    for name in ("INDICE_IA.json", "INDICE_IA.detalle.json"):
+        shutil.copy(root / name, tmp_path / name)
+    scenarios = [
+        ("Quiero hacer una página web", "HTML + CSS", []),
+        ("Quiero una landing page con Codex", "HTML + CSS", []),
+        ("Quiero hacer un panel web con login", "Next.js + Tailwind CSS + shadcn/ui", ["tailwindcss", "ui"]),
+        ("Quiero crear una web app con chat con IA", "Next.js + AI SDK", ["vercel-ai"]),
+        ("Quiero hacer una página web sin chat con IA", "HTML + CSS", []),
+    ]
+    for query, stack, ids in scenarios:
+        result = recommend(tmp_path, query, max_repos=7)
+        assert result["web_project"]["stack"] == stack
+        assert [repo["id"] for repo in result["recommended_repos"]] == ids
+        guide = (tmp_path / result["latest_superguide_file"]).read_text(encoding="utf-8")
+        assert stack in guide
+        assert "Primera prueba" in guide
+        assert "Qué combinar y qué elegir" in guide
+
+    research = recommend(tmp_path, "Quiero extraer datos de una página web")
+    assert "web_project" not in research
+
+
+def test_recommend_excludes_retired_repos_from_an_older_scan(tmp_path: Path) -> None:
+    archived = [
+        _repo("old", role="app", tags=["whatsapp"]),
+        {**_repo("old-alias", role="app", tags=["whatsapp"]), "github_id": 123},
+        {**_repo("renamed", role="app", tags=["whatsapp"]), "gh": "Example/Old"},
+    ]
+    active = _repo("active", role="app", tags=["whatsapp"])
+    write_json(tmp_path / "ai_index" / "REPOS.scan.json", {"repos": [*archived, active]})
+    write_json(tmp_path / "data" / "retired.json", {"repos": [{"id": "old", "github_id": 123, "gh": "example/old"}]})
+
+    result = recommend(tmp_path, "Quiero un bot de WhatsApp", max_repos=7)
+
+    assert [repo["id"] for repo in result["recommended_repos"]] == ["active"]
 
 
 def test_auto_without_tool_phrase_does_not_assume_codex(tmp_path: Path) -> None:

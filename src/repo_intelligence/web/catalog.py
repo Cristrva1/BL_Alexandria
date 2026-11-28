@@ -7,9 +7,11 @@ from repo_intelligence.analysis.combina_policy import combo_map, used_by
 import re
 from pathlib import Path
 from repo_intelligence.core.catalog import is_public_repo, read_indices
+from repo_intelligence.core.io import read_json
 from repo_intelligence.core.taxonomy import attach_areas, build_areas, goal_memberships
 from repo_intelligence.core.access import access_facts, access_routes, API_LABELS, CLIENT_LABELS, LOCAL_LABELS, COST_LABELS, HARDWARE_LABELS, ROUTE_LABELS
 from repo_intelligence.core.reading import GUIDES
+from repo_intelligence.core.web_projects import WEB_PROJECTS
 from repo_intelligence.core.handbook import load_handbook
 from repo_intelligence.core.techniques import load_techniques
 from repo_intelligence.core.access import AUDIENCE_LABELS
@@ -169,6 +171,22 @@ def build_catalog(project_root: Path) -> dict:
     root = Path(project_root)
     compact, detalle = read_indices(root)
     details = detalle["repos"]
+    public_ids = {repo["id"] for repo in compact["repos"] if is_public_repo(repo)}
+    editorial_groups = []
+    editorial_by_repo = {}
+    editorial_ids = set()
+    for group in read_json(root / "curation" / "guiame.json", {}).get("groups", []):
+        members = group["members"]
+        principals = [rid for rid, decision in members.items() if decision["role"] == "principal"]
+        if (group["id"] in editorial_ids or len(principals) != 1
+                or set(members) - public_ids or set(members) & editorial_by_repo.keys()):
+            raise ValueError(f"Grupo editorial de Guíame inconsistente: {group['id']}")
+        editorial_ids.add(group["id"])
+        for rid, decision in members.items():
+            if decision["role"] not in {"principal", "alternative", "reference", "pending"} or not decision["note"].strip():
+                raise ValueError(f"Decisión editorial de Guíame inválida: {rid}")
+            editorial_by_repo[rid] = {"group": group["id"], **decision}
+        editorial_groups.append({**group, "members": list(members)})
 
     memberships = goal_memberships(compact)
     internal = {r["id"] for r in compact["repos"] if not is_public_repo(r)}
@@ -233,6 +251,8 @@ def build_catalog(project_root: Path) -> dict:
             merged["complejidad"] = {"nivel": cx["nivel"], "nombre": cx["nombre"], "motivos": cx.get("motivos") or [], "origen": cx.get("origen")}
         if detail.get("similares"):
             merged["similares"] = detail["similares"]
+        if repo_id in editorial_by_repo:
+            merged["guided_editorial"] = editorial_by_repo[repo_id]
         for field in ("que_es", "que_hace", "como_lo_hace", "licencia_nota", "licencia_verificada", "descripcion_notas", "descripcion_fuentes", "descripcion_revision", "descripcion_github", "descripcion_origen"):
             if detail.get(field):
                 merged[field] = detail[field]
@@ -412,6 +432,11 @@ def build_catalog(project_root: Path) -> dict:
         },
         "labels": {**LABELS, "api": API_LABELS, "client": CLIENT_LABELS, "local_model": LOCAL_LABELS, "cost": COST_LABELS, "hardware": HARDWARE_LABELS, "route": ROUTE_LABELS, "audience": AUDIENCE_LABELS},
         "reading": GUIDES,
+        "guided_groups": editorial_groups,
+        "web_projects": [
+            {key: project[key] for key in ("title", "when", "stack")}
+            for project in WEB_PROJECTS.values()
+        ],
         "handbook": load_handbook(project_root, {repo['id'] for repo in repos}),
         "techniques": load_techniques(project_root, {repo["gh"]: repo["id"] for repo in repos if repo.get("gh")}),
         "discovery": {**(compact.get("discovery") or {"goals": []}), "areas": areas},

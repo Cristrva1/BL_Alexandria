@@ -35,7 +35,7 @@ Es un conjunto de instrucciones para agentes (formato skill). Se instala como pl
 | [Marketing Skills](marketingskills.md) | Pulir los textos de marketing que generan otras skills (combinación por arquitectura). | Genera con marketingskills y pasa el resultado por `/humanizer`. |
 | [postiz-app](postiz-app.md) | Revisar publicaciones antes de programarlas (combinación por arquitectura). | Humaniza primero; programa después. |
 
-**Notas:** Alternativas (elige una): no-ai-slop, stop-slop.
+**Notas:** Alternativa (elige una): stop-slop.
 
 Estado en GitHub: activo · último push 2026-11-10 · última versión publicada v4.0.0 (2026-11-10) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -43,13 +43,12 @@ Estado en GitHub: activo · último push 2026-11-10 · última versión publicad
 
 ## Ver similares
 
-Grupo **Skills para quitar el tono de IA a los textos**: Humanizer ocupa la posición 1 de 3 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+Grupo **Skills para quitar el tono de IA a los textos**: Humanizer ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | **Humanizer** (esta ficha) ⭐ recomendado | 72 | Si buscas esto: skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana. |
-| 2 | [no-ai-slop](no-ai-slop.md) | 55 | Si buscas esto: skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA. |
-| 3 | [Stop Slop](stop-slop.md) | 40 | Si buscas esto: skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbrica de calidad. |
+| 2 | [Stop Slop](stop-slop.md) | 40 | Si buscas esto: skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbrica de calidad. |
 
 ## Acceso, coste y equipo
 
@@ -127,7 +126,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Stop Slop](stop-slop.md) | 18.9k | Skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbrica de calidad. |
-| [no-ai-slop](no-ai-slop.md) | 13.5k | Skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA. |
 
 ## Enlaces
 

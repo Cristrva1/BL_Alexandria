@@ -207,10 +207,9 @@
      "orden_instalacion": "Prepara `setup:composio` y concede solo las apps necesarias."
     }
    ],
-   "notas": "Alternativa (elige una): opendots. OpenDots es ahora una «skin» de OpenBot y su repositorio queda como starter mantenido por la comunidad. El agente navegador maneja sesiones reales: mantén los puertos en loopback.",
+   "notas": "El tema de OpenDots se incorporó a OpenBot. El agente navegador maneja sesiones reales: mantén los puertos en loopback.",
    "fuentes": [
-    "https://github.com/CopilotKit/OpenBot/blob/main/README.md",
-    "https://github.com/CopilotKit/OpenDots/blob/main/README.md"
+    "https://github.com/CopilotKit/OpenBot/blob/main/README.md"
    ],
    "github": {
     "name_with_owner": "CopilotKit/OpenBot",

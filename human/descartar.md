@@ -287,9 +287,7 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [local-deep-research](fichas/local-deep-research.md) | [gpt-researcher](fichas/gpt-researcher.md) |
 | [Mercury Agent](fichas/mercury-agent.md) | [OpenClaw](fichas/openclaw.md), [hermes-agent](fichas/hermes-agent.md) |
 | [multica](fichas/multica.md) | [paperclip](fichas/paperclip.md) |
-| [OpenBot](fichas/openbot.md) | [OpenDots](fichas/opendots.md) |
 | [OpenClaw](fichas/openclaw.md) | [hermes-agent](fichas/hermes-agent.md), [Mercury Agent](fichas/mercury-agent.md) |
-| [OpenDots](fichas/opendots.md) | [OpenBot](fichas/openbot.md) |
 | [paperclip](fichas/paperclip.md) | [multica](fichas/multica.md) |
 | [STORM](fichas/storm.md) | [gpt-researcher](fichas/gpt-researcher.md) |
 | [Appwrite](fichas/appwrite.md) | [supabase](fichas/supabase.md) |
@@ -306,15 +304,14 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [sandbox](fichas/sandbox.md) | [NemoClaw](fichas/nemoclaw.md), [E2B](fichas/e2b.md) |
 | [supabase](fichas/supabase.md) | [Appwrite](fichas/appwrite.md) |
 | [Traefik Proxy](fichas/traefik.md) | [Caddy](fichas/caddy.md) |
-| [backdoor](fichas/backdoor.md) | [OmniRoute](fichas/omniroute.md), [claude-code-router](fichas/claude-code-router.md), [litellm](fichas/litellm.md) |
-| [claude-code-router](fichas/claude-code-router.md) | [OmniRoute](fichas/omniroute.md), [backdoor](fichas/backdoor.md), [litellm](fichas/litellm.md) |
+| [claude-code-router](fichas/claude-code-router.md) | [OmniRoute](fichas/omniroute.md), [litellm](fichas/litellm.md) |
 | [DeepEval](fichas/deepeval.md) | [Ragas](fichas/ragas.md), [promptfoo](fichas/promptfoo.md) |
 | [headroom](fichas/headroom.md) | [rtk](fichas/rtk.md) |
 | [Helicone](fichas/helicone.md) | [langfuse](fichas/langfuse.md) |
 | [langfuse](fichas/langfuse.md) | [Phoenix](fichas/phoenix.md), [Opik](fichas/opik.md), [MLflow](fichas/mlflow.md), [Helicone](fichas/helicone.md) |
-| [litellm](fichas/litellm.md) | [OmniRoute](fichas/omniroute.md), [claude-code-router](fichas/claude-code-router.md), [backdoor](fichas/backdoor.md) |
+| [litellm](fichas/litellm.md) | [OmniRoute](fichas/omniroute.md), [claude-code-router](fichas/claude-code-router.md) |
 | [MLflow](fichas/mlflow.md) | [langfuse](fichas/langfuse.md) |
-| [OmniRoute](fichas/omniroute.md) | [claude-code-router](fichas/claude-code-router.md), [backdoor](fichas/backdoor.md), [litellm](fichas/litellm.md) |
+| [OmniRoute](fichas/omniroute.md) | [claude-code-router](fichas/claude-code-router.md), [litellm](fichas/litellm.md) |
 | [Opik](fichas/opik.md) | [langfuse](fichas/langfuse.md), [Phoenix](fichas/phoenix.md) |
 | [Phoenix](fichas/phoenix.md) | [langfuse](fichas/langfuse.md), [Opik](fichas/opik.md) |
 | [promptfoo](fichas/promptfoo.md) | [DeepEval](fichas/deepeval.md), [Ragas](fichas/ragas.md), [DSPy](fichas/dspy.md) |
@@ -353,14 +350,11 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [PlayCanvas Engine](fichas/playcanvas.md) | [three.js](fichas/three-js.md), [Babylon.js](fichas/babylonjs.md) |
 | [three.js](fichas/three-js.md) | [Babylon.js](fichas/babylonjs.md), [PlayCanvas Engine](fichas/playcanvas.md) |
 | [3dviz-pro-max](fichas/3dviz-pro-max.md) | [threejs-skills](fichas/threejs-skills.md) |
-| [claude-seo](fichas/claude-seo.md) | [GEO-SEO Claude](fichas/geo-seo-claude.md) |
-| [GEO-SEO Claude](fichas/geo-seo-claude.md) | [claude-seo](fichas/claude-seo.md) |
 | [hallmark](fichas/hallmark.md) | [ui-ux-pro-max-skill](fichas/ui-ux-pro-max-skill.md), [taste-skill](fichas/taste-skill.md), [impeccable](fichas/impeccable.md) |
-| [Humanizer](fichas/humanizer.md) | [Stop Slop](fichas/stop-slop.md), [no-ai-slop](fichas/no-ai-slop.md) |
+| [Humanizer](fichas/humanizer.md) | [Stop Slop](fichas/stop-slop.md) |
 | [impeccable](fichas/impeccable.md) | [ui-ux-pro-max-skill](fichas/ui-ux-pro-max-skill.md), [taste-skill](fichas/taste-skill.md), [hallmark](fichas/hallmark.md) |
-| [no-ai-slop](fichas/no-ai-slop.md) | [Humanizer](fichas/humanizer.md), [Stop Slop](fichas/stop-slop.md) |
 | [social-media-research-skills](fichas/social-media-research-skills.md) | [last30days](fichas/last30days-skill.md) |
-| [Stop Slop](fichas/stop-slop.md) | [Humanizer](fichas/humanizer.md), [no-ai-slop](fichas/no-ai-slop.md) |
+| [Stop Slop](fichas/stop-slop.md) | [Humanizer](fichas/humanizer.md) |
 | [taste-skill](fichas/taste-skill.md) | [ui-ux-pro-max-skill](fichas/ui-ux-pro-max-skill.md), [impeccable](fichas/impeccable.md), [hallmark](fichas/hallmark.md) |
 | [The Agency (agency-agents)](fichas/agency-agents.md) | [wshobson/agents](fichas/wshobson-agents.md) |
 | [threejs-skills](fichas/threejs-skills.md) | [3dviz-pro-max](fichas/3dviz-pro-max.md) |

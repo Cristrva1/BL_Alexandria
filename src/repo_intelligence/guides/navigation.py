@@ -82,7 +82,8 @@ def render_navigation(root: Path, catalog: Catalog) -> None:
         lines=['[Inicio](README.md) · [Rutas por objetivo](rutas.md) · [Explorador](../docs/index.html)', '', '# '+guide['title'], '', guide['intro'], '']
         for section in guide['sections']:lines+=['## '+section['title'],'',section['text'],'']
         if guide.get('sources'):
-            lines+=['## Fuentes y fecha','',f'Documentación consultada el {catalog.meta.get("access_checked") or "fecha por confirmar"}. Las condiciones de los proveedores pueden cambiar.','']
+            checked_at = guide.get("checked_at") or catalog.meta.get("access_checked") or "fecha por confirmar"
+            lines+=['## Fuentes y fecha','',f'Documentación consultada el {checked_at}. Las condiciones de los proveedores pueden cambiar.','']
             lines += [f'- [{s["title"]}]({s["url"]})' for s in guide['sources']]
         (human/(guide['id']+'.md')).write_text('\n'.join(lines).rstrip()+'\n',encoding='utf8')
     lines=['[Inicio](README.md) · [Cómo elegir](elegir.md) · [Acceso y costes](acceso.md)', '', '# ¿Qué quieres conseguir?', '', 'Empieza por un resultado. Los repos de entrada son opciones para comparar, no una lista que debas instalar completa.', '']
@@ -90,6 +91,8 @@ def render_navigation(root: Path, catalog: Catalog) -> None:
         lines+=['## '+goal['title'],'',goal['description'],'', '| Punto de partida | Qué hace | Acceso básico |','|---|---|---|']
         if goal.get('outcome'):
             lines[-2:-2]=['**Resultado buscado:** '+goal['outcome'],'','**Prepara:** '+goal['bring'],'','**Decide primero:** '+goal['decision'],'']
+        if goal["id"] == "web":
+            lines[-2:-2] = ['[Elige una combinación para tu tipo de web](elegir-web.md).', '']
         for rid in goal['starters']:
             r=catalog.get(rid)
             if r:lines.append(f'| [{md_cell(r["name"])}](fichas/{slug(rid)}.md) | {md_cell(r["one"])} | {API_LABELS[access_facts(r)["api"]]} |')

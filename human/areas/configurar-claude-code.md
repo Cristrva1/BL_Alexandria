@@ -4,7 +4,7 @@
 
 Prepara Claude Code, elige plugins y conecta herramientas para trabajar con un proyecto real.
 
-252 repos únicos · 8 subcategorías. [Ver en el explorador](../../docs/index.html#/area/configurar-claude-code).
+249 repos únicos · 8 subcategorías. [Ver en el explorador](../../docs/index.html#/area/configurar-claude-code).
 
 ## Primera configuración, paso a paso
 
@@ -39,7 +39,7 @@ Cliente oficial y selección inicial de herramientas.
 
 Añadir instrucciones y un método de trabajo sin cargar todo el catálogo.
 
-[Explorar 119 repos](../../docs/index.html#/explorar?area=configurar-claude-code&topic=claude-skills)
+[Explorar 117 repos](../../docs/index.html#/explorar?area=configurar-claude-code&topic=claude-skills)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -86,7 +86,6 @@ Añadir instrucciones y un método de trabajo sin cargar todo el catálogo.
 | [floorplan](../fichas/floorplan.md) | Herramienta para que Claude o Codex genere un mapa interactivo y explicado de las partes y relaciones de un proyecto. | Sin clave propia de API de IA en la ruta básica |
 | [gemini-skills](../fichas/gemini-skills.md) | Skills oficiales de Google para ayudar a agentes a trabajar con la API, los SDK y los modelos de Gemini. | Sin clave propia de API de IA en la ruta básica |
 | [genjutsu](../fichas/genjutsu.md) | Skills de diseño y animación para agentes que trabajan con interfaces web, Android y plataformas de Apple. | Sin clave propia de API de IA en la ruta básica |
-| [GEO-SEO Claude](../fichas/geo-seo-claude.md) | Skill de Claude Code que audita webs para buscadores con IA (GEO) y SEO clásico, con citabilidad, schema, llms.txt e informes PDF. | API de IA opcional |
 | [GitNexus](../fichas/gitnexus.md) | Herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar el onboarding en una base de código nueva. | Sin clave propia de API de IA en la ruta básica |
 | [gpt-researcher](../fichas/gpt-researcher.md) | Agente autónomo que investiga en línea y consolida reportes citados y estructurados. | API de IA opcional |
 | [Gradio](../fichas/gradio.md) | Librería Python para crear y compartir apps web de modelos de ML en minutos. | API de IA opcional |
@@ -115,7 +114,6 @@ Añadir instrucciones y un método de trabajo sin cargar todo el catálogo.
 | [motion-design-skill](../fichas/motion-design-skill.md) | Skill con principios de ritmo, transiciones y composición del movimiento para diseñar animaciones de interfaces. | Sin clave propia de API de IA en la ruta básica |
 | [motionmaxxing](../fichas/motionmaxxing.md) | Skill para mejorar composición, ritmo y movimiento de videos creados con agentes y herramientas de código. | API de IA opcional |
 | [Nemotron (NVIDIA)](../fichas/nemotron.md) | Centro de recursos de NVIDIA para la familia de modelos abiertos Nemotron: recetas, datasets y ejemplos. | API de IA opcional |
-| [no-ai-slop](../fichas/no-ai-slop.md) | Skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA. | Sin clave propia de API de IA en la ruta básica |
 | [obsidian-second-brain](../fichas/obsidian-second-brain.md) | Sistema de memoria y notas en Markdown para compartir contexto de trabajo entre agentes y una bóveda de Obsidian. | API de IA opcional |
 | [obsidian-skills](../fichas/obsidian-skills.md) | Skills para que un agente trabaje con Obsidian y sus formatos de notas, bases de datos y lienzos. | Sin clave propia de API de IA en la ruta básica |
 | [Open Code Review](../fichas/open-code-review.md) | Revisa cambios de código con reglas y un informe guiado, usando su propio proveedor de IA o el asistente de programación que ya tienes. | API de IA opcional |
@@ -324,7 +322,7 @@ Skills de oficio documentadas para Claude Code.
 
 Adaptadores del proyecto para modelos,sesiones o servicios; revisa qué función usa realmente el plan.
 
-[Explorar 50 repos](../../docs/index.html#/explorar?area=configurar-claude-code&topic=claude-integraciones)
+[Explorar 49 repos](../../docs/index.html#/explorar?area=configurar-claude-code&topic=claude-integraciones)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -332,7 +330,6 @@ Adaptadores del proyecto para modelos,sesiones o servicios; revisa qué función
 | [agentes-chat](../fichas/agentes-chat.md) | Espacio de trabajo autoalojado con canales, mensajes y agentes de IA que colaboran con personas y herramientas. | API de IA opcional |
 | [agentmemory](../fichas/agentmemory.md) | Memoria persistente para agentes de código (Claude Code, Copilot CLI, Cursor, Gemini CLI, Codex…), construida sobre el motor iii y expuesta como capa común entre clientes. | API de IA opcional |
 | [autoskills](../fichas/autoskills.md) | CLI que detecta tecnologías de un proyecto y selecciona skills de IA desde un registro de referencia. | Sin clave propia de API de IA en la ruta básica |
-| [backdoor](../fichas/backdoor.md) | Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code. | API de IA opcional |
 | [claude-agent-sdk-python](../fichas/claude-agent-sdk-python.md) | SDK oficial de Python para integrar el bucle de Claude Code, herramientas, sesiones y hooks en una aplicación propia. | API de IA necesaria |
 | [claude-code-hooks-mastery](../fichas/claude-code-hooks-mastery.md) | Ejemplos y material para aprender a configurar hooks de Claude Code y ejecutar comprobaciones en su flujo de trabajo. | API de IA opcional |
 | [claude-code-router](../fichas/claude-code-router.md) | Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control local. | Depende de la ruta elegida |
@@ -408,7 +405,6 @@ Adaptadores del proyecto para modelos,sesiones o servicios; revisa qué función
 - [Awesome Claude Code](https://github.com/hesreallyhim/awesome-claude-code/blob/main/README.md), revisado el 2026-11-15.
 - [Awesome Claude Skills](https://github.com/ComposioHQ/awesome-claude-skills/blob/master/README.md), revisado el 2026-11-15.
 - [Awesome LLM Apps](https://github.com/Shubhamsaboo/awesome-llm-apps/blob/main/README.md), revisado el 2026-11-15.
-- [backdoor](https://github.com/ajsai47/backdoor/blob/main/README.md), revisado el 2026-11-15.
 - [bla](https://github.com/qybaihe/bla/blob/main/README.md), revisado el 2026-11-15.
 - [Blender MCP](https://github.com/ahujasid/mcp-for-blender/blob/main/README.md), revisado el 2026-11-15.
 - [blender-skills](https://github.com/arjun988/blender-skills/blob/main/README.md), revisado el 2026-11-15.
@@ -466,7 +462,6 @@ Adaptadores del proyecto para modelos,sesiones o servicios; revisa qué función
 - [Front-End-Checklist](https://github.com/thedaviddias/Front-End-Checklist/blob/main/README.md), revisado el 2026-11-15.
 - [gemini-skills](https://github.com/google-gemini/gemini-skills/blob/main/README.md), revisado el 2026-11-15.
 - [genjutsu](https://github.com/AThevon/genjutsu/blob/main/README.md), revisado el 2026-11-15.
-- [GEO-SEO Claude](https://github.com/zubair-trabzada/geo-seo-claude/blob/main/README.md), revisado el 2026-11-15.
 - [GhidraMCP](https://github.com/LaurieWired/GhidraMCP/blob/main/README.md), revisado el 2026-11-15.
 - [GitHub MCP Server](https://github.com/github/github-mcp-server/blob/main/README.md), revisado el 2026-11-15.
 - [GitNexus](https://github.com/abhigyanpatwari/GitNexus/blob/main/README.md), revisado el 2026-11-15.
@@ -525,7 +520,6 @@ Adaptadores del proyecto para modelos,sesiones o servicios; revisa qué función
 - [Material UI](https://github.com/mui/material-ui/blob/master/README.md), revisado el 2026-11-15.
 - [multica](https://github.com/multica-ai/multica/blob/main/README.md), revisado el 2026-11-15.
 - [Nemotron (NVIDIA)](https://github.com/NVIDIA-NeMo/Nemotron/blob/main/README.md), revisado el 2026-11-15.
-- [no-ai-slop](https://github.com/petergyang/no-ai-slop/blob/main/README.md), revisado el 2026-11-15.
 - [nodeterm](https://github.com/eneskirca/nodeterm/blob/main/README.md), revisado el 2026-11-15.
 - [notebooklm-mcp-cli](https://github.com/jacob-bd/gemini-notebook-mcp-cli/blob/main/README.md), revisado el 2026-11-15.
 - [notebooklm-py](https://github.com/teng-lin/notebooklm-py/blob/main/README.md), revisado el 2026-11-15.

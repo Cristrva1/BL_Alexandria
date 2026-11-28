@@ -117,7 +117,7 @@
     {
       "num": 21,
       "title": "Asistentes e investigación con agentes",
-      "count": 18
+      "count": 17
     },
     {
       "num": 22,
@@ -127,7 +127,7 @@
     {
       "num": 23,
       "title": "Operar, evaluar y medir modelos de IA",
-      "count": 31
+      "count": 30
     },
     {
       "num": 24,
@@ -147,7 +147,7 @@
     {
       "num": 27,
       "title": "Skills de diseño, contenido y especialidades",
-      "count": 40
+      "count": 38
     },
     {
       "num": 28,
@@ -3073,10 +3073,9 @@
           "repos": [
             "marketingskills",
             "agency-agents",
-            "geo-seo-claude",
+            "claude-seo",
             "arcads-claude-code",
             "social-media-research-skills",
-            "claude-seo",
             "instagram-agent-skill",
             "linkedin-agent-skill",
             "minimalist-entrepreneur-skills"
@@ -3087,14 +3086,13 @@
             "agency-agents",
             "arcads-claude-code",
             "claude-seo",
-            "geo-seo-claude",
             "instagram-agent-skill",
             "linkedin-agent-skill",
             "marketingskills",
             "minimalist-entrepreneur-skills",
             "social-media-research-skills"
           ],
-          "count": 9
+          "count": 8
         },
         {
           "id": "negocio-apps",
@@ -3222,7 +3220,6 @@
         "fluxer",
         "formbricks",
         "freescout",
-        "geo-seo-claude",
         "grist-core",
         "huginn",
         "instagram-agent-skill",
@@ -3262,7 +3259,7 @@
         "zammad",
         "zulip"
       ],
-      "count": 65
+      "count": 64
     },
     {
       "id": "marketing-redes-sociales",
@@ -3367,7 +3364,6 @@
           "description": "Revisar la visibilidad de una web en buscadores y respuestas de IA, y consultar datos para orientar el contenido.",
           "selectors": [],
           "repos": [
-            "geo-seo-claude",
             "claude-seo",
             "open-seo"
           ],
@@ -3380,10 +3376,9 @@
           "reference_repos": [],
           "repo_ids": [
             "claude-seo",
-            "geo-seo-claude",
             "open-seo"
           ],
-          "count": 3
+          "count": 2
         },
         {
           "id": "marketing-email",
@@ -3473,7 +3468,6 @@
         "arcads-claude-code",
         "brag",
         "claude-seo",
-        "geo-seo-claude",
         "instagram-agent-skill",
         "instaloader",
         "last30days-skill",
@@ -3494,7 +3488,7 @@
         "social-media-research-skills",
         "umami"
       ],
-      "count": 25
+      "count": 24
     },
     {
       "id": "agentes",
@@ -3614,13 +3608,12 @@
             "multica",
             "openbot",
             "openclaw",
-            "opendots",
             "openjarvis",
             "paperclip",
             "ruflo",
             "social-media-agent"
           ],
-          "count": 13
+          "count": 12
         },
         {
           "id": "agentes-investigar",
@@ -3878,7 +3871,6 @@
         "openai-agents-python",
         "openbot",
         "openclaw",
-        "opendots",
         "openevolve",
         "openjarvis",
         "openmanus",
@@ -3916,7 +3908,7 @@
         "webdriverio",
         "yt-dlp"
       ],
-      "count": 130
+      "count": 129
     },
     {
       "id": "ia-local",
@@ -4092,7 +4084,6 @@
           "keywords": [],
           "reference_repos": [],
           "repo_ids": [
-            "backdoor",
             "bentoml",
             "claude-code-router",
             "gpustack",
@@ -4106,7 +4097,7 @@
             "vllm",
             "xinference"
           ],
-          "count": 13
+          "count": 12
         }
       ],
       "repo_ids": [
@@ -4114,7 +4105,6 @@
         "airllm",
         "anything-llm",
         "axolotl",
-        "backdoor",
         "bentoml",
         "bionemo-recipes",
         "chatbox",
@@ -4183,7 +4173,7 @@
         "vllm",
         "xinference"
       ],
-      "count": 72
+      "count": 71
     },
     {
       "id": "documentos",
@@ -4867,10 +4857,9 @@
           "repo_ids": [
             "humanizer",
             "i-have-adhd",
-            "no-ai-slop",
             "stop-slop"
           ],
-          "count": 4
+          "count": 3
         }
       ],
       "repo_ids": [
@@ -4908,7 +4897,6 @@
         "logseq",
         "memos",
         "nextcloud-server",
-        "no-ai-slop",
         "obsidian-clipper",
         "obsidian-help",
         "obsidian-importer",
@@ -4931,7 +4919,7 @@
         "vaultwarden",
         "zigbee2mqtt"
       ],
-      "count": 56
+      "count": 55
     },
     {
       "id": "desarrollo",
@@ -5131,7 +5119,6 @@
           "keywords": [],
           "reference_repos": [],
           "repo_ids": [
-            "backdoor",
             "bentoml",
             "claude-code-router",
             "gptcache",
@@ -5149,7 +5136,7 @@
             "vllm",
             "xinference"
           ],
-          "count": 17
+          "count": 16
         }
       ],
       "repo_ids": [
@@ -5162,7 +5149,6 @@
         "appwrite",
         "apscheduler",
         "ast-grep",
-        "backdoor",
         "bentoml",
         "biome",
         "caddy",
@@ -5265,7 +5251,7 @@
         "xinference",
         "zed"
       ],
-      "count": 111
+      "count": 110
     },
     {
       "id": "vision",
@@ -5601,7 +5587,6 @@
             "financial-services",
             "front-end-checklist",
             "genjutsu",
-            "geo-seo-claude",
             "gsap-skills",
             "hallmark",
             "humanizer",
@@ -5615,7 +5600,6 @@
             "minimalist-entrepreneur-skills",
             "modern-web-guidance",
             "motion-design-skill",
-            "no-ai-slop",
             "scientific-agent-skills",
             "shopify-ai-toolkit",
             "skills-emil",
@@ -5627,7 +5611,7 @@
             "threejs-skills",
             "ui-ux-pro-max-skill"
           ],
-          "count": 40
+          "count": 38
         }
       ],
       "repo_ids": [
@@ -5685,7 +5669,6 @@
         "gemini-skills",
         "generative-ai-for-beginners",
         "genjutsu",
-        "geo-seo-claude",
         "google-skills",
         "grok-plugin-claude-code",
         "gsap-skills",
@@ -5710,7 +5693,6 @@
         "modern-web-guidance",
         "motion-design-skill",
         "nanochat",
-        "no-ai-slop",
         "openai-cookbook",
         "plugins",
         "ponytail",
@@ -5736,7 +5718,7 @@
         "ui-ux-pro-max-skill",
         "wshobson-agents"
       ],
-      "count": 104
+      "count": 102
     },
     {
       "id": "configurar-claude-code",
@@ -5817,7 +5799,6 @@
             "floorplan",
             "gemini-skills",
             "genjutsu",
-            "geo-seo-claude",
             "gitnexus",
             "google-skills",
             "gpt-researcher",
@@ -5846,7 +5827,6 @@
             "motion-design-skill",
             "motionmaxxing",
             "nemotron",
-            "no-ai-slop",
             "obsidian-second-brain",
             "obsidian-skills",
             "openfilm",
@@ -5943,7 +5923,6 @@
             "floorplan",
             "gemini-skills",
             "genjutsu",
-            "geo-seo-claude",
             "gitnexus",
             "google-skills",
             "gpt-researcher",
@@ -5973,7 +5952,6 @@
             "motion-design-skill",
             "motionmaxxing",
             "nemotron",
-            "no-ai-slop",
             "obsidian-second-brain",
             "obsidian-skills",
             "open-code-review",
@@ -6019,7 +5997,7 @@
             "wrenai",
             "wshobson-agents"
           ],
-          "count": 119
+          "count": 117
         },
         {
           "id": "claude-mcp",
@@ -6320,9 +6298,8 @@
             "agentes-chat",
             "agentmemory",
             "autoskills",
-            "backdoor",
-            "claude-agent-sdk-python",
             "claude-code-router",
+            "claude-agent-sdk-python",
             "claude-code-usage-monitor",
             "claude-mem",
             "claude-task-master",
@@ -6375,7 +6352,6 @@
             "agentes-chat",
             "agentmemory",
             "autoskills",
-            "backdoor",
             "claude-agent-sdk-python",
             "claude-code-hooks-mastery",
             "claude-code-router",
@@ -6422,7 +6398,7 @@
             "unsloth",
             "wan2gp"
           ],
-          "count": 50
+          "count": 49
         }
       ],
       "client": "claude_code",
@@ -6633,13 +6609,6 @@
           "repo_id": "awesome-llm-apps",
           "source": "https://github.com/Shubhamsaboo/awesome-llm-apps/blob/main/README.md",
           "readme_blob_sha": "e18d321b33109e152c506b8efe894f0c7149e102",
-          "checked_at": "2026-11-15",
-          "usage": "documented_integration"
-        },
-        {
-          "repo_id": "backdoor",
-          "source": "https://github.com/ajsai47/backdoor/blob/main/README.md",
-          "readme_blob_sha": "1c4235799bfe8a942adafed7c160aa9ede72f310",
           "checked_at": "2026-11-15",
           "usage": "documented_integration"
         },
@@ -7039,13 +7008,6 @@
           "repo_id": "genjutsu",
           "source": "https://github.com/AThevon/genjutsu/blob/main/README.md",
           "readme_blob_sha": "9079745ccb957851f2cb1e812b7be1b3d186707f",
-          "checked_at": "2026-11-15",
-          "usage": "documented_integration"
-        },
-        {
-          "repo_id": "geo-seo-claude",
-          "source": "https://github.com/zubair-trabzada/geo-seo-claude/blob/main/README.md",
-          "readme_blob_sha": "22ca0b035622b6606d4b33879daa5519249bfec5",
           "checked_at": "2026-11-15",
           "usage": "documented_integration"
         },
@@ -7452,13 +7414,6 @@
           "repo_id": "nemotron",
           "source": "https://github.com/NVIDIA-NeMo/Nemotron/blob/main/README.md",
           "readme_blob_sha": "aa26fec62268cf52cb73cbad3a82da1982df8ba8",
-          "checked_at": "2026-11-15",
-          "usage": "documented_integration"
-        },
-        {
-          "repo_id": "no-ai-slop",
-          "source": "https://github.com/petergyang/no-ai-slop/blob/main/README.md",
-          "readme_blob_sha": "82f8b7af7e02918077afb447f8fc83c2d33483ba",
           "checked_at": "2026-11-15",
           "usage": "documented_integration"
         },
@@ -8171,7 +8126,6 @@
         "awesome-claude-code",
         "awesome-claude-skills",
         "awesome-llm-apps",
-        "backdoor",
         "bla",
         "blender-mcp",
         "blender-skills",
@@ -8233,7 +8187,6 @@
         "front-end-checklist",
         "gemini-skills",
         "genjutsu",
-        "geo-seo-claude",
         "ghidramcp",
         "github-mcp-server",
         "gitnexus",
@@ -8295,7 +8248,6 @@
         "mui",
         "multica",
         "nemotron",
-        "no-ai-slop",
         "nodeterm",
         "notebooklm-mcp-cli",
         "notebooklm-py",
@@ -8396,7 +8348,7 @@
         "wrenai",
         "wshobson-agents"
       ],
-      "count": 252
+      "count": 249
     },
     {
       "id": "configurar-codex",
@@ -8485,7 +8437,6 @@
             "modern-web-guidance",
             "motion-design-skill",
             "motionmaxxing",
-            "no-ai-slop",
             "obsidian-second-brain",
             "obsidian-skills",
             "openfilm",
@@ -8577,7 +8528,6 @@
             "modern-web-guidance",
             "motion-design-skill",
             "motionmaxxing",
-            "no-ai-slop",
             "obsidian-second-brain",
             "obsidian-skills",
             "open-code-review",
@@ -8613,7 +8563,7 @@
             "wrenai",
             "wshobson-agents"
           ],
-          "count": 86
+          "count": 85
         },
         {
           "id": "codex-mcp",
@@ -9821,13 +9771,6 @@
           "usage": "documented_integration"
         },
         {
-          "repo_id": "no-ai-slop",
-          "source": "https://github.com/petergyang/no-ai-slop/blob/main/README.md",
-          "readme_blob_sha": "82f8b7af7e02918077afb447f8fc83c2d33483ba",
-          "checked_at": "2026-11-15",
-          "usage": "documented_integration"
-        },
-        {
           "repo_id": "nodeterm",
           "source": "https://github.com/eneskirca/nodeterm/blob/main/README.md",
           "readme_blob_sha": "390e77a5c222ba1ed66606b3c508426ecac4bb4f",
@@ -10569,7 +10512,6 @@
         "motionmaxxing",
         "mui",
         "multica",
-        "no-ai-slop",
         "nodeterm",
         "notebooklm-mcp-cli",
         "notebooklm-py",
@@ -10661,7 +10603,7 @@
         "wrenai",
         "wshobson-agents"
       ],
-      "count": 215
+      "count": 214
     },
     {
       "id": "configurar-antigravity",
@@ -10719,7 +10661,6 @@
             "modern-web-guidance",
             "motion-design-skill",
             "motionmaxxing",
-            "no-ai-slop",
             "obsidian-skills",
             "openfilm",
             "openmaic",
@@ -10792,7 +10733,6 @@
             "modern-web-guidance",
             "motion-design-skill",
             "motionmaxxing",
-            "no-ai-slop",
             "obsidian-skills",
             "openfilm",
             "openmaic",
@@ -10824,7 +10764,7 @@
             "wrenai",
             "wshobson-agents"
           ],
-          "count": 67
+          "count": 66
         },
         {
           "id": "antigravity-diseno",
@@ -11707,13 +11647,6 @@
           "usage": "documented_integration"
         },
         {
-          "repo_id": "no-ai-slop",
-          "source": "https://github.com/petergyang/no-ai-slop/blob/main/README.md",
-          "readme_blob_sha": "82f8b7af7e02918077afb447f8fc83c2d33483ba",
-          "checked_at": "2026-11-15",
-          "usage": "documented_integration"
-        },
-        {
           "repo_id": "nodeterm",
           "source": "https://github.com/eneskirca/nodeterm/blob/main/README.md",
           "readme_blob_sha": "390e77a5c222ba1ed66606b3c508426ecac4bb4f",
@@ -12337,7 +12270,6 @@
         "motion-design-skill",
         "motionmaxxing",
         "mui",
-        "no-ai-slop",
         "nodeterm",
         "notebooklm-mcp-cli",
         "notebooklm-py",
@@ -12412,7 +12344,7 @@
         "wrenai",
         "wshobson-agents"
       ],
-      "count": 164
+      "count": 163
     }
   ],
   "model_guidance": {
@@ -12429,7 +12361,7 @@
           "awesome-claude-code",
           "awesome-claude-skills",
           "claude-mem",
-          "geo-seo-claude",
+          "claude-seo",
           "agency-agents"
         ],
         "note": "Skills en .claude/skills y plugins con /plugin marketplace."
@@ -30050,8 +29982,7 @@
       "combines_with": [
         "mcp-inspector",
         "mcp-use",
-        "awesome-mcp-servers",
-        "opendots"
+        "awesome-mcp-servers"
       ],
       "alt": []
     },
@@ -85217,7 +85148,6 @@
       "combines_with": [
         "claude-code",
         "coolify",
-        "geo-seo-claude",
         "claude-seo",
         "cloud-mail",
         "marketingskills"
@@ -93441,7 +93371,7 @@
       "setup": "heavy",
       "complejidad": 2,
       "puntuacion": 70,
-      "grupo": "g-espacios-de-asistentes-de-copilotkit",
+      "grupo": null,
       "mcp": true,
       "prov": [
         "openai",
@@ -93557,9 +93487,7 @@
         "firecrawl",
         "composio"
       ],
-      "alt": [
-        "opendots"
-      ]
+      "alt": []
     },
     {
       "id": "openclaw",
@@ -93693,128 +93621,6 @@
       "alt": [
         "hermes-agent",
         "mercury-agent"
-      ]
-    },
-    {
-      "id": "opendots",
-      "name": "OpenDots",
-      "cat": 21,
-      "role": "app",
-      "exec": "hybrid",
-      "setup": "medium",
-      "complejidad": 2,
-      "puntuacion": 48,
-      "grupo": "g-espacios-de-asistentes-de-copilotkit",
-      "mcp": false,
-      "prov": [],
-      "tags": [
-        "asistentes",
-        "agent",
-        "typescript"
-      ],
-      "routes": [
-        "api"
-      ],
-      "access": {
-        "api": "required",
-        "local_model": "not_documented",
-        "claude_code": "not_documented",
-        "codex": "not_documented",
-        "cost": "choice",
-        "hardware": "prerequisites",
-        "scope": "La ficha distingue programa, modelo, agente y servicios externos. Compatibilidad documental; no se instaló ni probó el proyecto en los clientes.",
-        "api_note": "La UI MIT requiere Intelligence hospedado, evaluación Docker local o despliegue autoalojado con licencia; modelos y voz pueden cobrar aparte",
-        "subscription_note": "Autoalojar OpenDots no incluye automáticamente el servicio Intelligence ni una pila enteramente local",
-        "local_note": "Autoalojar OpenDots no incluye automáticamente el servicio Intelligence ni una pila enteramente local",
-        "cost_note": "La UI MIT requiere Intelligence hospedado, evaluación Docker local o despliegue autoalojado con licencia; modelos y voz pueden cobrar aparte",
-        "hardware_note": "Node; CopilotKit Intelligence; proveedores y conectores elegidos",
-        "checked_at": "2026-11-15",
-        "review": "documented",
-        "sources": [
-          "https://github.com/CopilotKit/OpenDots/blob/main/README.md"
-        ],
-        "mode": "software",
-        "source_blob_sha": "051c45466a6a85bca8551de5179bfcb3d3be66a9",
-        "antigravity": "not_documented"
-      },
-      "getting_started": {
-        "kind": "source",
-        "audience": "setup",
-        "entry_url": "",
-        "prerequisites": [
-          "Node",
-          "CopilotKit Intelligence",
-          "proveedores y conectores elegidos"
-        ],
-        "steps": [
-          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
-          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
-          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
-        ],
-        "command": "git clone https://github.com/CopilotKit/OpenDots.git\ncd OpenDots\nnpm ci\ncp .env.example .env\nnpm run dev",
-        "command_language": "sh",
-        "command_status": "documented",
-        "source": "https://github.com/CopilotKit/OpenDots/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
-      },
-      "first_try": {
-        "action": "Configura un Dot de prueba y haz una pregunta sin conceder herramientas de escritura",
-        "success": "Puedes comprobar la respuesta y el panel de conexiones",
-        "execution": "proposed_not_executed"
-      },
-      "practical_examples": [
-        {
-          "scenario": "Probar un asistente persistente",
-          "status": "illustrative"
-        },
-        {
-          "scenario": "Estudiar aprobación de acciones conectadas",
-          "status": "illustrative"
-        }
-      ],
-      "editorial_review": {
-        "status": "source_reviewed",
-        "checked_at": "2026-11-15",
-        "source": "https://github.com/CopilotKit/OpenDots/blob/main/README.md",
-        "source_blob_sha": "051c45466a6a85bca8551de5179bfcb3d3be66a9",
-        "previous_source_blob_sha": "051c45466a6a85bca8551de5179bfcb3d3be66a9",
-        "previous_category": [
-          21,
-          "asistentes"
-        ],
-        "category_verdict": "confirmed",
-        "note": "Autoalojar OpenDots no incluye automáticamente el servicio Intelligence ni una pila enteramente local",
-        "checks": [
-          "identity",
-          "category",
-          "examples",
-          "installation_source",
-          "api_costs",
-          "claude_code",
-          "codex",
-          "antigravity",
-          "local_model"
-        ],
-        "installation_tested": false
-      },
-      "one": "Interfaz abierta de asistentes persistentes que requiere CopilotKit Intelligence, alojado, evaluado localmente o con licencia.",
-      "desc": "Interfaz abierta de asistentes persistentes que requiere CopilotKit Intelligence, alojado, evaluado localmente o con licencia.",
-      "stack": "Node; CopilotKit Intelligence; proveedores y conectores elegidos",
-      "repo": "https://github.com/CopilotKit/OpenDots",
-      "install": "git clone https://github.com/CopilotKit/OpenDots.git\ncd OpenDots\nnpm ci\ncp .env.example .env\nnpm run dev",
-      "install_conf": "ok",
-      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
-      "choose_if": "Tu objetivo encaja con estos ejemplos: Probar un asistente persistente; Estudiar aprobación de acciones conectadas",
-      "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [
-        "copilotkit",
-        "composio",
-        "servers"
-      ],
-      "alt": [
-        "openbot"
       ]
     },
     {
@@ -98308,139 +98114,6 @@
       "alt": []
     },
     {
-      "id": "backdoor",
-      "name": "backdoor",
-      "cat": 23,
-      "role": "runtime",
-      "exec": "hybrid",
-      "setup": "medium",
-      "complejidad": 2,
-      "puntuacion": 34,
-      "grupo": "g-pasarelas-y-routers-de-proveedores-llm",
-      "mcp": false,
-      "prov": [],
-      "tags": [
-        "serving",
-        "ai",
-        "anthropic",
-        "claude",
-        "claude-code",
-        "deepseek",
-        "llm",
-        "ollama"
-      ],
-      "routes": [
-        "no_api",
-        "claude",
-        "local_model",
-        "api"
-      ],
-      "access": {
-        "mode": "software",
-        "api": "optional",
-        "local_model": "supported",
-        "claude_code": "project_integration",
-        "codex": "not_documented",
-        "cost": "choice",
-        "hardware": "prerequisites",
-        "scope": "La ficha distingue programa, modelo, agente y servicios externos. Compatibilidad documental; no se instaló ni probó el proyecto en los clientes.",
-        "api_note": "Modelo local o API del proveedor según elección; no aporta una suscripción ni créditos de Anthropic",
-        "subscription_note": "Es un adaptador independiente; afirmar privacidad local requiere revisar también búsquedas, telemetría y otras herramientas y no solo el endpoint del modelo",
-        "local_note": "Es un adaptador independiente; afirmar privacidad local requiere revisar también búsquedas, telemetría y otras herramientas y no solo el endpoint del modelo",
-        "cost_note": "Modelo local o API del proveedor según elección; no aporta una suscripción ni créditos de Anthropic",
-        "hardware_note": "Sistema compatible; Claude Code; proveedor u Ollama; carpeta de prueba",
-        "checked_at": "2026-11-15",
-        "review": "documented",
-        "sources": [
-          "https://github.com/ajsai47/backdoor/blob/main/README.md"
-        ],
-        "source_blob_sha": "1c4235799bfe8a942adafed7c160aa9ede72f310",
-        "antigravity": "not_documented"
-      },
-      "getting_started": {
-        "kind": "source",
-        "audience": "setup",
-        "entry_url": "",
-        "prerequisites": [
-          "Sistema compatible",
-          "Claude Code",
-          "proveedor u Ollama",
-          "carpeta de prueba"
-        ],
-        "steps": [
-          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
-          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
-          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
-        ],
-        "command": "git clone https://github.com/ajsai47/backdoor\ncd backdoor\n./backdoor   # animated setup wizard — picks your provider, writes your config, launches Claude Code",
-        "command_language": "bash",
-        "command_status": "documented",
-        "source": "https://github.com/ajsai47/backdoor/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
-      },
-      "first_try": {
-        "action": "Revisa la configuración que propone el asistente y solicita una explicación corta sin herramientas externas",
-        "success": "Puedes identificar el proveedor detrás del proxy",
-        "execution": "proposed_not_executed"
-      },
-      "practical_examples": [
-        {
-          "scenario": "Probar un backend local con Claude Code",
-          "status": "illustrative"
-        },
-        {
-          "scenario": "Comparar proveedores compatibles",
-          "status": "illustrative"
-        }
-      ],
-      "editorial_review": {
-        "status": "source_reviewed",
-        "checked_at": "2026-11-15",
-        "source": "https://github.com/ajsai47/backdoor/blob/main/README.md",
-        "source_blob_sha": "1c4235799bfe8a942adafed7c160aa9ede72f310",
-        "previous_source_blob_sha": "1c4235799bfe8a942adafed7c160aa9ede72f310",
-        "previous_category": [
-          23,
-          "serving"
-        ],
-        "category_verdict": "confirmed",
-        "note": "Es un adaptador independiente; afirmar privacidad local requiere revisar también búsquedas, telemetría y otras herramientas y no solo el endpoint del modelo",
-        "checks": [
-          "identity",
-          "category",
-          "examples",
-          "installation_source",
-          "api_costs",
-          "claude_code",
-          "codex",
-          "antigravity",
-          "local_model"
-        ],
-        "installation_tested": false
-      },
-      "one": "Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code.",
-      "desc": "Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code.",
-      "stack": "Sistema compatible; Claude Code; proveedor u Ollama; carpeta de prueba",
-      "repo": "https://github.com/ajsai47/backdoor",
-      "install": "git clone https://github.com/ajsai47/backdoor\ncd backdoor\n./backdoor   # animated setup wizard — picks your provider, writes your config, launches Claude Code",
-      "install_conf": "ok",
-      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
-      "choose_if": "Tu objetivo encaja con estos ejemplos: Probar un backend local con Claude Code; Comparar proveedores compatibles",
-      "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [
-        "claude-code",
-        "ollama",
-        "vllm"
-      ],
-      "alt": [
-        "omniroute",
-        "claude-code-router",
-        "litellm"
-      ]
-    },
-    {
       "id": "bentoml",
       "name": "BentoML",
       "cat": 23,
@@ -98800,7 +98473,6 @@
       ],
       "alt": [
         "omniroute",
-        "backdoor",
         "litellm"
       ]
     },
@@ -99908,8 +99580,7 @@
       ],
       "alt": [
         "omniroute",
-        "claude-code-router",
-        "backdoor"
+        "claude-code-router"
       ]
     },
     {
@@ -100516,7 +100187,6 @@
       ],
       "alt": [
         "claude-code-router",
-        "backdoor",
         "litellm"
       ]
     },
@@ -112611,7 +112281,7 @@
       "setup": "medium",
       "complejidad": 2,
       "puntuacion": 70,
-      "grupo": "g-skills-de-seo-para-agentes",
+      "grupo": null,
       "mcp": false,
       "prov": [],
       "tags": [
@@ -112723,9 +112393,7 @@
         "posthog",
         "open-seo"
       ],
-      "alt": [
-        "geo-seo-claude"
-      ]
+      "alt": []
     },
     {
       "id": "creative-architect",
@@ -113594,134 +113262,6 @@
       "alt": []
     },
     {
-      "id": "geo-seo-claude",
-      "name": "GEO-SEO Claude",
-      "cat": 27,
-      "role": "skill",
-      "exec": "cloud",
-      "setup": "easy",
-      "complejidad": 1,
-      "puntuacion": 49,
-      "grupo": "g-skills-de-seo-para-agentes",
-      "mcp": false,
-      "prov": [
-        "anthropic"
-      ],
-      "tags": [
-        "skills",
-        "search",
-        "pdf",
-        "python"
-      ],
-      "routes": [
-        "no_api",
-        "claude",
-        "api"
-      ],
-      "access": {
-        "mode": "agent_extension",
-        "api": "optional",
-        "local_model": "not_applicable",
-        "claude_code": "host",
-        "codex": "not_documented",
-        "cost": "choice",
-        "hardware": "prerequisites",
-        "scope": "La ficha distingue programa, modelo, agente y servicios externos. Compatibilidad documental; no se instaló ni probó el proyecto en los clientes.",
-        "api_note": "Usa el plan de Claude y dependencias locales; servicios o extensiones de datos pueden añadir costes",
-        "subscription_note": "Optimizar citabilidad no garantiza aparecer en resultados AI; la instalación Windows documentada usa Git Bash y no PowerShell",
-        "local_note": "Optimizar citabilidad no garantiza aparecer en resultados AI; la instalación Windows documentada usa Git Bash y no PowerShell",
-        "cost_note": "Usa el plan de Claude y dependencias locales; servicios o extensiones de datos pueden añadir costes",
-        "hardware_note": "Claude Code; Python; Git Bash en Windows; web propia de prueba",
-        "checked_at": "2026-11-15",
-        "review": "documented",
-        "sources": [
-          "https://github.com/zubair-trabzada/geo-seo-claude/blob/main/README.md"
-        ],
-        "source_blob_sha": "22ca0b035622b6606d4b33879daa5519249bfec5",
-        "antigravity": "not_documented"
-      },
-      "getting_started": {
-        "kind": "source",
-        "audience": "agent",
-        "entry_url": "",
-        "prerequisites": [
-          "Claude Code",
-          "Python",
-          "Git Bash en Windows",
-          "web propia de prueba"
-        ],
-        "steps": [
-          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
-          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
-          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
-        ],
-        "command": "git clone https://github.com/zubair-trabzada/geo-seo-claude.git\ncd geo-seo-claude\n./install.sh",
-        "command_language": "bash",
-        "command_status": "documented",
-        "source": "https://github.com/zubair-trabzada/geo-seo-claude/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
-      },
-      "first_try": {
-        "action": "Ejecuta una revisión de una página propia y contrasta dos hallazgos con el HTML",
-        "success": "Puedes separar observación, heurística y propuesta",
-        "execution": "proposed_not_executed"
-      },
-      "practical_examples": [
-        {
-          "scenario": "Revisar schema de una web",
-          "status": "illustrative"
-        },
-        {
-          "scenario": "Preparar un informe GEO inicial",
-          "status": "illustrative"
-        }
-      ],
-      "editorial_review": {
-        "status": "source_reviewed",
-        "checked_at": "2026-11-15",
-        "source": "https://github.com/zubair-trabzada/geo-seo-claude/blob/main/README.md",
-        "source_blob_sha": "22ca0b035622b6606d4b33879daa5519249bfec5",
-        "previous_source_blob_sha": "22ca0b035622b6606d4b33879daa5519249bfec5",
-        "previous_category": [
-          27,
-          "dominio"
-        ],
-        "category_verdict": "confirmed",
-        "note": "Optimizar citabilidad no garantiza aparecer en resultados AI; la instalación Windows documentada usa Git Bash y no PowerShell",
-        "checks": [
-          "identity",
-          "category",
-          "examples",
-          "installation_source",
-          "api_costs",
-          "claude_code",
-          "codex",
-          "antigravity",
-          "local_model"
-        ],
-        "installation_tested": false
-      },
-      "one": "Skill de Claude Code que audita webs para buscadores con IA (GEO) y SEO clásico, con citabilidad, schema, llms.txt e informes PDF.",
-      "desc": "Skill de Claude Code que audita webs para buscadores con IA (GEO) y SEO clásico, con citabilidad, schema, llms.txt e informes PDF.",
-      "stack": "Claude Code; Python; Git Bash en Windows; web propia de prueba",
-      "repo": "https://github.com/zubair-trabzada/geo-seo-claude",
-      "install": "git clone https://github.com/zubair-trabzada/geo-seo-claude.git\ncd geo-seo-claude\n./install.sh",
-      "install_conf": "ok",
-      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
-      "choose_if": "Tu objetivo encaja con estos ejemplos: Revisar schema de una web; Preparar un informe GEO inicial",
-      "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [
-        "claude-code",
-        "playwright",
-        "open-seo"
-      ],
-      "alt": [
-        "claude-seo"
-      ]
-    },
-    {
       "id": "gsap-skills",
       "name": "gsap-skills",
       "cat": 27,
@@ -114092,8 +113632,7 @@
         "postiz-app"
       ],
       "alt": [
-        "stop-slop",
-        "no-ai-slop"
+        "stop-slop"
       ]
     },
     {
@@ -115322,131 +114861,6 @@
       "alt": []
     },
     {
-      "id": "no-ai-slop",
-      "name": "no-ai-slop",
-      "cat": 27,
-      "role": "skill",
-      "exec": "local",
-      "setup": "medium",
-      "complejidad": 2,
-      "puntuacion": 55,
-      "grupo": "g-skills-para-quitar-el-tono-de-ia-a-los-textos",
-      "mcp": false,
-      "prov": [],
-      "tags": [
-        "escritura",
-        "skill",
-        "python"
-      ],
-      "routes": [
-        "no_api",
-        "claude",
-        "codex",
-        "antigravity"
-      ],
-      "access": {
-        "api": "not_required",
-        "local_model": "not_applicable",
-        "claude_code": "host",
-        "codex": "host",
-        "cost": "host_plan",
-        "hardware": "prerequisites",
-        "scope": "La ficha distingue programa, modelo, agente y servicios externos. Compatibilidad documental; no se instaló ni probó el proyecto en los clientes.",
-        "api_note": "Usa el modelo del anfitrión; no necesita una segunda API por sí solo",
-        "subscription_note": "Tiene metadatos de plugins para ChatGPT y Codex y formato de skill portable; no garantiza detección o invisibilidad de escritura AI",
-        "local_note": "Tiene metadatos de plugins para ChatGPT y Codex y formato de skill portable; no garantiza detección o invisibilidad de escritura AI",
-        "cost_note": "Usa el modelo del anfitrión; no necesita una segunda API por sí solo",
-        "hardware_note": "Agente compatible; texto propio",
-        "checked_at": "2026-11-15",
-        "review": "documented",
-        "sources": [
-          "https://github.com/petergyang/no-ai-slop/blob/main/README.md"
-        ],
-        "mode": "agent_extension",
-        "source_blob_sha": "82f8b7af7e02918077afb447f8fc83c2d33483ba",
-        "antigravity": "host"
-      },
-      "getting_started": {
-        "kind": "source",
-        "audience": "agent",
-        "entry_url": "",
-        "prerequisites": [
-          "Agente compatible",
-          "texto propio"
-        ],
-        "steps": [
-          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
-          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
-          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
-        ],
-        "command": "npx skills add petergyang/no-ai-slop --skill no-ai-slop --global --yes",
-        "command_language": "sh",
-        "command_status": "documented",
-        "source": "https://github.com/petergyang/no-ai-slop/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
-      },
-      "first_try": {
-        "action": "Revisa un texto corto y contrasta cada cambio con el sentido y voz originales",
-        "success": "Puedes aceptar correcciones concretas sin perder información",
-        "execution": "proposed_not_executed"
-      },
-      "practical_examples": [
-        {
-          "scenario": "Editar una publicación",
-          "status": "illustrative"
-        },
-        {
-          "scenario": "Mejorar claridad de un informe",
-          "status": "illustrative"
-        }
-      ],
-      "editorial_review": {
-        "status": "source_reviewed",
-        "checked_at": "2026-11-15",
-        "source": "https://github.com/petergyang/no-ai-slop/blob/main/README.md",
-        "source_blob_sha": "82f8b7af7e02918077afb447f8fc83c2d33483ba",
-        "previous_source_blob_sha": "82f8b7af7e02918077afb447f8fc83c2d33483ba",
-        "previous_category": [
-          27,
-          "escritura"
-        ],
-        "category_verdict": "confirmed",
-        "note": "Tiene metadatos de plugins para ChatGPT y Codex y formato de skill portable; no garantiza detección o invisibilidad de escritura AI",
-        "checks": [
-          "identity",
-          "category",
-          "examples",
-          "installation_source",
-          "api_costs",
-          "claude_code",
-          "codex",
-          "antigravity",
-          "local_model"
-        ],
-        "installation_tested": false
-      },
-      "one": "Skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA.",
-      "desc": "Skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA.",
-      "stack": "Agente compatible; texto propio",
-      "repo": "https://github.com/petergyang/no-ai-slop",
-      "install": "npx skills add petergyang/no-ai-slop --skill no-ai-slop --global --yes",
-      "install_conf": "ok",
-      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
-      "choose_if": "Tu objetivo encaja con estos ejemplos: Editar una publicación; Mejorar claridad de un informe",
-      "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [
-        "claude-code",
-        "codex",
-        "marketingskills"
-      ],
-      "alt": [
-        "humanizer",
-        "stop-slop"
-      ]
-    },
-    {
       "id": "scientific-agent-skills",
       "name": "scientific-agent-skills",
       "cat": 27,
@@ -116181,8 +115595,7 @@
         "postiz-app"
       ],
       "alt": [
-        "humanizer",
-        "no-ai-slop"
+        "humanizer"
       ]
     },
     {

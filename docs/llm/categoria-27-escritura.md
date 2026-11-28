@@ -1,6 +1,6 @@
 # Alexandría para agentes · Escritura y calidad de texto
 
-Categoría 27 «Skills de diseño, contenido y especialidades» › subcategoría `escritura`. 4 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 27 «Skills de diseño, contenido y especialidades» › subcategoría `escritura`. 3 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=27&sub=escritura · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -20,7 +20,6 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 |---|---|---|---:|---|---|
 | `humanizer` | Skill para revisar estilo y claridad de texto conservando su sentido; no prueba… | 1 Básico | 72 | MIT (OSI permisiva) | recomendado |
 | `i-have-adhd` | Skill para que un agente presente primero la respuesta y organice su salida con… | 2 Intermedio | 67 | MIT (OSI permisiva) | sin grupo |
-| `no-ai-slop` | Skill para revisar escritura y eliminar patrones repetitivos o frases poco… | 2 Intermedio | 55 | MIT (OSI permisiva) | alternativa |
 | `stop-slop` | Skill con reglas para eliminar las señales de escritura IA: frases prohibidas… | 1 Básico | 40 | MIT (OSI permisiva) | alternativa |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
@@ -36,8 +35,8 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Instalación (documentada en la fuente; no ejecutada):** `npx skills add blader/humanizer --global --agent codex` — fuente: https://github.com/blader/humanizer/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Revisa un párrafo y compara la versión propuesta con los hechos y tono del original Éxito: Puedes aceptar cambios de estilo sin alterar el contenido
 - **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `marketingskills` [27/dominio], `postiz-app` [18/marketing]
-- **Alternativas:** `no-ai-slop`, `stop-slop`
-- **Riesgos y avisos:** Alternativas (elige una): no-ai-slop, stop-slop. Documenta Claude Code, Codex y otros hosts de skills; mejorar estilo no demuestra autoría humana ni garantiza pasar detectores.
+- **Alternativas:** `stop-slop`
+- **Riesgos y avisos:** Alternativa (elige una): stop-slop. Documenta Claude Code, Codex y otros hosts de skills; mejorar estilo no demuestra autoría humana ni garantiza pasar detectores.
 
 ### i-have-adhd (`i-have-adhd`)
 
@@ -50,18 +49,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `gemini-cli` [20/terminal]
 - **Riesgos y avisos:** INSTALL.md documenta Claude Code, Codex y Antigravity CLI; la activación y always-on difieren entre hosts; es formato de comunicación, no intervención médica.
 
-### no-ai-slop (`no-ai-slop`)
-
-- **Repo:** https://github.com/petergyang/no-ai-slop · MIT · nivel 2 · 55/100 · alternativa en «Skills para quitar el tono de IA a los textos»
-- **Qué es:** Skill de escritura de código abierto (MIT) de Peter Yang. Activa (v1.0.6).
-- **Cuándo elegirlo:** Casos: Editar una publicación; Mejorar claridad de un informe.
-- **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Agente compatible; texto propio; hardware prerequisites; API de IA: no; Agente compatible; texto propio.
-- **Instalación (documentada en la fuente; no ejecutada):** `npx skills add petergyang/no-ai-slop --skill no-ai-slop --global --yes` — fuente: https://github.com/petergyang/no-ai-slop/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Revisa un texto corto y contrasta cada cambio con el sentido y voz originales Éxito: Puedes aceptar correcciones concretas sin perder información
-- **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `marketingskills` [27/dominio]
-- **Alternativas:** `humanizer`, `stop-slop`
-- **Riesgos y avisos:** Alternativas (elige una): humanizer, stop-slop. Tiene metadatos de plugins para ChatGPT y Codex y formato de skill portable; no garantiza detección o invisibilidad de escritura AI.
-
 ### Stop Slop (`stop-slop`)
 
 - **Repo:** https://github.com/hardikpandya/stop-slop · MIT · nivel 1 · 40/100 · alternativa en «Skills para quitar el tono de IA a los textos»
@@ -71,8 +58,8 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/hardikpandya/stop-slop/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Aplica la lista de frases a un párrafo y conserva cualquier término técnico necesario Éxito: Puedes justificar cada cambio de redacción
 - **Combina con:** `claude-code` [20/terminal], `marketingskills` [27/dominio], `postiz-app` [18/marketing]
-- **Alternativas:** `humanizer`, `no-ai-slop`
-- **Riesgos y avisos:** Alternativas (elige una): no-ai-slop, humanizer. Sus reglas son estrictas (por ejemplo, elimina todos los adverbios) y pueden aplanar el estilo. Documenta instalación en Claude Code y uso de instrucciones en otros LLM; no acredita plugins específicos para Codex o Antigravity.
+- **Alternativas:** `humanizer`
+- **Riesgos y avisos:** Alternativa (elige una): humanizer. Sus reglas son estrictas (por ejemplo, elimina todos los adverbios) y pueden aplanar el estilo. Documenta instalación en Claude Code y uso de instrucciones en otros LLM; no acredita plugins específicos para Codex o Antigravity.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 
