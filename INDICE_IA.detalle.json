@@ -9841,8 +9841,7 @@
     "postiz-app"
    ],
    "alternatives": [
-    "stop-slop",
-    "no-ai-slop"
+    "stop-slop"
    ],
    "repo": "https://github.com/blader/humanizer",
    "homepage": "https://skills.sh/blader/humanizer",
@@ -9962,7 +9961,7 @@
      "orden_instalacion": "Humaniza primero; programa después."
     }
    ],
-   "descripcion_notas": "Alternativas (elige una): no-ai-slop, stop-slop.",
+   "descripcion_notas": "Alternativa (elige una): stop-slop.",
    "descripcion_fuentes": [
     "https://github.com/blader/humanizer/blob/main/README.md"
    ],
@@ -10013,7 +10012,7 @@
     "grupo": "g-skills-para-quitar-el-tono-de-ia-a-los-textos",
     "titulo": "Skills para quitar el tono de IA a los textos",
     "posicion": 1,
-    "total": 3,
+    "total": 2,
     "papel": "recomendado",
     "cuando": "Si buscas esto: skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana.",
     "ranking": [
@@ -10025,15 +10024,8 @@
       "cuando": "Si buscas esto: skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana."
      },
      {
-      "id": "no-ai-slop",
-      "posicion": 2,
-      "puntuacion": 55.2,
-      "papel": "alternativa",
-      "cuando": "Si buscas esto: skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA."
-     },
-     {
       "id": "stop-slop",
-      "posicion": 3,
+      "posicion": 2,
       "puntuacion": 40.4,
       "papel": "alternativa",
       "cuando": "Si buscas esto: skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbrica de calidad."
@@ -10064,8 +10056,7 @@
     "postiz-app"
    ],
    "alternatives": [
-    "humanizer",
-    "no-ai-slop"
+    "humanizer"
    ],
    "repo": "https://github.com/hardikpandya/stop-slop",
    "homepage": "",
@@ -10178,7 +10169,7 @@
      "orden_instalacion": "Igual que arriba."
     }
    ],
-   "descripcion_notas": "Alternativas (elige una): no-ai-slop, humanizer. Sus reglas son estrictas (por ejemplo, elimina todos los adverbios) y pueden aplanar el estilo.",
+   "descripcion_notas": "Alternativa (elige una): humanizer. Sus reglas son estrictas (por ejemplo, elimina todos los adverbios) y pueden aplanar el estilo.",
    "descripcion_fuentes": [
     "https://github.com/hardikpandya/stop-slop/blob/main/README.md"
    ],
@@ -10231,8 +10222,8 @@
    "similares": {
     "grupo": "g-skills-para-quitar-el-tono-de-ia-a-los-textos",
     "titulo": "Skills para quitar el tono de IA a los textos",
-    "posicion": 3,
-    "total": 3,
+    "posicion": 2,
+    "total": 2,
     "papel": "alternativa",
     "cuando": "Si buscas esto: skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbrica de calidad.",
     "ranking": [
@@ -10244,15 +10235,8 @@
       "cuando": "Si buscas esto: skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana."
      },
      {
-      "id": "no-ai-slop",
-      "posicion": 2,
-      "puntuacion": 55.2,
-      "papel": "alternativa",
-      "cuando": "Si buscas esto: skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA."
-     },
-     {
       "id": "stop-slop",
-      "posicion": 3,
+      "posicion": 2,
       "puntuacion": 40.4,
       "papel": "alternativa",
       "cuando": "Si buscas esto: skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbrica de calidad."
@@ -10654,216 +10638,6 @@
     "origen": "README",
     "seccion": "Option 1: Install the app",
     "fuente": "https://github.com/msitarzewski/agency-agents/blob/main/README.md"
-   }
-  },
-  "geo-seo-claude": {
-   "name": "GEO-SEO Claude",
-   "cat": 27,
-   "sub": "dominio",
-   "desc": "Skill de Claude Code que audita webs para buscadores con IA (GEO) y SEO clásico, con citabilidad, schema, llms.txt e informes PDF.",
-   "why": "Usos propuestos: Revisar schema de una web; Preparar un informe GEO inicial.",
-   "how": "Optimizar citabilidad no garantiza aparecer en resultados AI; la instalación Windows documentada usa Git Bash y no PowerShell",
-   "install": "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar. Guía original: https://github.com/zubair-trabzada/geo-seo-claude/blob/main/README.md",
-   "cases": [
-    "Revisar schema de una web",
-    "Preparar un informe GEO inicial"
-   ],
-   "stack": "Claude Code; Python; Git Bash en Windows; web propia de prueba",
-   "models": "Usa el plan de Claude y dependencias locales; servicios o extensiones de datos pueden añadir costes",
-   "choose_if": "Tu objetivo encaja con estos ejemplos: Revisar schema de una web; Preparar un informe GEO inicial",
-   "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-   "limits": "Optimizar citabilidad no garantiza aparecer en resultados AI; la instalación Windows documentada usa Git Bash y no PowerShell",
-   "combines_with": [
-    "claude-code",
-    "playwright",
-    "open-seo"
-   ],
-   "alternatives": [
-    "claude-seo"
-   ],
-   "repo": "https://github.com/zubair-trabzada/geo-seo-claude",
-   "homepage": "https://www.skool.com/aiworkshop",
-   "license": "MIT",
-   "lang": "Python",
-   "updated": "2026-11-14",
-   "doc": "human/fichas/geo-seo-claude.md",
-   "previously_registered_local": true,
-   "access": {
-    "mode": "agent_extension",
-    "api": "optional",
-    "local_model": "not_applicable",
-    "claude_code": "host",
-    "codex": "not_documented",
-    "cost": "choice",
-    "hardware": "prerequisites",
-    "scope": "La ficha distingue programa, modelo, agente y servicios externos. Compatibilidad documental; no se instaló ni probó el proyecto en los clientes.",
-    "api_note": "Usa el plan de Claude y dependencias locales; servicios o extensiones de datos pueden añadir costes",
-    "subscription_note": "Optimizar citabilidad no garantiza aparecer en resultados AI; la instalación Windows documentada usa Git Bash y no PowerShell",
-    "local_note": "Optimizar citabilidad no garantiza aparecer en resultados AI; la instalación Windows documentada usa Git Bash y no PowerShell",
-    "cost_note": "Usa el plan de Claude y dependencias locales; servicios o extensiones de datos pueden añadir costes",
-    "hardware_note": "Claude Code; Python; Git Bash en Windows; web propia de prueba",
-    "checked_at": "2026-11-15",
-    "review": "documented",
-    "sources": [
-     "https://github.com/zubair-trabzada/geo-seo-claude/blob/main/README.md"
-    ],
-    "source_blob_sha": "22ca0b035622b6606d4b33879daa5519249bfec5",
-    "antigravity": "not_documented"
-   },
-   "getting_started": {
-    "kind": "source",
-    "audience": "agent",
-    "entry_url": "",
-    "prerequisites": [
-     "Claude Code",
-     "Python",
-     "Git Bash en Windows",
-     "web propia de prueba"
-    ],
-    "steps": [
-     "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
-     "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
-     "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.",
-     "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
-    ],
-    "command": "git clone https://github.com/zubair-trabzada/geo-seo-claude.git\ncd geo-seo-claude\n./install.sh",
-    "command_language": "bash",
-    "command_status": "documented",
-    "source": "https://github.com/zubair-trabzada/geo-seo-claude/blob/main/README.md",
-    "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-    "checked_at": "2026-11-15"
-   },
-   "first_step": "Ejecuta una revisión de una página propia y contrasta dos hallazgos con el HTML",
-   "first_try": {
-    "action": "Ejecuta una revisión de una página propia y contrasta dos hallazgos con el HTML",
-    "success": "Puedes separar observación, heurística y propuesta",
-    "execution": "proposed_not_executed"
-   },
-   "practical_examples": [
-    {
-     "scenario": "Revisar schema de una web",
-     "status": "illustrative"
-    },
-    {
-     "scenario": "Preparar un informe GEO inicial",
-     "status": "illustrative"
-    }
-   ],
-   "editorial_review": {
-    "status": "source_reviewed",
-    "checked_at": "2026-11-15",
-    "source": "https://github.com/zubair-trabzada/geo-seo-claude/blob/main/README.md",
-    "source_blob_sha": "22ca0b035622b6606d4b33879daa5519249bfec5",
-    "previous_source_blob_sha": "22ca0b035622b6606d4b33879daa5519249bfec5",
-    "previous_category": [
-     27,
-     "dominio"
-    ],
-    "category_verdict": "confirmed",
-    "note": "Optimizar citabilidad no garantiza aparecer en resultados AI; la instalación Windows documentada usa Git Bash y no PowerShell",
-    "checks": [
-     "identity",
-     "category",
-     "examples",
-     "installation_source",
-     "api_costs",
-     "claude_code",
-     "codex",
-     "antigravity",
-     "local_model"
-    ],
-    "installation_tested": false
-   },
-   "source_archived": false,
-   "que_es": "Skill para Claude Code de zubair-trabzada (MIT) que optimiza sitios para buscadores con IA (GEO) sin descuidar el SEO tradicional. Activa, sin releases.",
-   "que_hace": "Comandos `/geo` para auditoría completa GEO+SEO con subagentes en paralelo, instantánea rápida, puntuación de «citabilidad», acceso de rastreadores de IA (robots.txt), análisis o generación de llms.txt, menciones de marca en plataformas citadas por IA, datos estructurados, SEO técnico, calidad de contenido (E-E-A-T) e informes para clientes, también en PDF con gráficos.",
-   "como_lo_hace": "Se instala con un script (macOS/Linux o Git Bash en Windows) que copia la skill y crea un entorno virtual aislado en `~/.claude/skills/geo/.venv/`. Requiere Python 3.10+, Claude Code y Git; uv acelera la instalación y Playwright es opcional para capturas.",
-   "combina_con": [
-    {
-     "id": "claude-code",
-     "motivo": "Requisito: los comandos se ejecutan dentro de Claude Code.",
-     "orden_instalacion": "Claude Code primero; luego el script de instalación."
-    },
-    {
-     "id": "playwright",
-     "motivo": "Dependencia opcional para capturas de pantalla.",
-     "orden_instalacion": "Instala Playwright y sus navegadores si quieres capturas en los informes."
-    },
-    {
-     "id": "open-seo",
-     "motivo": "Datos de palabras clave y backlinks como complemento a la auditoría (combinación por arquitectura).",
-     "orden_instalacion": "Conecta el MCP de OpenSEO al mismo agente."
-    }
-   ],
-   "descripcion_notas": "Revisa el script antes de ejecutar `curl | bash`. Alternativa (elige una): claude-seo.",
-   "descripcion_fuentes": [
-    "https://github.com/zubair-trabzada/geo-seo-claude/blob/main/README.md"
-   ],
-   "descripcion_revision": {
-    "batch": "08-skills-escritura-dominio",
-    "checked_at": "2026-11-15",
-    "status": "source_reviewed",
-    "installation_tested": false
-   },
-   "descripcion_github": {
-    "name_with_owner": "zubair-trabzada/geo-seo-claude",
-    "archived": false,
-    "pushed_at": "2026-11-15",
-    "license": "MIT",
-    "primary_language": "Python",
-    "checked_at": "2026-11-15"
-   },
-   "calidad": {
-    "puntuacion": 49.3,
-    "ejes": {
-     "adopcion": 8.8,
-     "mantenimiento": 9.5,
-     "madurez": 5.5,
-     "licencia": 15.0,
-     "respaldo": 5.0,
-     "seguridad": 2.5,
-     "encaje": 3.0
-    },
-    "licencia": "osi_permisiva",
-    "notas": [
-     "Adopción: sin dato de descargas_mes (se reparte el peso)",
-     "Sin OpenSSF Scorecard publicado: seguridad neutral"
-    ],
-    "fecha": "2026-11-16"
-   },
-   "complejidad_detalle": {
-    "nivel": 1,
-    "nombre": "Básico",
-    "motivos": [
-     "preparación sencilla",
-     "se instala dentro de un agente (skill, plugin o MCP)"
-    ],
-    "origen": "auto",
-    "auto": 1
-   },
-   "similares": {
-    "grupo": "g-skills-de-seo-para-agentes",
-    "titulo": "Skills de SEO para agentes",
-    "posicion": 2,
-    "total": 2,
-    "papel": "alternativa",
-    "cuando": "Si buscas esto: skill de Claude Code que audita webs para buscadores con IA (GEO) y SEO clásico, con citabilidad, schema, llms.txt e informes PDF.",
-    "ranking": [
-     {
-      "id": "claude-seo",
-      "posicion": 1,
-      "puntuacion": 70.2,
-      "papel": "recomendado",
-      "cuando": "Si buscas esto: skills de Claude Code para revisar SEO técnico, contenido, presencia en buscadores de IA y otros aspectos de una web."
-     },
-     {
-      "id": "geo-seo-claude",
-      "posicion": 2,
-      "puntuacion": 49.3,
-      "papel": "alternativa",
-      "cuando": "Si buscas esto: skill de Claude Code que audita webs para buscadores con IA (GEO) y SEO clásico, con citabilidad, schema, llms.txt e informes PDF."
-     }
-    ]
    }
   },
   "arcads-claude-code": {
@@ -32892,8 +32666,7 @@
    "combines_with": [
     "mcp-inspector",
     "mcp-use",
-    "awesome-mcp-servers",
-    "opendots"
+    "awesome-mcp-servers"
    ],
    "alternatives": [],
    "repo": "https://github.com/modelcontextprotocol/servers",
@@ -33004,12 +32777,6 @@
      "id": "awesome-mcp-servers",
      "motivo": "Encontrar servidores de la comunidad más allá de las referencias. (combinación por arquitectura)",
      "orden_instalacion": "Consulta también el MCP Registry oficial."
-    },
-    {
-     "id": "opendots",
-     "motivo": "Combinación recíproca: OpenDots lo enlaza como «Servidores MCP de referencia como herramientas. (combinación por arquitectura)».",
-     "orden_instalacion": "Orden indicado desde OpenDots: Añade los MCP por Dot.",
-     "reciproca_de": "opendots"
     }
    ],
    "descripcion_notas": "Sin alternativas declaradas. No son para producción, según el propio README.",
@@ -40022,8 +39789,7 @@
    ],
    "alternatives": [
     "omniroute",
-    "claude-code-router",
-    "backdoor"
+    "claude-code-router"
    ],
    "repo": "https://github.com/BerriAI/litellm",
    "homepage": "https://docs.litellm.ai/docs/",
@@ -40156,7 +39922,7 @@
     "status": "source_reviewed",
     "installation_tested": false
    },
-   "descripcion_notas": "Alternativas (elige una): omniroute, claude-code-router, backdoor. Incidente de cadena de suministro de marzo de 2026 (PYSEC-2026-2): si instalaste 1.82.7 o 1.82.8, rota todos los secretos y busca `litellm_init.pth`.",
+   "descripcion_notas": "Alternativas (elige una): omniroute, claude-code-router. Incidente de cadena de suministro de marzo de 2026 (PYSEC-2026-2): si instalaste 1.82.7 o 1.82.8, rota todos los secretos y busca `litellm_init.pth`.",
    "descripcion_github": {
     "name_with_owner": "BerriAI/litellm",
     "archived": false,
@@ -40202,7 +39968,7 @@
     "grupo": "g-pasarelas-y-routers-de-proveedores-llm",
     "titulo": "Pasarelas y routers de proveedores LLM",
     "posicion": 1,
-    "total": 4,
+    "total": 3,
     "papel": "recomendado",
     "cuando": "Si necesitas una pasarela estándar para 100+ proveedores con presupuestos y claves.",
     "ranking": [
@@ -40226,13 +39992,6 @@
       "puntuacion": 57.9,
       "papel": "alternativa",
       "cuando": "Si quieres usar Claude Code con otros proveedores o modelos y enrutar por tarea."
-     },
-     {
-      "id": "backdoor",
-      "posicion": 4,
-      "puntuacion": 33.6,
-      "papel": "alternativa",
-      "cuando": "Si quieres adaptar otro proveedor al flujo de herramientas de Claude Code (proyecto pequeño de terceros)."
      }
     ]
    }
@@ -88971,238 +88730,6 @@
     ]
    }
   },
-  "backdoor": {
-   "name": "backdoor",
-   "cat": 23,
-   "sub": "serving",
-   "desc": "Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code.",
-   "why": "Usos propuestos: Probar un backend local con Claude Code; Comparar proveedores compatibles.",
-   "how": "Es un adaptador independiente; afirmar privacidad local requiere revisar también búsquedas, telemetría y otras herramientas y no solo el endpoint del modelo",
-   "install": "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar. Guía original: https://github.com/ajsai47/backdoor/blob/main/README.md",
-   "cases": [
-    "Probar un backend local con Claude Code",
-    "Comparar proveedores compatibles"
-   ],
-   "stack": "Sistema compatible; Claude Code; proveedor u Ollama; carpeta de prueba",
-   "models": "Modelo local o API del proveedor según elección; no aporta una suscripción ni créditos de Anthropic",
-   "choose_if": "Tu objetivo encaja con estos ejemplos: Probar un backend local con Claude Code; Comparar proveedores compatibles",
-   "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-   "limits": "Es un adaptador independiente; afirmar privacidad local requiere revisar también búsquedas, telemetría y otras herramientas y no solo el endpoint del modelo",
-   "combines_with": [
-    "claude-code",
-    "ollama",
-    "vllm"
-   ],
-   "alternatives": [
-    "omniroute",
-    "claude-code-router",
-    "litellm"
-   ],
-   "repo": "https://github.com/ajsai47/backdoor",
-   "homepage": "",
-   "license": "MIT",
-   "lang": "Python",
-   "updated": "2026-11-14",
-   "doc": "human/fichas/backdoor.md",
-   "sources": {
-    "checked_at": "2026-11-14",
-    "readme_url": "https://github.com/ajsai47/backdoor/blob/main/README.md",
-    "readme_blob_sha": "1c4235799bfe8a942adafed7c160aa9ede72f310",
-    "root_tree_sha": "7f9765aed856cfebc345df0c5312b78857d7fe5e",
-    "method": "README y estructura raíz de GitHub; sin ejecución ni instalación del proyecto."
-   },
-   "access": {
-    "mode": "software",
-    "api": "optional",
-    "local_model": "supported",
-    "claude_code": "project_integration",
-    "codex": "not_documented",
-    "cost": "choice",
-    "hardware": "prerequisites",
-    "scope": "La ficha distingue programa, modelo, agente y servicios externos. Compatibilidad documental; no se instaló ni probó el proyecto en los clientes.",
-    "api_note": "Modelo local o API del proveedor según elección; no aporta una suscripción ni créditos de Anthropic",
-    "subscription_note": "Es un adaptador independiente; afirmar privacidad local requiere revisar también búsquedas, telemetría y otras herramientas y no solo el endpoint del modelo",
-    "local_note": "Es un adaptador independiente; afirmar privacidad local requiere revisar también búsquedas, telemetría y otras herramientas y no solo el endpoint del modelo",
-    "cost_note": "Modelo local o API del proveedor según elección; no aporta una suscripción ni créditos de Anthropic",
-    "hardware_note": "Sistema compatible; Claude Code; proveedor u Ollama; carpeta de prueba",
-    "checked_at": "2026-11-15",
-    "review": "documented",
-    "sources": [
-     "https://github.com/ajsai47/backdoor/blob/main/README.md"
-    ],
-    "source_blob_sha": "1c4235799bfe8a942adafed7c160aa9ede72f310",
-    "antigravity": "not_documented"
-   },
-   "getting_started": {
-    "kind": "source",
-    "audience": "setup",
-    "entry_url": "",
-    "prerequisites": [
-     "Sistema compatible",
-     "Claude Code",
-     "proveedor u Ollama",
-     "carpeta de prueba"
-    ],
-    "steps": [
-     "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
-     "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
-     "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.",
-     "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
-    ],
-    "command": "git clone https://github.com/ajsai47/backdoor\ncd backdoor\n./backdoor   # animated setup wizard — picks your provider, writes your config, launches Claude Code",
-    "command_language": "bash",
-    "command_status": "documented",
-    "source": "https://github.com/ajsai47/backdoor/blob/main/README.md",
-    "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-    "checked_at": "2026-11-15"
-   },
-   "first_step": "Revisa la configuración que propone el asistente y solicita una explicación corta sin herramientas externas",
-   "first_try": {
-    "action": "Revisa la configuración que propone el asistente y solicita una explicación corta sin herramientas externas",
-    "success": "Puedes identificar el proveedor detrás del proxy",
-    "execution": "proposed_not_executed"
-   },
-   "practical_examples": [
-    {
-     "scenario": "Probar un backend local con Claude Code",
-     "status": "illustrative"
-    },
-    {
-     "scenario": "Comparar proveedores compatibles",
-     "status": "illustrative"
-    }
-   ],
-   "editorial_review": {
-    "status": "source_reviewed",
-    "checked_at": "2026-11-15",
-    "source": "https://github.com/ajsai47/backdoor/blob/main/README.md",
-    "source_blob_sha": "1c4235799bfe8a942adafed7c160aa9ede72f310",
-    "previous_source_blob_sha": "1c4235799bfe8a942adafed7c160aa9ede72f310",
-    "previous_category": [
-     23,
-     "serving"
-    ],
-    "category_verdict": "confirmed",
-    "note": "Es un adaptador independiente; afirmar privacidad local requiere revisar también búsquedas, telemetría y otras herramientas y no solo el endpoint del modelo",
-    "checks": [
-     "identity",
-     "category",
-     "examples",
-     "installation_source",
-     "api_costs",
-     "claude_code",
-     "codex",
-     "antigravity",
-     "local_model"
-    ],
-    "installation_tested": false
-   },
-   "source_archived": false,
-   "que_es": "Backdoor, proxy de terceros de @ajsai47 que permite usar Claude Code con otros proveedores de modelos. Licencia MIT. Es pequeño (~300 estrellas, sin releases) y su último cambio es de mayo de 2026.",
-   "que_hace": "Intercepta las llamadas de Claude Code a la API de Anthropic, traduce el formato y las reenvía a cualquier proveedor compatible con OpenAI (DeepSeek, Groq, OpenRouter, Ollama o un modelo local). Permite cambiar de proveedor con una línea. El README presenta una comparación de costes propia que no se ha verificado.",
-   "como_lo_hace": "Es un proyecto en Python de menos de 600 líneas (servidor, asistente de configuración y scripts) que se ejecuta en local con uv y un archivo `.env`. Requiere tener Claude Code instalado. Con Ollama no salen datos de tu máquina.",
-   "combina_con": [
-    {
-     "id": "claude-code",
-     "motivo": "Es el cliente que Backdoor redirige.",
-     "orden_instalacion": "Instala Claude Code y luego configura Backdoor."
-    },
-    {
-     "id": "ollama",
-     "motivo": "Proveedor local documentado en el README.",
-     "orden_instalacion": "Arranca Ollama y elígelo como backend."
-    },
-    {
-     "id": "vllm",
-     "motivo": "vLLM sirve modelos propios con API compatible con OpenAI, el tipo de proveedor al que Backdoor redirige Claude Code. (combinación por arquitectura)",
-     "orden_instalacion": "Levanta vLLM primero y apunta Backdoor a su URL base."
-    }
-   ],
-   "descripcion_notas": "Alternativas (elige una): omniroute, claude-code-router, litellm. Proyecto pequeño y sin mantenimiento reciente. La calidad del agente depende mucho del modelo y de su soporte de herramientas. Cifras de ahorro del README sin verificar.",
-   "descripcion_fuentes": [
-    "https://github.com/ajsai47/backdoor/blob/main/README.md"
-   ],
-   "descripcion_revision": {
-    "batch": "26-gateways-y-codigo-parte-1",
-    "checked_at": "2026-11-15",
-    "status": "source_reviewed",
-    "installation_tested": false
-   },
-   "descripcion_github": {
-    "name_with_owner": "ajsai47/backdoor",
-    "archived": false,
-    "pushed_at": "2026-05-22",
-    "license": "MIT",
-    "primary_language": "Python",
-    "checked_at": "2026-11-15"
-   },
-   "calidad": {
-    "puntuacion": 33.6,
-    "ejes": {
-     "adopcion": 1.8,
-     "mantenimiento": 2.2,
-     "madurez": 2.2,
-     "licencia": 15.0,
-     "respaldo": 5.0,
-     "seguridad": 2.5,
-     "encaje": 5.0
-    },
-    "licencia": "osi_permisiva",
-    "notas": [
-     "Adopción: sin dato de descargas_mes (se reparte el peso)",
-     "Mantenimiento: sin dato de primera_respuesta_dias, ratio_cerradas (se reparte el peso)",
-     "Sin OpenSSF Scorecard publicado: seguridad neutral"
-    ],
-    "fecha": "2026-11-16"
-   },
-   "complejidad_detalle": {
-    "nivel": 2,
-    "nombre": "Intermedio",
-    "motivos": [
-     "preparación media"
-    ],
-    "origen": "auto",
-    "auto": 2
-   },
-   "similares": {
-    "grupo": "g-pasarelas-y-routers-de-proveedores-llm",
-    "titulo": "Pasarelas y routers de proveedores LLM",
-    "posicion": 4,
-    "total": 4,
-    "papel": "alternativa",
-    "cuando": "Si quieres adaptar otro proveedor al flujo de herramientas de Claude Code (proyecto pequeño de terceros).",
-    "ranking": [
-     {
-      "id": "litellm",
-      "posicion": 1,
-      "puntuacion": 77.5,
-      "papel": "recomendado",
-      "cuando": "Si necesitas una pasarela estándar para 100+ proveedores con presupuestos y claves."
-     },
-     {
-      "id": "omniroute",
-      "posicion": 2,
-      "puntuacion": 75.9,
-      "papel": "alternativa",
-      "cuando": "Si quieres una pasarela local que reparta cuotas y alternativas entre proveedores."
-     },
-     {
-      "id": "claude-code-router",
-      "posicion": 3,
-      "puntuacion": 57.9,
-      "papel": "alternativa",
-      "cuando": "Si quieres usar Claude Code con otros proveedores o modelos y enrutar por tarea."
-     },
-     {
-      "id": "backdoor",
-      "posicion": 4,
-      "puntuacion": 33.6,
-      "papel": "alternativa",
-      "cuando": "Si quieres adaptar otro proveedor al flujo de herramientas de Claude Code (proyecto pequeño de terceros)."
-     }
-    ]
-   }
-  },
   "masterdnsvpn": {
    "name": "MasterDnsVPN",
    "cat": 22,
@@ -96961,9 +96488,7 @@
     "posthog",
     "open-seo"
    ],
-   "alternatives": [
-    "geo-seo-claude"
-   ],
+   "alternatives": [],
    "repo": "https://github.com/AgriciDaniel/claude-seo",
    "homepage": "skool.com/ai-marketing-hub-pro",
    "license": "MIT",
@@ -97086,7 +96611,6 @@
      "orden_instalacion": "Conecta el MCP de OpenSEO al mismo agente."
     }
    ],
-   "descripcion_notas": "Alternativa (elige una): geo-seo-claude.",
    "descripcion_fuentes": [
     "https://github.com/AgriciDaniel/claude-seo/blob/main/README.md"
    ],
@@ -97132,30 +96656,6 @@
     ],
     "origen": "auto",
     "auto": 2
-   },
-   "similares": {
-    "grupo": "g-skills-de-seo-para-agentes",
-    "titulo": "Skills de SEO para agentes",
-    "posicion": 1,
-    "total": 2,
-    "papel": "recomendado",
-    "cuando": "Si buscas esto: skills de Claude Code para revisar SEO técnico, contenido, presencia en buscadores de IA y otros aspectos de una web.",
-    "ranking": [
-     {
-      "id": "claude-seo",
-      "posicion": 1,
-      "puntuacion": 70.2,
-      "papel": "recomendado",
-      "cuando": "Si buscas esto: skills de Claude Code para revisar SEO técnico, contenido, presencia en buscadores de IA y otros aspectos de una web."
-     },
-     {
-      "id": "geo-seo-claude",
-      "posicion": 2,
-      "puntuacion": 49.3,
-      "papel": "alternativa",
-      "cuando": "Si buscas esto: skill de Claude Code que audita webs para buscadores con IA (GEO) y SEO clásico, con citabilidad, schema, llms.txt e informes PDF."
-     }
-    ]
    }
   },
   "awesome-harness-engineering": {
@@ -100837,7 +100337,6 @@
    ],
    "alternatives": [
     "claude-code-router",
-    "backdoor",
     "litellm"
    ],
    "repo": "https://github.com/cheaper-inference/OmniRoute",
@@ -100961,7 +100460,7 @@
      "orden_instalacion": "Conecta tu instancia de Ollama como proveedor local."
     }
    ],
-   "descripcion_notas": "Alternativas (elige una): claude-code-router, backdoor, litellm. Combinar cuentas gratuitas puede incumplir las condiciones de algunos proveedores; el MITM implica confiar en una CA local.",
+   "descripcion_notas": "Alternativas (elige una): claude-code-router, litellm. Combinar cuentas gratuitas puede incumplir las condiciones de algunos proveedores; el MITM implica confiar en una CA local.",
    "descripcion_fuentes": [
     "https://github.com/cheaper-inference/OmniRoute/blob/release/v3.8.54/README.md"
    ],
@@ -101016,7 +100515,7 @@
     "grupo": "g-pasarelas-y-routers-de-proveedores-llm",
     "titulo": "Pasarelas y routers de proveedores LLM",
     "posicion": 2,
-    "total": 4,
+    "total": 3,
     "papel": "alternativa",
     "cuando": "Si quieres una pasarela local que reparta cuotas y alternativas entre proveedores.",
     "ranking": [
@@ -101040,13 +100539,6 @@
       "puntuacion": 57.9,
       "papel": "alternativa",
       "cuando": "Si quieres usar Claude Code con otros proveedores o modelos y enrutar por tarea."
-     },
-     {
-      "id": "backdoor",
-      "posicion": 4,
-      "puntuacion": 33.6,
-      "papel": "alternativa",
-      "cuando": "Si quieres adaptar otro proveedor al flujo de herramientas de Claude Code (proyecto pequeño de terceros)."
      }
     ]
    }
@@ -101931,222 +101423,6 @@
       "puntuacion": 52.0,
       "papel": "alternativa",
       "cuando": "Si buscas esto: entorno para administrar un servidor personal, instalar aplicaciones y organizar servicios y archivos domésticos."
-     }
-    ]
-   }
-  },
-  "opendots": {
-   "name": "OpenDots",
-   "cat": 21,
-   "sub": "asistentes",
-   "desc": "Interfaz abierta de asistentes persistentes que requiere CopilotKit Intelligence, alojado, evaluado localmente o con licencia.",
-   "how": "Autoalojar OpenDots no incluye automáticamente el servicio Intelligence ni una pila enteramente local",
-   "install": "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar. Guía original: https://github.com/CopilotKit/OpenDots/blob/main/README.md",
-   "cases": [
-    "Probar un asistente persistente",
-    "Estudiar aprobación de acciones conectadas"
-   ],
-   "stack": "Node; CopilotKit Intelligence; proveedores y conectores elegidos",
-   "choose_if": "Tu objetivo encaja con estos ejemplos: Probar un asistente persistente; Estudiar aprobación de acciones conectadas",
-   "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-   "limits": "Autoalojar OpenDots no incluye automáticamente el servicio Intelligence ni una pila enteramente local",
-   "combines_with": [
-    "copilotkit",
-    "composio",
-    "servers"
-   ],
-   "alternatives": [
-    "openbot"
-   ],
-   "repo": "https://github.com/CopilotKit/OpenDots",
-   "homepage": "https://www.copilotkit.ai/opendots",
-   "license": "MIT",
-   "lang": "TypeScript",
-   "updated": "2026-11-14",
-   "doc": "human/fichas/opendots.md",
-   "access": {
-    "api": "required",
-    "local_model": "not_documented",
-    "claude_code": "not_documented",
-    "codex": "not_documented",
-    "cost": "choice",
-    "hardware": "prerequisites",
-    "scope": "La ficha distingue programa, modelo, agente y servicios externos. Compatibilidad documental; no se instaló ni probó el proyecto en los clientes.",
-    "api_note": "La UI MIT requiere Intelligence hospedado, evaluación Docker local o despliegue autoalojado con licencia; modelos y voz pueden cobrar aparte",
-    "subscription_note": "Autoalojar OpenDots no incluye automáticamente el servicio Intelligence ni una pila enteramente local",
-    "local_note": "Autoalojar OpenDots no incluye automáticamente el servicio Intelligence ni una pila enteramente local",
-    "cost_note": "La UI MIT requiere Intelligence hospedado, evaluación Docker local o despliegue autoalojado con licencia; modelos y voz pueden cobrar aparte",
-    "hardware_note": "Node; CopilotKit Intelligence; proveedores y conectores elegidos",
-    "checked_at": "2026-11-15",
-    "review": "documented",
-    "sources": [
-     "https://github.com/CopilotKit/OpenDots/blob/main/README.md"
-    ],
-    "mode": "software",
-    "source_blob_sha": "051c45466a6a85bca8551de5179bfcb3d3be66a9",
-    "antigravity": "not_documented"
-   },
-   "getting_started": {
-    "kind": "source",
-    "audience": "setup",
-    "entry_url": "",
-    "prerequisites": [
-     "Node",
-     "CopilotKit Intelligence",
-     "proveedores y conectores elegidos"
-    ],
-    "steps": [
-     "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
-     "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
-     "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.",
-     "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
-    ],
-    "command": "git clone https://github.com/CopilotKit/OpenDots.git\ncd OpenDots\nnpm ci\ncp .env.example .env\nnpm run dev",
-    "command_language": "sh",
-    "command_status": "documented",
-    "source": "https://github.com/CopilotKit/OpenDots/blob/main/README.md",
-    "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-    "checked_at": "2026-11-15"
-   },
-   "first_step": "Configura un Dot de prueba y haz una pregunta sin conceder herramientas de escritura",
-   "sources": {
-    "readme_blob_sha": "051c45466a6a85bca8551de5179bfcb3d3be66a9",
-    "root_tree_sha": "0e706ab3686fee50e9f26befc6df2aac2c2b1422",
-    "readme_url": "https://github.com/CopilotKit/OpenDots/blob/main/README.md",
-    "github_checked": "2026-11-14",
-    "collection": "saved-resources-document"
-   },
-   "one": "Interfaz abierta de asistentes persistentes que requiere CopilotKit Intelligence, alojado, evaluado localmente o con licencia.",
-   "why": "Usos propuestos: Probar un asistente persistente; Estudiar aprobación de acciones conectadas.",
-   "models": "La UI MIT requiere Intelligence hospedado, evaluación Docker local o despliegue autoalojado con licencia; modelos y voz pueden cobrar aparte",
-   "first_try": {
-    "action": "Configura un Dot de prueba y haz una pregunta sin conceder herramientas de escritura",
-    "success": "Puedes comprobar la respuesta y el panel de conexiones",
-    "execution": "proposed_not_executed"
-   },
-   "practical_examples": [
-    {
-     "scenario": "Probar un asistente persistente",
-     "status": "illustrative"
-    },
-    {
-     "scenario": "Estudiar aprobación de acciones conectadas",
-     "status": "illustrative"
-    }
-   ],
-   "editorial_review": {
-    "status": "source_reviewed",
-    "checked_at": "2026-11-15",
-    "source": "https://github.com/CopilotKit/OpenDots/blob/main/README.md",
-    "source_blob_sha": "051c45466a6a85bca8551de5179bfcb3d3be66a9",
-    "previous_source_blob_sha": "051c45466a6a85bca8551de5179bfcb3d3be66a9",
-    "previous_category": [
-     21,
-     "asistentes"
-    ],
-    "category_verdict": "confirmed",
-    "note": "Autoalojar OpenDots no incluye automáticamente el servicio Intelligence ni una pila enteramente local",
-    "checks": [
-     "identity",
-     "category",
-     "examples",
-     "installation_source",
-     "api_costs",
-     "claude_code",
-     "codex",
-     "antigravity",
-     "local_model"
-    ],
-    "installation_tested": false
-   },
-   "source_archived": false,
-   "que_es": "OpenDots, plantilla open source de CopilotKit para agentes persistentes, cada uno con su propio ordenador, en web y móvil. Licencia MIT. Tiene ~6.6k estrellas; CopilotKit ofrece ahora la versión más robusta como skin de OpenBot.",
-   "que_hace": "Los «Dots» conversan por texto, llamadas y Slack, navegan, redactan y guardan resultados en páginas editables tras una tarjeta de aprobación humana. Usan herramientas MCP y apps de Composio con aprobación para escrituras.",
-   "como_lo_hace": "Se autoaloja, pero las conversaciones requieren CopilotKit Intelligence: servicio alojado, evaluación local con Docker o despliegue autoalojado con licencia. La telemetría del SDK está activa.",
-   "combina_con": [
-    {
-     "id": "copilotkit",
-     "motivo": "Framework base y requisito (CopilotKit Intelligence).",
-     "orden_instalacion": "Crea el proyecto con `npx copilotkit@latest login`."
-    },
-    {
-     "id": "composio",
-     "motivo": "Apps conectadas integradas.",
-     "orden_instalacion": "Añade la clave de Composio."
-    },
-    {
-     "id": "servers",
-     "motivo": "Servidores MCP de referencia como herramientas. (combinación por arquitectura)",
-     "orden_instalacion": "Añade los MCP por Dot."
-    }
-   ],
-   "descripcion_notas": "Alternativa (elige una): openbot. No es autónomo del todo: depende de un servicio de CopilotKit.",
-   "descripcion_fuentes": [
-    "https://github.com/CopilotKit/OpenDots/blob/main/README.md"
-   ],
-   "descripcion_revision": {
-    "batch": "34-agentes-autonomos-parte-2-e-infra-agentes-parte-1",
-    "checked_at": "2026-11-15",
-    "status": "source_reviewed",
-    "installation_tested": false
-   },
-   "descripcion_github": {
-    "name_with_owner": "CopilotKit/OpenDots",
-    "archived": false,
-    "pushed_at": "2026-11-14",
-    "license": "MIT",
-    "primary_language": "TypeScript",
-    "checked_at": "2026-11-15"
-   },
-   "calidad": {
-    "puntuacion": 48.1,
-    "ejes": {
-     "adopcion": 8.2,
-     "mantenimiento": 6.8,
-     "madurez": 4.7,
-     "licencia": 15.0,
-     "respaldo": 8.0,
-     "seguridad": 2.5,
-     "encaje": 3.0
-    },
-    "licencia": "osi_permisiva",
-    "notas": [
-     "Adopción: sin dato de descargas_mes (se reparte el peso)",
-     "Sin OpenSSF Scorecard publicado: seguridad neutral"
-    ],
-    "fecha": "2026-11-16"
-   },
-   "complejidad_detalle": {
-    "nivel": 2,
-    "nombre": "Intermedio",
-    "motivos": [
-     "preparación media",
-     "requiere clave de API"
-    ],
-    "origen": "auto",
-    "auto": 2
-   },
-   "similares": {
-    "grupo": "g-espacios-de-asistentes-de-copilotkit",
-    "titulo": "Espacios de asistentes de CopilotKit",
-    "posicion": 2,
-    "total": 2,
-    "papel": "alternativa",
-    "cuando": "Si buscas esto: interfaz abierta de asistentes persistentes que requiere CopilotKit Intelligence, alojado, evaluado localmente o con licencia.",
-    "ranking": [
-     {
-      "id": "openbot",
-      "posicion": 1,
-      "puntuacion": 70.4,
-      "papel": "recomendado",
-      "cuando": "Si buscas esto: espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y auditoría, conectables por AG-UI."
-     },
-     {
-      "id": "opendots",
-      "posicion": 2,
-      "puntuacion": 48.1,
-      "papel": "alternativa",
-      "cuando": "Si buscas esto: interfaz abierta de asistentes persistentes que requiere CopilotKit Intelligence, alojado, evaluado localmente o con licencia."
      }
     ]
    }
@@ -104608,7 +103884,6 @@
    "combines_with": [
     "claude-code",
     "coolify",
-    "geo-seo-claude",
     "claude-seo",
     "cloud-mail",
     "marketingskills"
@@ -104729,11 +104004,6 @@
      "id": "coolify",
      "motivo": "El README cita Coolify entre las plataformas Compose compatibles con su imagen Docker.",
      "orden_instalacion": "Coolify en el servidor; crea el servicio desde el Compose de OpenSEO y protege el acceso."
-    },
-    {
-     "id": "geo-seo-claude",
-     "motivo": "Skill de SEO/GEO que puede apoyarse en los datos de OpenSEO para recomendaciones (combinación por arquitectura).",
-     "orden_instalacion": "Después de conectar el MCP de OpenSEO al agente."
     },
     {
      "id": "claude-seo",
@@ -116463,7 +115733,6 @@
    ],
    "alternatives": [
     "omniroute",
-    "backdoor",
     "litellm"
    ],
    "repo": "https://github.com/musistudio/claude-code-router",
@@ -116593,7 +115862,7 @@
      "reciproca_de": "claude-code-hooks-mastery"
     }
    ],
-   "descripcion_notas": "Alternativas (elige una): omniroute, backdoor, litellm. Usar modelos de terceros con Claude Code puede no estar soportado por Anthropic.",
+   "descripcion_notas": "Alternativas (elige una): omniroute, litellm. Usar modelos de terceros con Claude Code puede no estar soportado por Anthropic.",
    "descripcion_fuentes": [
     "https://github.com/musistudio/claude-code-router/blob/main/README.md"
    ],
@@ -116642,7 +115911,7 @@
     "grupo": "g-pasarelas-y-routers-de-proveedores-llm",
     "titulo": "Pasarelas y routers de proveedores LLM",
     "posicion": 3,
-    "total": 4,
+    "total": 3,
     "papel": "alternativa",
     "cuando": "Si quieres usar Claude Code con otros proveedores o modelos y enrutar por tarea.",
     "ranking": [
@@ -116666,13 +115935,6 @@
       "puntuacion": 57.9,
       "papel": "alternativa",
       "cuando": "Si quieres usar Claude Code con otros proveedores o modelos y enrutar por tarea."
-     },
-     {
-      "id": "backdoor",
-      "posicion": 4,
-      "puntuacion": 33.6,
-      "papel": "alternativa",
-      "cuando": "Si quieres adaptar otro proveedor al flujo de herramientas de Claude Code (proyecto pequeño de terceros)."
      }
     ]
    }
@@ -120916,229 +120178,6 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://www.pencil2d.org/download/"
-   }
-  },
-  "no-ai-slop": {
-   "name": "no-ai-slop",
-   "cat": 27,
-   "sub": "escritura",
-   "desc": "Skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA.",
-   "how": "Tiene metadatos de plugins para ChatGPT y Codex y formato de skill portable; no garantiza detección o invisibilidad de escritura AI",
-   "install": "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar. Guía original: https://github.com/petergyang/no-ai-slop/blob/main/README.md",
-   "cases": [
-    "Editar una publicación",
-    "Mejorar claridad de un informe"
-   ],
-   "stack": "Agente compatible; texto propio",
-   "choose_if": "Tu objetivo encaja con estos ejemplos: Editar una publicación; Mejorar claridad de un informe",
-   "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-   "limits": "Tiene metadatos de plugins para ChatGPT y Codex y formato de skill portable; no garantiza detección o invisibilidad de escritura AI",
-   "combines_with": [
-    "claude-code",
-    "codex",
-    "marketingskills"
-   ],
-   "alternatives": [
-    "humanizer",
-    "stop-slop"
-   ],
-   "repo": "https://github.com/petergyang/no-ai-slop",
-   "homepage": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns",
-   "license": "MIT",
-   "lang": "Python",
-   "updated": "2026-11-14",
-   "doc": "human/fichas/no-ai-slop.md",
-   "access": {
-    "api": "not_required",
-    "local_model": "not_applicable",
-    "claude_code": "host",
-    "codex": "host",
-    "cost": "host_plan",
-    "hardware": "prerequisites",
-    "scope": "La ficha distingue programa, modelo, agente y servicios externos. Compatibilidad documental; no se instaló ni probó el proyecto en los clientes.",
-    "api_note": "Usa el modelo del anfitrión; no necesita una segunda API por sí solo",
-    "subscription_note": "Tiene metadatos de plugins para ChatGPT y Codex y formato de skill portable; no garantiza detección o invisibilidad de escritura AI",
-    "local_note": "Tiene metadatos de plugins para ChatGPT y Codex y formato de skill portable; no garantiza detección o invisibilidad de escritura AI",
-    "cost_note": "Usa el modelo del anfitrión; no necesita una segunda API por sí solo",
-    "hardware_note": "Agente compatible; texto propio",
-    "checked_at": "2026-11-15",
-    "review": "documented",
-    "sources": [
-     "https://github.com/petergyang/no-ai-slop/blob/main/README.md"
-    ],
-    "mode": "agent_extension",
-    "source_blob_sha": "82f8b7af7e02918077afb447f8fc83c2d33483ba",
-    "antigravity": "host"
-   },
-   "getting_started": {
-    "kind": "source",
-    "audience": "agent",
-    "entry_url": "",
-    "prerequisites": [
-     "Agente compatible",
-     "texto propio"
-    ],
-    "steps": [
-     "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
-     "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
-     "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.",
-     "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
-    ],
-    "command": "npx skills add petergyang/no-ai-slop --skill no-ai-slop --global --yes",
-    "command_language": "sh",
-    "command_status": "documented",
-    "source": "https://github.com/petergyang/no-ai-slop/blob/main/README.md",
-    "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-    "checked_at": "2026-11-15"
-   },
-   "first_step": "Revisa un texto corto y contrasta cada cambio con el sentido y voz originales",
-   "sources": {
-    "readme_blob_sha": "82f8b7af7e02918077afb447f8fc83c2d33483ba",
-    "root_tree_sha": "000650b156983f5159695b441477f4e63b25dc85",
-    "readme_url": "https://github.com/petergyang/no-ai-slop/blob/main/README.md",
-    "github_checked": "2026-11-14",
-    "collection": "saved-resources-document"
-   },
-   "why": "Usos propuestos: Editar una publicación; Mejorar claridad de un informe.",
-   "models": "Usa el modelo del anfitrión; no necesita una segunda API por sí solo",
-   "first_try": {
-    "action": "Revisa un texto corto y contrasta cada cambio con el sentido y voz originales",
-    "success": "Puedes aceptar correcciones concretas sin perder información",
-    "execution": "proposed_not_executed"
-   },
-   "practical_examples": [
-    {
-     "scenario": "Editar una publicación",
-     "status": "illustrative"
-    },
-    {
-     "scenario": "Mejorar claridad de un informe",
-     "status": "illustrative"
-    }
-   ],
-   "editorial_review": {
-    "status": "source_reviewed",
-    "checked_at": "2026-11-15",
-    "source": "https://github.com/petergyang/no-ai-slop/blob/main/README.md",
-    "source_blob_sha": "82f8b7af7e02918077afb447f8fc83c2d33483ba",
-    "previous_source_blob_sha": "82f8b7af7e02918077afb447f8fc83c2d33483ba",
-    "previous_category": [
-     27,
-     "escritura"
-    ],
-    "category_verdict": "confirmed",
-    "note": "Tiene metadatos de plugins para ChatGPT y Codex y formato de skill portable; no garantiza detección o invisibilidad de escritura AI",
-    "checks": [
-     "identity",
-     "category",
-     "examples",
-     "installation_source",
-     "api_costs",
-     "claude_code",
-     "codex",
-     "antigravity",
-     "local_model"
-    ],
-    "installation_tested": false
-   },
-   "source_archived": false,
-   "que_es": "Skill de escritura de código abierto (MIT) de Peter Yang. Activa (v1.0.6).",
-   "que_hace": "Quita más de 20 patrones de «slop» de IA (como «No es X. Es Y.» o «Lo que nadie te cuenta…») sin aplanar tu voz personal, y lista lo que cambió. También detecta y cita patrones sin juzgar si lo escribió una IA, y genera «slop» exagerado como sátira.",
-   "como_lo_hace": "Skill instalable pidiéndoselo a ChatGPT, Claude Code o Codex, o con `npx skills add petergyang/no-ai-slop --skill no-ai-slop --global --yes`; se usa con `/no-ai-slop`.",
-   "combina_con": [
-    {
-     "id": "claude-code",
-     "motivo": "Agente compatible documentado.",
-     "orden_instalacion": "Instala con npx skills de forma global."
-    },
-    {
-     "id": "codex",
-     "motivo": "Agente compatible documentado.",
-     "orden_instalacion": "Igual que arriba."
-    },
-    {
-     "id": "marketingskills",
-     "motivo": "Revisar los textos de marketing generados (combinación por arquitectura).",
-     "orden_instalacion": "Genera primero y revisa después."
-    }
-   ],
-   "descripcion_notas": "Alternativas (elige una): humanizer, stop-slop.",
-   "descripcion_fuentes": [
-    "https://github.com/petergyang/no-ai-slop/blob/main/README.md"
-   ],
-   "descripcion_revision": {
-    "batch": "08-skills-escritura-dominio",
-    "checked_at": "2026-11-15",
-    "status": "source_reviewed",
-    "installation_tested": false
-   },
-   "descripcion_github": {
-    "name_with_owner": "petergyang/no-ai-slop",
-    "archived": false,
-    "pushed_at": "2026-09-02",
-    "license": "MIT",
-    "primary_language": "Python",
-    "latest_release": "v1.0.6 (2026-08-01)",
-    "checked_at": "2026-11-15"
-   },
-   "calidad": {
-    "puntuacion": 55.2,
-    "ejes": {
-     "adopcion": 12.3,
-     "mantenimiento": 8.9,
-     "madurez": 6.5,
-     "licencia": 15.0,
-     "respaldo": 5.0,
-     "seguridad": 2.5,
-     "encaje": 5.0
-    },
-    "licencia": "osi_permisiva",
-    "notas": [
-     "Adopción: sin dato de descargas_mes (se reparte el peso)",
-     "Sin OpenSSF Scorecard publicado: seguridad neutral"
-    ],
-    "fecha": "2026-11-16"
-   },
-   "complejidad_detalle": {
-    "nivel": 2,
-    "nombre": "Intermedio",
-    "motivos": [
-     "preparación media",
-     "se instala dentro de un agente (skill, plugin o MCP)"
-    ],
-    "origen": "auto",
-    "auto": 2
-   },
-   "similares": {
-    "grupo": "g-skills-para-quitar-el-tono-de-ia-a-los-textos",
-    "titulo": "Skills para quitar el tono de IA a los textos",
-    "posicion": 2,
-    "total": 3,
-    "papel": "alternativa",
-    "cuando": "Si buscas esto: skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA.",
-    "ranking": [
-     {
-      "id": "humanizer",
-      "posicion": 1,
-      "puntuacion": 72.2,
-      "papel": "recomendado",
-      "cuando": "Si buscas esto: skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana."
-     },
-     {
-      "id": "no-ai-slop",
-      "posicion": 2,
-      "puntuacion": 55.2,
-      "papel": "alternativa",
-      "cuando": "Si buscas esto: skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA."
-     },
-     {
-      "id": "stop-slop",
-      "posicion": 3,
-      "puntuacion": 40.4,
-      "papel": "alternativa",
-      "cuando": "Si buscas esto: skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbrica de calidad."
-     }
-    ]
    }
   },
   "planck-js": {
@@ -130897,9 +129936,7 @@
     "firecrawl",
     "composio"
    ],
-   "alternatives": [
-    "opendots"
-   ],
+   "alternatives": [],
    "repo": "https://github.com/CopilotKit/OpenBot",
    "homepage": "open.bot",
    "license": "MIT",
@@ -130990,10 +130027,9 @@
      "orden_instalacion": "Prepara `setup:composio` y concede solo las apps necesarias."
     }
    ],
-   "descripcion_notas": "Alternativa (elige una): opendots. OpenDots es ahora una «skin» de OpenBot y su repositorio queda como starter mantenido por la comunidad. El agente navegador maneja sesiones reales: mantén los puertos en loopback.",
+   "descripcion_notas": "El tema de OpenDots se incorporó a OpenBot. El agente navegador maneja sesiones reales: mantén los puertos en loopback.",
    "descripcion_fuentes": [
-    "https://github.com/CopilotKit/OpenBot/blob/main/README.md",
-    "https://github.com/CopilotKit/OpenDots/blob/main/README.md"
+    "https://github.com/CopilotKit/OpenBot/blob/main/README.md"
    ],
    "descripcion_revision": {
     "batch": "46-altas-del-propietario",
@@ -131087,30 +130123,6 @@
     "origen": "README",
     "seccion": "Deploy it",
     "fuente": "https://github.com/CopilotKit/OpenBot/blob/main/README.md"
-   },
-   "similares": {
-    "grupo": "g-espacios-de-asistentes-de-copilotkit",
-    "titulo": "Espacios de asistentes de CopilotKit",
-    "posicion": 1,
-    "total": 2,
-    "papel": "recomendado",
-    "cuando": "Si buscas esto: espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y auditoría, conectables por AG-UI.",
-    "ranking": [
-     {
-      "id": "openbot",
-      "posicion": 1,
-      "puntuacion": 70.4,
-      "papel": "recomendado",
-      "cuando": "Si buscas esto: espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y auditoría, conectables por AG-UI."
-     },
-     {
-      "id": "opendots",
-      "posicion": 2,
-      "puntuacion": 48.1,
-      "papel": "alternativa",
-      "cuando": "Si buscas esto: interfaz abierta de asistentes persistentes que requiere CopilotKit Intelligence, alojado, evaluado localmente o con licencia."
-     }
-    ]
    }
   },
   "hunyuanvideo-1-5": {

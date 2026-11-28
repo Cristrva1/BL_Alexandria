@@ -10,7 +10,7 @@ NEW = {"neo4j-mcp": "neo4j/mcp", "deepseek-harness": "deepseek-ai/deepseek-harne
        "hunyuanvideo-1-5": "Tencent-Hunyuan/HunyuanVideo-1.5", "apache-iceberg": "apache/iceberg", "delta-lake": "delta-io/delta",
        "jupyterlab": "jupyterlab/jupyterlab", "pyannote-audio": "pyannote/pyannote-audio", "elevenlabs-python": "elevenlabs/elevenlabs-python"}
 GROUPS = [["antigravity-cli", "gemini-cli", "claude-code", "codex"], ["tanstack-query", "swr"], ["apache-iceberg", "delta-lake", "hudi"],
-          ["jupyterlab", "marimo"], ["neo4j-mcp", "mcp-neo4j"], ["hunyuanvideo-1-5", "hunyuanvideo", "wan2-2"], ["openbot", "opendots"]]
+          ["jupyterlab", "marimo"], ["neo4j-mcp", "mcp-neo4j"], ["hunyuanvideo-1-5", "hunyuanvideo", "wan2-2"]]
 
 
 def load():

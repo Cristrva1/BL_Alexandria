@@ -248,7 +248,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes contrastar títulos, enlaces o schema con la página
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `posthog`, `open-seo`
-**Alternativas (elige una):** `geo-seo-claude`
 
 ## `creative-architect`
 role=skill · exec=hybrid · setup=easy · mcp=False · prov=anthropic,openai · tags=direccion-de-arte,fotos-producto,ugc,claude-code,creative-architect
@@ -465,39 +464,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `gsap`, `three.js`
 
-## `geo-seo-claude`
-role=skill · exec=cloud · setup=easy · mcp=False · prov=anthropic · tags=skills,search,pdf,python
-
-**Qué es:** Skill de Claude Code que audita webs para buscadores con IA (GEO) y SEO clásico, con citabilidad, schema, llms.txt e informes PDF.
-**Stack:** Claude Code; Python; Git Bash en Windows; web propia de prueba
-**Acceso y costes:**
-- API de IA: API de IA opcional. Usa el plan de Claude y dependencias locales; servicios o extensiones de datos pueden añadir costes
-- Claude Code: Dentro del agente: skills o instrucciones
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. Optimizar citabilidad no garantiza aparecer en resultados AI; la instalación Windows documentada usa Git Bash y no PowerShell
-- Coste: El coste depende del proveedor o la ruta. Usa el plan de Claude y dependencias locales; servicios o extensiones de datos pueden añadir costes
-- Equipo: Preparación según la ruta elegida. Claude Code; Python; Git Bash en Windows; web propia de prueba
-**Repo:** https://github.com/zubair-trabzada/geo-seo-claude
-
-**Instalación** [+]:
-
-```
-git clone https://github.com/zubair-trabzada/geo-seo-claude.git
-cd geo-seo-claude
-./install.sh
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Revisar schema de una web; Preparar un informe GEO inicial
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Ejecuta una revisión de una página propia y contrasta dos hallazgos con el HTML
-**Qué comprobar:** Puedes separar observación, heurística y propuesta
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `playwright`, `open-seo`
-**Alternativas (elige una):** `claude-seo`
-
 ## `gsap-skills`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=skills,skill,reference
 
@@ -588,7 +554,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes aceptar cambios de estilo sin alterar el contenido
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `marketingskills`, `postiz-app`
-**Alternativas (elige una):** `stop-slop`, `no-ai-slop`
+**Alternativas (elige una):** `stop-slop`
 
 ## `i-have-adhd`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=escritura,skill,python
@@ -893,37 +859,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `gsap`, `motion`, `animejs`, `gsap-skills`, `scenejs`
 
-## `no-ai-slop`
-role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=escritura,skill,python
-
-**Qué es:** Skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA.
-**Stack:** Agente compatible; texto propio
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. Usa el modelo del anfitrión; no necesita una segunda API por sí solo
-- Claude Code: Dentro del agente: skills o instrucciones
-- Codex: Dentro del agente: skills o instrucciones
-- Antigravity: Dentro del agente: skills o instrucciones
-- Modelos locales: La función básica no necesita un modelo. Tiene metadatos de plugins para ChatGPT y Codex y formato de skill portable; no garantiza detección o invisibilidad de escritura AI
-- Coste: Consumo del agente que ya utilizas. Usa el modelo del anfitrión; no necesita una segunda API por sí solo
-- Equipo: Preparación según la ruta elegida. Agente compatible; texto propio
-**Repo:** https://github.com/petergyang/no-ai-slop
-
-**Instalación** [+]:
-
-```
-npx skills add petergyang/no-ai-slop --skill no-ai-slop --global --yes
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Editar una publicación; Mejorar claridad de un informe
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Revisa un texto corto y contrasta cada cambio con el sentido y voz originales
-**Qué comprobar:** Puedes aceptar correcciones concretas sin perder información
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `codex`, `marketingskills`
-**Alternativas (elige una):** `humanizer`, `stop-slop`
-
 ## `scientific-agent-skills`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=dominio,skill,python
 
@@ -1103,7 +1038,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes justificar cada cambio de redacción
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `marketingskills`, `postiz-app`
-**Alternativas (elige una):** `humanizer`, `no-ai-slop`
+**Alternativas (elige una):** `humanizer`
 
 ## `taste-skill`
 role=skill · exec=cloud · setup=easy · mcp=False · prov=— · tags=skills,design,javascript

@@ -10,6 +10,7 @@ from repo_intelligence.core.access import API_LABELS, COST_LABELS, ROUTE_LABELS,
 from repo_intelligence.core.install_mode import install_mode as _install_mode
 from repo_intelligence.core.taxonomy import goal_memberships
 from repo_intelligence.core.io import read_json, write_json
+from repo_intelligence.core.web_projects import WEB_PROJECTS, WEB_PROJECT_GUIDE, WEB_PROJECT_RULES
 
 
 TAG_SYNONYMS = {
@@ -112,7 +113,7 @@ BUILD_TOOL_REPOS = {
         "superpowers": 9,
         "skills": 8,
         "agent-toolkit": 8,
-        "geo-seo-claude": 7,
+        "claude-seo": 7,
         "agency-agents": 7,
     },
     "codex": {
@@ -160,7 +161,7 @@ INTENT_BOOSTS = {
         "skillspector": 16,
         "context-engineering": 12,
         "prompt-master": 10,
-        "geo-seo-claude": 3,
+        "claude-seo": 3,
         "agency-agents": 3,
     },
 }
@@ -184,7 +185,7 @@ INTENT_TERMS = {
 
 
 CONDITIONAL_SKILLS = {
-    "geo-seo-claude": {"seo", "geo", "search", "busqueda", "marketing", "contenido"},
+    "claude-seo": {"seo", "geo", "search", "busqueda", "marketing", "contenido"},
     "agency-agents": {"agencia", "agency", "clientes", "marketing", "ventas"},
     "marketingskills": {"marketing", "copy", "seo", "ads", "growth", "campanas"},
     "taste-skill": {"frontend", "ui", "interfaz", "diseño", "diseno", "react", "web"},
@@ -347,6 +348,10 @@ def recommend(project_root: Path, project: str, max_repos: int = 5, build_tool: 
     scan = read_json(project_root / "ai_index" / "REPOS.scan.json", {"repos": []})
     detail = read_json(project_root / "ai_index" / "REPOS.detail.json", {"repos": []})
     winners = read_json(project_root / "ai_index" / "WINNERS.json", {})
+    retired = read_json(project_root / "data" / "retired.json", {}).get("repos", [])
+    retired_ids = {entry["id"] for entry in retired}
+    retired_github_ids = {entry["github_id"] for entry in retired if entry.get("github_id")}
+    retired_names = {entry["gh"].lower() for entry in retired if entry.get("gh")}
     detail_by_id = {item["id"]: item for item in detail.get("repos", [])}
     _merge_curated_index(project_root, scan, detail_by_id)
     discovery = read_json(project_root / "INDICE_IA.json", {}).get("discovery", {})
@@ -354,18 +359,24 @@ def recommend(project_root: Path, project: str, max_repos: int = 5, build_tool: 
     effective_tool = _detect_effective_tool(project, build_tool)
     intents = _detect_intents(project)
     required_capabilities = _infer_required_capabilities(project)
+    web_project = _web_project_for(project) if task_goals == {"web"} and not access_route else None
 
     scored = []
     for repo in scan.get("repos", []):
         candidate = {**repo, **detail_by_id.get(repo["id"], {})}
         if candidate.get("alias_of") or candidate.get("cat") == 0:
             continue
+        if (candidate["id"] in retired_ids or candidate.get("github_id") in retired_github_ids
+                or (candidate.get("gh") or "").lower() in retired_names):
+            continue
+        if web_project is not None and candidate["id"] not in web_project["repo_ids"]:
+            continue
         if access_route and access_route not in access_routes(candidate):
             continue
         if task_goals and "goals" in candidate and not task_goals.intersection(candidate["goals"]):
             continue
         score, reasons = score_repo(project, repo, detail_by_id.get(repo["id"], {}), build_tool=effective_tool, intents=intents)
-        if score <= 0:
+        if score <= 0 and web_project is None:
             continue
         enriched = {**repo, **detail_by_id.get(repo["id"], {})}
         enriched["score"] = score
@@ -374,13 +385,16 @@ def recommend(project_root: Path, project: str, max_repos: int = 5, build_tool: 
         enriched["install_hint"] = INSTALL_HINTS.get(enriched["install_mode"], "")
         scored.append(enriched)
 
-    scored.sort(key=lambda item: (item["score"], _mode_priority(item["install_mode"])), reverse=True)
-    selected = _dedupe_alternatives(scored, max_repos)
-    selected = _ensure_capability_coverage(required_capabilities, scored, selected, max_repos)
+    if web_project is None:
+        scored.sort(key=lambda item: (item["score"], _mode_priority(item["install_mode"])), reverse=True)
+        selected = _dedupe_alternatives(scored, max_repos)
+        selected = _ensure_capability_coverage(required_capabilities, scored, selected, max_repos)
+    else:
+        selected = sorted(scored, key=lambda item: web_project["repo_ids"].index(item["id"]))[:max_repos]
     selected = [_enrich_recommendation(item, position=index + 1) for index, item in enumerate(selected)]
     capability_coverage = _capability_coverage(required_capabilities, selected)
 
-    global_tools = _global_tools_for_project(selected, winners)
+    global_tools = _global_tools_for_project(selected, winners) if web_project is None else []
     local_project = [item for item in selected if item["install_mode"] == "local_project"]
     docker_local = [item for item in selected if item["install_mode"] == "docker_local"]
     reference_only = [item for item in selected if item["install_mode"] == "reference_only"]
@@ -409,10 +423,26 @@ def recommend(project_root: Path, project: str, max_repos: int = 5, build_tool: 
         "deferred": deferred,
         "avoid_by_default": _avoid_by_default(winners),
     }
+    if web_project is not None:
+        result["web_project"] = web_project
 
     write_json(project_root / "data" / "decisions" / f"{safe_name}.json", result)
     write_superguide(project_root, result, safe_name=safe_name)
     return result
+
+
+def _web_project_for(project: str) -> dict | None:
+    text = _norm_text(project)
+    if not re.search(r"\b(?:paginas? web|sitios? web|web app|app web|aplicacion web|landing|frontend|panel web)\b", text):
+        return None
+    if re.search(r"\b(?:ecommerce|tienda|carrito|pasarela de pago|sin codigo|no[- ]code)\b", text):
+        return None
+    text = re.sub(r"\b(?:sin|no quiero|no necesito) (?:un )?(?:chat con ia|chat de ia|login)\b", "", text)
+    if re.search(r"\b(?:chat con ia|chat de ia|chatbot con ia|chatbot de ia)\b", text):
+        return WEB_PROJECTS["chat"]
+    if re.search(r"\b(?:web app|app web|aplicacion web|dashboard|panel|login|inicio de sesion|cuentas de usuario|base de datos)\b", text):
+        return WEB_PROJECTS["aplicacion"]
+    return WEB_PROJECTS["informativa"]
 
 
 def _task_goals(project: str, goals: list[dict]) -> set[str]:
@@ -478,6 +508,36 @@ def write_context_pack(project_root: Path, result: dict[str, Any]) -> Path:
 
 
 def _render_superguide(result: dict[str, Any]) -> str:
+    web_project = result.get("web_project")
+    if web_project:
+        lines = [
+            "# Super Guía Práctica del Proyecto",
+            "",
+            result["project"],
+            "",
+            f'## {web_project["title"]}',
+            "",
+            f'{web_project["when"]} Empieza con **{web_project["stack"]}**.',
+            "",
+            web_project["details"],
+            "",
+            f'**Primera prueba.** {web_project["trial"]}',
+            "",
+            f'[Guía oficial para empezar]({web_project["source"]})',
+            "",
+            "## Qué combinar y qué elegir",
+            "",
+        ]
+        lines.extend(f"- **{title}.** {content}" for title, content in WEB_PROJECT_RULES)
+        if result["recommended_repos"]:
+            lines.extend(["", "## Fichas del catálogo", ""])
+            lines.extend(
+                f'- [{repo["id"]}](../../human/fichas/{repo["id"]}.md)'
+                for repo in result["recommended_repos"]
+            )
+        lines.extend(["", f'[Ver las otras rutas web](../../human/{WEB_PROJECT_GUIDE["id"]}.md)', ""])
+        return "\n".join(lines)
+
     lines = [
         "# Super Guia Practica Del Proyecto",
         "",

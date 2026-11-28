@@ -1,0 +1,2464 @@
+{
+ "reviewed_at": "2026-11-27",
+ "source": "reports/revision-editorial-138-grupos-2026-11-27.md",
+ "groups": [
+  {
+   "id": "g-memoria-persistente-para-agentes-de-codigo",
+   "title": "Memoria persistente para agentes de código",
+   "members": {
+    "claude-mem": {
+     "role": "principal",
+     "note": "Memoria de sesiones para un equipo que trabaja principalmente con Claude Code."
+    },
+    "engram": {
+     "role": "alternative",
+     "note": "Servidor de memoria local en un binario Go con SQLite."
+    },
+    "agentmemory": {
+     "role": "alternative",
+     "note": "Memoria compartida cuando el mismo proyecto pasa por varios agentes."
+    }
+   }
+  },
+  {
+   "id": "g-capas-de-memoria-para-apps-y-agentes-de-ia",
+   "title": "Capas de memoria para apps y agentes de IA",
+   "members": {
+    "mem0": {
+     "role": "principal",
+     "note": "Base práctica para añadir memoria de usuario persistente a una aplicación."
+    },
+    "cognee": {
+     "role": "alternative",
+     "note": "Transforma documentos en un grafo consultable."
+    },
+    "graphiti": {
+     "role": "alternative",
+     "note": "Conserva la dimensión temporal de los hechos del grafo."
+    },
+    "supermemory": {
+     "role": "alternative",
+     "note": "Memoria gestionada combinada con búsqueda híbrida de documentos y conectores sincronizados. Ese flujo sí justifica una alternativa frente a la memoria general de Mem0."
+    },
+    "letta": {
+     "role": "reference",
+     "note": "Runtime de agentes con estado. Ubicarlo como plataforma de agentes."
+    }
+   }
+  },
+  {
+   "id": "g-agentes-de-programacion-en-terminal",
+   "title": "Agentes de programación en terminal",
+   "members": {
+    "opencode": {
+     "role": "principal",
+     "note": "Entrada general para quien quiere elegir proveedor desde la terminal."
+    },
+    "codex": {
+     "role": "alternative",
+     "note": "Ruta oficial para OpenAI o la sesión de ChatGPT cuando corresponda."
+    },
+    "claude-code": {
+     "role": "alternative",
+     "note": "Ruta de Anthropic con su sistema de skills, hooks y subagentes."
+    },
+    "gemini-cli": {
+     "role": "alternative",
+     "note": "Opción para instalaciones empresariales de Google Code Assist que lo utilicen."
+    },
+    "antigravity-cli": {
+     "role": "alternative",
+     "note": "Terminal para el flujo de Antigravity de Google."
+    },
+    "qwen-code": {
+     "role": "alternative",
+     "note": "Conservar como cliente del ecosistema Qwen cuando esa sea la elección del usuario."
+    },
+    "aider": {
+     "role": "alternative",
+     "note": "Flujo centrado en Git, revisión y commits pequeños."
+    },
+    "goose": {
+     "role": "alternative",
+     "note": "Cliente disponible también como app de escritorio con extensiones MCP."
+    },
+    "mimo-code": {
+     "role": "alternative",
+     "note": "Cliente del ecosistema Xiaomi MiMo, con un flujo diseñado alrededor de esos modelos. Mantener como entrada especializada por proveedor."
+    }
+   }
+  },
+  {
+   "id": "g-interfaces-de-chat-con-llm",
+   "title": "Interfaces de chat con LLM",
+   "members": {
+    "open-webui": {
+     "role": "principal",
+     "note": "Base autoalojada para chat multiusuario, modelos locales y documentos."
+    },
+    "cherry-studio": {
+     "role": "alternative",
+     "note": "Aplicación de escritorio para manejar varios proveedores."
+    },
+    "lobehub": {
+     "role": "alternative",
+     "note": "Flujo orientado a asistentes y extensiones de la propia aplicación."
+    },
+    "librechat": {
+     "role": "alternative",
+     "note": "Conservar para equipos que necesitan su gestión de usuarios y acceso."
+    },
+    "jan": {
+     "role": "alternative",
+     "note": "Cliente de escritorio centrado en ejecutar modelos localmente."
+    },
+    "chatbox": {
+     "role": "alternative",
+     "note": "Cliente sencillo que incluye una ruta móvil."
+    },
+    "nextchat": {
+     "role": "alternative",
+     "note": "Conservar para un frontend ligero y despliegue estático o serverless documentado."
+    },
+    "textgen": {
+     "role": "reference",
+     "note": "Banco de pruebas de backends y formatos de inferencia. Mover junto a herramientas de experimentación local."
+    }
+   }
+  },
+  {
+   "id": "g-frameworks-de-agentes-en-python",
+   "title": "Frameworks de agentes en Python",
+   "members": {
+    "langgraph": {
+     "role": "principal",
+     "note": "Base de flujos con estado, control explícito y checkpoints."
+    },
+    "crewai": {
+     "role": "alternative",
+     "note": "Equipos definidos por roles y tareas con un arranque más guiado."
+    },
+    "openai-agents-python": {
+     "role": "alternative",
+     "note": "SDK oficial para quien construye sobre OpenAI."
+    },
+    "adk-python": {
+     "role": "alternative",
+     "note": "SDK para quien trabaja en el ecosistema Google y Vertex."
+    },
+    "pydantic-ai": {
+     "role": "alternative",
+     "note": "Contratos tipados y validación con Pydantic."
+    },
+    "agno": {
+     "role": "alternative",
+     "note": "Plataforma de agentes con runtime y API de servicio."
+    },
+    "smolagents": {
+     "role": "alternative",
+     "note": "Experimentos pequeños centrados en agentes que generan código."
+    },
+    "deepagents": {
+     "role": "reference",
+     "note": "Se apoya en LangGraph. Referenciar como ampliación para planificación, archivos y subagentes."
+    }
+   }
+  },
+  {
+   "id": "g-herramientas-internas-y-bases-de-datos-no-code",
+   "title": "Herramientas internas y bases de datos no-code",
+   "members": {
+    "tooljet": {
+     "role": "principal",
+     "note": "Punto de partida para aplicaciones internas visuales sobre fuentes de datos."
+    },
+    "appsmith": {
+     "role": "pending",
+     "note": "Se solapa con ToolJet como constructor de paneles internos. Comparar los widgets y conectores que realmente usa el equipo y qué incluye cada edición antes de retirar la ficha."
+    },
+    "budibase": {
+     "role": "alternative",
+     "note": "Formularios, portales y automatizaciones internas."
+    },
+    "nocodb": {
+     "role": "reference",
+     "note": "Hoja tipo Airtable sobre una base SQL. Mover al subgrupo de tablas de negocio."
+    },
+    "teable": {
+     "role": "reference",
+     "note": "Base visual centrada en PostgreSQL. Evaluar junto a NocoDB y Baserow."
+    },
+    "baserow": {
+     "role": "reference",
+     "note": "Base visual autoalojada con su propio modelo de tablas. Mover al mismo subgrupo."
+    },
+    "grist-core": {
+     "role": "reference",
+     "note": "Hoja relacional con fórmulas Python. Conservar en tablas de negocio."
+    }
+   }
+  },
+  {
+   "id": "g-bases-y-librerias-vectoriales",
+   "title": "Bases y librerías vectoriales",
+   "members": {
+    "qdrant": {
+     "role": "principal",
+     "note": "Servidor vectorial de entrada para proyectos locales con filtros."
+    },
+    "milvus": {
+     "role": "alternative",
+     "note": "Escala distribuida y colecciones muy grandes."
+    },
+    "chroma": {
+     "role": "alternative",
+     "note": "Arranque embebido para prototipos de RAG."
+    },
+    "lancedb": {
+     "role": "alternative",
+     "note": "Datos vectoriales en archivos locales y flujos sobre Arrow/Lance."
+    },
+    "weaviate": {
+     "role": "alternative",
+     "note": "Búsqueda híbrida y vectorización integrada."
+    },
+    "pgvector": {
+     "role": "alternative",
+     "note": "Reutiliza PostgreSQL cuando los datos ya viven ahí."
+    },
+    "faiss": {
+     "role": "reference",
+     "note": "Librería de índices dentro del proceso. Mantener fuera de la comparación de bases con servicio."
+    }
+   }
+  },
+  {
+   "id": "g-orquestadores-de-workflows-de-datos-y-tareas",
+   "title": "Orquestadores de workflows de datos y tareas",
+   "members": {
+    "airflow": {
+     "role": "principal",
+     "note": "Flujos por lotes y amplio ecosistema de operadores."
+    },
+    "kestra": {
+     "role": "alternative",
+     "note": "Declaración YAML, interfaz y eventos."
+    },
+    "prefect": {
+     "role": "alternative",
+     "note": "Flujos declarados como funciones Python."
+    },
+    "dagster": {
+     "role": "alternative",
+     "note": "Activos de datos con linaje y pruebas."
+    },
+    "trigger-dev": {
+     "role": "reference",
+     "note": "Tareas en segundo plano para aplicaciones TypeScript. Mover a trabajos de aplicación."
+    },
+    "windmill": {
+     "role": "reference",
+     "note": "Conversión de scripts en trabajos y aplicaciones internas. Enlazar como automatización de scripts."
+    }
+   }
+  },
+  {
+   "id": "g-bibliotecas-de-componentes-react",
+   "title": "Bibliotecas de componentes React",
+   "members": {
+    "ui": {
+     "role": "principal",
+     "note": "Base modificable dentro del propio código para un frontend React con Tailwind."
+    },
+    "ant-design": {
+     "role": "alternative",
+     "note": "Paneles empresariales con tablas y formularios densos."
+    },
+    "mui": {
+     "role": "alternative",
+     "note": "Equipos que ya usan Material Design o su ecosistema."
+    },
+    "chakra-ui": {
+     "role": "alternative",
+     "note": "Interfaces que aprovechan su API de estilos y componentes accesibles."
+    },
+    "mantine": {
+     "role": "alternative",
+     "note": "Aplicaciones con necesidad de hooks, formularios y utilidades integradas."
+    },
+    "heroui": {
+     "role": "alternative",
+     "note": "Componentes React instalables como biblioteca con un sistema visual propio y ruta Tailwind. Mantener cuando se prefiera ese paquete a copiar componentes al código."
+    }
+   }
+  },
+  {
+   "id": "g-catalogos-de-skills-y-plugins-para-agentes",
+   "title": "Catálogos de skills y plugins para agentes",
+   "members": {
+    "antigravity-awesome-skills": {
+     "role": "principal",
+     "note": "Puerta de entrada a un inventario amplio y portable de skills."
+    },
+    "claude-plugins-official": {
+     "role": "alternative",
+     "note": "Fuente oficial de plugins de Anthropic."
+    },
+    "wshobson-agents": {
+     "role": "reference",
+     "note": "Plugins y subagentes empaquetados. Ubicarlo como colección instalable."
+    },
+    "awesome-claude-code": {
+     "role": "alternative",
+     "note": "Útil para el directorio específico de hooks, comandos y flujos de Claude Code."
+    },
+    "awesome-agent-skills": {
+     "role": "alternative",
+     "note": "Directorio de enlaces a skills de sus autores y equipos oficiales. Conservar por esa forma de curación, junto a la colección de playbooks instalables."
+    },
+    "awesome-claude-skills": {
+     "role": "pending",
+     "note": "El directorio general y multiplataforma se solapa con las otras colecciones. Verificar cuántos enlaces o recursos propios de Composio se perderían antes de retirar."
+    }
+   }
+  },
+  {
+   "id": "g-conversion-de-documentos-a-markdown-json-para-ia",
+   "title": "Conversión de documentos a Markdown/JSON para IA",
+   "members": {
+    "docling": {
+     "role": "principal",
+     "note": "Conversión local de documentos estructurados con tablas como punto de partida."
+    },
+    "mineru": {
+     "role": "alternative",
+     "note": "PDF científicos o multilingües con maquetación y fórmulas."
+    },
+    "xberg": {
+     "role": "alternative",
+     "note": "Extractor empaquetado en Rust con OCR y funciones de procesamiento adicionales."
+    },
+    "marker": {
+     "role": "alternative",
+     "note": "Flujo especializado de PDF a Markdown con fórmulas y código."
+    },
+    "unstructured": {
+     "role": "alternative",
+     "note": "Partición en elementos dentro de pipelines de ingestión."
+    },
+    "tika": {
+     "role": "reference",
+     "note": "Extracción de metadatos y texto de muchos formatos desde Java. Mantener como extractor general."
+    }
+   }
+  },
+  {
+   "id": "g-metodologias-y-harness-para-agentes-de-codigo",
+   "title": "Metodologías y harness para agentes de código",
+   "members": {
+    "superpowers": {
+     "role": "principal",
+     "note": "Método para planificar, implementar con pruebas y revisar cambios."
+    },
+    "ecc": {
+     "role": "alternative",
+     "note": "Configura un entorno completo de skills, hooks y herramientas."
+    },
+    "gstack": {
+     "role": "alternative",
+     "note": "Conservar para el proceso específico de producto, ingeniería y lanzamiento que documenta."
+    },
+    "agent-skills": {
+     "role": "reference",
+     "note": "Material portable para elegir skills individuales. Separar del método de trabajo completo."
+    },
+    "superclaude-framework": {
+     "role": "pending",
+     "note": "Comandos y modos del framework se solapan con ECC y parte de Superpowers. Validar si alguien aprovecha sus personas o un flujo propio en Claude Code."
+    }
+   }
+  },
+  {
+   "id": "g-apis-y-librerias-no-oficiales-de-whatsapp",
+   "title": "APIs y librerías no oficiales de WhatsApp",
+   "members": {
+    "evolution-api": {
+     "role": "principal",
+     "note": "Entrada de alto nivel para conectar WhatsApp con automatizaciones y CRM."
+    },
+    "waha": {
+     "role": "alternative",
+     "note": "API HTTP empaquetada con elección de motor."
+    },
+    "whatsapp-web-js": {
+     "role": "reference",
+     "note": "Librería Node.js que opera WhatsApp Web mediante navegador."
+    },
+    "baileys": {
+     "role": "reference",
+     "note": "Librería Node.js de bajo nivel por WebSocket."
+    },
+    "whatsmeow": {
+     "role": "reference",
+     "note": "Librería Go para una aplicación que integra el protocolo directamente."
+    }
+   }
+  },
+  {
+   "id": "g-mapas-e-indices-de-codigo-para-agentes",
+   "title": "Mapas e índices de código para agentes",
+   "members": {
+    "codegraph": {
+     "role": "principal",
+     "note": "Entrada para navegar relaciones y símbolos del código desde el agente."
+    },
+    "graphify": {
+     "role": "alternative",
+     "note": "Grafo que abarca documentación y otros materiales además del código."
+    },
+    "codebase-memory-mcp": {
+     "role": "alternative",
+     "note": "Índice persistente accesible por MCP con foco en consultas compactas."
+    },
+    "gitnexus": {
+     "role": "pending",
+     "note": "El mapa general de código ya está cubierto. Valorar su análisis de flujos y la licencia no comercial de la edición revisada frente a un caso real antes de retirarlo."
+    },
+    "repomix": {
+     "role": "reference",
+     "note": "Exporta código como contexto. Mover junto a empaquetadores y enlazar como complemento."
+    }
+   }
+  },
+  {
+   "id": "g-clonacion-de-voz-y-tts-multilingue",
+   "title": "Clonación de voz y TTS multilingüe",
+   "members": {
+    "gpt-sovits": {
+     "role": "principal",
+     "note": "Entrada a la síntesis con una voz propia y flujo de entrenamiento guiado."
+    },
+    "f5-tts": {
+     "role": "alternative",
+     "note": "Clonación sin entrenamiento específico de la voz del usuario."
+    },
+    "cosyvoice": {
+     "role": "alternative",
+     "note": "Ruta multilingüe con énfasis en chino y sus variantes."
+    },
+    "fish-speech": {
+     "role": "alternative",
+     "note": "Alternativa de síntesis multilingüe con rutas de inferencia de baja latencia a verificar en el entorno."
+    },
+    "index-tts": {
+     "role": "alternative",
+     "note": "Control de duración y expresión para doblaje o narración."
+    }
+   }
+  },
+  {
+   "id": "g-automatizacion-de-navegador-y-pruebas-e2e",
+   "title": "Automatización de navegador y pruebas E2E",
+   "members": {
+    "playwright": {
+     "role": "principal",
+     "note": "Primera opción para pruebas de navegador de una aplicación nueva."
+    },
+    "cypress": {
+     "role": "alternative",
+     "note": "Pruebas de componentes y trabajo interactivo en el navegador."
+    },
+    "selenium": {
+     "role": "alternative",
+     "note": "Continuidad de suites WebDriver y ejecución sobre grids."
+    },
+    "webdriverio": {
+     "role": "alternative",
+     "note": "Automatización móvil con Appium en el flujo de pruebas."
+    },
+    "puppeteer": {
+     "role": "reference",
+     "note": "Automatización programática para capturas o extracción. Mantener fuera de la primera selección de suites E2E."
+    }
+   }
+  },
+  {
+   "id": "g-crm-y-erp-auto-hospedados",
+   "title": "CRM y ERP auto-hospedados",
+   "members": {
+    "twenty-main": {
+     "role": "principal",
+     "note": "CRM autoalojado para un proyecto nuevo de ventas."
+    },
+    "espocrm": {
+     "role": "alternative",
+     "note": "CRM ligero para equipos que quieren extender un stack PHP."
+    },
+    "suitecrm": {
+     "role": "alternative",
+     "note": "Continuidad de instalaciones y procesos procedentes de SugarCRM."
+    },
+    "erpnext": {
+     "role": "reference",
+     "note": "ERP con manufactura y contabilidad. Reubicar como ERP."
+    },
+    "odoo": {
+     "role": "reference",
+     "note": "ERP modular con ecosistema de módulos. Comparar con ERPNext."
+    }
+   }
+  },
+  {
+   "id": "g-apps-web-de-datos-en-python",
+   "title": "Apps web de datos en Python",
+   "members": {
+    "streamlit": {
+     "role": "principal",
+     "note": "Primera app de datos desde un script Python."
+    },
+    "nicegui": {
+     "role": "alternative",
+     "note": "Interfaces Python con disposición y controles más personalizados."
+    },
+    "panel": {
+     "role": "alternative",
+     "note": "Dashboards construidos con HoloViz y notebooks."
+    },
+    "gradio": {
+     "role": "reference",
+     "note": "Demos de modelos con entradas y salidas. Mantener en una ruta de demos de IA."
+    },
+    "reflex": {
+     "role": "reference",
+     "note": "Framework web completo en Python. Reubicar en creación de aplicaciones."
+    }
+   }
+  },
+  {
+   "id": "g-observabilidad-y-trazas-de-llm",
+   "title": "Observabilidad y trazas de LLM",
+   "members": {
+    "langfuse": {
+     "role": "principal",
+     "note": "Trazas, gestión de prompts y evaluación de aplicaciones LLM en una misma plataforma."
+    },
+    "opik": {
+     "role": "alternative",
+     "note": "Evaluaciones integradas en pruebas y flujos de equipo."
+    },
+    "phoenix": {
+     "role": "alternative",
+     "note": "OpenTelemetry y análisis desde notebooks."
+    },
+    "mlflow": {
+     "role": "alternative",
+     "note": "Equipos que ya gestionan experimentos y modelos mediante MLflow."
+    },
+    "helicone": {
+     "role": "reference",
+     "note": "Observabilidad en la capa de pasarela. Mantener como integración de proxy."
+    }
+   }
+  },
+  {
+   "id": "g-video-y-escenas-por-codigo",
+   "title": "Video y escenas por código",
+   "members": {
+    "hyperframes": {
+     "role": "principal",
+     "note": "Composición de video con HTML y guía para agentes creativos."
+    },
+    "remotion": {
+     "role": "alternative",
+     "note": "Producción de video a partir de componentes React."
+    },
+    "motion-canvas": {
+     "role": "alternative",
+     "note": "Escenas animadas y explicativas con edición en tiempo real."
+    },
+    "revideo": {
+     "role": "alternative",
+     "note": "Renderizado TypeScript para servicios y API de video."
+    },
+    "moviepy": {
+     "role": "reference",
+     "note": "Edición y composición desde Python. Mantener como herramienta de edición por código."
+    }
+   }
+  },
+  {
+   "id": "g-motores-para-correr-llm-en-local",
+   "title": "Motores para correr LLM en local",
+   "members": {
+    "ollama": {
+     "role": "principal",
+     "note": "Arranque sencillo para descargar y servir modelos locales."
+    },
+    "llama-cpp": {
+     "role": "alternative",
+     "note": "Control fino de inferencia, cuantización y backends."
+    },
+    "localai": {
+     "role": "alternative",
+     "note": "Servicio compatible con API de OpenAI y alcance multimodal."
+    },
+    "llamafile": {
+     "role": "alternative",
+     "note": "Distribución autocontenida para ejecutar un modelo con poca instalación."
+    },
+    "koboldcpp": {
+     "role": "reference",
+     "note": "Interfaz y motor orientados a escritura creativa y rol. Reubicar en ese flujo."
+    }
+   }
+  },
+  {
+   "id": "g-builders-visuales-de-agentes",
+   "title": "Builders visuales de agentes",
+   "members": {
+    "dify": {
+     "role": "principal",
+     "note": "Construcción visual y despliegue de aplicaciones de IA con documentos."
+    },
+    "langflow": {
+     "role": "alternative",
+     "note": "Flujos visuales extensibles como componentes de LangChain."
+    },
+    "autogpt": {
+     "role": "alternative",
+     "note": "Plataforma de agentes y bloques reutilizables en su propio ecosistema."
+    },
+    "sim": {
+     "role": "pending",
+     "note": "La construcción visual y el despliegue de agentes solapan Dify y Langflow. Conservar si sus permisos por espacio de trabajo, cliente de escritorio o integraciones aportan una ruta propia."
+    }
+   }
+  },
+  {
+   "id": "g-fine-tuning-de-llm",
+   "title": "Fine-tuning de LLM",
+   "members": {
+    "unsloth": {
+     "role": "principal",
+     "note": "Punto de entrada a afinación de modelos de lenguaje en una GPU."
+    },
+    "axolotl": {
+     "role": "alternative",
+     "note": "Experimentos reproducibles por YAML y configuraciones de varias GPU."
+    },
+    "llama-factory": {
+     "role": "alternative",
+     "note": "Interfaz visual para ejecutar una afinación guiada."
+    },
+    "torchtune": {
+     "role": "alternative",
+     "note": "Recetas modificables con piezas nativas de PyTorch."
+    }
+   }
+  },
+  {
+   "id": "g-pasarelas-y-routers-de-proveedores-llm",
+   "title": "Pasarelas y routers de proveedores LLM",
+   "members": {
+    "litellm": {
+     "role": "principal",
+     "note": "Pasarela multiproveedor para aplicaciones con gestión centralizada."
+    },
+    "omniroute": {
+     "role": "alternative",
+     "note": "Enrutador local centrado en cuotas de proveedores."
+    },
+    "claude-code-router": {
+     "role": "reference",
+     "note": "Adaptador de un cliente específico. Mantener en configuración de Claude Code."
+    }
+   }
+  },
+  {
+   "id": "g-agentes-que-navegan-la-web",
+   "title": "Agentes que navegan la web",
+   "members": {
+    "browser-use": {
+     "role": "principal",
+     "note": "Referencia de biblioteca Python para automatizar navegación de flujos autorizados."
+    },
+    "stagehand": {
+     "role": "alternative",
+     "note": "Ruta TypeScript con automatización programática y pasos en lenguaje natural."
+    },
+    "skyvern": {
+     "role": "alternative",
+     "note": "Flujos repetitivos de formularios y operaciones con interfaz visual."
+    },
+    "browser-harness": {
+     "role": "reference",
+     "note": "Conexión de un agente de código a una sesión de navegador. Ubicar como integración del cliente."
+    }
+   }
+  },
+  {
+   "id": "g-librerias-de-graficos",
+   "title": "Librerías de gráficos",
+   "members": {
+    "echarts": {
+     "role": "principal",
+     "note": "Visualización general cuando hacen falta tipos de gráfico y mapas variados."
+    },
+    "recharts": {
+     "role": "alternative",
+     "note": "Gráficos declarativos integrados en React."
+    },
+    "chart-js": {
+     "role": "alternative",
+     "note": "Gráficos clásicos en canvas con poca configuración."
+    },
+    "d3": {
+     "role": "alternative",
+     "note": "Composición visual a medida y control detallado de escalas y elementos."
+    }
+   }
+  },
+  {
+   "id": "g-fuzzing-de-rutas-y-contenido-web",
+   "title": "Fuzzing de rutas y contenido web",
+   "members": {
+    "dirsearch": {
+     "role": "principal",
+     "note": "Ficha principal para documentar el grupo de revisión autorizada de superficie web."
+    },
+    "ffuf": {
+     "role": "reference",
+     "note": "Referencia técnica para el inventario de herramientas de auditoría autorizada."
+    },
+    "feroxbuster": {
+     "role": "reference",
+     "note": "Referencia de implementación en Rust para el inventario técnico."
+    },
+    "gobuster": {
+     "role": "reference",
+     "note": "Referencia histórica y de continuidad para equipos que ya la documentan."
+    }
+   },
+   "reference_only": true
+  },
+  {
+   "id": "g-agentes-de-voz-en-tiempo-real",
+   "title": "Agentes de voz en tiempo real",
+   "members": {
+    "pipecat": {
+     "role": "principal",
+     "note": "Flujos programables de voz con componentes intercambiables."
+    },
+    "livekit-agents": {
+     "role": "alternative",
+     "note": "Integración con una infraestructura LiveKit de audio y video."
+    },
+    "dograh": {
+     "role": "alternative",
+     "note": "Configuración visual y flujo orientado a telefonía."
+    },
+    "ten-framework": {
+     "role": "alternative",
+     "note": "Framework de voz y conversación multimodal con extensiones y rutas RTC o WebSocket. Conservar cuando ese runtime y ecosistema sean un requisito."
+    }
+   }
+  },
+  {
+   "id": "g-rag-con-grafos-e-indices-de-conocimiento",
+   "title": "RAG con grafos e índices de conocimiento",
+   "members": {
+    "ragflow": {
+     "role": "principal",
+     "note": "Aplicación integral que ingiere documentos y ofrece una experiencia de consulta."
+    },
+    "lightrag": {
+     "role": "alternative",
+     "note": "Índice de conocimiento como componente de un sistema propio."
+    },
+    "pageindex": {
+     "role": "alternative",
+     "note": "Navegación por la estructura jerárquica del documento."
+    },
+    "graphrag": {
+     "role": "alternative",
+     "note": "Preguntas globales y resúmenes a partir de comunidades en un corpus."
+    }
+   }
+  },
+  {
+   "id": "g-skills-de-diseno-de-interfaces-para-agentes",
+   "title": "Skills de diseño de interfaces para agentes",
+   "members": {
+    "taste-skill": {
+     "role": "principal",
+     "note": "Dirección visual al crear una web asistida por un agente."
+    },
+    "impeccable": {
+     "role": "alternative",
+     "note": "Revisión de interfaz existente con reglas automáticas y hooks."
+    },
+    "ui-ux-pro-max-skill": {
+     "role": "alternative",
+     "note": "Biblioteca consultable de estilos, paletas y tipografías."
+    },
+    "hallmark": {
+     "role": "alternative",
+     "note": "Conservar por temas prediseñados y auditoría de rediseño. Evitar duplicarlo como segunda dirección visual general."
+    }
+   }
+  },
+  {
+   "id": "g-notas-y-bases-de-conocimiento-personales",
+   "title": "Notas y bases de conocimiento personales",
+   "members": {
+    "siyuan": {
+     "role": "principal",
+     "note": "Base de notas con bloques referenciables y organización local."
+    },
+    "trilium": {
+     "role": "alternative",
+     "note": "Notas jerárquicas profundas y scripting."
+    },
+    "logseq": {
+     "role": "alternative",
+     "note": "Esquemas diarios y relaciones tipo grafo."
+    },
+    "joplin": {
+     "role": "alternative",
+     "note": "Markdown y sincronización con opción de cifrado."
+    }
+   }
+  },
+  {
+   "id": "g-ocr-de-documentos",
+   "title": "OCR de documentos",
+   "members": {
+    "paddleocr": {
+     "role": "principal",
+     "note": "OCR general con idiomas y análisis de maquetación."
+    },
+    "tesseract": {
+     "role": "alternative",
+     "note": "OCR tradicional en CPU con una instalación convencional."
+    },
+    "olmocr": {
+     "role": "alternative",
+     "note": "Conversión de escaneos con un modelo de visión cuando se dispone de GPU."
+    },
+    "unlimited-ocr": {
+     "role": "reference",
+     "note": "Su arquitectura para secuencias documentales largas justifica una ficha de investigación especializada. Mover fuera de la primera elección de OCR general."
+    }
+   }
+  },
+  {
+   "id": "g-generacion-de-musica",
+   "title": "Generación de música",
+   "members": {
+    "ace-step-1.5": {
+     "role": "principal",
+     "note": "Generación local de música desde instrucciones."
+    },
+    "yue": {
+     "role": "alternative",
+     "note": "Producción de canciones con letra y acompañamiento."
+    },
+    "audiocraft": {
+     "role": "reference",
+     "note": "Biblioteca de investigación que incluye efectos y códec. Conservar como referencia técnica."
+    }
+   }
+  },
+  {
+   "id": "g-animacion-web-en-javascript",
+   "title": "Animación web en JavaScript",
+   "members": {
+    "motion": {
+     "role": "principal",
+     "note": "Animación de interfaz integrada con React en un proyecto nuevo."
+    },
+    "gsap": {
+     "role": "alternative",
+     "note": "Secuencias de animación extensas y sincronizadas."
+    },
+    "animejs": {
+     "role": "alternative",
+     "note": "Animación directa sobre DOM o SVG en proyectos JavaScript sin depender de React."
+    }
+   }
+  },
+  {
+   "id": "g-workspaces-privados-con-documentos-y-chat",
+   "title": "Workspaces privados con documentos y chat",
+   "members": {
+    "anything-llm": {
+     "role": "principal",
+     "note": "Aplicación lista para consultar documentos y usar modelos elegidos."
+    },
+    "khoj": {
+     "role": "alternative",
+     "note": "Segundo cerebro personal con notas, búsqueda y automatizaciones."
+    },
+    "private-gpt": {
+     "role": "reference",
+     "note": "Capa de API y servicios privados para integrar en una aplicación propia."
+    }
+   }
+  },
+  {
+   "id": "g-formatos-de-tabla-para-data-lakes",
+   "title": "Formatos de tabla para data lakes",
+   "members": {
+    "apache-iceberg": {
+     "role": "principal",
+     "note": "Formato interoperable para tablas analíticas cuando se parte de cero."
+    },
+    "delta-lake": {
+     "role": "alternative",
+     "note": "Continuidad con Spark y ecosistemas centrados en Delta."
+    },
+    "hudi": {
+     "role": "alternative",
+     "note": "Ingestión incremental y actualización frecuente de registros."
+    }
+   }
+  },
+  {
+   "id": "g-cookbooks-y-ejemplos-de-apps-con-llm",
+   "title": "Cookbooks y ejemplos de apps con LLM",
+   "members": {
+    "awesome-llm-apps": {
+     "role": "principal",
+     "note": "Inventario de ejemplos que permite explorar capacidades de distintos proveedores."
+    },
+    "openai-cookbook": {
+     "role": "alternative",
+     "note": "Documentación práctica oficial para la API de OpenAI."
+    },
+    "claude-cookbooks": {
+     "role": "alternative",
+     "note": "Documentación práctica oficial para la API de Claude."
+    }
+   }
+  },
+  {
+   "id": "g-motores-3d-para-la-web",
+   "title": "Motores 3D para la web",
+   "members": {
+    "three.js": {
+     "role": "principal",
+     "note": "Escenas y visualización 3D integradas en una web."
+    },
+    "babylonjs": {
+     "role": "alternative",
+     "note": "Motor con subsistemas de juego, física y XR."
+    },
+    "playcanvas": {
+     "role": "alternative",
+     "note": "Motor web orientado también a la edición visual y al desarrollo de juegos."
+    }
+   }
+  },
+  {
+   "id": "g-paneles-de-auto-hospedaje-y-paas-propios",
+   "title": "Paneles de auto-hospedaje y PaaS propios",
+   "members": {
+    "coolify": {
+     "role": "principal",
+     "note": "PaaS general para publicar servicios en infraestructura propia."
+    },
+    "dokploy": {
+     "role": "alternative",
+     "note": "Alternativa cuando su flujo Docker y Traefik encaja mejor con la operación."
+    },
+    "casaos": {
+     "role": "reference",
+     "note": "Ubicarlo en administración de servidores domésticos y archivos."
+    }
+   }
+  },
+  {
+   "id": "g-crawlers-que-entregan-contenido-listo-para-llm",
+   "title": "Crawlers que entregan contenido listo para LLM",
+   "members": {
+    "crawl4ai": {
+     "role": "principal",
+     "note": "Crawling e ingestión desde una biblioteca que puedes manejar en tu entorno."
+    },
+    "firecrawl": {
+     "role": "alternative",
+     "note": "Operación gestionada por API y funciones integradas de búsqueda y rastreo."
+    },
+    "jina-reader": {
+     "role": "alternative",
+     "note": "Conversión directa de una URL individual con un servicio ligero."
+    }
+   }
+  },
+  {
+   "id": "g-diagramas-como-codigo",
+   "title": "Diagramas como código",
+   "members": {
+    "mermaid": {
+     "role": "principal",
+     "note": "Diagramas técnicos rápidos que se integran en documentación Markdown."
+    },
+    "d2": {
+     "role": "alternative",
+     "note": "Diseño declarativo con varios motores de disposición y exportación gráfica."
+    },
+    "plantuml": {
+     "role": "alternative",
+     "note": "UML técnico y continuidad con diagramas de clases y secuencia existentes."
+    }
+   }
+  },
+  {
+   "id": "g-evaluacion-y-pruebas-de-llm",
+   "title": "Evaluación y pruebas de LLM",
+   "members": {
+    "promptfoo": {
+     "role": "principal",
+     "note": "Pruebas de regresión declarativas para prompts y selecciones de modelos."
+    },
+    "deepeval": {
+     "role": "alternative",
+     "note": "Suite de evaluación integrada con pruebas Python estilo pytest."
+    },
+    "ragas": {
+     "role": "alternative",
+     "note": "Métricas y colecciones de prueba especializadas en aplicaciones RAG."
+    }
+   }
+  },
+  {
+   "id": "g-procesamiento-de-datos-tabulares",
+   "title": "Procesamiento de datos tabulares",
+   "members": {
+    "pandas": {
+     "role": "principal",
+     "note": "Base general para limpieza y transformación interactiva de tablas en Python."
+    },
+    "polars": {
+     "role": "alternative",
+     "note": "Motor de DataFrames y consultas para flujos tabulares de mayor volumen."
+    },
+    "duckdb": {
+     "role": "alternative",
+     "note": "SQL analítico local sobre archivos y fuentes tabulares."
+    }
+   }
+  },
+  {
+   "id": "g-sandboxes-para-agentes",
+   "title": "Sandboxes para agentes",
+   "members": {
+    "e2b": {
+     "role": "principal",
+     "note": "Entorno ejecutable aislado en la nube para código generado por una aplicación."
+    },
+    "sandbox": {
+     "role": "alternative",
+     "note": "Espacio de trabajo aislado que agrupa terminal, navegador y editores."
+    },
+    "nemoclaw": {
+     "role": "reference",
+     "note": "Stack de referencia específico de NVIDIA para proteger despliegues de agentes. Ubicar en despliegue seguro."
+    }
+   }
+  },
+  {
+   "id": "g-tts-ligero-y-rapido",
+   "title": "TTS ligero y rápido",
+   "members": {
+    "kokoro": {
+     "role": "principal",
+     "note": "Narración con ejecución del modelo en local."
+    },
+    "edge-tts": {
+     "role": "alternative",
+     "note": "Ruta ligera que usa un servicio en línea. Confirmar condiciones antes de depender de ella."
+    },
+    "luxtts": {
+     "role": "reference",
+     "note": "Conservar junto a adaptación de voz en local cuando esa capacidad sea el propósito."
+    }
+   }
+  },
+  {
+   "id": "g-frameworks-de-c2-y-post-explotacion",
+   "title": "Frameworks de C2 y post-explotación",
+   "members": {
+    "sliver": {
+     "role": "principal",
+     "note": "Ficha representativa para el inventario defensivo de familias C2."
+    },
+    "empire": {
+     "role": "reference",
+     "note": "Referencia para documentación y reconocimiento defensivo de una familia distinta."
+    },
+    "mythic": {
+     "role": "reference",
+     "note": "Referencia para documentación y reconocimiento defensivo de una familia distinta."
+    }
+   },
+   "reference_only": true
+  },
+  {
+   "id": "g-transcripcion-con-whisper",
+   "title": "Transcripción con Whisper",
+   "members": {
+    "whisper-cpp": {
+     "role": "principal",
+     "note": "Transcripción local para una primera prueba en equipos con recursos variados."
+    },
+    "faster-whisper": {
+     "role": "alternative",
+     "note": "Integración Python y backend CTranslate2 para flujos por lotes."
+    },
+    "whisper": {
+     "role": "reference",
+     "note": "Implementación y pesos de referencia de OpenAI. Conservar como fuente del ecosistema."
+    }
+   }
+  },
+  {
+   "id": "g-ingenieria-inversa-y-desensambladores",
+   "title": "Ingeniería inversa y desensambladores",
+   "members": {
+    "ghidra": {
+     "role": "principal",
+     "note": "Análisis estático visual de binarios para mantenimiento y auditoría de software."
+    },
+    "radare2": {
+     "role": "alternative",
+     "note": "Análisis en terminal y continuidad de scripts existentes."
+    },
+    "rizin": {
+     "role": "alternative",
+     "note": "Ecosistema de Rizin y Cutter para equipos que ya usan esas integraciones."
+    }
+   }
+  },
+  {
+   "id": "g-agentes-de-investigacion-autonoma",
+   "title": "Agentes de investigación autónoma",
+   "members": {
+    "gpt-researcher": {
+     "role": "principal",
+     "note": "Investigación general con salida estructurada y fuentes."
+    },
+    "storm": {
+     "role": "alternative",
+     "note": "Informes largos y estructurados al estilo enciclopédico."
+    },
+    "local-deep-research": {
+     "role": "alternative",
+     "note": "Investigación que combina buscadores con documentos y modelos del propio entorno."
+    }
+   }
+  },
+  {
+   "id": "g-frameworks-de-rag-y-orquestacion-de-llm",
+   "title": "Frameworks de RAG y orquestación de LLM",
+   "members": {
+    "langchain": {
+     "role": "principal",
+     "note": "Composición general de aplicaciones LLM con muchas integraciones."
+    },
+    "haystack": {
+     "role": "alternative",
+     "note": "Pipelines explícitos de recuperación y procesamiento documental."
+    },
+    "llama-index": {
+     "role": "alternative",
+     "note": "Ingesta e indexación sobre colecciones de documentos propias."
+    }
+   }
+  },
+  {
+   "id": "g-asistentes-personales-autonomos",
+   "title": "Asistentes personales autónomos",
+   "members": {
+    "openclaw": {
+     "role": "principal",
+     "note": "Asistente personal persistente disponible por varios canales."
+    },
+    "hermes-agent": {
+     "role": "alternative",
+     "note": "Flujo centrado en memoria, skills y selección de proveedor o endpoint."
+    },
+    "mercury-agent": {
+     "role": "alternative",
+     "note": "Conservar para perfiles que necesitan presupuestos y control estricto de permisos."
+    }
+   }
+  },
+  {
+   "id": "g-skills-para-quitar-el-tono-de-ia-a-los-textos",
+   "title": "Skills para quitar el tono de IA a los textos",
+   "members": {
+    "humanizer": {
+     "role": "principal",
+     "note": "Primera skill para revisar y reescribir prosa de forma general."
+    },
+    "stop-slop": {
+     "role": "reference",
+     "note": "Conservar la rúbrica de edición como referencia accesible desde la ficha principal."
+    }
+   }
+  },
+  {
+   "id": "g-modelos-abiertos-de-video-generativo",
+   "title": "Modelos abiertos de video generativo",
+   "members": {
+    "wan2-2": {
+     "role": "principal",
+     "note": "Primera familia a evaluar para texto, imagen o audio como entrada al video generativo."
+    },
+    "hunyuanvideo-1-5": {
+     "role": "alternative",
+     "note": "Variante Tencent más ligera para flujos que necesitan ese ecosistema."
+    },
+    "hunyuanvideo": {
+     "role": "alternative",
+     "note": "Continuidad si los checkpoints, complementos o resultados existentes exigen la familia original."
+    }
+   }
+  },
+  {
+   "id": "g-frameworks-de-deep-learning",
+   "title": "Frameworks de deep learning",
+   "members": {
+    "pytorch": {
+     "role": "principal",
+     "note": "Arranque general para desarrollar o adaptar modelos en Python."
+    },
+    "tensorflow": {
+     "role": "alternative",
+     "note": "Continuidad de modelos y despliegues que ya usan el ecosistema TensorFlow."
+    },
+    "jax": {
+     "role": "alternative",
+     "note": "Investigación numérica con transformaciones, compilación XLA y acceso a TPU."
+    }
+   }
+  },
+  {
+   "id": "g-editores-de-video",
+   "title": "Editores de video",
+   "members": {
+    "shotcut": {
+     "role": "principal",
+     "note": "Edición convencional local desde una interfaz gráfica."
+    },
+    "kdenlive": {
+     "role": "alternative",
+     "note": "Proyectos de edición multipista y trabajo con proxys."
+    },
+    "opencut": {
+     "role": "reference",
+     "note": "Referencia de edición en navegador mientras la ficha describe una reescritura del proyecto principal."
+    }
+   }
+  },
+  {
+   "id": "g-frameworks-de-agentes-en-typescript",
+   "title": "Frameworks de agentes en TypeScript",
+   "members": {
+    "vercel-ai": {
+     "role": "principal",
+     "note": "Aplicaciones web TypeScript con chat, streaming y llamadas a modelos."
+    },
+    "mastra": {
+     "role": "alternative",
+     "note": "Flujos de agentes, RAG y evaluación explícitos en una aplicación TypeScript."
+    },
+    "langgraphjs": {
+     "role": "alternative",
+     "note": "Agentes en grafos con estado y continuidad con la arquitectura LangGraph."
+    }
+   }
+  },
+  {
+   "id": "g-scraping-guiado-por-llm",
+   "title": "Scraping guiado por LLM",
+   "members": {
+    "scrapegraph-ai": {
+     "role": "principal",
+     "note": "Extracción semántica programable sobre páginas que el usuario puede consultar."
+    },
+    "maxun": {
+     "role": "alternative",
+     "note": "Extracción guiada sin código para convertir páginas en datos."
+    },
+    "llm-scraper": {
+     "role": "alternative",
+     "note": "Extracción con contrato Zod para código TypeScript."
+    }
+   }
+  },
+  {
+   "id": "g-presentaciones-desde-markdown",
+   "title": "Presentaciones desde Markdown",
+   "members": {
+    "slidev": {
+     "role": "principal",
+     "note": "Presentaciones técnicas en Markdown con código y componentes interactivos."
+    },
+    "marp": {
+     "role": "alternative",
+     "note": "Presentación sencilla desde Markdown y edición en su ecosistema de herramientas."
+    },
+    "reveal.js": {
+     "role": "reference",
+     "note": "Framework de presentación HTML con soporte opcional para Markdown. Ubicar junto a slides web personalizables."
+    }
+   }
+  },
+  {
+   "id": "g-analitica-web-auto-hospedada",
+   "title": "Analítica web auto-hospedada",
+   "members": {
+    "umami": {
+     "role": "principal",
+     "note": "Analítica de sitios centrada en privacidad y preparación acotada."
+    },
+    "matomo": {
+     "role": "alternative",
+     "note": "Analítica más profunda y control de datos para organizaciones."
+    },
+    "plausible": {
+     "role": "alternative",
+     "note": "Alternativa de analítica ligera si se requiere la oferta gestionada con alojamiento europeo descrita por el proyecto."
+    }
+   }
+  },
+  {
+   "id": "g-chat-de-equipo-auto-hospedado",
+   "title": "Chat de equipo auto-hospedado",
+   "members": {
+    "mattermost": {
+     "role": "principal",
+     "note": "Comunicación para equipos que buscan un espacio de colaboración autoalojado."
+    },
+    "rocket-chat": {
+     "role": "alternative",
+     "note": "Además del chat de equipo, atiende flujos omnicanal de soporte."
+    },
+    "zulip": {
+     "role": "alternative",
+     "note": "Organización de conversaciones por tema e hilos."
+    }
+   }
+  },
+  {
+   "id": "g-bi-y-dashboards",
+   "title": "BI y dashboards",
+   "members": {
+    "metabase": {
+     "role": "principal",
+     "note": "Primera opción para que un equipo de negocio explore métricas con una interfaz guiada."
+    },
+    "superset": {
+     "role": "alternative",
+     "note": "Exploración, visualizaciones y administración de BI más extensa."
+    },
+    "redash": {
+     "role": "alternative",
+     "note": "Consultas SQL compartidas cuando el equipo construye sus vistas directamente sobre consultas."
+    }
+   }
+  },
+  {
+   "id": "g-agentes-que-resuelven-issues-de-software",
+   "title": "Agentes que resuelven issues de software",
+   "members": {
+    "openhands": {
+     "role": "principal",
+     "note": "Espacio de trabajo autoalojado para revisar sesiones de ingeniería con varios agentes."
+    },
+    "open-swe": {
+     "role": "alternative",
+     "note": "Flujo gestionado que convierte trabajo de ingeniería en propuestas revisables."
+    },
+    "mini-swe-agent": {
+     "role": "reference",
+     "note": "Implementación mínima de investigación y benchmarks. Conservar como referencia de ingeniería."
+    }
+   }
+  },
+  {
+   "id": "g-skills-y-flujos-de-produccion-de-video",
+   "title": "Skills y flujos de producción de video",
+   "members": {
+    "openmontage": {
+     "role": "principal",
+     "note": "Producción de video asistida con recursos propios y etapas componibles."
+    },
+    "video-use": {
+     "role": "alternative",
+     "note": "Edición y corte de material existente con FFmpeg y transcripción según la ruta documentada."
+    },
+    "remotion-superpowers": {
+     "role": "reference",
+     "note": "Mantener como ampliación de Remotion para quien ya eligió ese motor y quiere conectar etapas audiovisuales externas. Evitar presentarlo como otro motor de producción."
+    }
+   }
+  },
+  {
+   "id": "g-skills-de-visualizacion-3d",
+   "title": "Skills de visualización 3D",
+   "members": {
+    "threejs-skills": {
+     "role": "principal",
+     "note": "Referencias especializadas para construir escenas 3D en la web con Three.js."
+    },
+    "3dviz-pro-max": {
+     "role": "alternative",
+     "note": "Conservar para proyectos que también necesitan la ruta Blender o una dirección visual 3D más amplia."
+    }
+   }
+  },
+  {
+   "id": "g-finanzas-personales",
+   "title": "Finanzas personales",
+   "members": {
+    "actual": {
+     "role": "principal",
+     "note": "Presupuesto doméstico local mediante sobres."
+    },
+    "firefly-iii": {
+     "role": "alternative",
+     "note": "Reglas, contabilidad de doble entrada e informes."
+    }
+   }
+  },
+  {
+   "id": "g-bloqueo-de-anuncios-por-dns",
+   "title": "Bloqueo de anuncios por DNS",
+   "members": {
+    "pi-hole": {
+     "role": "principal",
+     "note": "Filtrado de anuncios y rastreadores por DNS para toda una red."
+    },
+    "adguardhome": {
+     "role": "alternative",
+     "note": "Conservar cuando se prioriza DNS cifrado o su control parental integrado."
+    }
+   }
+  },
+  {
+   "id": "g-clis-de-navegador-para-agentes",
+   "title": "CLIs de navegador para agentes",
+   "members": {
+    "playwright-cli": {
+     "role": "principal",
+     "note": "Entrada en terminal ligada al ecosistema Playwright y a sus skills."
+    },
+    "agent-browser": {
+     "role": "alternative",
+     "note": "Conservar como CLI independiente para un flujo que usa referencias del árbol de accesibilidad."
+    }
+   }
+  },
+  {
+   "id": "g-cursos-de-microsoft-para-principiantes",
+   "title": "Cursos de Microsoft para principiantes",
+   "members": {
+    "generative-ai-for-beginners": {
+     "role": "principal",
+     "note": "Fundamentos y primer proyecto de IA generativa."
+    },
+    "ai-agents-for-beginners": {
+     "role": "alternative",
+     "note": "Curso especializado en construir agentes una vez cubiertos los fundamentos."
+    }
+   }
+  },
+  {
+   "id": "g-espacios-de-trabajo-local-first-tipo-notion",
+   "title": "Espacios de trabajo local-first tipo Notion",
+   "members": {
+    "appflowy": {
+     "role": "principal",
+     "note": "Wiki o espacio de trabajo con colaboración y alojamiento propio."
+    },
+    "anytype-ts": {
+     "role": "alternative",
+     "note": "Conocimiento personal centrado en objetos y relaciones del cliente local."
+    }
+   }
+  },
+  {
+   "id": "g-backends-como-servicio-auto-hospedados",
+   "title": "Backends como servicio auto-hospedados",
+   "members": {
+    "supabase": {
+     "role": "principal",
+     "note": "Backend de entrada cuando se requiere PostgreSQL, Auth y almacenamiento."
+    },
+    "appwrite": {
+     "role": "alternative",
+     "note": "Conservar para proyectos que prefieren su plataforma de funciones, mensajería y hosting."
+    }
+   }
+  },
+  {
+   "id": "g-skills-de-diagramas-de-arquitectura",
+   "title": "Skills de diagramas de arquitectura",
+   "members": {
+    "archify": {
+     "role": "principal",
+     "note": "Diagramas interactivos que relacionan código o planes existentes."
+    },
+    "diagram-design": {
+     "role": "alternative",
+     "note": "Diagramas explicativos más libres en HTML y SVG, con instrucciones de composición."
+    }
+   }
+  },
+  {
+   "id": "g-componentes-de-chat-y-copilotos-para-react",
+   "title": "Componentes de chat y copilotos para React",
+   "members": {
+    "assistant-ui": {
+     "role": "principal",
+     "note": "Componentes React cuando el resultado visible es un chat coherente."
+    },
+    "copilotkit": {
+     "role": "alternative",
+     "note": "Interfaces generadas dentro del flujo y agentes basados en AG-UI."
+    }
+   }
+  },
+  {
+   "id": "g-emulacion-de-adversarios",
+   "title": "Emulación de adversarios",
+   "members": {
+    "atomic-red-team": {
+     "role": "principal",
+     "note": "Ficha principal para documentación de validación de detecciones y controles."
+    },
+    "caldera": {
+     "role": "reference",
+     "note": "Conservar como referencia de laboratorio e inventario de emulación, fuera de flujos operativos recomendados."
+    }
+   },
+   "reference_only": true
+  },
+  {
+   "id": "g-proveedores-de-identidad-y-sso",
+   "title": "Proveedores de identidad y SSO",
+   "members": {
+    "keycloak": {
+     "role": "principal",
+     "note": "Identidad y SSO para integraciones que requieren estándares y federación."
+    },
+    "authentik": {
+     "role": "alternative",
+     "note": "Flujos de acceso administrados visualmente y otra experiencia de operación."
+    }
+   }
+  },
+  {
+   "id": "g-analisis-forense-de-discos",
+   "title": "Análisis forense de discos",
+   "members": {
+    "autopsy": {
+     "role": "principal",
+     "note": "Trabajo forense con interfaz, casos y módulos de ingestión."
+    },
+    "sleuthkit": {
+     "role": "reference",
+     "note": "Base de análisis de discos que usa Autopsy. Conservar como herramienta de consola y dependencia."
+    }
+   }
+  },
+  {
+   "id": "g-backtesting-en-python",
+   "title": "Backtesting en Python",
+   "members": {
+    "backtesting-py": {
+     "role": "principal",
+     "note": "Primer backtest legible sobre una serie OHLC."
+    },
+    "vectorbt": {
+     "role": "alternative",
+     "note": "Comparación masiva de configuraciones y señales mediante cálculos vectorizados."
+    }
+   }
+  },
+  {
+   "id": "g-motores-de-videojuegos",
+   "title": "Motores de videojuegos",
+   "members": {
+    "godot": {
+     "role": "principal",
+     "note": "Desarrollo 2D o 3D con editor integrado."
+    },
+    "bevy": {
+     "role": "alternative",
+     "note": "Juegos o simulaciones en Rust con arquitectura ECS."
+    }
+   }
+  },
+  {
+   "id": "g-desarrollo-guiado-por-especificaciones",
+   "title": "Desarrollo guiado por especificaciones",
+   "members": {
+    "spec-kit": {
+     "role": "principal",
+     "note": "Especificaciones, planes y tareas versionadas en el repositorio."
+    },
+    "bmad-method": {
+     "role": "alternative",
+     "note": "Conservar para equipos que necesitan el flujo detallado de roles de producto e ingeniería."
+    }
+   }
+  },
+  {
+   "id": "g-proxies-inversos-con-https-automatico",
+   "title": "Proxies inversos con HTTPS automático",
+   "members": {
+    "caddy": {
+     "role": "principal",
+     "note": "Publicación con HTTPS automático para pocos servicios y configuración directa."
+    },
+    "traefik": {
+     "role": "alternative",
+     "note": "Descubrimiento dinámico de servicios en entornos Docker o Kubernetes."
+    }
+   }
+  },
+  {
+   "id": "g-proxies-de-pruebas-de-aplicaciones-web",
+   "title": "Proxies de pruebas de aplicaciones web",
+   "members": {
+    "zaproxy": {
+     "role": "principal",
+     "note": "Ficha principal del grupo para revisión defensiva autorizada de aplicaciones web."
+    },
+    "caido": {
+     "role": "reference",
+     "note": "Referencia de proxy comercial, útil al documentar herramientas existentes y sus planes."
+    }
+   },
+   "reference_only": true
+  },
+  {
+   "id": "g-reservas-y-citas",
+   "title": "Reservas y citas",
+   "members": {
+    "easyappointments": {
+     "role": "principal",
+     "note": "Agenda sencilla para una operación que asigna citas a proveedores de servicio."
+    },
+    "cal.diy": {
+     "role": "alternative",
+     "note": "Edición comunitaria del ecosistema Cal, útil si se necesitan sus flujos e integraciones y se acepta su alcance."
+    }
+   }
+  },
+  {
+   "id": "g-bibliotecas-de-libros-y-comics",
+   "title": "Bibliotecas de libros y cómics",
+   "members": {
+    "kavita": {
+     "role": "principal",
+     "note": "Biblioteca mixta con un lector orientado también a manga y cómics."
+    },
+    "calibre-web": {
+     "role": "alternative",
+     "note": "Publicación de una biblioteca cuyo catálogo ya está administrado en Calibre."
+    }
+   }
+  },
+  {
+   "id": "g-servidores-mcp-de-navegador",
+   "title": "Servidores MCP de navegador",
+   "members": {
+    "playwright-mcp": {
+     "role": "principal",
+     "note": "Ficha principal para interacción con páginas y validación de una interfaz propia."
+    },
+    "chrome-devtools-mcp": {
+     "role": "alternative",
+     "note": "Diagnóstico de consola, red y rendimiento en Chrome."
+    }
+   }
+  },
+  {
+   "id": "g-obsidian-como-segundo-cerebro-para-agentes",
+   "title": "Obsidian como segundo cerebro para agentes",
+   "members": {
+    "obsidian-second-brain": {
+     "role": "principal",
+     "note": "Sistema de contexto en Markdown compartido entre varios agentes."
+    },
+    "claude-obsidian": {
+     "role": "alternative",
+     "note": "Instrucciones específicas para Claude Code y actividades de organización de una bóveda."
+    }
+   }
+  },
+  {
+   "id": "g-skills-de-seo-para-agentes",
+   "title": "Skills de SEO para agentes",
+   "members": {
+    "claude-seo": {
+     "role": "principal",
+     "note": "Primera skill para una auditoría general de SEO y presencia en buscadores de IA."
+    }
+   }
+  },
+  {
+   "id": "g-agentes-de-codigo-en-el-editor",
+   "title": "Agentes de código en el editor",
+   "members": {
+    "cline": {
+     "role": "principal",
+     "note": "Agente general en el editor con elección de proveedor y ruta de CLI."
+    },
+    "kilocode": {
+     "role": "alternative",
+     "note": "Conservar para equipos que utilicen su catálogo de modos, agentes e integraciones."
+    }
+   }
+  },
+  {
+   "id": "g-crawlee-node-js-y-python",
+   "title": "Crawlee (Node.js y Python)",
+   "members": {
+    "crawlee": {
+     "role": "principal",
+     "note": "Entrada de la familia en Node.js y TypeScript."
+    },
+    "crawlee-python": {
+     "role": "alternative",
+     "note": "La misma familia en un ecosistema Python. Mantener ambas variantes en una sola explicación comparativa."
+    }
+   }
+  },
+  {
+   "id": "g-bloqueo-de-ip-por-comportamiento",
+   "title": "Bloqueo de IP por comportamiento",
+   "members": {
+    "crowdsec": {
+     "role": "principal",
+     "note": "Defensa de servicios con detección y reputación colaborativa."
+    },
+    "fail2ban": {
+     "role": "alternative",
+     "note": "Protección de un host a partir de reglas sobre sus propios logs."
+    }
+   }
+  },
+  {
+   "id": "g-etiquetado-de-datos-para-vision",
+   "title": "Etiquetado de datos para visión",
+   "members": {
+    "label-studio": {
+     "role": "principal",
+     "note": "Etiquetado de datos cuando se combinan varias modalidades."
+    },
+    "cvat": {
+     "role": "alternative",
+     "note": "Anotación visual intensiva en equipo con flujos especializados de visión."
+    }
+   }
+  },
+  {
+   "id": "g-intercambio-de-rostros",
+   "title": "Intercambio de rostros",
+   "members": {
+    "facefusion": {
+     "role": "principal",
+     "note": "Ficha de posproducción creativa con imágenes o video y autorización de las personas representadas."
+    },
+    "deep-live-cam": {
+     "role": "alternative",
+     "note": "Variante de efectos visuales en directo para usos consentidos."
+    }
+   }
+  },
+  {
+   "id": "g-pizarras-y-diagramas-a-mano-alzada",
+   "title": "Pizarras y diagramas a mano alzada",
+   "members": {
+    "excalidraw": {
+     "role": "principal",
+     "note": "Pizarra lista para hacer diagramas a mano alzada."
+    },
+    "tldraw": {
+     "role": "reference",
+     "note": "SDK para construir una pizarra o editor de lienzo infinito. Mantener en desarrollo de interfaces."
+    }
+   }
+  },
+  {
+   "id": "g-colecciones-de-prompts",
+   "title": "Colecciones de prompts",
+   "members": {
+    "prompts-chat": {
+     "role": "principal",
+     "note": "Punto de entrada para buscar ejemplos de prompts por tarea."
+    },
+    "fabric": {
+     "role": "reference",
+     "note": "CLI ejecutable para aplicar patrones a textos. Mantener en la ruta de herramientas de terminal."
+    }
+   }
+  },
+  {
+   "id": "g-sdks-de-mcp-en-python",
+   "title": "SDKs de MCP en Python",
+   "members": {
+    "mcp-python-sdk": {
+     "role": "principal",
+     "note": "Base oficial para implementar el protocolo MCP en Python."
+    },
+    "fastmcp": {
+     "role": "alternative",
+     "note": "Framework de conveniencia con servicios y flujos de desarrollo adicionales."
+    }
+   }
+  },
+  {
+   "id": "g-help-desk-y-tickets",
+   "title": "Help desk y tickets",
+   "members": {
+    "freescout": {
+     "role": "principal",
+     "note": "Bandeja compartida y mesa de ayuda de preparación ligera."
+    },
+    "zammad": {
+     "role": "alternative",
+     "note": "Mesa de ayuda omnicanal con chat, teléfono o redes sociales."
+    }
+   }
+  },
+  {
+   "id": "g-lectores-rss-auto-hospedados",
+   "title": "Lectores RSS auto-hospedados",
+   "members": {
+    "freshrss": {
+     "role": "principal",
+     "note": "Agregador multiusuario con extensiones y clientes móviles."
+    },
+    "miniflux": {
+     "role": "alternative",
+     "note": "Servicio minimalista cuando el equipo prefiere PostgreSQL y un lector con menos superficie."
+    }
+   }
+  },
+  {
+   "id": "g-deteccion-de-secretos-en-repos",
+   "title": "Detección de secretos en repos",
+   "members": {
+    "gitleaks": {
+     "role": "principal",
+     "note": "Detección de credenciales expuestas en Git y en la integración continua propia."
+    },
+    "trufflehog": {
+     "role": "alternative",
+     "note": "Inventario defensivo de filtraciones que abarcan servicios y almacenes además de Git."
+    }
+   }
+  },
+  {
+   "id": "g-paneles-osint-sobre-globo-3d",
+   "title": "Paneles OSINT sobre globo 3D",
+   "members": {
+    "gods-eye-view": {
+     "role": "principal",
+     "note": "Referencia para visualizar información geoespacial pública en un globo."
+    },
+    "osiris": {
+     "role": "alternative",
+     "note": "Panel de eventos y noticias con información geográfica como parte de un tablero."
+    }
+   }
+  },
+  {
+   "id": "g-escaneres-de-vulnerabilidades-de-contenedores",
+   "title": "Escáneres de vulnerabilidades de contenedores",
+   "members": {
+    "trivy": {
+     "role": "principal",
+     "note": "Revisión defensiva de imágenes e infraestructura con un escáner integrado."
+    },
+    "grype": {
+     "role": "alternative",
+     "note": "Escaneo centrado en paquetes y vulnerabilidades, especialmente con SBOM."
+    }
+   }
+  },
+  {
+   "id": "g-cracking-de-contrasenas",
+   "title": "Cracking de contraseñas",
+   "members": {
+    "hashcat": {
+     "role": "principal",
+     "note": "Ficha representativa para documentar auditorías de credenciales propias y su mitigación."
+    },
+    "john": {
+     "role": "reference",
+     "note": "Referencia histórica y de compatibilidad en el inventario de evaluación defensiva de credenciales."
+    }
+   },
+   "reference_only": true
+  },
+  {
+   "id": "g-compactar-contexto-y-tokens",
+   "title": "Compactar contexto y tokens",
+   "members": {
+    "rtk": {
+     "role": "principal",
+     "note": "Reducción de salida repetitiva de comandos antes de que llegue al agente."
+    },
+    "headroom": {
+     "role": "alternative",
+     "note": "Compresión del contexto de texto largo en el flujo de un modelo."
+    }
+   }
+  },
+  {
+   "id": "g-redes-privadas-tipo-mesh-wireguard",
+   "title": "Redes privadas tipo mesh (WireGuard)",
+   "members": {
+    "netbird": {
+     "role": "principal",
+     "note": "Red privada autoalojable cuando también se requiere identidad y control de acceso."
+    },
+    "headscale": {
+     "role": "alternative",
+     "note": "Servidor de control compatible con los clientes Tailscale para equipos que ya usan ese ecosistema."
+    }
+   }
+  },
+  {
+   "id": "g-sondeo-y-escaneo-de-reconocimiento",
+   "title": "Sondeo y escaneo de reconocimiento",
+   "members": {
+    "httpx": {
+     "role": "principal",
+     "note": "Ficha principal para inventario autorizado de servicios web propios."
+    },
+    "naabu": {
+     "role": "reference",
+     "note": "Cubre inventario de puertos, distinto del inventario HTTP. Mantener como referencia defensiva en su propia ficha."
+    }
+   },
+   "reference_only": true
+  },
+  {
+   "id": "g-automatizacion-por-eventos-auto-hospedada",
+   "title": "Automatización por eventos auto-hospedada",
+   "members": {
+    "node-red": {
+     "role": "principal",
+     "note": "Automatizaciones visuales por eventos con conectores e integración IoT."
+    },
+    "huginn": {
+     "role": "alternative",
+     "note": "Flujos autoalojados de vigilancia de fuentes y reacción a eventos online."
+    }
+   }
+  },
+  {
+   "id": "g-gestion-de-fotos-auto-hospedada",
+   "title": "Gestión de fotos auto-hospedada",
+   "members": {
+    "immich": {
+     "role": "principal",
+     "note": "Biblioteca con copia automática de fotos y videos desde móviles."
+    },
+    "photoprism": {
+     "role": "alternative",
+     "note": "Organización de un archivo fotográfico existente con flujo web y etiquetado."
+    }
+   }
+  },
+  {
+   "id": "g-skills-para-redes-sociales",
+   "title": "Skills para redes sociales",
+   "members": {
+    "instagram-agent-skill": {
+     "role": "principal",
+     "note": "Ficha inicial para preparar formatos y guiones de Instagram."
+    },
+    "linkedin-agent-skill": {
+     "role": "alternative",
+     "note": "Contenido profesional y formato de publicación propio de LinkedIn."
+    }
+   }
+  },
+  {
+   "id": "g-interfaces-de-creacion-de-imagenes",
+   "title": "Interfaces de creación de imágenes",
+   "members": {
+    "invokeai": {
+     "role": "principal",
+     "note": "Aplicación integrada de generación y edición con lienzo y gestión de modelos."
+    },
+    "krita-ai-diffusion": {
+     "role": "alternative",
+     "note": "Conservar para quien ya edita ilustraciones dentro de Krita."
+    }
+   }
+  },
+  {
+   "id": "g-notebooks",
+   "title": "Notebooks",
+   "members": {
+    "jupyterlab": {
+     "role": "principal",
+     "note": "Notebook general y entorno de trabajo con extensiones."
+    },
+    "marimo": {
+     "role": "alternative",
+     "note": "Notebook reactivo guardado como código, adecuado para versionar y publicar."
+    }
+   }
+  },
+  {
+   "id": "g-pruebas-de-carga",
+   "title": "Pruebas de carga",
+   "members": {
+    "locust": {
+     "role": "principal",
+     "note": "Medición de rendimiento de servicios propios en suites escritas en Python."
+    },
+    "k6": {
+     "role": "alternative",
+     "note": "Pruebas de rendimiento dentro del ecosistema JavaScript y Grafana."
+    }
+   }
+  },
+  {
+   "id": "g-gestores-de-contrasenas",
+   "title": "Gestores de contraseñas",
+   "members": {
+    "keepassxc": {
+     "role": "principal",
+     "note": "Bóveda local para un usuario que administra su archivo de contraseñas."
+    },
+    "vaultwarden": {
+     "role": "alternative",
+     "note": "Servidor para sincronización propia con clientes compatibles de Bitwarden."
+    }
+   }
+  },
+  {
+   "id": "g-motores-de-navegador-independientes",
+   "title": "Motores de navegador independientes",
+   "members": {
+    "ladybird": {
+     "role": "principal",
+     "note": "Ficha para seguir un navegador independiente en desarrollo."
+    },
+    "servo": {
+     "role": "reference",
+     "note": "Motor embebible en Rust. Mantener como referencia para integrar tecnologías web en aplicaciones."
+    }
+   }
+  },
+  {
+   "id": "g-mapas-web-interactivos",
+   "title": "Mapas web interactivos",
+   "members": {
+    "leaflet": {
+     "role": "principal",
+     "note": "Mapa interactivo con marcadores, capas y GeoJSON de preparación ligera."
+    },
+    "maplibre": {
+     "role": "alternative",
+     "note": "Renderizado de mapas vectoriales y estilos con aceleración gráfica."
+    }
+   }
+  },
+  {
+   "id": "g-aprender-llm-desde-cero",
+   "title": "Aprender LLM desde cero",
+   "members": {
+    "llms-from-scratch": {
+     "role": "principal",
+     "note": "Implementación paso a paso de un modelo de lenguaje desde sus fundamentos."
+    },
+    "llm-course": {
+     "role": "alternative",
+     "note": "Ruta por etapas que lleva de fundamentos a aplicaciones y despliegue."
+    }
+   }
+  },
+  {
+   "id": "g-componentes-animados-para-react",
+   "title": "Componentes animados para React",
+   "members": {
+    "react-bits": {
+     "role": "principal",
+     "note": "Fuente general de componentes de animación para React."
+    },
+    "magicui": {
+     "role": "pending",
+     "note": "Sus componentes de efecto y secciones animadas se solapan con React Bits. Comparar su catálogo concreto, registro y condiciones de sus plantillas antes de decidir."
+    }
+   }
+  },
+  {
+   "id": "g-busqueda-de-usuarios-en-redes-sociales",
+   "title": "Búsqueda de usuarios en redes sociales",
+   "members": {
+    "sherlock": {
+     "role": "principal",
+     "note": "Ficha representativa del grupo para documentación de auditoría de presencia propia en Internet."
+    },
+    "maigret": {
+     "role": "reference",
+     "note": "Referencia de inventario de la familia y evaluación de riesgos de privacidad. Evitar duplicar la recomendación genérica."
+    }
+   },
+   "reference_only": true
+  },
+  {
+   "id": "g-animaciones-matematicas-manim",
+   "title": "Animaciones matemáticas (Manim)",
+   "members": {
+    "manim-community": {
+     "role": "principal",
+     "note": "Animaciones matemáticas en Python con la documentación de la edición mantenida por la comunidad."
+    },
+    "manim": {
+     "role": "reference",
+     "note": "Conservar la variante original para reproducir escenas y proyectos de 3Blue1Brown."
+    }
+   }
+  },
+  {
+   "id": "g-servidores-mcp-de-neo4j",
+   "title": "Servidores MCP de Neo4j",
+   "members": {
+    "neo4j-mcp": {
+     "role": "principal",
+     "note": "Servidor oficial para consultas y lectura de esquema del grafo."
+    },
+    "mcp-neo4j": {
+     "role": "reference",
+     "note": "Labs solapa la consulta Cypher. Mantener en memoria, modelado y administración de Aura como referencia específica."
+    }
+   }
+  },
+  {
+   "id": "g-sdks-de-mcp-en-typescript",
+   "title": "SDKs de MCP en TypeScript",
+   "members": {
+    "mcp-typescript-sdk": {
+     "role": "principal",
+     "note": "Base oficial para implementar el protocolo MCP en TypeScript."
+    },
+    "mcp-use": {
+     "role": "alternative",
+     "note": "Stack complementario para construir y desplegar aplicaciones MCP con herramientas integradas."
+    }
+   }
+  },
+  {
+   "id": "g-generacion-automatica-de-videos-cortos",
+   "title": "Generación automática de videos cortos",
+   "members": {
+    "moneyprinterturbo": {
+     "role": "principal",
+     "note": "Producción en un flujo de guion, material, voz y subtítulos para video corto."
+    },
+    "short-video-factory": {
+     "role": "alternative",
+     "note": "Adaptación a videos de producto con una interfaz de escritorio."
+    }
+   }
+  },
+  {
+   "id": "g-paneles-para-coordinar-equipos-de-agentes",
+   "title": "Paneles para coordinar equipos de agentes",
+   "members": {
+    "paperclip": {
+     "role": "principal",
+     "note": "Organización de equipos de agentes con objetivos, presupuestos y trazabilidad."
+    },
+    "multica": {
+     "role": "alternative",
+     "note": "Asignación y revisión de trabajo de agentes de código con sus CLI y cuentas."
+    }
+   }
+  },
+  {
+   "id": "g-transcripcion-con-modelos-nvidia-y-alineacion",
+   "title": "Transcripción con modelos NVIDIA y alineación",
+   "members": {
+    "whisperx": {
+     "role": "principal",
+     "note": "Transcripción cuando se necesita alinear tiempos y separar hablantes."
+    },
+    "nemo": {
+     "role": "reference",
+     "note": "Framework de voz de NVIDIA para construir o adaptar pipelines completos. Reubicar como framework de voz."
+    }
+   }
+  },
+  {
+   "id": "g-fotogrametria-con-drones",
+   "title": "Fotogrametría con drones",
+   "members": {
+    "webodm": {
+     "role": "principal",
+     "note": "Flujo visual para convertir fotografías aéreas en mapas y modelos."
+    },
+    "odm": {
+     "role": "reference",
+     "note": "Motor de procesamiento del ecosistema. Mantener como dependencia y ruta de procesamiento por código."
+    }
+   }
+  },
+  {
+   "id": "g-editores-visuales-de-diseno-con-ia",
+   "title": "Editores visuales de diseño con IA",
+   "members": {
+    "open-design": {
+     "role": "principal",
+     "note": "Diseño y prototipado visual colaborativo desde un encargo."
+    },
+    "onlook": {
+     "role": "alternative",
+     "note": "Edición visual sobre el código de una aplicación React y Tailwind existente."
+    }
+   }
+  },
+  {
+   "id": "g-alternativas-a-notebooklm",
+   "title": "Alternativas a NotebookLM",
+   "members": {
+    "open-notebook": {
+     "role": "principal",
+     "note": "Cuaderno de fuentes para resumir, conversar y generar audio."
+    },
+    "surfsense": {
+     "role": "alternative",
+     "note": "Investigación sobre fuentes conectadas y transformación de documentos en un espacio de trabajo."
+    }
+   }
+  },
+  {
+   "id": "g-espacios-de-asistentes-de-copilotkit",
+   "title": "Espacios de asistentes de CopilotKit",
+   "members": {
+    "openbot": {
+     "role": "principal",
+     "note": "Espacio autoalojable para asistentes cuando se requiere control de permisos y auditoría."
+    }
+   }
+  },
+  {
+   "id": "g-gestores-de-sesiones-de-agentes-de-codigo",
+   "title": "Gestores de sesiones de agentes de código",
+   "members": {
+    "t3code": {
+     "role": "principal",
+     "note": "Gestión de sesiones de distintos agentes desde una misma interfaz."
+    },
+    "opencode-manager": {
+     "role": "reference",
+     "note": "T3 Code gestiona sesiones de varios agentes. Mantener OpenCode Manager como opción especializada en el control remoto de OpenCode con Git, terminal y tareas programadas."
+    }
+   }
+  },
+  {
+   "id": "g-aprendizaje-por-refuerzo-para-llm",
+   "title": "Aprendizaje por refuerzo para LLM",
+   "members": {
+    "verl": {
+     "role": "principal",
+     "note": "Referencia para equipos con infraestructura distribuida de post-entrenamiento por refuerzo."
+    },
+    "openrlhf": {
+     "role": "alternative",
+     "note": "Alternativa cuando se elige Ray y DeepSpeed o su esquema de ejecución asíncrona."
+    }
+   }
+  },
+  {
+   "id": "g-listas-de-payloads-y-diccionarios",
+   "title": "Listas de payloads y diccionarios",
+   "members": {
+    "seclists": {
+     "role": "principal",
+     "note": "Ficha principal para documentar la familia de referencias de auditoría en el inventario editorial."
+    },
+    "payloadsallthethings": {
+     "role": "reference",
+     "note": "Referencia documental de la comunidad. Mantener fuera de las rutas de recomendación operativa."
+    }
+   },
+   "reference_only": true
+  },
+  {
+   "id": "g-suites-de-herramientas-pdf",
+   "title": "Suites de herramientas PDF",
+   "members": {
+    "stirling-pdf": {
+     "role": "principal",
+     "note": "Suite PDF autoalojada para cubrir tareas variadas de documentos."
+    },
+    "pdfcraft": {
+     "role": "alternative",
+     "note": "Edición habitual desde navegador para quienes prefieren prescindir de la instalación."
+    }
+   }
+  },
+  {
+   "id": "g-generacion-de-presentaciones-con-ia",
+   "title": "Generación de presentaciones con IA",
+   "members": {
+    "ppt-master": {
+     "role": "principal",
+     "note": "Elaboración de un PowerPoint editable asistido por un agente a partir de fuentes propias."
+    },
+    "presenton": {
+     "role": "alternative",
+     "note": "Servicio de generación de presentaciones con interfaz y API."
+    }
+   }
+  },
+  {
+   "id": "g-de-diseno-o-captura-a-codigo",
+   "title": "De diseño o captura a código",
+   "members": {
+    "screenshot-to-code": {
+     "role": "principal",
+     "note": "Primer candidato cuando ya existe una captura o diseño que convertir en código."
+    },
+    "stitch-sdk": {
+     "role": "reference",
+     "note": "Generación de pantallas desde una descripción con el servicio de Google. Mantener como ruta para crear un diseño original."
+    }
+   }
+  },
+  {
+   "id": "g-servidores-de-inferencia-de-alto-rendimiento",
+   "title": "Servidores de inferencia de alto rendimiento",
+   "members": {
+    "vllm": {
+     "role": "principal",
+     "note": "Servidor general de inferencia de LLM acelerada por GPU."
+    },
+    "sglang": {
+     "role": "alternative",
+     "note": "Conservar para flujos multimodales o de generación estructurada que se adapten mejor a su runtime."
+    }
+   }
+  },
+  {
+   "id": "g-pentesting-autonomo-con-agentes",
+   "title": "Pentesting autónomo con agentes",
+   "members": {
+    "strix": {
+     "role": "principal",
+     "note": "Ficha principal exclusivamente como representante del grupo en el inventario editorial de riesgos."
+    },
+    "shannon": {
+     "role": "reference",
+     "note": "Referencia para documentar el alcance y los riesgos de esta familia. Excluir ambas fichas de rutas operativas de recomendación autónoma."
+    }
+   },
+   "reference_only": true
+  },
+  {
+   "id": "g-obtencion-de-datos-en-react",
+   "title": "Obtención de datos en React",
+   "members": {
+    "tanstack-query": {
+     "role": "principal",
+     "note": "Gestión general de caché, sincronización y cambios de datos de servidor."
+    },
+    "swr": {
+     "role": "alternative",
+     "note": "Lecturas autoactualizables y proyectos existentes que requieren una integración React más acotada."
+    }
+   }
+  },
+  {
+   "id": "g-waf-compatibles-con-seclang",
+   "title": "WAF compatibles con SecLang y el OWASP CRS",
+   "members": {
+    "modsecurity": {
+     "role": "principal",
+     "note": "Motor WAF de referencia para servidores que requieren sus conectores o continuidad con configuraciones existentes."
+    },
+    "coraza": {
+     "role": "alternative",
+     "note": "Motor compatible con SecLang para aplicaciones e infraestructura Go."
+    }
+   }
+  },
+  {
+   "id": "g-modelado-de-amenazas",
+   "title": "Modelado de amenazas",
+   "members": {
+    "threat-dragon": {
+     "role": "principal",
+     "note": "Modelado visual de amenazas desde un diagrama de arquitectura."
+    },
+    "pytm": {
+     "role": "alternative",
+     "note": "Modelo de amenazas como código Python versionable y reproducible en integración continua."
+    }
+   }
+  },
+  {
+   "id": "g-aplicaciones-web-vulnerables-para-practicar",
+   "title": "Aplicaciones web vulnerables para practicar",
+   "members": {
+    "juice-shop": {
+     "role": "principal",
+     "note": "Ficha de referencia de una aplicación educativa para seguridad de software."
+    },
+    "webgoat": {
+     "role": "reference",
+     "note": "Material de formación guiada del ecosistema Java. Mantener como referencia curricular."
+    }
+   },
+   "reference_only": true
+  },
+  {
+   "id": "g-generadores-de-sbom",
+   "title": "Generadores de SBOM",
+   "members": {
+    "syft": {
+     "role": "principal",
+     "note": "Generación de inventarios de componentes de imágenes y sistemas de archivos."
+    },
+    "cdxgen": {
+     "role": "alternative",
+     "note": "Inventario CycloneDX a partir de código de distintos lenguajes y evidencias de dependencias."
+    }
+   }
+  },
+  {
+   "id": "g-analisis-de-dependencias-vulnerables",
+   "title": "Análisis de dependencias vulnerables (SCA)",
+   "members": {
+    "osv-scanner": {
+     "role": "principal",
+     "note": "Revisión defensiva de dependencias desde lockfiles y la base OSV."
+    },
+    "dependency-check": {
+     "role": "alternative",
+     "note": "Continuidad de proyectos Java o .NET con integración en herramientas de construcción."
+    },
+    "dep-scan": {
+     "role": "alternative",
+     "note": "Auditoría con SBOM, alcance y documentos de intercambio de vulnerabilidades."
+    }
+   }
+  }
+ ]
+}

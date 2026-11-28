@@ -4,7 +4,7 @@
 
 Conecta aplicaciones, organiza clientes y prepara procesos de atención, ventas y comunicación.
 
-65 repos únicos · 9 subcategorías. [Ver en el explorador](../../docs/index.html#/area/automatizacion).
+64 repos únicos · 9 subcategorías. [Ver en el explorador](../../docs/index.html#/area/automatizacion).
 
 ## Opciones para empezar
 
@@ -90,13 +90,12 @@ Correo, notificaciones y programación de publicaciones.
 
 Guías para que tu agente prepare análisis, mensajes y contenido.
 
-[Explorar 9 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-marketing)
+[Explorar 8 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-marketing)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [Arcads AI Video Skill Pack](../fichas/arcads-claude-code.md) | Pack de skills para Claude Code y Cursor que crea anuncios en video e imagen con la API de Arcads (Seedance, Sora, Veo, Kling). | API de IA necesaria |
 | [claude-seo](../fichas/claude-seo.md) | Skills de Claude Code para revisar SEO técnico, contenido, presencia en buscadores de IA y otros aspectos de una web. | API de IA opcional |
-| [GEO-SEO Claude](../fichas/geo-seo-claude.md) | Skill de Claude Code que audita webs para buscadores con IA (GEO) y SEO clásico, con citabilidad, schema, llms.txt e informes PDF. | API de IA opcional |
 | [instagram-agent-skill](../fichas/instagram-agent-skill.md) | Skills de Claude para investigar ideas, preparar guiones y revisar contenido y publicaciones de una cuenta de Instagram. | Sin clave propia de API de IA en la ruta básica |
 | [linkedin-agent-skill](../fichas/linkedin-agent-skill.md) | Skills de Claude para preparar publicaciones, comentarios y planificación de contenidos de una cuenta de LinkedIn. | Sin clave propia de API de IA en la ruta básica |
 | [Marketing Skills](../fichas/marketingskills.md) | Colección de más de 50 skills de marketing (CRO, copy, SEO, ads, email, analítica, pricing) para Claude Code, Codex, Cursor y otros. | API de IA opcional |

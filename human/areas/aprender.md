@@ -4,7 +4,7 @@
 
 Comprende conceptos, practica con ejemplos y elige instrucciones que mejoren el trabajo de tus agentes.
 
-104 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/aprender).
+102 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/aprender).
 
 ## Opciones para empezar
 
@@ -118,7 +118,7 @@ Explorar instrucciones generales y formas de trabajar con agentes.
 
 Explorar instrucciones de diseño, escritura, ciencia, marketing y negocio.
 
-[Explorar 40 repos](../../docs/index.html#/explorar?area=aprender&topic=aprender-especialidades)
+[Explorar 38 repos](../../docs/index.html#/explorar?area=aprender&topic=aprender-especialidades)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -136,7 +136,6 @@ Explorar instrucciones de diseño, escritura, ciencia, marketing y negocio.
 | [financial-services](../fichas/financial-services.md) | Plugins, skills y conectores de Anthropic para flujos de investigación y trabajo en servicios financieros. | API de IA opcional |
 | [Front-End-Checklist](../fichas/front-end-checklist.md) | Checklist y recursos para revisar aspectos de calidad de un frontend antes de entregarlo. | API de IA opcional |
 | [genjutsu](../fichas/genjutsu.md) | Skills de diseño y animación para agentes que trabajan con interfaces web, Android y plataformas de Apple. | Sin clave propia de API de IA en la ruta básica |
-| [GEO-SEO Claude](../fichas/geo-seo-claude.md) | Skill de Claude Code que audita webs para buscadores con IA (GEO) y SEO clásico, con citabilidad, schema, llms.txt e informes PDF. | API de IA opcional |
 | [gsap-skills](../fichas/gsap-skills.md) | Skills oficiales con instrucciones y ejemplos para que agentes creen animaciones y utilicen plugins de GSAP. | Sin clave propia de API de IA en la ruta básica |
 | [hallmark](../fichas/hallmark.md) | Skill de diseño para agentes que ayuda a construir interfaces con decisiones visuales más específicas y coherentes. | Sin clave propia de API de IA en la ruta básica |
 | [Humanizer](../fichas/humanizer.md) | Skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana. | Sin clave propia de API de IA en la ruta básica |
@@ -149,7 +148,6 @@ Explorar instrucciones de diseño, escritura, ciencia, marketing y negocio.
 | [Marketing Skills](../fichas/marketingskills.md) | Colección de más de 50 skills de marketing (CRO, copy, SEO, ads, email, analítica, pricing) para Claude Code, Codex, Cursor y otros. | API de IA opcional |
 | [modern-web-guidance](../fichas/modern-web-guidance.md) | Herramienta y skill para que un agente consulte documentación actual sobre prácticas y APIs de desarrollo web. | Sin clave propia de API de IA en la ruta básica |
 | [motion-design-skill](../fichas/motion-design-skill.md) | Skill con principios de ritmo, transiciones y composición del movimiento para diseñar animaciones de interfaces. | Sin clave propia de API de IA en la ruta básica |
-| [no-ai-slop](../fichas/no-ai-slop.md) | Skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA. | Sin clave propia de API de IA en la ruta básica |
 | [scientific-agent-skills](../fichas/scientific-agent-skills.md) | Colección de skills y recursos para que agentes realicen tareas de investigación científica con herramientas de dominio. | API de IA opcional |
 | [Shopify AI Toolkit](../fichas/shopify-ai-toolkit.md) | Aporta guías y herramientas de Shopify para asistir el desarrollo de temas y aplicaciones con fuentes del fabricante. | Sin clave propia de API de IA en la ruta básica |
 | [skills](../fichas/minimalist-entrepreneur-skills.md) | Skills basadas en ideas de The Minimalist Entrepreneur para orientar trabajo de negocio y emprendimiento con un agente. | Sin clave propia de API de IA en la ruta básica |

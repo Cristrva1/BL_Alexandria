@@ -34,7 +34,7 @@ Se instala con `npm install -g omniroute`, con Docker (`diegosouzapw/omniroute`)
 | [Cline](cline.md) | Cliente citado en el flujo de peticiones del README. | Configura Cline con el endpoint OpenAI de OmniRoute. |
 | [Ollama](ollama.md) | Ollama es un proveedor de primera clase en OmniRoute. | Conecta tu instancia de Ollama como proveedor local. |
 
-**Notas:** Alternativas (elige una): claude-code-router, backdoor, litellm. Combinar cuentas gratuitas puede incumplir las condiciones de algunos proveedores; el MITM implica confiar en una CA local.
+**Notas:** Alternativas (elige una): claude-code-router, litellm. Combinar cuentas gratuitas puede incumplir las condiciones de algunos proveedores; el MITM implica confiar en una CA local.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v3.8.53 (2026-11-06) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -42,14 +42,13 @@ Estado en GitHub: activo · último push 2026-11-16 · última versión publicad
 
 ## Ver similares
 
-Grupo **Pasarelas y routers de proveedores LLM**: OmniRoute ocupa la posición 2 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+Grupo **Pasarelas y routers de proveedores LLM**: OmniRoute ocupa la posición 2 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [litellm](litellm.md) ⭐ recomendado | 78 | Si necesitas una pasarela estándar para 100+ proveedores con presupuestos y claves. |
 | 2 | **OmniRoute** (esta ficha) | 76 | Si quieres una pasarela local que reparta cuotas y alternativas entre proveedores. |
 | 3 | [claude-code-router](claude-code-router.md) | 58 | Si quieres usar Claude Code con otros proveedores o modelos y enrutar por tarea. |
-| 4 | [backdoor](backdoor.md) | 34 | Si quieres adaptar otro proveedor al flujo de herramientas de Claude Code (proyecto pequeño de terceros). |
 
 ## Acceso, coste y equipo
 
@@ -128,7 +127,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [claude-code-router](claude-code-router.md) | 38.1k | Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control local. |
-| [backdoor](backdoor.md) | 302 | Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code. |
 | [litellm](litellm.md) | 63.3k | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. |
 
 ## Enlaces

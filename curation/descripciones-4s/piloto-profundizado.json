@@ -196,7 +196,7 @@
      "orden_instalacion": "LiteLLM proxy primero; luego configura la URL base en Claude Code."
     }
    ],
-   "notas": "Alternativas (elige una): omniroute, claude-code-router, backdoor. Incidente de cadena de suministro de marzo de 2026 (PYSEC-2026-2): si instalaste 1.82.7 o 1.82.8, rota todos los secretos y busca `litellm_init.pth`.",
+   "notas": "Alternativas (elige una): omniroute, claude-code-router. Incidente de cadena de suministro de marzo de 2026 (PYSEC-2026-2): si instalaste 1.82.7 o 1.82.8, rota todos los secretos y busca `litellm_init.pth`.",
    "fuentes": [
     "https://github.com/BerriAI/litellm/blob/main/README.md",
     "https://docs.litellm.ai/docs/providers/ollama",

@@ -4,7 +4,7 @@
 
 Elige un agente de código, comprende un proyecto y prepara su infraestructura, pruebas y seguimiento.
 
-111 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/desarrollo).
+110 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/desarrollo).
 
 ## Opciones para empezar
 
@@ -148,11 +148,10 @@ Medir resultados y revisar lo que hace una aplicación de IA.
 
 Reducir contexto innecesario y organizar el acceso a modelos.
 
-[Explorar 17 repos](../../docs/index.html#/explorar?area=desarrollo&topic=dev-contexto)
+[Explorar 16 repos](../../docs/index.html#/explorar?area=desarrollo&topic=dev-contexto)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
-| [backdoor](../fichas/backdoor.md) | Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code. | API de IA opcional |
 | [BentoML](../fichas/bentoml.md) | Framework Python para convertir modelos y pipelines de IA en APIs de producción, con empaquetado en imágenes Docker y despliegue reproducible. | Sin clave propia de API de IA en la ruta básica |
 | [claude-code-router](../fichas/claude-code-router.md) | Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control local. | Depende de la ruta elegida |
 | [GPTCache](../fichas/gptcache.md) | Reutiliza respuestas de consultas parecidas a un modelo mediante una caché semántica con reglas de comparación configurables. | API de IA opcional |

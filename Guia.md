@@ -1,6 +1,6 @@
 # 🌌 Guía completa de BL_Alexandria
 
-Las **970 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
+Las **966 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
 
 ## 🧭 Cómo leer cada ficha
 
@@ -32,13 +32,13 @@ Las **970 fichas** de la biblioteca en un solo documento, agrupadas por categor�
 | 18 | [🤖 CRM, ventas y marketing](#-18-crm-ventas-y-marketing) | 19 | Gestiona clientes, soporte, campañas, correo y publicaciones. Un CRM guarda la relación con el cliente; una herramienta de campañas distribuye mensajes. Comprueba los servicios externos y sus tarifas. |
 | 19 | [🧠 Aprender IA y escribir mejores prompts](#-19-aprender-ia-y-escribir-mejores-prompts) | 30 | Cursos, ejemplos, guías y colecciones de prompts. Son material de aprendizaje: cada ejemplo puede necesitar sus propias cuentas, dependencias o modelos. |
 | 20 | [🕸️ Programar con agentes de código](#️-20-programar-con-agentes-de-código) | 21 | Agentes de terminal, extensiones de editor y entornos para programar con IA. Revisa qué cliente utilizas, cómo inicia sesión y si el modelo usa un plan, una API o un servidor local. |
-| 21 | [🕸️ Asistentes e investigación con agentes](#️-21-asistentes-e-investigación-con-agentes) | 18 | Asistentes personales, equipos de agentes e investigación con fuentes. Compara la tarea que completan, las herramientas que pueden usar y la revisión que necesitas hacer del resultado. |
+| 21 | [🕸️ Asistentes e investigación con agentes](#️-21-asistentes-e-investigación-con-agentes) | 17 | Asistentes personales, equipos de agentes e investigación con fuentes. Compara la tarea que completan, las herramientas que pueden usar y la revisión que necesitas hacer del resultado. |
 | 22 | [🕸️ Infraestructura, despliegue y herramientas para agentes](#️-22-infraestructura-despliegue-y-herramientas-para-agentes) | 32 | Sandboxes, herramientas de ejecución, backend y alojamiento. Son piezas de infraestructura: separa el coste del servidor, los servicios conectados y las llamadas al modelo. |
-| 23 | [🧬 Operar, evaluar y medir modelos de IA](#-23-operar-evaluar-y-medir-modelos-de-ia) | 31 | Servidores de inferencia, gateways, evaluación, trazas y control de contexto. Cada pieza cubre una etapa: ejecutar el modelo, observarlo o comprobar la calidad de sus respuestas. |
+| 23 | [🧬 Operar, evaluar y medir modelos de IA](#-23-operar-evaluar-y-medir-modelos-de-ia) | 30 | Servidores de inferencia, gateways, evaluación, trazas y control de contexto. Cada pieza cubre una etapa: ejecutar el modelo, observarlo o comprobar la calidad de sus respuestas. |
 | 24 | [🧑‍💻 Modelos abiertos y entrenamiento](#-24-modelos-abiertos-y-entrenamiento) | 25 | Modelos, bibliotecas de entrenamiento y ajuste fino. Revisa la licencia de los pesos, la memoria necesaria y la opción de inferencia antes de descargar o entrenar. |
 | 25 | [🧑‍💻 Procesar datos y trabajar con notebooks](#-25-procesar-datos-y-trabajar-con-notebooks) | 23 | Motores de consulta, tablas, notebooks y aplicaciones de datos. Empieza por un archivo pequeño y distingue una herramienta de análisis de un catálogo o conjunto de datos de referencia. |
 | 26 | [🎨 Animación, gráficos y creación 3D](#-26-animación-gráficos-y-creación-3d) | 32 | Animación web, motores gráficos, modelado y renderizado 3D. Una librería se integra en una aplicación; un editor se utiliza directamente. Consulta el formato de entrada y el equipo necesario. |
-| 27 | [🎨 Skills de diseño, contenido y especialidades](#-27-skills-de-diseño-contenido-y-especialidades) | 40 | Skills y plugins para diseño, escritura, marketing, ciencia y negocio. Se añaden a un agente compatible; generar imágenes, publicar o consultar servicios puede requerir cuentas adicionales. |
+| 27 | [🎨 Skills de diseño, contenido y especialidades](#-27-skills-de-diseño-contenido-y-especialidades) | 38 | Skills y plugins para diseño, escritura, marketing, ciencia y negocio. Se añaden a un agente compatible; generar imágenes, publicar o consultar servicios puede requerir cuentas adicionales. |
 | 28 | [🖼️ Visión artificial, rostros y percepción](#️-28-visión-artificial-rostros-y-percepción) | 21 | Detección, seguimiento, segmentación, rostros y percepción espacial. Distingue el modelo, sus pesos y las herramientas para preparar datos. Comprueba requisitos y permisos sobre las imágenes. |
 | 29 | [🎬 Audio, transcripción, voz y música](#-29-audio-transcripción-voz-y-música) | 34 | Transcripción, síntesis, clonación de voz, agentes de audio y música. Compara idioma, latencia, procesamiento local y servicios externos según la tarea concreta. |
 | 30 | [🎬 Video con código y agentes creativos](#-30-video-con-código-y-agentes-creativos) | 25 | Herramientas y skills para escenas, motion graphics y montaje programático. Distingue el renderizado del video de la generación de sus imágenes o voces, que puede necesitar otros proveedores. |
@@ -1471,7 +1471,7 @@ SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o dato
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/modelcontextprotocol/servers/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender cómo se implementa memoria MCP; Estudiar acceso a un repositorio Git de prueba — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [MCP Inspector](human/fichas/mcp-inspector.md) · [mcp-use](human/fichas/mcp-use.md) · [awesome-mcp-servers](human/fichas/awesome-mcp-servers.md) · [OpenDots](human/fichas/opendots.md)<br>
+**Combina con:** [MCP Inspector](human/fichas/mcp-inspector.md) · [mcp-use](human/fichas/mcp-use.md) · [awesome-mcp-servers](human/fichas/awesome-mcp-servers.md)<br>
 **Más:** [ficha completa](human/fichas/servers.md) · [GitHub](https://github.com/modelcontextprotocol/servers)
 
 #### 🔌 Chrome DevTools MCP
@@ -6496,7 +6496,7 @@ bun run dev` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/every-app/open-seo/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Investigar palabras clave de una web propia; Preparar una revisión técnica SEO — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Claude Code](human/fichas/claude-code.md) · [coolify](human/fichas/coolify.md) · [GEO-SEO Claude](human/fichas/geo-seo-claude.md) · [claude-seo](human/fichas/claude-seo.md) · [cloud-mail](human/fichas/cloud-mail.md) · [Marketing Skills](human/fichas/marketingskills.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [coolify](human/fichas/coolify.md) · [claude-seo](human/fichas/claude-seo.md) · [cloud-mail](human/fichas/cloud-mail.md) · [Marketing Skills](human/fichas/marketingskills.md)<br>
 **Más:** [ficha completa](human/fichas/open-seo.md) · [GitHub](https://github.com/every-app/open-seo)
 
 #### 📬 listmonk
@@ -7138,13 +7138,6 @@ Asistentes personales, equipos de agentes e investigación con fuentes. Compara 
 | [paperclip](human/fichas/paperclip.md) | Tu objetivo encaja con estos ejemplos: Organizar tareas de varios agentes; Auditar una propuesta antes de aprobarla | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [multica](human/fichas/multica.md) | Tu objetivo encaja con estos ejemplos: Organizar trabajo entre agentes; Revisar entregas en un espacio compartido | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**⚖️ ¿Cuál elegir? — OpenBot, OpenDots**
-
-| Repo | Elígelo si… | Evítalo si… |
-|---|---|---|
-| [OpenBot](human/fichas/openbot.md) | Tu objetivo encaja con estos ejemplos: Dar a un asistente un navegador propio con aprobaciones; Conectar un agente existente por AG-UI a un espacio común | necesitas una herramienta estable y auditada para datos sensibles |
-| [OpenDots](human/fichas/opendots.md) | Tu objetivo encaja con estos ejemplos: Probar un asistente persistente; Estudiar aprobación de acciones conectadas | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
-
 **⚖️ ¿Cuál elegir? — STORM, gpt-researcher, local-deep-research**
 
 | Repo | Elígelo si… | Evítalo si… |
@@ -7228,19 +7221,6 @@ deeptutor start    # starts backend + frontend` (comprobar los pasos completos e
 **Elige si:** Tu objetivo encaja con estos ejemplos: Dar a un asistente un navegador propio con aprobaciones; Conectar un agente existente por AG-UI a un espacio común — **Evita si:** necesitas una herramienta estable y auditada para datos sensibles<br>
 **Combina con:** [CopilotKit](human/fichas/copilotkit.md) · [LangGraph](human/fichas/langgraph.md) · [Mastra](human/fichas/mastra.md) · [crewAI](human/fichas/crewai.md) · [firecrawl](human/fichas/firecrawl.md) · [Composio](human/fichas/composio.md)<br>
 **Más:** [ficha completa](human/fichas/openbot.md) · [GitHub](https://github.com/CopilotKit/OpenBot)
-
-#### 🖥️ OpenDots
-**Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟡 medio · ⭐ 6.6k<br>
-**Qué es:** Interfaz abierta de asistentes persistentes que requiere CopilotKit Intelligence, alojado, evaluado localmente o con licencia.<br>
-**Acceso:** API de IA necesaria · El coste depende del proveedor o la ruta<br>
-**Comando documentado:** `git clone https://github.com/CopilotKit/OpenDots.git
-cd OpenDots
-npm ci
-cp .env.example .env
-npm run dev` (comprobar los pasos completos en la ficha).<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Probar un asistente persistente; Estudiar aprobación de acciones conectadas — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [CopilotKit](human/fichas/copilotkit.md) · [Composio](human/fichas/composio.md) · [servers](human/fichas/servers.md)<br>
-**Más:** [ficha completa](human/fichas/opendots.md) · [GitHub](https://github.com/CopilotKit/OpenDots)
 
 #### 🦾 Mercury Agent
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 3.9k<br>
@@ -7693,14 +7673,13 @@ Servidores de inferencia, gateways, evaluación, trazas y control de contexto. C
 | [vLLM](human/fichas/vllm.md) | Tu objetivo encaja con estos ejemplos: Servir un modelo propio; Estudiar rendimiento de inferencia | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [SGLang](human/fichas/sglang.md) | Tu objetivo encaja con estos ejemplos: Servir un modelo para una aplicación; Estudiar inferencia multimodal | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**⚖️ ¿Cuál elegir? — OmniRoute, litellm, claude-code-router, backdoor**
+**⚖️ ¿Cuál elegir? — OmniRoute, litellm, claude-code-router**
 
 | Repo | Elígelo si… | Evítalo si… |
 |---|---|---|
 | [OmniRoute](human/fichas/omniroute.md) | Tu objetivo encaja con estos ejemplos: Centralizar proveedores de un agente; Comparar rutas y límites de consumo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [litellm](human/fichas/litellm.md) | Tu objetivo encaja con estos ejemplos: Unificar llamadas a varios modelos; Enrutar un agente por un gateway propio | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [claude-code-router](human/fichas/claude-code-router.md) | Tu objetivo encaja con estos ejemplos: Comparar proveedores desde Claude Code; Organizar perfiles para Codex | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
-| [backdoor](human/fichas/backdoor.md) | Tu objetivo encaja con estos ejemplos: Probar un backend local con Claude Code; Comparar proveedores compatibles | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
 **⚖️ ¿Cuál elegir? — headroom, rtk**
 
@@ -7828,17 +7807,6 @@ ccr ui` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: servir varios modelos en las GPU de tu laboratorio con una sola consola; dar a tu equipo claves de API compatibles con OpenAI sobre modelos propios — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
 **Combina con:** [vLLM](human/fichas/vllm.md) · [SGLang](human/fichas/sglang.md) · [TensorRT-LLM](human/fichas/tensorrt-llm.md)<br>
 **Más:** [ficha completa](human/fichas/gpustack.md) · [GitHub](https://github.com/gpustack/gpustack)
-
-#### 🧬 backdoor
-**Etiquetas:** Ejecución 🔀 híbrido · Rol 🧩 motor/runtime · Setup 🟡 medio · ⭐ 302<br>
-**Qué es:** Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code.<br>
-**Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Comando documentado:** `git clone https://github.com/ajsai47/backdoor
-cd backdoor
-./backdoor   # animated setup wizard — picks your provider, writes your config, launches Claude Code` (comprobar los pasos completos en la ficha).<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Probar un backend local con Claude Code; Comparar proveedores compatibles — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Ollama](human/fichas/ollama.md) · [vLLM](human/fichas/vllm.md)<br>
-**Más:** [ficha completa](human/fichas/backdoor.md) · [GitHub](https://github.com/ajsai47/backdoor)
 
 ### Ahorro de contexto y tokens
 
@@ -8880,20 +8848,12 @@ Skills y plugins para diseño, escritura, marketing, ciencia y negocio. Se añad
 | [threejs-skills](human/fichas/threejs-skills.md) | Tu objetivo encaja con estos ejemplos: Preparar una escena web; Revisar migraciones de Three.js | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [3dviz-pro-max](human/fichas/3dviz-pro-max.md) | Tu objetivo encaja con estos ejemplos: Preparar una visualización de producto; Crear una escena explicativa | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**⚖️ ¿Cuál elegir? — Humanizer, Stop Slop, no-ai-slop**
+**⚖️ ¿Cuál elegir? — Humanizer, Stop Slop**
 
 | Repo | Elígelo si… | Evítalo si… |
 |---|---|---|
 | [Humanizer](human/fichas/humanizer.md) | Tu objetivo encaja con estos ejemplos: Mejorar claridad de un correo; Revisar prosa repetitiva | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [Stop Slop](human/fichas/stop-slop.md) | Tu objetivo encaja con estos ejemplos: Reducir frases vagas; Revisar un borrador antes de publicarlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
-| [no-ai-slop](human/fichas/no-ai-slop.md) | Tu objetivo encaja con estos ejemplos: Editar una publicación; Mejorar claridad de un informe | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
-
-**⚖️ ¿Cuál elegir? — claude-seo, GEO-SEO Claude**
-
-| Repo | Elígelo si… | Evítalo si… |
-|---|---|---|
-| [claude-seo](human/fichas/claude-seo.md) | Tu objetivo encaja con estos ejemplos: Preparar una auditoría SEO inicial; Revisar indexabilidad de una landing | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
-| [GEO-SEO Claude](human/fichas/geo-seo-claude.md) | Tu objetivo encaja con estos ejemplos: Revisar schema de una web; Preparar un informe GEO inicial | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
 ### Skills de diseño para agentes
 
@@ -9127,15 +9087,6 @@ cp -r blender-skills/.claude/skills /path/to/your/project/.claude/skills/` (comp
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [Marketing Skills](human/fichas/marketingskills.md) · [postiz-app](human/fichas/postiz-app.md)<br>
 **Más:** [ficha completa](human/fichas/stop-slop.md) · [GitHub](https://github.com/hardikpandya/stop-slop)
 
-#### 🎨 no-ai-slop
-**Etiquetas:** Ejecución 🏠 local · Rol 🎨 skill/prompt · Setup 🟡 medio · ⭐ 13.5k<br>
-**Qué es:** Skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
-**Comando documentado:** `npx skills add petergyang/no-ai-slop --skill no-ai-slop --global --yes` (comprobar los pasos completos en la ficha).<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Editar una publicación; Mejorar claridad de un informe — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [Marketing Skills](human/fichas/marketingskills.md)<br>
-**Más:** [ficha completa](human/fichas/no-ai-slop.md) · [GitHub](https://github.com/petergyang/no-ai-slop)
-
 ### Skills de dominio: marketing, SEO y negocio
 
 #### 📈 Marketing Skills ⭐
@@ -9196,17 +9147,6 @@ claude plugin install financial-analysis@claude-for-financial-services` (comprob
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una auditoría SEO inicial; Revisar indexabilidad de una landing — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [posthog](human/fichas/posthog.md) · [open-seo](human/fichas/open-seo.md)<br>
 **Más:** [ficha completa](human/fichas/claude-seo.md) · [GitHub](https://github.com/AgriciDaniel/claude-seo)
-
-#### 🌍 GEO-SEO Claude
-**Etiquetas:** Ejecución ☁️ cloud/API · Rol 🎨 skill/prompt · Setup 🟢 fácil · ⭐ 11.7k<br>
-**Qué es:** Skill de Claude Code que audita webs para buscadores con IA (GEO) y SEO clásico, con citabilidad, schema, llms.txt e informes PDF.<br>
-**Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Comando documentado:** `git clone https://github.com/zubair-trabzada/geo-seo-claude.git
-cd geo-seo-claude
-./install.sh` (comprobar los pasos completos en la ficha).<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Revisar schema de una web; Preparar un informe GEO inicial — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Claude Code](human/fichas/claude-code.md) · [playwright](human/fichas/playwright.md) · [open-seo](human/fichas/open-seo.md)<br>
-**Más:** [ficha completa](human/fichas/geo-seo-claude.md) · [GitHub](https://github.com/zubair-trabzada/geo-seo-claude)
 
 #### 🎨 Claude Ads
 **Etiquetas:** Ejecución 🏠 local · Rol 🎨 skill/prompt · Setup 🟡 medio · ⭐ 11.2k<br>

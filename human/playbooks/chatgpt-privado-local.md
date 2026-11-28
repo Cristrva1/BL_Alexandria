@@ -46,7 +46,7 @@ Si es solo para ti en tu portátil, una app de escritorio como Jan o LM Studio e
 
 - En lugar de [Ollama](../fichas/ollama.md): [llama.cpp](../fichas/llama-cpp.md), [LocalAI](../fichas/localai.md), [llamafile](../fichas/llamafile.md)
 - En lugar de [Open WebUI](../fichas/open-webui.md): [LibreChat](../fichas/librechat.md), [LobeHub](../fichas/lobehub.md), [AnythingLLM](../fichas/anything-llm.md)
-- En lugar de [litellm](../fichas/litellm.md): [OmniRoute](../fichas/omniroute.md), [claude-code-router](../fichas/claude-code-router.md), [backdoor](../fichas/backdoor.md)
+- En lugar de [litellm](../fichas/litellm.md): [OmniRoute](../fichas/omniroute.md), [claude-code-router](../fichas/claude-code-router.md)
 
 ---
 

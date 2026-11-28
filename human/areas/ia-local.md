@@ -4,7 +4,7 @@
 
 Elige un chat o motor local, explora modelos abiertos y revisa lo necesario para servirlos o entrenarlos.
 
-72 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/ia-local).
+71 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/ia-local).
 
 ## Opciones para empezar
 
@@ -113,11 +113,10 @@ Bibliotecas para entrenar o adaptar modelos a tus datos.
 
 Servir modelos y organizar el acceso de tus aplicaciones.
 
-[Explorar 13 repos](../../docs/index.html#/explorar?area=ia-local&topic=local-servidores)
+[Explorar 12 repos](../../docs/index.html#/explorar?area=ia-local&topic=local-servidores)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
-| [backdoor](../fichas/backdoor.md) | Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code. | API de IA opcional |
 | [BentoML](../fichas/bentoml.md) | Framework Python para convertir modelos y pipelines de IA en APIs de producción, con empaquetado en imágenes Docker y despliegue reproducible. | Sin clave propia de API de IA en la ruta básica |
 | [claude-code-router](../fichas/claude-code-router.md) | Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control local. | Depende de la ruta elegida |
 | [GPUStack](../fichas/gpustack.md) | Gestor de clústeres de GPU para servir modelos de IA: configura vLLM, SGLang o TensorRT-LLM, expone APIs compatibles con OpenAI y aprovisiona instancias GPU. | Sin clave propia de API de IA en la ruta básica |

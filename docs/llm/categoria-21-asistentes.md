@@ -1,6 +1,6 @@
 # Alexandría para agentes · Asistentes autónomos y equipos de agentes
 
-Categoría 21 «Asistentes e investigación con agentes» › subcategoría `asistentes`. 13 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 21 «Asistentes e investigación con agentes» › subcategoría `asistentes`. 12 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=21&sub=asistentes · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -22,14 +22,13 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `hermes-agent` | Asistente de Nous Research con memoria, skills y herramientas; usa proveedores… | 2 Intermedio | 74 | MIT (OSI permisiva) | alternativa |
 | `deeptutor` | Sistema de tutoría con agentes que personaliza el aprendizaje a partir de tus… | 2 Intermedio | 72 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `ruflo` | Harness multiagente en Rust para Claude Code y Codex que coordina 100+ agentes… | 3 Avanzado | 71 | MIT (OSI permisiva) | sin grupo |
-| `openbot` | Espacio autoalojable de CopilotKit para compañeros de IA con navegador propio… | 2 Intermedio | 70 | MIT (OSI permisiva) | recomendado |
+| `openbot` | Espacio autoalojable de CopilotKit para compañeros de IA con navegador propio… | 2 Intermedio | 70 | MIT (OSI permisiva) | sin grupo |
 | `paperclip` | Servidor y panel para organizar equipos de agentes con objetivos, tareas… | 3 Avanzado | 68 | MIT (OSI permisiva) | recomendado |
 | `openjarvis` | Crea un asistente personal con chat y flujos que pueden usar modelos locales… | 2 Intermedio | 58 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `multica` | Workspace para asignar y revisar trabajo de agentes de código mediante sus CLI… | 2 Intermedio | 57 | Apache-2.0 con condiciones adicionales (open-core) | alternativa |
 | `agentes-chat` | Espacio de trabajo autoalojado con canales, mensajes y agentes de IA que… | 2 Intermedio | 50 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `hello-halo` | Asistente de escritorio con manejo de archivos, navegador y rutas de acceso con… | 1 Básico | 50 | MIT con términos adicionales (OSI permisiva) | sin grupo |
 | `mercury-agent` | Agente personal 24/7 con permisos estrictos, presupuesto de tokens y acceso por… | 1 Básico | 49 | MIT (OSI permisiva) | alternativa |
-| `opendots` | Interfaz abierta de asistentes persistentes que requiere CopilotKit… | 2 Intermedio | 48 | MIT (OSI permisiva) | alternativa |
 | `social-media-agent` | Agente de LangChain que convierte enlaces en publicaciones para redes sociales… | 2 Intermedio | 42 | MIT (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
@@ -92,15 +91,14 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### OpenBot (`openbot`)
 
-- **Repo:** https://github.com/CopilotKit/OpenBot · MIT · nivel 2 · 70/100 · recomendado en «Espacios de asistentes de CopilotKit»
+- **Repo:** https://github.com/CopilotKit/OpenBot · MIT · nivel 2 · 70/100
 - **Qué es:** Plataforma de CopilotKit (creadores de AG-UI) para «compañeros de trabajo» de IA autoalojables, en TypeScript. La plantilla es MIT, pero necesita CopilotKit Intelligence, con licencia aparte: gratuita en local para uso personal, de prueba…
 - **Cuándo elegirlo:** Casos: Dar a un asistente un navegador propio con aprobaciones; Conectar un agente existente por AG-UI a un espacio común. Evítalo si necesitas una herramienta estable y auditada para datos sensibles.
 - **Requisitos:** nivel 2: preparación pesada, app o instalador listo para usar; TypeScript, docker-compose.yml, package.json; hardware prerequisites; API de IA: depends; Un sistema compatible y una copia de datos o archivos para la primera prueba..
 - **Instalación (documentada en la fuente; no ejecutada):** `docker run -p 3001:3001 --env-file .env -e EMBEDDED_POSTGRES=on -v openbot-data:/var/lib/postgresql ghcr.io/copilotkit/openbot:latest` — fuente: https://github.com/CopilotKit/OpenBot/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Instala la app de escritorio, configura un modelo y pide una búsqueda web que requiera aprobación Éxito: La acción queda pendiente de tu aprobación y aparece en la auditoría
 - **Combina con:** `copilotkit` [9/ia-ui], `langgraph` [3/py], `mastra` [3/ts], `crewai` [3/py], `firecrawl` [4/crawlers], `composio` [22/infra]
-- **Alternativas:** `opendots`
-- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativa (elige una): opendots. OpenDots es ahora una «skin» de OpenBot y su repositorio queda como starter mantenido por la comunidad.
+- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. El tema de OpenDots se incorporó a OpenBot. El agente navegador maneja sesiones reales: mantén los puertos en loopback.
 
 ### paperclip (`paperclip`)
 
@@ -169,26 +167,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `ollama` [8/motores], `litellm` [23/serving], `searxng` [4/busqueda]
 - **Alternativas:** `openclaw`, `hermes-agent`
 - **Riesgos y avisos:** Alternativas (elige una): openclaw, hermes-agent. Se quita claude-mem (es un plugin de Claude Code y OpenClaw, no de Mercury). El asistente inicia un servicio en segundo plano; revisa su estado antes de añadir canales o ejecución programada.
-
-### OpenDots (`opendots`)
-
-- **Repo:** https://github.com/CopilotKit/OpenDots · MIT · nivel 2 · 48/100 · alternativa en «Espacios de asistentes de CopilotKit»
-- **Qué es:** OpenDots, plantilla open source de CopilotKit para agentes persistentes, cada uno con su propio ordenador, en web y móvil. Licencia MIT. Tiene ~6.6k estrellas; CopilotKit ofrece ahora la versión más robusta como skin de OpenBot.
-- **Cuándo elegirlo:** Casos: Probar un asistente persistente; Estudiar aprobación de acciones conectadas.
-- **Requisitos:** nivel 2: preparación media, requiere clave de API; Node; CopilotKit Intelligence; proveedores y conectores elegidos; hardware prerequisites; API de IA: sí; Node; CopilotKit Intelligence; proveedores y conectores elegidos.
-- **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/CopilotKit/OpenDots/blob/main/README.md
-
-  ```sh
-  git clone https://github.com/CopilotKit/OpenDots.git
-  cd OpenDots
-  npm ci
-  cp .env.example .env
-  npm run dev
-  ```
-- **Primera prueba propuesta (no ejecutada):** Configura un Dot de prueba y haz una pregunta sin conceder herramientas de escritura Éxito: Puedes comprobar la respuesta y el panel de conexiones
-- **Combina con:** `copilotkit` [9/ia-ui], `composio` [22/infra], `servers` [5/servidores]
-- **Alternativas:** `openbot`
-- **Riesgos y avisos:** Alternativa (elige una): openbot. No es autónomo del todo: depende de un servicio de CopilotKit. Autoalojar OpenDots no incluye automáticamente el servicio Intelligence ni una pila enteramente local.
 
 ### social-media-agent (`social-media-agent`)
 

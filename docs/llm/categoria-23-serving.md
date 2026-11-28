@@ -1,6 +1,6 @@
 # Alexandría para agentes · Serving y gateways de LLM
 
-Categoría 23 «Operar, evaluar y medir modelos de IA» › subcategoría `serving`. 12 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 23 «Operar, evaluar y medir modelos de IA» › subcategoría `serving`. 11 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=23&sub=serving · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -29,7 +29,6 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `bentoml` | Framework Python para convertir modelos y pipelines de IA en APIs de… | 2 Intermedio | 59 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `claude-code-router` | Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes… | 3 Avanzado | 58 | MIT (OSI permisiva) | alternativa |
 | `portkey-gateway` | Centraliza llamadas a distintos proveedores de modelos mediante una pasarela… | 3 Avanzado | 51 | MIT (OSI permisiva) | sin grupo |
-| `backdoor` | Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo… | 2 Intermedio | 34 | MIT (OSI permisiva) | alternativa |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -61,8 +60,8 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Instalación (documentada en la fuente; no ejecutada):** `uv add litellm` — fuente: https://github.com/BerriAI/litellm/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Configura un único proveedor y envía una petición breve antes de activar fallback y balanceo Éxito: Puedes identificar el proveedor real y su consumo
 - **Combina con:** `ollama` [8/motores], `open-webui` [8/chats], `langfuse` [23/observabilidad], `claude-code` [20/terminal]
-- **Alternativas:** `omniroute`, `claude-code-router`, `backdoor`
-- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativas (elige una): omniroute, claude-code-router, backdoor. Incidente de cadena de suministro de marzo de 2026 (PYSEC-2026-2): si instalaste 1.82.7 o…. Documenta harnesses de Claude Code y Codex en el SDK; pasar por el gateway no incorpora suscripciones ni elimina diferencias entre protocolos.
+- **Alternativas:** `omniroute`, `claude-code-router`
+- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativas (elige una): omniroute, claude-code-router. Incidente de cadena de suministro de marzo de 2026 (PYSEC-2026-2): si instalaste 1.82.7 o 1.82.8, rota…. Documenta harnesses de Claude Code y Codex en el SDK; pasar por el gateway no incorpora suscripciones ni elimina diferencias entre protocolos.
 
 ### TensorRT-LLM (`tensorrt-llm`)
 
@@ -88,8 +87,8 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Instalación (documentada en la fuente; no ejecutada):** `npm install -g omniroute` — fuente: https://github.com/cheaper-inference/OmniRoute/blob/release/v3.8.55/README.md
 - **Primera prueba propuesta (no ejecutada):** Conecta un proveedor autorizado y revisa una petición breve antes de activar rotación, fallback o compresión Éxito: Puedes identificar qué cuenta y modelo atendieron la petición
 - **Combina con:** `claude-code` [20/terminal], `cline` [20/editor], `ollama` [8/motores]
-- **Alternativas:** `litellm`, `claude-code-router`, `backdoor`
-- **Riesgos y avisos:** Alternativas (elige una): claude-code-router, backdoor, litellm. Combinar cuentas gratuitas puede incumplir las condiciones de algunos proveedores; el MITM…. Documenta Claude Code, Codex y un adaptador Antigravity; OAuth y automatización de terceros dependen de permisos y términos de cada proveedor.
+- **Alternativas:** `litellm`, `claude-code-router`
+- **Riesgos y avisos:** Alternativas (elige una): claude-code-router, litellm. Combinar cuentas gratuitas puede incumplir las condiciones de algunos proveedores; el MITM implica…. Documenta Claude Code, Codex y un adaptador Antigravity; OAuth y automatización de terceros dependen de permisos y términos de cada proveedor.
 
 ### Ray (`ray`)
 
@@ -161,8 +160,8 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   ```
 - **Primera prueba propuesta (no ejecutada):** Añade un proveedor, inicia el servidor local y aplica un perfil a una sesión de prueba Éxito: Puedes identificar endpoint, modelo y ruta efectiva
 - **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `opencode` [20/terminal], `claude-code-hooks-mastery` [2/metodologia]
-- **Alternativas:** `litellm`, `omniroute`, `backdoor`
-- **Riesgos y avisos:** Alternativas (elige una): omniroute, backdoor, litellm. Usar modelos de terceros con Claude Code puede no estar soportado por Anthropic. Documenta perfiles para Claude Code y Codex; llamar local al gateway no confirma que el modelo se ejecute localmente ni garantiza todas las capacidades de cada….
+- **Alternativas:** `litellm`, `omniroute`
+- **Riesgos y avisos:** Alternativas (elige una): omniroute, litellm. Usar modelos de terceros con Claude Code puede no estar soportado por Anthropic. Documenta perfiles para Claude Code y Codex; llamar local al gateway no confirma que el modelo se ejecute localmente ni garantiza todas las capacidades de cada….
 
 ### Portkey AI Gateway (`portkey-gateway`)
 
@@ -173,24 +172,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/Portkey-AI/gateway/blob/669825cbe89ee51569918b8f78a9db486fd69dd4/README.md
 - **Primera prueba propuesta (no ejecutada):** Instala una versión posterior al mínimo corregido y prueba una llamada con texto ficticio y presupuesto reducido. Éxito: Puedes identificar el proveedor utilizado en la respuesta o el registro de prueba.
 - **Riesgos y avisos:** Usa 1.14.0 o posterior por el aviso; la versión publicada verificada fue 1.15.2. El modo gestionado y los proveedores tienen facturación independiente.
-
-### backdoor (`backdoor`)
-
-- **Repo:** https://github.com/ajsai47/backdoor · MIT · nivel 2 · 34/100 · alternativa en «Pasarelas y routers de proveedores LLM»
-- **Qué es:** Backdoor, proxy de terceros de @ajsai47 que permite usar Claude Code con otros proveedores de modelos. Licencia MIT. Es pequeño (~300 estrellas, sin releases) y su último cambio es de mayo de 2026.
-- **Cuándo elegirlo:** Casos: Probar un backend local con Claude Code; Comparar proveedores compatibles.
-- **Requisitos:** nivel 2: preparación media; Sistema compatible; Claude Code; proveedor u Ollama; carpeta de prueba; hardware prerequisites; API de IA: opcional; Sistema compatible; Claude Code; proveedor u Ollama; carpeta de prueba.
-- **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/ajsai47/backdoor/blob/main/README.md
-
-  ```bash
-  git clone https://github.com/ajsai47/backdoor
-  cd backdoor
-  ./backdoor   # animated setup wizard — picks your provider, writes your config, launches Claude Code
-  ```
-- **Primera prueba propuesta (no ejecutada):** Revisa la configuración que propone el asistente y solicita una explicación corta sin herramientas externas Éxito: Puedes identificar el proveedor detrás del proxy
-- **Combina con:** `claude-code` [20/terminal], `ollama` [8/motores], `vllm`
-- **Alternativas:** `litellm`, `omniroute`, `claude-code-router`
-- **Riesgos y avisos:** Alternativas (elige una): omniroute, claude-code-router, litellm. Proyecto pequeño y sin mantenimiento reciente. Es un adaptador independiente; afirmar privacidad local requiere revisar también búsquedas, telemetría y otras herramientas y no solo el endpoint del modelo.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

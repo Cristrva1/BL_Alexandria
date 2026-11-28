@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-16",
+  "updated_at": "2026-11-27",
   "note": "Repos retirados del catálogo por estar archivados, abandonados, sustituidos o inactivos. scripts/daily_stars.py no los propone de nuevo aunque sigan con star. Para recuperar uno, quítalo de esta lista y vuelve a revisarlo como incorporación nueva.",
   "reasons": {
     "archivado": "Archivado en GitHub por sus autores.",
@@ -1081,6 +1081,66 @@
       "archived": false,
       "replaced_by": [
         "prompt-engineering-guide"
+      ]
+    },
+    {
+      "id": "opendots",
+      "gh": "CopilotKit/OpenDots",
+      "github_id": 1396117711,
+      "name": "OpenDots",
+      "cat": 21,
+      "retired_at": "2026-11-27",
+      "reason": "sustituido",
+      "evidence": "Los autores anuncian el fin del mantenimiento y la integración de OpenDots como tema de OpenBot. https://github.com/CopilotKit/OpenDots/commit/f59b1d32c91ed70eaf8435caace4732ed438acf1",
+      "last_commit": "2026-11-25",
+      "archived": false,
+      "replaced_by": [
+        "openbot"
+      ]
+    },
+    {
+      "id": "geo-seo-claude",
+      "gh": "zubair-trabzada/geo-seo-claude",
+      "github_id": 1160693255,
+      "name": "GEO-SEO Claude",
+      "cat": 27,
+      "retired_at": "2026-11-27",
+      "reason": "editorial",
+      "evidence": "Claude SEO documenta GEO, análisis de citabilidad y exportación de informes PDF. https://github.com/zubair-trabzada/geo-seo-claude/commit/989cae01e8ebbc42a9ec798eb9e7cb423f5ec89c",
+      "last_commit": "2026-10-05",
+      "archived": false,
+      "replaced_by": [
+        "claude-seo"
+      ]
+    },
+    {
+      "id": "backdoor",
+      "gh": "ajsai47/backdoor",
+      "github_id": 1241825396,
+      "name": "backdoor",
+      "cat": 23,
+      "retired_at": "2026-11-27",
+      "reason": "editorial",
+      "evidence": "La función de adaptar proveedores a Claude Code solapa la ruta documentada por Claude Code Router. https://github.com/ajsai47/backdoor/commit/7f9765aed856cfebc345df0c5312b78857d7fe5e",
+      "last_commit": "2026-05-22",
+      "archived": false,
+      "replaced_by": [
+        "claude-code-router"
+      ]
+    },
+    {
+      "id": "no-ai-slop",
+      "gh": "petergyang/no-ai-slop",
+      "github_id": 1291783779,
+      "name": "no-ai-slop",
+      "cat": 27,
+      "retired_at": "2026-11-27",
+      "reason": "editorial",
+      "evidence": "La revisión de patrones repetitivos y la edición para conservar la voz del autor se cubren con Humanizer. https://github.com/petergyang/no-ai-slop/commit/000650b156983f5159695b441477f4e63b25dc85",
+      "last_commit": "2026-09-02",
+      "archived": false,
+      "replaced_by": [
+        "humanizer"
       ]
     }
   ]

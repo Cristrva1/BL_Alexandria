@@ -122,6 +122,8 @@ Elegir componentes y añadir IA solo si el producto la necesita.
 
 **Decide primero:** ¿Necesitas una página estática, una aplicación o un chat con IA?
 
+[Elige una combinación para tu tipo de web](elegir-web.md).
+
 | Punto de partida | Qué hace | Acceso básico |
 |---|---|---|
 | [ui](fichas/ui.md) | Colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada. | Sin clave propia de API de IA en la ruta básica |

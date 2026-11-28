@@ -22,12 +22,6 @@
      "id": "awesome-mcp-servers",
      "motivo": "Encontrar servidores de la comunidad más allá de las referencias. (combinación por arquitectura)",
      "orden_instalacion": "Consulta también el MCP Registry oficial."
-    },
-    {
-     "id": "opendots",
-     "motivo": "Combinación recíproca: OpenDots lo enlaza como «Servidores MCP de referencia como herramientas. (combinación por arquitectura)».",
-     "orden_instalacion": "Orden indicado desde OpenDots: Añade los MCP por Dot.",
-     "reciproca_de": "opendots"
     }
    ],
    "notas": "Sin alternativas declaradas. No son para producción, según el propio README.",

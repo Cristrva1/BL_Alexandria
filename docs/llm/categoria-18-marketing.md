@@ -49,7 +49,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 3: preparación pesada; Cuenta o despliegue; DataForSEO; cliente MCP opcional; dominio propio de prueba; hardware prerequisites; API de IA: no; Cuenta o despliegue; DataForSEO; cliente MCP opcional; dominio propio de prueba.
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/every-app/open-seo/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Consulta una métrica de un dominio propio y revisa origen, fecha y coste de la solicitud Éxito: Puedes identificar qué datos devuelve DataForSEO y qué interpreta el agente
-- **Combina con:** `claude-code` [20/terminal], `coolify` [22/infraestructura], `geo-seo-claude` [27/dominio], `claude-seo` [27/dominio], `cloud-mail`, `marketingskills` [27/dominio]
+- **Combina con:** `claude-code` [20/terminal], `coolify` [22/infraestructura], `claude-seo` [27/dominio], `cloud-mail`, `marketingskills` [27/dominio]
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Cada consulta a DataForSEO tiene coste; vigila el gasto en su panel. El plugin Codex agrupa MCP y skills; MCP HTTP también conecta otros clientes; el agente mantiene sus propios límites.
 
 ### mautic (`mautic`)

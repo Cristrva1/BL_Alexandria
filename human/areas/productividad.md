@@ -4,7 +4,7 @@
 
 Organiza información, sincroniza archivos y prepara herramientas para tu trabajo cotidiano y tu hogar.
 
-56 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/productividad).
+55 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/productividad).
 
 ## Opciones para empezar
 
@@ -115,13 +115,12 @@ Organizar experiencias de estudio con ayuda de IA.
 
 Revisar y mejorar el contenido escrito con ayuda de un agente.
 
-[Explorar 4 repos](../../docs/index.html#/explorar?area=productividad&topic=personal-escritura)
+[Explorar 3 repos](../../docs/index.html#/explorar?area=productividad&topic=personal-escritura)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [Humanizer](../fichas/humanizer.md) | Skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana. | Sin clave propia de API de IA en la ruta básica |
 | [i-have-adhd](../fichas/i-have-adhd.md) | Skill para que un agente presente primero la respuesta y organice su salida con menos distracciones y rodeos. | Sin clave propia de API de IA en la ruta básica |
-| [no-ai-slop](../fichas/no-ai-slop.md) | Skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA. | Sin clave propia de API de IA en la ruta básica |
 | [Stop Slop](../fichas/stop-slop.md) | Skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbrica de calidad. | Sin clave propia de API de IA en la ruta básica |
 
 La revisión de documentación no equivale a una instalación probada. Consulta cada ficha para acceso, coste, equipo y pasos de arranque.

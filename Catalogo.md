@@ -1,6 +1,6 @@
 # 📚 Catálogo de BL_Alexandria
 
-**970 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
+**966 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
 
 [🗺️ Guía humana](human/README.md) · [🔎 Explorador interactivo](docs/index.html) · [🧪 Recetas](human/playbooks/README.md) · [🆕 Novedades](human/novedades.md) · [🤖 Para agentes](AGENTS.md)
 
@@ -28,13 +28,13 @@
 18. [🤖 CRM, ventas y marketing](#-18-crm-ventas-y-marketing) — 19
 19. [🧠 Aprender IA y escribir mejores prompts](#-19-aprender-ia-y-escribir-mejores-prompts) — 30
 20. [🕸️ Programar con agentes de código](#️-20-programar-con-agentes-de-código) — 21
-21. [🕸️ Asistentes e investigación con agentes](#️-21-asistentes-e-investigación-con-agentes) — 18
+21. [🕸️ Asistentes e investigación con agentes](#️-21-asistentes-e-investigación-con-agentes) — 17
 22. [🕸️ Infraestructura, despliegue y herramientas para agentes](#️-22-infraestructura-despliegue-y-herramientas-para-agentes) — 32
-23. [🧬 Operar, evaluar y medir modelos de IA](#-23-operar-evaluar-y-medir-modelos-de-ia) — 31
+23. [🧬 Operar, evaluar y medir modelos de IA](#-23-operar-evaluar-y-medir-modelos-de-ia) — 30
 24. [🧑‍💻 Modelos abiertos y entrenamiento](#-24-modelos-abiertos-y-entrenamiento) — 25
 25. [🧑‍💻 Procesar datos y trabajar con notebooks](#-25-procesar-datos-y-trabajar-con-notebooks) — 23
 26. [🎨 Animación, gráficos y creación 3D](#-26-animación-gráficos-y-creación-3d) — 32
-27. [🎨 Skills de diseño, contenido y especialidades](#-27-skills-de-diseño-contenido-y-especialidades) — 40
+27. [🎨 Skills de diseño, contenido y especialidades](#-27-skills-de-diseño-contenido-y-especialidades) — 38
 28. [🖼️ Visión artificial, rostros y percepción](#️-28-visión-artificial-rostros-y-percepción) — 21
 29. [🎬 Audio, transcripción, voz y música](#-29-audio-transcripción-voz-y-música) — 34
 30. [🎬 Video con código y agentes creativos](#-30-video-con-código-y-agentes-creativos) — 25
@@ -1203,7 +1203,6 @@ _Asistentes personales, equipos de agentes e investigación con fuentes. Compara
 | [multica](human/fichas/multica.md) | Workspace para asignar y revisar trabajo de agentes de código mediante sus CLI y cuentas propias. | API de IA opcional | ⚙️ plataforma | 🟡 medio |
 | [OpenJarvis](human/fichas/openjarvis.md) | Crea un asistente personal con chat y flujos que pueden usar modelos locales, con conectores opcionales para tus servicios. | API de IA opcional | 🖥️ app | 🟡 medio |
 | [OpenBot](human/fichas/openbot.md) | Espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y auditoría, conectables por AG-UI. | Depende de la ruta elegida | 🖥️ app | 🔴 pesado |
-| [OpenDots](human/fichas/opendots.md) | Interfaz abierta de asistentes persistentes que requiere CopilotKit Intelligence, alojado, evaluado localmente o con licencia. | API de IA necesaria | 🖥️ app | 🟡 medio |
 | [Mercury Agent](human/fichas/mercury-agent.md) | Agente personal 24/7 con permisos estrictos, presupuesto de tokens y acceso por CLI, Telegram o web. | API de IA opcional | 🖥️ app | 🟢 fácil |
 | [social-media-agent](human/fichas/social-media-agent.md) | Agente de LangChain que convierte enlaces en publicaciones para redes sociales con revisión humana antes de publicarlas. | API de IA necesaria | 🧩 motor/runtime | 🟡 medio |
 | [hello-halo](human/fichas/hello-halo.md) | Asistente de escritorio con manejo de archivos, navegador y rutas de acceso con cuentas de IA o proveedores API. | API de IA opcional | 🖥️ app | 🟢 fácil |
@@ -1294,7 +1293,6 @@ _Servidores de inferencia, gateways, evaluación, trazas y control de contexto. 
 | [Xinference](human/fichas/xinference.md) | Plataforma abierta de inferencia para modelos de lenguaje, visión, embeddings, reranking, imagen, audio y vídeo, con API compatible con OpenAI y varios motores. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
 | [BentoML](human/fichas/bentoml.md) | Framework Python para convertir modelos y pipelines de IA en APIs de producción, con empaquetado en imágenes Docker y despliegue reproducible. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [GPUStack](human/fichas/gpustack.md) | Gestor de clústeres de GPU para servir modelos de IA: configura vLLM, SGLang o TensorRT-LLM, expone APIs compatibles con OpenAI y aprovisiona instancias GPU. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
-| [backdoor](human/fichas/backdoor.md) | Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code. | API de IA opcional | 🧩 motor/runtime | 🟡 medio |
 
 ### Ahorro de contexto y tokens
 
@@ -1490,7 +1488,6 @@ _Skills y plugins para diseño, escritura, marketing, ciencia y negocio. Se aña
 | ⭐ [Humanizer](human/fichas/humanizer.md) | Skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana. | Sin clave propia de API de IA en la ruta básica | 🎨 skill/prompt | 🟢 fácil |
 | [i-have-adhd](human/fichas/i-have-adhd.md) | Skill para que un agente presente primero la respuesta y organice su salida con menos distracciones y rodeos. | Sin clave propia de API de IA en la ruta básica | 🎨 skill/prompt | 🟡 medio |
 | [Stop Slop](human/fichas/stop-slop.md) | Skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbrica de calidad. | Sin clave propia de API de IA en la ruta básica | 🎨 skill/prompt | 🟢 fácil |
-| [no-ai-slop](human/fichas/no-ai-slop.md) | Skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA. | Sin clave propia de API de IA en la ruta básica | 🎨 skill/prompt | 🟡 medio |
 
 ### Skills de dominio: marketing, SEO y negocio
 
@@ -1502,7 +1499,6 @@ _Skills y plugins para diseño, escritura, marketing, ciencia y negocio. Se aña
 | [financial-services](human/fichas/financial-services.md) | Plugins, skills y conectores de Anthropic para flujos de investigación y trabajo en servicios financieros. | API de IA opcional | 🎨 skill/prompt | 🟡 medio |
 | [Knowledge Work Plugins](human/fichas/knowledge-work-plugins.md) | Añade a Claude flujos de trabajo por especialidad, como preparar reuniones de ventas, revisar datos y organizar soporte. | Sin clave propia de API de IA en la ruta básica | 🎨 skill/prompt | 🟡 medio |
 | [claude-seo](human/fichas/claude-seo.md) | Skills de Claude Code para revisar SEO técnico, contenido, presencia en buscadores de IA y otros aspectos de una web. | API de IA opcional | 🎨 skill/prompt | 🟡 medio |
-| [GEO-SEO Claude](human/fichas/geo-seo-claude.md) | Skill de Claude Code que audita webs para buscadores con IA (GEO) y SEO clásico, con citabilidad, schema, llms.txt e informes PDF. | API de IA opcional | 🎨 skill/prompt | 🟢 fácil |
 | [Claude Ads](human/fichas/claude-ads.md) | Audita campañas de publicidad con Claude Code y organiza los hallazgos por plataforma, evidencia y prioridad. | Sin clave propia de API de IA en la ruta básica | 🎨 skill/prompt | 🟡 medio |
 | [skills](human/fichas/minimalist-entrepreneur-skills.md) | Skills basadas en ideas de The Minimalist Entrepreneur para orientar trabajo de negocio y emprendimiento con un agente. | Sin clave propia de API de IA en la ruta básica | 🎨 skill/prompt | 🟡 medio |
 | [instagram-agent-skill](human/fichas/instagram-agent-skill.md) | Skills de Claude para investigar ideas, preparar guiones y revisar contenido y publicaciones de una cuenta de Instagram. | Sin clave propia de API de IA en la ruta básica | 🎨 skill/prompt | 🟡 medio |

@@ -276,14 +276,14 @@
     ];
     const paths = [
       {h:150,icon:"🌱",title:"Nunca he usado estas herramientas",text:"Te explicamos los términos, qué cuesta cada pieza y te proponemos una primera prueba pequeña.",links:[["#/empezar","Guíame con mi proyecto"],["#/guia/vocabulario","Entender el vocabulario"],["#/acceso","Qué es una API, una suscripción o un modelo local"]]},
-      {h:40,icon:"🛠️",title:"Quiero crear algo concreto",text:"Parte del resultado que buscas y combina pocas piezas con un propósito claro.",links:[["#/rutas","Elegir por objetivo"],["#/recetas","Seguir una receta completa"],["#/comparar","Comparar alternativas"]]},
+      {h:40,icon:"🛠️",title:"Quiero crear algo concreto",text:"Elige una herramienta para tu tarea y descubre qué añadir cuando la necesites.",links:[["#/empezar","Elegir para mi tarea"],["#/recetas","Seguir una receta completa"],["#/comparar","Comparar alternativas"]]},
       {h:255,icon:"🤖",title:"Ya trabajo con un agente",text:"Mejora Claude Code, Codex o Antigravity con técnicas, plantillas y comandos documentados.",links:[["#/tecnicas","Técnicas e ideas"],["#/prompts","Plantillas de prompts"],["#/configurar","Configurar agentes y modelos"]]},
     ];
     return `<header class="hero">
       <div class="library-intro rise">
         <p class="eyebrow">Biblioteca de Alexandría · catálogo educativo de IA</p>
         <h1>Encuentra lo que necesitas.<br><span class="ink-gradient">Entiende cómo usarlo.</span></h1>
-        <p class="lede">${catalog.counts.repos} repositorios de IA y automatización, explicados por su función, su acceso y sus requisitos. Con recetas, técnicas y plantillas para pasar de la idea a una primera prueba.</p>
+        <p class="lede">${catalog.counts.repos} repositorios de IA y automatización para tareas, equipos y necesidades distintas. En Guíame puedes descubrir con cuál empezar.</p>
         <search><form id="home-search" class="home-search" action="#/explorar" method="get">
           <label for="home-query">¿Qué quieres hacer?</label><p id="search-help" class="meta">Escribe una tarea o un nombre. Pulsa <kbd>/</kbd> en cualquier página para buscar.</p>
           <div class="search-line"><input id="home-query" name="q" type="search" aria-describedby="search-help" placeholder="Por ejemplo: transcribir una reunión" autocapitalize="none" autocorrect="off" spellcheck="false" enterkeyhint="search"><button class="btn" type="submit">Buscar <span class="arrow" aria-hidden="true">→</span></button></div></form></search>
@@ -339,9 +339,13 @@
       context.set("goal",goal.id);
       const picks=AlexandriaSearch.guided(catalog.repos,catalog.categories,catalog.discovery.goals,context);
       const related=catalog.recipes.filter(r=>(goal.recipe_ids||[]).includes(r.id));
+      const startingPoints=goal.id==="web"&&!route
+        ? `<section class="decision-brief"><h2>Elige según el tipo de web</h2>${webProjectOptions()}<p><a href="${exploreHref(context)}">Explorar el catálogo con este filtro</a></p></section>`
+        : `<section class="section"><h2>${picks.length?"Pocos puntos de partida, con funciones distintas":"No hay un punto de partida documentado con este acceso"}</h2><p class="meta">Selección editorial de hasta tres opciones. Revisa sus funciones: no todas son sustitutas ni tienen la misma preparación.</p>${picks.length?pickList(picks):`<p>Cambia la forma de acceso para explorar otras rutas. La ausencia de una coincidencia no demuestra incompatibilidad.</p>`}<div class="decision-actions">${picks.length>1?`<a class="btn" href="${comparisonHref(picks.map(p=>p.id))}">Comparar funciones de estas opciones</a>`:""}<a href="${exploreHref(context)}">Ver todas las herramientas para este objetivo</a></div></section>`;
       return `<p class="breadcrumbs"><a href="#/rutas${route?`?route=${esc(route)}`:""}">Todos los objetivos</a></p><h1><span aria-hidden="true">${GOAL_ICONS[goal.id]||""}</span> ${esc(goal.title)}</h1><p class="lede">${esc(goal.description)}</p>${filters}
         <section class="decision-brief"><h2>Antes de elegir una herramienta</h2><dl><div><dt>Resultado buscado</dt><dd>${esc(goal.outcome||goal.description)}</dd></div><div><dt>Qué preparar</dt><dd>${esc(goal.bring||"Una tarea y datos de prueba")}</dd></div><div><dt>La decisión importante</dt><dd>${esc(goal.decision||"¿Qué parte de tu tarea necesita resolver esta herramienta?")}</dd></div></dl></section>
-        <section class="section"><h2>${picks.length?"Pocos puntos de partida, con funciones distintas":"No hay un punto de partida documentado con este acceso"}</h2><p class="meta">Selección editorial de hasta tres opciones. Revisa sus funciones: no todas son sustitutas ni tienen la misma preparación.</p>${picks.length?pickList(picks):`<p>Cambia la forma de acceso para explorar otras rutas. La ausencia de una coincidencia no demuestra incompatibilidad.</p>`}<div class="decision-actions">${picks.length>1?`<a class="btn" href="${comparisonHref(picks.map(p=>p.id))}">Comparar funciones de estas opciones</a>`:""}<a href="${exploreHref(context)}">Ver todas las herramientas para este objetivo</a></div></section>
+        <p><a class="btn" href="#/empezar?${esc(new URLSearchParams({goal:goal.id,...(route&&{route})}).toString())}">Ayúdame a elegir para este objetivo</a></p>
+        ${startingPoints}
         ${related.length?`<section class="section"><h2>Si necesitas un flujo completo</h2><ul class="related-recipes">${related.map(r=>`<li><a href="#/receta/${esc(r.id)}">${esc(r.title)}</a><p>${esc(r.goal)}</p></li>`).join("")}</ul></section>`:""}`;
     }
     const groups=[...(catalog.discovery.goal_groups||[])];
@@ -380,18 +384,29 @@
   let guidedSession=null;
   function guidedState(params) {
     const goal=catalog.discovery.goals.find(g=>g.id===params.get("goal")),route=params.get("route");
-    // A new goal link (for example from the home page ideas) starts a fresh draft.
-    if(guidedSession&&!(goal&&goal.id!==guidedSession.fromGoal))return guidedSession;
+    const topicId=params.get("topic"),topic=Object.hasOwn(topicById,topicId)?topicById[topicId]:null;
+    const group=catalog.guided_groups?.find(item=>item.id===params.get("group"));
+    const entry=group||topic||goal;
+    const source=entry?`${group?"group":topic?"topic":"goal"}:${entry.id}:${route||""}`:"";
+    if(guidedSession&&(!source||source===guidedSession.source))return guidedSession;
     const modes={claude:'existing',codex:'existing',antigravity:'existing',local_model:'local',no_api:'no_api',api:'api'};
-    const draft=AlexandriaGuide.normalize({project:goal?.title||'',goal:goal?.id||'',mode:modes[route]||'any',clients:['claude','codex','antigravity'].includes(route)?[route]:[]});
-    return guidedSession={draft,submitted:goal?draft:null,fromGoal:goal?.id||""};
+    const previous=guidedSession?.draft||{};
+    const draft=AlexandriaGuide.normalize({...previous,project:'',goal:topic||group?'':goal?.id,topic:group?'':topic?.id,group:group?.id,mode:modes[route]||previous.mode,clients:['claude','codex','antigravity'].includes(route)?[route]:previous.clients});
+    return guidedSession={draft,submitted:entry?draft:null,source};
+  }
+  function guidedScopeOptions(profile) {
+    const group=catalog.guided_groups?.find(item=>item.id===profile.group);
+    const selected=group?`<optgroup label="Grupo elegido"><option value="group:${esc(group.id)}" selected>${esc(group.title)}</option></optgroup>`:'';
+    const broad=catalog.discovery.goals.map(goal=>`<option value="${esc(goal.id)}"${profile.goal===goal.id?' selected':''}>${esc(goal.title)}</option>`);
+    const concrete=areas.map(area=>`<optgroup label="${esc(area.title)}">${area.topics.map(topic=>`<option value="topic:${esc(topic.id)}"${profile.topic===topic.id?' selected':''}>${esc(topic.title)}</option>`).join('')}</optgroup>`);
+    return `<option value="">Detectar por la descripción</option>${selected}<optgroup label="Objetivos generales">${broad.join('')}</optgroup>${concrete.join('')}`;
   }
   function profileSelect(group,id,name,value) {
     return `<select id="${id}" name="${name}">${Object.entries(AlexandriaGuide.labels[group]).map(([key,title])=>`<option value="${key}"${value===key?' selected':''}>${esc(title)}</option>`).join('')}</select>`;
   }
-  function guidedPrompt(pick,profile) {
+  function guidedPrompt(pick,profile,taskTitle) {
     const item=pick.item,l=AlexandriaGuide.labels,trial=AlexandriaGuide.firstTry(pick);
-    return [`Quiero crear: ${profile.project}`,`Objetivo: ${catalog.discovery.goals.find(g=>g.id===profile.goal)?.title||'confirmar al empezar'}.`,
+    return [`Objetivo: ${taskTitle}.`,...(profile.project?[`Mi proyecto: ${profile.project}`]:[]),
       `Mi experiencia: ${l.experience[profile.experience]}. Mi equipo: ${l.os[profile.os]}, ${l.ram[profile.ram]}, ${l.gpu[profile.gpu]}.`,
       `Acceso declarado: ${profile.clients.map(id=>AlexandriaGuide.clientNames[id]).join(', ')||'ninguno confirmado'}. Preferencia: ${l.mode[profile.mode]}.`,
       `Estoy considerando ${item.name}. Fuente: ${item.getting_started?.source||item.repo_url}.`,
@@ -399,32 +414,84 @@
       'Lee la documentación actual y comprueba sistema, dependencias, licencia y costes antes de dar comandos. Si falta un dato de equipo, pregúntalo. Separa tu ayuda para instalar del modelo que ejecuta la aplicación y no asumas que mi suscripción paga sus APIs. Guíame una acción a la vez y verifica el resultado. No inventes paquetes ni solicites claves en el chat.'
     ].join('\n\n');
   }
+  function guidedRecommendationList(picks,profile,taskTitle,extra) {
+    const [first,...others]=picks,primary=first.item;
+    const trial=AlexandriaGuide.firstTry(first),steps=AlexandriaGuide.startSteps(first,profile).slice(0,2);
+    const prompt=guidedPrompt(first,profile,taskTitle);
+    const alternativeMarkup=pick=>{
+      const item=pick.item,relation=AlexandriaDecisions.relationship(primary,item);
+      const title=relation==='alternative'?`En lugar de ${primary.name}`
+        :relation==='complement'?'Pieza complementaria'
+        :item.guided_editorial?.group&&item.guided_editorial.group===primary.guided_editorial?.group?'Alternativa para esta tarea'
+        :item.similares?.grupo&&item.similares.grupo===primary.similares?.grupo?'Funciones parecidas':'Otro enfoque para la tarea';
+      return `<li><p><strong>${esc(title)} · <a href="#/repo/${esc(item.id)}">${esc(item.name)}</a></strong></p><p>${esc(item.guided_editorial?.note||item.similares?.cuando||item.choose_if||item.lead)}</p><p class="meta">${esc(pick.useBrowser?'Aplicación web oficial':preparation(item))} · ${esc(label('cost',item.access?.cost))}</p></li>`;
+    };
+    const visible=new Set(picks.map(pick=>pick.item.id));
+    const combos=(primary.combina_con||[]).filter(combo=>{
+      const item=repo(combo.id);
+      return item&&!item.status&&item.guided_editorial?.role!=='pending'&&!visible.has(combo.id)&&AlexandriaDecisions.relationship(primary,item)==='complement';
+    }).slice(0,2);
+    return `<article class="decision-brief guided-primary">
+      <h3><a href="#/repo/${esc(primary.id)}">${esc(primary.name)}</a></h3>
+      <p>${esc(primary.lead)}</p>
+      ${primary.guided_editorial?.note||primary.similares?.cuando?`<p>${esc(primary.guided_editorial?.note||primary.similares.cuando)}</p>`:''}
+      <p class="meta">${esc(first.useBrowser?'Aplicación web oficial':preparation(primary))} · ${esc(label('cost',primary.access?.cost))}</p>
+      <h4>Por qué empezaría aquí</h4>
+      <ul>${first.reasons.map(reason=>`<li>${esc(reason)}</li>`).join('')}</ul>
+      <p><strong>Primera prueba.</strong> ${esc(trial.action||'Prueba el ejemplo básico de la documentación.')}</p>
+      ${trial.success?`<p><strong>Qué comprobar.</strong> ${esc(trial.success)}</p>`:''}
+      <details class="guided-help"><summary>Ver pasos, requisitos y costes</summary>
+        ${first.warnings.length?`<p>${esc(first.warnings.join(' '))}</p>`:''}
+        <ol>${steps.map(step=>`<li>${esc(step.text)}${safeUrl(step.href)?` <a href="${esc(safeUrl(step.href))}" target="_blank" rel="noreferrer">${esc(step.label)}</a>`:''}</li>`).join('')}</ol>
+        <p>${esc(primary.access?.cost_note)}</p><p class="meta">Prueba propuesta según las fuentes de la ficha.</p>
+        <label for="guided-prompt">Encargo para pedir ayuda a mi asistente</label>
+        <textarea id="guided-prompt" rows="6" readonly>${esc(prompt)}</textarea>
+        <button class="btn small" type="button" data-action="copy" data-text="${esc(prompt)}">Copiar encargo</button><p class="copy-status meta" role="status"></p>
+        <p><a href="#/repo/${esc(primary.id)}?section=start">Abrir la ficha y sus fuentes</a></p>
+      </details>
+    </article>
+    ${others.length?`<section class="section"><h3>Cuándo elegir otra opción</h3><ul class="starter-list" role="list">${others.map(alternativeMarkup).join('')}</ul></section>`:''}
+    ${extra.length?`<details class="reading-details"><summary>Más alternativas de este grupo</summary><ul class="starter-list" role="list">${extra.map(alternativeMarkup).join('')}</ul></details>`:''}
+    ${combos.length?`<details class="reading-details"><summary>Qué podrías combinar con ${esc(primary.name)}</summary>
+      <ul>${combos.map(combo=>`<li><p><a href="#/repo/${esc(combo.id)}">${esc(repo(combo.id).name)}</a>. ${esc(combo.motivo||repo(combo.id).lead)}</p></li>`).join('')}</ul>
+      <p class="meta">Combinaciones documentadas en el catálogo. Comprueba versiones, acceso y requisitos en las fichas.</p>
+    </details>`:''}`;
+  }
   function guidedResults(profile) {
-    const result=AlexandriaGuide.recommend(catalog,profile),{intent,picks,notices,excluded}=result,l=AlexandriaGuide.labels;
+    const result=AlexandriaGuide.recommend(catalog,profile),{intent,picks,notices,excluded,extra=[],referenceOnly}=result,l=AlexandriaGuide.labels;
+    const showWebProjects=intent.goal?.id==='web' && profile.os!=='browser' && ['any','api'].includes(profile.mode);
     const summary=`<dl class="guided-summary"><div><dt>Experiencia</dt><dd>${esc(l.experience[profile.experience])}</dd></div><div><dt>Equipo</dt><dd>${esc([l.os[profile.os],l.ram[profile.ram],l.gpu[profile.gpu]].join(' · '))}</dd></div><div><dt>Acceso</dt><dd>${esc(profile.clients.map(id=>AlexandriaGuide.clientNames[id]).join(', ')||'Ningún agente confirmado')} · ${esc(l.mode[profile.mode])}</dd></div></dl>`;
     let body;
     if(!intent.goal){
-      body=`<p>${intent.kind==='ambiguous'?'Tu descripción encaja en varios objetivos. Elige cuál quieres resolver primero en «Tipo de resultado».':'No hemos identificado un objetivo con suficiente claridad. Elige «Tipo de resultado» o añade qué entrada tendrás y qué salida necesitas.'}</p>${intent.suggestions.length?`<ul>${intent.suggestions.map(g=>`<li>${esc(g.title)}</li>`).join('')}</ul>`:''}<button class="btn ghost" type="button" data-action="guided-objective">Elegir el objetivo</button>`;
+      body=`<p>${intent.kind==='ambiguous'?'Tu descripción encaja en varios objetivos. Elige qué quieres resolver primero en «Tarea u objetivo».':'Elige una tarea en el formulario o describe el resultado que necesitas.'}</p>${intent.suggestions.length?`<ul>${intent.suggestions.map(g=>`<li>${esc(g.title)}</li>`).join('')}</ul>`:''}<button class="btn ghost" type="button" data-action="guided-objective">Elegir una tarea</button>`;
+    }else if(showWebProjects){
+      body=`<div class="decision-brief">${webProjectOptions()}</div><div class="decision-actions"><button class="btn ghost" type="button" data-action="guided-edit">Cambiar mis respuestas</button><a href="#/area/frontend?section=topics">Explorar herramientas de frontend</a></div>`;
+    }else if(referenceOnly){
+      body='<p>El informe conserva este grupo como referencia documental.</p><button class="btn ghost" type="button" data-action="guided-objective">Elegir otra tarea</button>';
     }else if(!picks.length){
       body=`<p>No encontramos un punto de partida documentado con estas condiciones. Conservamos tus respuestas; puedes ajustar el perfil.</p><ul>${excluded.device?'<li>Solo navegador: no hay una aplicación web verificada en estos puntos de partida.</li>':''}${excluded.access?'<li>Revisa el acceso: una integración con tu agente, un modelo local y una API son rutas diferentes.</li>':''}${excluded.preparation?'<li>Se han apartado opciones con preparación pesada o requisitos documentados que superan el equipo indicado. Puedes revisar sus fichas si vas a usar otro entorno.</li>':''}</ul><button class="btn ghost" type="button" data-action="guided-edit">Ajustar mis respuestas</button>`;
     }else{
-      body=`<p>Son puntos de partida para explorar, con funciones y requisitos distintos. Elige una primera prueba; no necesitas instalar todas las opciones.</p><ol class="guided-recommendations">${picks.map(pick=>{
-        const item=pick.item,trial=AlexandriaGuide.firstTry(pick),steps=AlexandriaGuide.startSteps(pick,profile),prompt=guidedPrompt(pick,{...profile,goal:intent.goal.id});
-        return `<li><article><h3><a href="#/repo/${esc(item.id)}">${esc(item.name)}</a></h3><p>${esc(item.lead)}</p><p class="meta">${esc(pick.useBrowser?'Aplicación web oficial':preparation(item))} · ${esc(label('cost',item.access.cost))}</p><h4>Por qué aparece para ti</h4><ul>${pick.reasons.map(text=>`<li>${esc(text)}</li>`).join('')}</ul>${pick.warnings.length?`<p class="guided-caution"><strong>Antes de empezar:</strong> ${esc(pick.warnings.join(' '))}</p>`:''}<h4>Tus primeros pasos</h4><ol class="guided-start-steps">${steps.map(step=>`<li>${esc(step.text)}${safeUrl(step.href)?` <a href="${esc(safeUrl(step.href))}" target="_blank" rel="noreferrer">${esc(step.label)}</a>`:''}</li>`).join('')}</ol><p><strong>Qué comprobar:</strong> ${esc(trial.success||'El resultado indicado por la documentación.')}</p><p><strong>Costes a revisar:</strong> ${esc(item.access.cost_note)}</p><p class="meta">Ficha revisada el ${esc(item.access.checked_at)}. Prueba propuesta; no ejecutada por Alexandría.</p><details class="reading-details"><summary>Pedir ayuda a mi asistente con estos datos</summary><label for="guided-prompt-${esc(item.id)}">Encargo para empezar con ${esc(item.name)}</label><textarea id="guided-prompt-${esc(item.id)}" rows="7" readonly>${esc(prompt)}</textarea><button class="btn small" type="button" data-action="copy" data-text="${esc(prompt)}">Copiar encargo personalizado</button><p class="copy-status meta" role="status"></p></details><p><a href="#/repo/${esc(item.id)}?section=start">Abrir la ficha, requisitos y fuentes</a></p></article></li>`;
-      }).join('')}</ol><div class="decision-actions">${picks.length>1?`<a class="btn" href="${comparisonHref(picks.map(p=>p.item.id))}">Comparar funciones de estas opciones</a>`:''}<button class="btn ghost" type="button" data-action="guided-edit">Cambiar mis respuestas</button><a href="#/rutas?goal=${esc(intent.goal.id)}">Explorar este objetivo</a></div>`;
+      const browse=intent.kind==='group'?'':intent.area?topicHref(areaById[intent.area],intent.goal):`#/rutas?goal=${esc(intent.goal.id)}`;
+      body=`${guidedRecommendationList(picks,profile,intent.goal.title,extra)}<div class="decision-actions">${picks.length>1?`<a class="btn" href="${comparisonHref(picks.map(p=>p.item.id))}">Comparar estas opciones</a>`:''}<button class="btn ghost" type="button" data-action="guided-edit">Ajustar mi perfil</button>${browse?`<a href="${browse}">Ver más para esta tarea</a>`:''}</div>`;
     }
-    return `<section id="guided-results" class="section" aria-labelledby="guided-result-title"><h2 id="guided-result-title" tabindex="-1">${!intent.goal?'Aclaremos el resultado que buscas':picks.length?`${picks.length} ${picks.length===1?'punto de partida':'puntos de partida'} para tu proyecto`:'Revisemos las condiciones para empezar'}</h2><p class="guided-project"><strong>Quieres crear:</strong> ${esc(profile.project)}</p>${intent.goal?`<p><strong>${intent.kind==='detected'?'Objetivo interpretado':'Objetivo elegido'}:</strong> ${esc(intent.goal.title)}. Puedes corregirlo en el formulario.</p>`:''}${summary}${notices.length?`<ul class="reading-notes">${notices.map(text=>`<li>${esc(text)}</li>`).join('')}</ul>`:''}<p class="meta">Selección orientativa basada en el catálogo y tus respuestas. No certifica compatibilidad de hardware ni mide rendimiento.</p>${body}</section>`;
+    const title=showWebProjects?'Elige cómo construir tu web':!intent.goal?'Aclaremos el resultado que buscas':referenceOnly?'Grupo de referencia':picks.length?'Por dónde empezaría':'Revisemos las condiciones para empezar';
+    return `<section id="guided-results" class="section" aria-labelledby="guided-result-title"><h2 id="guided-result-title" tabindex="-1">${title}</h2>
+      ${intent.goal?`<p><strong>${intent.kind==='detected'?'Objetivo interpretado':'Tarea elegida'}.</strong> ${esc(intent.goal.title)}</p>`:''}
+      ${profile.project?`<p class="guided-project">${esc(profile.project)}</p>`:''}
+      ${notices.length?`<ul class="reading-notes">${notices.map(text=>`<li>${esc(text)}</li>`).join('')}</ul>`:''}
+      ${body}<details class="reading-details"><summary>Perfil usado para elegir</summary>${summary}</details></section>`;
   }
   function renderGuided(params) {
     const state=guidedState(params),p=state.draft;
-    return `<h1>Cuéntanos qué quieres crear</h1><p class="lede">Tu proyecto, tu experiencia y lo que ya tienes. Recibirás hasta tres repos con motivos para elegirlos y pasos para una primera prueba.</p><p class="meta">Todas las preguntas están aquí. Tus respuestas se procesan en esta pestaña: no se envían a una API ni se guardan al recargar.</p>
+    return `<h1>Elige una herramienta para tu tarea</h1><p class="lede">Describe lo que quieres lograr o elige una tarea. Te propondremos por dónde empezar y qué puede cambiar tu elección.</p>
+      ${state.submitted?guidedResults(state.submitted):''}
       <form id="guided-start" class="guided-profile-form" action="#/empezar" method="post" aria-label="Tu proyecto y condiciones para empezar">
-      <fieldset><legend>Qué quieres crear</legend><div class="guided-project-fields"><div><label for="guided-project">Describe tu proyecto (obligatorio)</label><textarea id="guided-project" name="project" rows="3" minlength="12" maxlength="800" required aria-describedby="guided-project-help guided-validation">${esc(p.project)}</textarea><p id="guided-project-help" class="meta">Por ejemplo: «Quiero crear una presentación a partir de un PDF». Entre 12 y 800 caracteres.</p></div><div><label for="guided-goal">Tipo de resultado</label><select id="guided-goal" name="goal">${goalOptions(p.goal,'Detectar por la descripción')}</select><p class="meta">Si el objetivo no se interpreta bien, elígelo aquí.</p></div></div></fieldset>
+      <fieldset><legend>Qué quieres conseguir</legend><div class="guided-project-fields"><div><label for="guided-project">Describe tu tarea</label><textarea id="guided-project" name="project" rows="3" minlength="12" maxlength="800" aria-describedby="guided-project-help guided-validation">${esc(p.project)}</textarea><p id="guided-project-help" class="meta">Por ejemplo, «Quiero transcribir una reunión en mi equipo». Puedes dejarlo en blanco si eliges una tarea.</p></div><div><label for="guided-goal">Tarea u objetivo</label><select id="guided-goal" name="goal">${guidedScopeOptions(p)}</select></div></div></fieldset>
       <fieldset><legend>Tu experiencia</legend><div class="guided-radio-options">${Object.entries(AlexandriaGuide.labels.experience).map(([key,text])=>`<label><input type="radio" name="experience" value="${key}"${p.experience===key?' checked':''}> <span>${esc(text)}</span></label>`).join('')}</div><p class="meta">Al empezar se priorizan interfaces y rutas de aplicación; si programas, también piezas para integrar en código.</p></fieldset>
       <fieldset><legend>Tu equipo</legend><div class="guided-equipment"><div><label for="guided-os">Sistema o dispositivo</label>${profileSelect('os','guided-os','os',p.os)}</div><div><label for="guided-ram">Memoria RAM</label>${profileSelect('ram','guided-ram','ram',p.ram)}</div><div><label for="guided-gpu">GPU dedicada</label>${profileSelect('gpu','guided-gpu','gpu',p.gpu)}</div></div><p class="meta">Puedes dejar «por confirmar». RAM y GPU sirven para priorizar; los requisitos dependen del modelo y del flujo que elijas.</p></fieldset>
       <fieldset><legend>Tu acceso a IA</legend><p class="field-help">Marca lo que ya puedes utilizar. Si no tienes ninguno, deja las opciones sin marcar.</p><div class="guided-client-options">${Object.entries(AlexandriaGuide.clientNames).map(([key,text])=>`<label><input type="checkbox" name="clients" value="${key}"${p.clients.includes(key)?' checked':''}> <span>${esc(key==='web'?'Solo un chat web: ChatGPT, Claude, Gemini…':text)}</span></label>`).join('')}</div><div class="guided-mode"><label for="guided-mode">Qué ruta prefieres para ejecutar la herramienta</label>${profileSelect('mode','guided-mode','mode',p.mode)}</div><p class="meta">Usar un agente para instalar no implica que su suscripción pague la IA de la aplicación. No necesitas introducir claves ni datos de tu cuenta.</p></fieldset>
-      <p id="guided-validation" class="guided-validation" role="status"></p><div class="decision-actions"><button class="btn" type="submit">Recomendar hasta 3 repos</button><button class="btn ghost" type="button" data-action="guided-clear">Borrar respuestas</button></div></form>
-      ${state.submitted?guidedResults(state.submitted):''}<p class="meta"><a href="#/guia/vocabulario">Entender los términos</a> · <a href="#/acceso">Entender acceso y costes</a></p>`;
+      <p id="guided-validation" class="guided-validation" role="status"></p><div class="decision-actions"><button class="btn" type="submit">Ver recomendación</button><button class="btn ghost" type="button" data-action="guided-clear">Borrar respuestas</button></div></form>
+      <p class="meta">Tus respuestas se quedan en esta pestaña y se borran al recargar. <a href="#/guia/vocabulario">Entender los términos</a> · <a href="#/acceso">Entender acceso y costes</a></p>`;
   }
 
   function renderReading(id) {
@@ -434,7 +501,7 @@
     return `<article class="reading"><p><a href="#/guias">Todas las guías</a></p><h1>${esc(guide.title)}</h1><p class="lede">${esc(guide.intro)}</p>
       <nav class="reading-toc" aria-label="En esta guía"><h2>En esta guía</h2><ol>${guide.sections.map((section,index) => `<li><a href="#/guia/${esc(id)}?section=${index}">${esc(section.title)}</a></li>`).join("")}</ol></nav>
       ${guide.sections.map((section,index) => `<section id="reading-section-${index}" class="reading-section"><h2>${esc(section.title)}</h2><p>${esc(section.text)}</p></section>`).join("")}
-      ${guide.sources ? `<section><h2>Fuentes y fecha</h2><p>Consultadas el ${esc(catalog.access_checked)}. Las condiciones pueden cambiar.</p><ul>${guide.sources.map(source => `<li><a href="${esc(safeUrl(source.url))}" target="_blank" rel="noreferrer">${esc(source.title)}</a></li>`).join("")}</ul></section>` : ""}
+      ${guide.sources ? `<section><h2>Fuentes y fecha</h2><p>Consultadas el ${esc(guide.checked_at || catalog.access_checked)}. Las condiciones pueden cambiar.</p><ul>${guide.sources.map(source => `<li><a href="${esc(safeUrl(source.url))}" target="_blank" rel="noreferrer">${esc(source.title)}</a></li>`).join("")}</ul></section>` : ""}
       <p><a class="btn" href="#/explorar">Buscar una herramienta</a></p></article>`;
   }
 
@@ -538,6 +605,11 @@
       <details class="technical-map"><summary>Ver el índice técnico de ${catalog.counts.categories} secciones</summary><p class="meta">Clasificación original por tipo de herramienta. Los enlaces anteriores siguen funcionando.</p>${technicalRooms()}</details>`;
   }
 
+  function webProjectOptions() {
+    const choices=catalog.web_projects.map((project,index)=>`<div><dt><a href="#/guia/elegir-web?section=${index}">${esc(project.title)}</a></dt><dd>${esc(project.when)} Empieza con <strong>${esc(project.stack)}</strong>.</dd></div>`);
+    return `<dl>${choices.join("")}</dl><p><a href="#/guia/elegir-web">Qué combinar, qué reemplazar y cómo probarlo</a></p>`;
+  }
+
   function renderArea(id) {
     const area=areaById[id];
     if(!area)return missing("No encontramos esa categoría.","#/salas");
@@ -545,9 +617,10 @@
     const guide=area.guide?`<section class="section setup-guide"><h2>Primera configuración, paso a paso</h2><ol>${area.guide.map(step=>`<li><h3>${esc(step.title)}</h3><p>${esc(step.text)}</p></li>`).join("")}</ol><p><a href="${esc(safeUrl(area.official_url))}" target="_blank" rel="noreferrer">Abrir la fuente oficial de ${esc(area.title.replace("Configuración de ",""))}</a></p><p class="meta">${esc(area.scope)}</p></section>`:"";
     return `<div${areaTone(id)}><nav class="breadcrumbs" aria-label="Ubicación"><a href="#/salas">Categorías</a><span aria-hidden="true"> / </span><span aria-current="page">${esc(area.title)}</span></nav><header class="page-head tone"><div class="title-row"><span class="icon-tile big" aria-hidden="true">${areaIcon(id)}</span><h1>${esc(area.title)}</h1></div><p class="lede">${esc(area.description)}</p><div class="badges"><span class="badge tone">${area.count} repos únicos</span><span class="badge tone">${area.topics.length} subcategorías</span>${area.kind==="tool"?'<span class="badge tone">Colección de configuración</span>':'<span class="badge tone">Área de trabajo</span>'}</div></header>
       <nav class="area-jump" aria-label="En esta categoría"><a href="#/area/${esc(id)}?section=topics">Elegir subcategoría</a>${area.guide?`<a href="#/area/${esc(id)}?section=setup">Primeros pasos</a>`:""}<a href="${exploreHref(new URLSearchParams({area:id}))}">Ver todos los repos de esta área</a></nav>
+      ${id==="frontend"?`<section class="decision-brief"><h2>Elige según el tipo de web</h2>${webProjectOptions()}</section>`:""}
       <section class="section" id="area-topics"><h2>¿Qué necesitas hacer?</h2><ul class="topic-directory" role="list">${topics}</ul></section>
       ${guide.replace('class="section setup-guide"','class="section setup-guide" id="area-setup"')}
-      <section class="section"><h2>Opciones para empezar</h2><p>Compara estas fichas antes de instalar. No necesitas usar todas.</p>${quickRepos(area.starters)}</section>
+      ${id!=="frontend"?`<section class="section"><h2>Opciones para empezar</h2><p>Compara estas fichas antes de instalar. No necesitas usar todas.</p>${quickRepos(area.starters)}</section>`:""}
       ${area.evidence?.length?`<details class="technical-map"><summary>Fuentes de compatibilidad de esta colección</summary><ul>${area.evidence.map(e=>`<li><a href="${esc(safeUrl(e.source))}" target="_blank" rel="noreferrer">${esc(repo(e.repo_id)?.name||e.repo_id)}</a> · revisado el ${esc(e.checked_at)}</li>`).join("")}</ul></details>`:""}</div>`;
   }
 
@@ -577,7 +650,12 @@
     const addChip=(key,text)=>{const next=new URLSearchParams(params);next.delete(key);next.delete("page");if(key==="cat")next.delete("sub");if(key==="area")next.delete("topic");chips.push(`<a class="chip" href="${exploreHref(next)}">${esc(text)} <span aria-hidden="true">×</span><span class="sr-only">: quitar filtro</span></a>`);};
     for(const [key,value] of params){if(key==="q"||key==="page"||key==="sort"||!value)continue;const text=key==="area"?(area?.title||value):key==="topic"?(topic?.title||value):key==="cat"?catName(value):key==="sub"?(category?.subs.find(s=>s.key===value)?.title||value):key==="goal"?(goal?.title||value):key==="route"?label("route",value):key==="complejidad"?`Nivel ${value} · ${({1:"Básico",2:"Intermedio",3:"Avanzado",4:"Experto"})[value]||""}`:value;addChip(key,text);}
     const groups=catalog.labels;
+    const guideParams=new URLSearchParams();
+    if(topic)guideParams.set("topic",topic.id);
+    else if(goal)guideParams.set("goal",goal.id);
+    if(guideParams.size&&params.get("route"))guideParams.set("route",params.get("route"));
     return `${area?`<nav class="breadcrumbs" aria-label="Ubicación"><a href="#/salas">Categorías</a> / <a href="#/area/${esc(area.id)}">${esc(area.title)}</a>${topic?` / <span aria-current="page">${esc(topic.title)}</span>`:""}</nav>`:""}<header class="page-head${area?" tone":""}"${area?areaTone(area.id):""}><div class="title-row">${area?`<span class="icon-tile big" aria-hidden="true">${areaIcon(area.id)}</span>`:""}<h1>${esc(topic?.title||area?.title||goal?.title||"Busca una herramienta")}</h1></div><p class="lede">${esc(topic?.description||area?.description||goal?.description||"Busca una tarea, un nombre o una tecnología. Después filtra por área, acceso y requisitos.")}</p>${area&&!topic?`<div class="chip-row">${area.topics.map(t=>`<a class="chip" href="${topicHref(area,t)}">${esc(t.title)} <span class="meta">${t.count}</span></a>`).join("")}</div>`:""}</header>
+<p><a class="btn" href="#/empezar${guideParams.size?`?${esc(guideParams.toString())}`:""}">${topic?"Ayúdame a elegir para esta tarea":"Ayúdame a elegir"}</a></p>
 ${llmDownload(category,params.get("sub"))}
       <search><form class="library-filters" id="filters" action="#/explorar" method="get">
         <div class="query-field"><label for="q">Buscar en la biblioteca</label><input id="q" type="search" name="q" placeholder="Por ejemplo: transcribir audio" value="${esc(params.get("q")||"")}" autocapitalize="none" autocorrect="off" spellcheck="false" enterkeyhint="search"></div>
@@ -649,15 +727,18 @@ ${llmDownload(category,params.get("sub"))}
 
   function similarSection(item) {
     const sim = item.similares;
-    if (!sim || !sim.ranking || sim.ranking.length < 2) return "";
+    const editorial=item.guided_editorial;
+    const guide=editorial?`<p><a href="#/empezar?group=${encodeURIComponent(editorial.group)}">Ver la revisión editorial en Guíame</a></p>`:"";
+    const pending=editorial?.role==="pending"?`<p><strong>Pendiente de revisión.</strong> ${esc(editorial.note)}</p>`:"";
+    if (!sim || !sim.ranking || sim.ranking.length < 2) return guide;
     const rows = sim.ranking.filter(r => repo(r.id)).map(r => {
       const self = r.id === item.id;
       const name = self ? `<strong>${esc(repo(r.id).name)}</strong> <span class="meta">(esta ficha)</span>` : `<a href="#/repo/${encodeURIComponent(r.id)}"><strong>${esc(repo(r.id).name)}</strong></a>`;
-      const star = r.papel === "recomendado" ? ' <span class="badge green">Recomendado</span>' : "";
+      const star = r.papel === "recomendado" ? ' <span class="badge green">Mayor puntuación del grupo</span>' : "";
       const score = r.puntuacion == null ? "—" : Math.round(r.puntuacion);
       return `<li class="similar-row${self ? " is-self" : ""}"><span class="similar-rank">${r.posicion}</span><div>${name}${star} <span class="meta">· ${score}/100</span><br><span>${esc(r.cuando || "")}</span></div></li>`;
     }).join("");
-    return `<section id="repo-similares" class="section"><h2>Ver similares</h2><p class="meta">Grupo «${esc(sim.titulo)}»: posición ${sim.posicion} de ${sim.total}. Orden por puntuación de calidad; mira «cuándo elegirlo», porque no todos cubren lo mismo.</p><ol class="similar-list" role="list">${rows}</ol></section>`;
+    return `<section id="repo-similares" class="section"><h2>Ver similares</h2>${pending}${guide}<p class="meta">Grupo «${esc(sim.titulo)}»: posición ${sim.posicion} de ${sim.total}. Orden por puntuación de calidad; mira «cuándo elegirlo», porque no todos cubren lo mismo.</p><ol class="similar-list" role="list">${rows}</ol></section>`;
   }
 
   function fourSections(item) {
@@ -993,13 +1074,20 @@ ${llmDownload(category,params.get("sub"))}
   function readGuidedForm(form) {
     const data=new FormData(form),profile=Object.fromEntries(data);
     profile.clients=data.getAll('clients');
+    if(profile.goal.startsWith('topic:')){
+      profile.topic=profile.goal.slice('topic:'.length);
+      profile.goal='';
+    }else if(profile.goal.startsWith('group:')){
+      profile.group=profile.goal.slice('group:'.length);
+      profile.goal='';
+    }
     return AlexandriaGuide.normalize(profile);
   }
   function updateGuidedDraft(form,changedField) {
     const state=guidedState(parseHash().params);
     state.draft=readGuidedForm(form);state.submitted=null;
     const results=document.getElementById('guided-results');if(results)results.hidden=true;
-    if(changedField==='project'){
+    if(changedField==='project'||changedField==='goal'){
       const project=document.getElementById('guided-project');project.setCustomValidity('');project.removeAttribute('aria-invalid');
       document.getElementById('guided-validation').textContent='';
     }
@@ -1055,8 +1143,9 @@ ${llmDownload(category,params.get("sub"))}
     }
     if(event.target.id === "guided-start") {
       event.preventDefault();const profile=readGuidedForm(event.target),field=document.getElementById('guided-project');
-      if(profile.project.length<12){
-        const message='Describe qué quieres crear con al menos 12 caracteres, además de espacios.';
+      const choseTask=profile.goal||profile.topic||profile.group;
+      if((!choseTask||profile.project)&&profile.project.length<12){
+        const message='Elige una tarea o escribe una descripción de al menos 12 caracteres.';
         field.setCustomValidity(message);field.setAttribute('aria-invalid','true');
         document.getElementById('guided-validation').textContent=message;field.reportValidity();field.focus();return;
       }

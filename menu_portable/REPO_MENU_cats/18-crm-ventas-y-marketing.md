@@ -442,7 +442,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Consulta una métrica de un dominio propio y revisa origen, fecha y coste de la solicitud
 **Qué comprobar:** Puedes identificar qué datos devuelve DataForSEO y qué interpreta el agente
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `coolify`, `geo-seo-claude`, `claude-seo`, `cloud-mail`, `marketingskills`
+**Combina con:** `claude-code`, `coolify`, `claude-seo`, `cloud-mail`, `marketingskills`
 
 ## `postiz-app`
 role=platform · exec=hybrid · setup=heavy · mcp=True · prov=— · tags=marketing,server,typescript

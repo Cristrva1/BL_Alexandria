@@ -299,15 +299,20 @@ def recommend_project(
         result = recommend(paths.project_root, project_text, max_repos=max_repos, build_tool=tool, access_route=route)
     except ValueError as exc:
         raise typer.BadParameter(str(exc), param_hint="--route") from exc
-    table = Table(title="Recommended Repositories")
-    table.add_column("Repo")
-    table.add_column("Score")
-    table.add_column("Install")
-    table.add_column("Reason")
-    for repo in result["recommended_repos"]:
-        reason = repo.get("expert_reason") or ", ".join(repo.get("reasons", []))
-        table.add_row(repo["id"], str(repo["score"]), repo["install_mode"], _first_line(reason, 110))
-    console.print(table)
+    if web_project := result.get("web_project"):
+        console.print(f'[bold]{web_project["title"]}[/bold]')
+        console.print(f'Empieza con {web_project["stack"]}. {web_project["when"]}')
+        console.print(f'Primera prueba. {web_project["trial"]}')
+    else:
+        table = Table(title="Recommended Repositories")
+        table.add_column("Repo")
+        table.add_column("Score")
+        table.add_column("Install")
+        table.add_column("Reason")
+        for repo in result["recommended_repos"]:
+            reason = repo.get("expert_reason") or ", ".join(repo.get("reasons", []))
+            table.add_row(repo["id"], str(repo["score"]), repo["install_mode"], _first_line(reason, 110))
+        console.print(table)
     console.print(f"Wrote {paths.project_root / result['superguide_file']}")
     console.print(f"Updated {paths.project_root / result['latest_superguide_file']}")
 

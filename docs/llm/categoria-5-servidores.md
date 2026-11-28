@@ -48,7 +48,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; Node o Python según el servidor elegido; hardware prerequisites; API de IA: no; Navegador; Node o Python según el servidor elegido.
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/modelcontextprotocol/servers/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Elige un servidor de referencia y comprueba sus permisos sobre datos ficticios Éxito: Entiendes qué herramientas expone y qué datos puede modificar
-- **Combina con:** `mcp-inspector` [5/sdk], `mcp-use` [5/sdk], `awesome-mcp-servers` [5/directorios], `opendots` [21/asistentes]
+- **Combina con:** `mcp-inspector` [5/sdk], `mcp-use` [5/sdk], `awesome-mcp-servers` [5/directorios]
 - **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Sin alternativas declaradas. No son para producción, según el propio README. Los autores los presentan como implementaciones educativas de referencia, no servicios listos para producción.
 
 ### Context7 (`context7`)

@@ -189,40 +189,6 @@
     "checked_at": "2026-11-15"
    }
   },
-  "opendots": {
-   "que_es": "OpenDots, plantilla open source de CopilotKit para agentes persistentes, cada uno con su propio ordenador, en web y móvil. Licencia MIT. Tiene ~6.6k estrellas; CopilotKit ofrece ahora la versión más robusta como skin de OpenBot.",
-   "que_hace": "Los «Dots» conversan por texto, llamadas y Slack, navegan, redactan y guardan resultados en páginas editables tras una tarjeta de aprobación humana. Usan herramientas MCP y apps de Composio con aprobación para escrituras.",
-   "como_lo_hace": "Se autoaloja, pero las conversaciones requieren CopilotKit Intelligence: servicio alojado, evaluación local con Docker o despliegue autoalojado con licencia. La telemetría del SDK está activa.",
-   "combina_con": [
-    {
-     "id": "copilotkit",
-     "motivo": "Framework base y requisito (CopilotKit Intelligence).",
-     "orden_instalacion": "Crea el proyecto con `npx copilotkit@latest login`."
-    },
-    {
-     "id": "composio",
-     "motivo": "Apps conectadas integradas.",
-     "orden_instalacion": "Añade la clave de Composio."
-    },
-    {
-     "id": "servers",
-     "motivo": "Servidores MCP de referencia como herramientas. (combinación por arquitectura)",
-     "orden_instalacion": "Añade los MCP por Dot."
-    }
-   ],
-   "notas": "Alternativa (elige una): openbot. No es autónomo del todo: depende de un servicio de CopilotKit.",
-   "fuentes": [
-    "https://github.com/CopilotKit/OpenDots/blob/main/README.md"
-   ],
-   "github": {
-    "name_with_owner": "CopilotKit/OpenDots",
-    "archived": false,
-    "pushed_at": "2026-11-14",
-    "license": "MIT",
-    "primary_language": "TypeScript",
-    "checked_at": "2026-11-15"
-   }
-  },
   "hello-halo": {
    "que_es": "Halo AI Workstation, estación de trabajo de IA de escritorio open source, de OpenKursar. El LICENSE es MIT (GitHub muestra NOASSERTION). Tiene ~1.9k estrellas (v3.0.5).",
    "que_hace": "Funciona como un banco de trabajo de IA (chat, código, documentos, investigación) y añade «Digital Humans»: miembros IA que se reparten el trabajo, acumulan memoria y siguen activos de forma autónoma. Permite delegar trabajo desde cualquier lugar.",

@@ -246,7 +246,7 @@ Correo, notificaciones y programación de publicaciones.
 
 Guías para que tu agente prepare análisis, mensajes y contenido.
 
-`agency-agents`, `arcads-claude-code`, `claude-seo`, `geo-seo-claude`, `instagram-agent-skill`, `linkedin-agent-skill`, `marketingskills`, `minimalist-entrepreneur-skills`, `social-media-research-skills`
+`agency-agents`, `arcads-claude-code`, `claude-seo`, `instagram-agent-skill`, `linkedin-agent-skill`, `marketingskills`, `minimalist-entrepreneur-skills`, `social-media-research-skills`
 
 ### Aplicaciones internas sin código
 
@@ -298,7 +298,7 @@ Investigar publicaciones, comentarios, tendencias y competidores para fundamenta
 
 Revisar la visibilidad de una web en buscadores y respuestas de IA, y consultar datos para orientar el contenido.
 
-`claude-seo`, `geo-seo-claude`, `open-seo`
+`claude-seo`, `open-seo`
 
 ### Email, newsletters y campañas
 
@@ -338,7 +338,7 @@ Plataformas que permiten diseñar flujos de IA con una interfaz.
 
 Asistentes listos o adaptables para tareas de varias etapas.
 
-`agentes-chat`, `deeptutor`, `hello-halo`, `hermes-agent`, `mercury-agent`, `multica`, `openbot`, `openclaw`, `opendots`, `openjarvis`, `paperclip`, `ruflo`, `social-media-agent`
+`agentes-chat`, `deeptutor`, `hello-halo`, `hermes-agent`, `mercury-agent`, `multica`, `openbot`, `openclaw`, `openjarvis`, `paperclip`, `ruflo`, `social-media-agent`
 
 ### Investigación con fuentes
 
@@ -396,7 +396,7 @@ Bibliotecas para entrenar o adaptar modelos a tus datos.
 
 Servir modelos y organizar el acceso de tus aplicaciones.
 
-`backdoor`, `bentoml`, `claude-code-router`, `gpustack`, `libretranslate`, `litellm`, `omniroute`, `portkey-gateway`, `ray`, `sglang`, `tensorrt-llm`, `vllm`, `xinference`
+`bentoml`, `claude-code-router`, `gpustack`, `libretranslate`, `litellm`, `omniroute`, `portkey-gateway`, `ray`, `sglang`, `tensorrt-llm`, `vllm`, `xinference`
 
 ## Documentos, presentaciones y conocimiento
 
@@ -516,7 +516,7 @@ Organizar experiencias de estudio con ayuda de IA.
 
 Revisar y mejorar el contenido escrito con ayuda de un agente.
 
-`humanizer`, `i-have-adhd`, `no-ai-slop`, `stop-slop`
+`humanizer`, `i-have-adhd`, `stop-slop`
 
 ## Programación, backend y despliegue
 
@@ -550,7 +550,7 @@ Medir resultados y revisar lo que hace una aplicación de IA.
 
 Reducir contexto innecesario y organizar el acceso a modelos.
 
-`backdoor`, `bentoml`, `claude-code-router`, `gptcache`, `gpustack`, `headroom`, `litellm`, `llmlingua`, `omniroute`, `portkey-gateway`, `ray`, `rtk`, `sglang`, `tensorrt-llm`, `toon-format`, `vllm`, `xinference`
+`bentoml`, `claude-code-router`, `gptcache`, `gpustack`, `headroom`, `litellm`, `llmlingua`, `omniroute`, `portkey-gateway`, `ray`, `rtk`, `sglang`, `tensorrt-llm`, `toon-format`, `vllm`, `xinference`
 
 ## Visión artificial, mapas y percepción
 
@@ -606,7 +606,7 @@ Explorar instrucciones generales y formas de trabajar con agentes.
 
 Explorar instrucciones de diseño, escritura, ciencia, marketing y negocio.
 
-`3dviz-pro-max`, `agency-agents`, `anatomy`, `android-skills`, `arcads-claude-code`, `blender-skills`, `claude-ads`, `claude-seo`, `creative-architect`, `design-dna`, `design.md`, `dream-loop`, `financial-services`, `front-end-checklist`, `genjutsu`, `geo-seo-claude`, `gsap-skills`, `hallmark`, `humanizer`, `i-have-adhd`, `impeccable`, `instagram-agent-skill`, `knowledge-work-plugins`, `linkedin-agent-skill`, `logo-design-skill`, `marketingskills`, `minimalist-entrepreneur-skills`, `modern-web-guidance`, `motion-design-skill`, `no-ai-slop`, `scientific-agent-skills`, `shopify-ai-toolkit`, `skills-emil`, `social-media-research-skills`, `stitch-skills`, `stop-slop`, `taste-skill`, `threejs-game-skills`, `threejs-skills`, `ui-ux-pro-max-skill`
+`3dviz-pro-max`, `agency-agents`, `anatomy`, `android-skills`, `arcads-claude-code`, `blender-skills`, `claude-ads`, `claude-seo`, `creative-architect`, `design-dna`, `design.md`, `dream-loop`, `financial-services`, `front-end-checklist`, `genjutsu`, `gsap-skills`, `hallmark`, `humanizer`, `i-have-adhd`, `impeccable`, `instagram-agent-skill`, `knowledge-work-plugins`, `linkedin-agent-skill`, `logo-design-skill`, `marketingskills`, `minimalist-entrepreneur-skills`, `modern-web-guidance`, `motion-design-skill`, `scientific-agent-skills`, `shopify-ai-toolkit`, `skills-emil`, `social-media-research-skills`, `stitch-skills`, `stop-slop`, `taste-skill`, `threejs-game-skills`, `threejs-skills`, `ui-ux-pro-max-skill`
 
 ## Configuración de Claude Code
 
@@ -622,7 +622,7 @@ Cliente oficial y selección inicial de herramientas.
 
 Añadir instrucciones y un método de trabajo sin cargar todo el catálogo.
 
-`3dviz-pro-max`, `agency-agents`, `agent-framework`, `agent-skills`, `agent-toolkit`, `ai-job-search`, `ai-website-cloner-template`, `anatomy`, `andrej-karpathy-skills`, `android-skills`, `anthropic-skills`, `antigravity-awesome-skills`, `arcads-claude-code`, `archify`, `autoresearch`, `autoskills`, `awesome-claude-skills`, `awesome-llm-apps`, `blender-skills`, `bmad-method`, `book-to-skill`, `brag`, `browser-use`, `claude-animated-shorts`, `claude-obsidian`, `claude-plugins-official`, `claude-seo`, `claude-token-efficient`, `cleanyourtv`, `codex-plugin-cc`, `context-engineering`, `creative-architect`, `crewai`, `cybersecurity-skills`, `deer-flow`, `defending-code-reference-harness`, `design-dna`, `diagram-design`, `ecc`, `elephant-goldfish-model`, `financial-services`, `floorplan`, `gemini-skills`, `genjutsu`, `geo-seo-claude`, `gitnexus`, `google-skills`, `gpt-researcher`, `gradio`, `graphify`, `grok-plugin-claude-code`, `gsap-skills`, `gstack`, `hallmark`, `huashu-motion`, `humanizer`, `humans-md-plugins`, `hyperframes`, `i-have-adhd`, `impeccable`, `instagram-agent-skill`, `last30days-skill`, `lemo-opuscar`, `linkedin-agent-skill`, `logo-design-skill`, `loop-engineering`, `marketingskills`, `mem0`, `mineru`, `minimalist-entrepreneur-skills`, `modern-web-guidance`, `motion-design-skill`, `motionmaxxing`, `nemotron`, `no-ai-slop`, `obsidian-second-brain`, `obsidian-skills`, `open-code-review`, `openfilm`, `openmaic`, `openmontage`, `openui`, `papermorph`, `pipecat`, `pixelfx`, `playwright-cli`, `ponytail`, `ppt-master`, `prompt-master`, `prompts-chat`, `rea-video`, `remotion`, `remotion-superpowers`, `scientific-agent-skills`, `security-audit-skill`, `semgrep`, `skills`, `skills-emil`, `skills-remotion`, `social-media-research-skills`, `spec-kit`, `stitch-skills`, `stop-slop`, `streamlit`, `strix`, `superclaude-framework`, `superpowers`, `taste-skill`, `threejs-game-skills`, `threejs-skills`, `twenty-main`, `ui-sdk`, `ui-ux-pro-max-skill`, `vercel-ai`, `video-shotcraft`, `video-use`, `whatsapp-agentkit`, `wrenai`, `wshobson-agents`
+`3dviz-pro-max`, `agency-agents`, `agent-framework`, `agent-skills`, `agent-toolkit`, `ai-job-search`, `ai-website-cloner-template`, `anatomy`, `andrej-karpathy-skills`, `android-skills`, `anthropic-skills`, `antigravity-awesome-skills`, `arcads-claude-code`, `archify`, `autoresearch`, `autoskills`, `awesome-claude-skills`, `awesome-llm-apps`, `blender-skills`, `bmad-method`, `book-to-skill`, `brag`, `browser-use`, `claude-animated-shorts`, `claude-obsidian`, `claude-plugins-official`, `claude-seo`, `claude-token-efficient`, `cleanyourtv`, `codex-plugin-cc`, `context-engineering`, `creative-architect`, `crewai`, `cybersecurity-skills`, `deer-flow`, `defending-code-reference-harness`, `design-dna`, `diagram-design`, `ecc`, `elephant-goldfish-model`, `financial-services`, `floorplan`, `gemini-skills`, `genjutsu`, `gitnexus`, `google-skills`, `gpt-researcher`, `gradio`, `graphify`, `grok-plugin-claude-code`, `gsap-skills`, `gstack`, `hallmark`, `huashu-motion`, `humanizer`, `humans-md-plugins`, `hyperframes`, `i-have-adhd`, `impeccable`, `instagram-agent-skill`, `last30days-skill`, `lemo-opuscar`, `linkedin-agent-skill`, `logo-design-skill`, `loop-engineering`, `marketingskills`, `mem0`, `mineru`, `minimalist-entrepreneur-skills`, `modern-web-guidance`, `motion-design-skill`, `motionmaxxing`, `nemotron`, `obsidian-second-brain`, `obsidian-skills`, `open-code-review`, `openfilm`, `openmaic`, `openmontage`, `openui`, `papermorph`, `pipecat`, `pixelfx`, `playwright-cli`, `ponytail`, `ppt-master`, `prompt-master`, `prompts-chat`, `rea-video`, `remotion`, `remotion-superpowers`, `scientific-agent-skills`, `security-audit-skill`, `semgrep`, `skills`, `skills-emil`, `skills-remotion`, `social-media-research-skills`, `spec-kit`, `stitch-skills`, `stop-slop`, `streamlit`, `strix`, `superclaude-framework`, `superpowers`, `taste-skill`, `threejs-game-skills`, `threejs-skills`, `twenty-main`, `ui-sdk`, `ui-ux-pro-max-skill`, `vercel-ai`, `video-shotcraft`, `video-use`, `whatsapp-agentkit`, `wrenai`, `wshobson-agents`
 
 ### MCP y navegador
 
@@ -658,7 +658,7 @@ Skills de oficio documentadas para Claude Code.
 
 Adaptadores del proyecto para modelos,sesiones o servicios; revisa qué función usa realmente el plan.
 
-`agent-reach`, `agentes-chat`, `agentmemory`, `autoskills`, `backdoor`, `claude-agent-sdk-python`, `claude-code-hooks-mastery`, `claude-code-router`, `claude-code-usage-monitor`, `claude-mem`, `claude-task-master`, `cleanyourtv`, `codebase-memory-mcp`, `codegraph`, `cognee`, `composio`, `craft-anything`, `deeptutor`, `fabric`, `goose`, `headroom`, `hello-halo`, `hermes-agent-self-evolution`, `litellm`, `lobehub`, `magnitude`, `marimo`, `mimo-code`, `mlflow`, `multica`, `nodeterm`, `ollama`, `omniroute`, `openclaw`, `opencursor`, `openevolve`, `openhands`, `openviking`, `pageindex`, `paperclip`, `private-gpt`, `rtk`, `ruflo`, `sellbird`, `shepherd`, `skillspector`, `supermemory`, `t3code`, `unsloth`, `wan2gp`
+`agent-reach`, `agentes-chat`, `agentmemory`, `autoskills`, `claude-agent-sdk-python`, `claude-code-hooks-mastery`, `claude-code-router`, `claude-code-usage-monitor`, `claude-mem`, `claude-task-master`, `cleanyourtv`, `codebase-memory-mcp`, `codegraph`, `cognee`, `composio`, `craft-anything`, `deeptutor`, `fabric`, `goose`, `headroom`, `hello-halo`, `hermes-agent-self-evolution`, `litellm`, `lobehub`, `magnitude`, `marimo`, `mimo-code`, `mlflow`, `multica`, `nodeterm`, `ollama`, `omniroute`, `openclaw`, `opencursor`, `openevolve`, `openhands`, `openviking`, `pageindex`, `paperclip`, `private-gpt`, `rtk`, `ruflo`, `sellbird`, `shepherd`, `skillspector`, `supermemory`, `t3code`, `unsloth`, `wan2gp`
 
 ## Configuración de Codex
 
@@ -674,7 +674,7 @@ Cliente oficial y formas de empezar con un proyecto.
 
 Instrucciones y plugins documentados para Codex.
 
-`3dviz-pro-max`, `agency-agents`, `agent-framework`, `agent-skills`, `agent-toolkit`, `ai-job-search`, `ai-website-cloner-template`, `anatomy`, `android-skills`, `antigravity-awesome-skills`, `archify`, `autoresearch`, `awesome-llm-apps`, `blender-skills`, `bmad-method`, `book-to-skill`, `brag`, `browser-use`, `claude-obsidian`, `context-engineering`, `crewai`, `cybersecurity-skills`, `design-dna`, `diagram-design`, `dream-loop`, `ecc`, `elephant-goldfish-model`, `floorplan`, `gemini-skills`, `gitnexus`, `google-skills`, `gradio`, `graphify`, `gsap-skills`, `gstack`, `hallmark`, `huashu-motion`, `humanizer`, `humans-md-plugins`, `hyperframes`, `i-have-adhd`, `impeccable`, `last30days-skill`, `logo-design-skill`, `loop-engineering`, `marketingskills`, `mem0`, `mineru`, `modern-web-guidance`, `motion-design-skill`, `motionmaxxing`, `no-ai-slop`, `obsidian-second-brain`, `obsidian-skills`, `open-code-review`, `openfilm`, `openmaic`, `openmontage`, `openui`, `playwright-cli`, `ponytail`, `ppt-master`, `rea-video`, `remotion`, `remotion-superpowers`, `scientific-agent-skills`, `security-audit-skill`, `skills`, `skills-emil`, `skills-remotion`, `social-media-research-skills`, `spec-kit`, `srt-whiteboard-animation`, `stitch-skills`, `streamlit`, `strix`, `superpowers`, `taste-skill`, `threejs-game-skills`, `twenty-main`, `ui-sdk`, `ui-ux-pro-max-skill`, `video-shotcraft`, `video-use`, `wrenai`, `wshobson-agents`
+`3dviz-pro-max`, `agency-agents`, `agent-framework`, `agent-skills`, `agent-toolkit`, `ai-job-search`, `ai-website-cloner-template`, `anatomy`, `android-skills`, `antigravity-awesome-skills`, `archify`, `autoresearch`, `awesome-llm-apps`, `blender-skills`, `bmad-method`, `book-to-skill`, `brag`, `browser-use`, `claude-obsidian`, `context-engineering`, `crewai`, `cybersecurity-skills`, `design-dna`, `diagram-design`, `dream-loop`, `ecc`, `elephant-goldfish-model`, `floorplan`, `gemini-skills`, `gitnexus`, `google-skills`, `gradio`, `graphify`, `gsap-skills`, `gstack`, `hallmark`, `huashu-motion`, `humanizer`, `humans-md-plugins`, `hyperframes`, `i-have-adhd`, `impeccable`, `last30days-skill`, `logo-design-skill`, `loop-engineering`, `marketingskills`, `mem0`, `mineru`, `modern-web-guidance`, `motion-design-skill`, `motionmaxxing`, `obsidian-second-brain`, `obsidian-skills`, `open-code-review`, `openfilm`, `openmaic`, `openmontage`, `openui`, `playwright-cli`, `ponytail`, `ppt-master`, `rea-video`, `remotion`, `remotion-superpowers`, `scientific-agent-skills`, `security-audit-skill`, `skills`, `skills-emil`, `skills-remotion`, `social-media-research-skills`, `spec-kit`, `srt-whiteboard-animation`, `stitch-skills`, `streamlit`, `strix`, `superpowers`, `taste-skill`, `threejs-game-skills`, `twenty-main`, `ui-sdk`, `ui-ux-pro-max-skill`, `video-shotcraft`, `video-use`, `wrenai`, `wshobson-agents`
 
 ### MCP y herramientas de navegador
 
@@ -708,7 +708,7 @@ Distingue el cliente de Google, las skills compatibles y los recursos para dise�
 
 El catálogo Agentic Awesome Skills documenta destinos Antigravity 2.0 y CLI.
 
-`agency-agents`, `agent-framework`, `agent-skills`, `agent-toolkit`, `ai-job-search`, `anatomy`, `android-skills`, `antigravity-awesome-skills`, `bmad-method`, `book-to-skill`, `claude-obsidian`, `cybersecurity-skills`, `design-dna`, `diagram-design`, `ecc`, `elephant-goldfish-model`, `gemini-skills`, `gitnexus`, `google-skills`, `gradio`, `graphify`, `gsap-skills`, `gstack`, `humanizer`, `humans-md-plugins`, `hyperframes`, `i-have-adhd`, `impeccable`, `last30days-skill`, `logo-design-skill`, `marketingskills`, `mem0`, `mineru`, `modern-web-guidance`, `motion-design-skill`, `motionmaxxing`, `no-ai-slop`, `obsidian-skills`, `openfilm`, `openmaic`, `openmontage`, `openui`, `playwright-cli`, `ponytail`, `rea-video`, `remotion`, `remotion-superpowers`, `robotics-antigravity-plugin`, `rtk`, `scientific-agent-skills`, `security-audit-skill`, `shopify-ai-toolkit`, `skills-emil`, `skills-remotion`, `social-media-research-skills`, `spec-kit`, `stitch-skills`, `streamlit`, `strix`, `superpowers`, `taste-skill`, `twenty-main`, `ui-sdk`, `ui-ux-pro-max-skill`, `video-use`, `wrenai`, `wshobson-agents`
+`agency-agents`, `agent-framework`, `agent-skills`, `agent-toolkit`, `ai-job-search`, `anatomy`, `android-skills`, `antigravity-awesome-skills`, `bmad-method`, `book-to-skill`, `claude-obsidian`, `cybersecurity-skills`, `design-dna`, `diagram-design`, `ecc`, `elephant-goldfish-model`, `gemini-skills`, `gitnexus`, `google-skills`, `gradio`, `graphify`, `gsap-skills`, `gstack`, `humanizer`, `humans-md-plugins`, `hyperframes`, `i-have-adhd`, `impeccable`, `last30days-skill`, `logo-design-skill`, `marketingskills`, `mem0`, `mineru`, `modern-web-guidance`, `motion-design-skill`, `motionmaxxing`, `obsidian-skills`, `openfilm`, `openmaic`, `openmontage`, `openui`, `playwright-cli`, `ponytail`, `rea-video`, `remotion`, `remotion-superpowers`, `robotics-antigravity-plugin`, `rtk`, `scientific-agent-skills`, `security-audit-skill`, `shopify-ai-toolkit`, `skills-emil`, `skills-remotion`, `social-media-research-skills`, `spec-kit`, `stitch-skills`, `streamlit`, `strix`, `superpowers`, `taste-skill`, `twenty-main`, `ui-sdk`, `ui-ux-pro-max-skill`, `video-use`, `wrenai`, `wshobson-agents`
 
 ### Diseño y creación de interfaces
 

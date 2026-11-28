@@ -3,7 +3,7 @@
 Esta biblioteca es un menú curado de repos de IA y automatización, con datos completos para cada uno. Este archivo te dice cómo elegir los repos correctos **gastando el mínimo de tokens**. Es corto, así que léelo entero y luego abre solo lo que necesites.
 
 <!-- BL:STATS -->
-**970 repos curados** · **14 áreas de trabajo** · **3 colecciones de configuración** · **110 subcategorías prácticas** · **32 categorías técnicas** · **117 subcategorías técnicas**
+**966 repos curados** · **14 áreas de trabajo** · **3 colecciones de configuración** · **110 subcategorías prácticas** · **32 categorías técnicas** · **117 subcategorías técnicas**
 <!-- /BL:STATS -->
 
 ---
@@ -58,7 +58,7 @@ Esta biblioteca es un menú curado de repos de IA y automatización, con datos c
 <!-- BL:AGENT_TOOLS -->
 | Herramienta | Repos específicos que le sirven |
 |---|---|
-| **Claude Code** | `claude-code`, `anthropic-skills`, `claude-plugins-official`, `superpowers`, `awesome-claude-code`, `awesome-claude-skills`, `claude-mem`, `geo-seo-claude`, `agency-agents` — Skills en .claude/skills y plugins con /plugin marketplace. |
+| **Claude Code** | `claude-code`, `anthropic-skills`, `claude-plugins-official`, `superpowers`, `awesome-claude-code`, `awesome-claude-skills`, `claude-mem`, `claude-seo`, `agency-agents` — Skills en .claude/skills y plugins con /plugin marketplace. |
 | **Codex** | `codex`, `agent-skills`, `antigravity-awesome-skills`, `awesome-agent-skills`, `spec-kit`, `marketingskills`, `taste-skill` — Lee AGENTS.md y skills portables (formato Agent Skills). |
 | **Antigravity** | `antigravity-awesome-skills`, `awesome-agent-skills`, `prompt-master`, `stitch-skills` |
 | **Gemini CLI** | `gemini-cli`, `awesome-agent-skills`, `antigravity-awesome-skills`, `stitch-skills` |
@@ -98,13 +98,13 @@ Las secciones técnicas siguientes conservan sus números y rutas. La lógica co
 | 18 | 🤖 CRM, ventas y marketing | 19 | CRM, ERP y soporte al cliente, Email, marketing y notificaciones, Reservas y programación de citas | `human/categorias/18-crm-ventas-marketing.md` |
 | 19 | 🧠 Aprender IA y escribir mejores prompts | 30 | Prompts y prompt engineering, Guías, cursos y cookbooks, Aprender LLMs desde cero | `human/categorias/19-aprender-ia-prompts.md` |
 | 20 | 🕸️ Programar con agentes de código | 21 | Agentes de terminal, Editores y extensiones de código, Agentes para issues y tareas de ingeniería, Interfaces para gestionar sesiones | `human/categorias/20-agentes-de-codigo.md` |
-| 21 | 🕸️ Asistentes e investigación con agentes | 18 | Asistentes autónomos y equipos de agentes, Agentes de research autónomo | `human/categorias/21-asistentes-investigacion.md` |
+| 21 | 🕸️ Asistentes e investigación con agentes | 17 | Asistentes autónomos y equipos de agentes, Agentes de research autónomo | `human/categorias/21-asistentes-investigacion.md` |
 | 22 | 🕸️ Infraestructura, despliegue y herramientas para agentes | 32 | Infraestructura: sandboxes, herramientas y protocolos, Dominios y recursos de infraestructura, Redes y transporte, Alojamiento y backend | `human/categorias/22-infraestructura-despliegue.md` |
-| 23 | 🧬 Operar, evaluar y medir modelos de IA | 31 | Serving y gateways de LLM, Ahorro de contexto y tokens, Observabilidad, evaluación y guardrails | `human/categorias/23-operacion-evaluacion-modelos.md` |
+| 23 | 🧬 Operar, evaluar y medir modelos de IA | 30 | Serving y gateways de LLM, Ahorro de contexto y tokens, Observabilidad, evaluación y guardrails | `human/categorias/23-operacion-evaluacion-modelos.md` |
 | 24 | 🧑‍💻 Modelos abiertos y entrenamiento | 25 | Entrenar y afinar modelos, Modelos abiertos y fundacionales | `human/categorias/24-modelos-entrenamiento.md` |
 | 25 | 🧑‍💻 Procesar datos y trabajar con notebooks | 23 | Datos y notebooks, Apps de datos en Python | `human/categorias/25-datos-notebooks.md` |
 | 26 | 🎨 Animación, gráficos y creación 3D | 32 | Animación y 3D, Creación, renderizado y animación 3D, Física y simulación | `human/categorias/26-animacion-graficos-3d.md` |
-| 27 | 🎨 Skills de diseño, contenido y especialidades | 40 | Skills de diseño para agentes, Escritura y calidad de texto, Skills de dominio: marketing, SEO y negocio | `human/categorias/27-skills-especializadas.md` |
+| 27 | 🎨 Skills de diseño, contenido y especialidades | 38 | Skills de diseño para agentes, Escritura y calidad de texto, Skills de dominio: marketing, SEO y negocio | `human/categorias/27-skills-especializadas.md` |
 | 28 | 🖼️ Visión artificial, rostros y percepción | 21 | Rostros y retratos animados, Visión por computador | `human/categorias/28-vision-percepcion.md` |
 | 29 | 🎬 Audio, transcripción, voz y música | 34 | Transcripción (voz a texto), Síntesis y clonación de voz, Agentes de voz en tiempo real, Música y audio generativo, Procesamiento y limpieza de audio | `human/categorias/29-audio-voz-musica.md` |
 | 30 | 🎬 Video con código y agentes creativos | 25 | Motores de video y escenas por código, Skills y métodos de producción audiovisual, Aplicaciones y flujos de producción | `human/categorias/30-video-codigo-agentes.md` |

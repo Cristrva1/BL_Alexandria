@@ -439,7 +439,6 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-11-14 | [OpenMAIC](fichas/openmaic.md) | Aplicación educativa con varios agentes que prepara clases y actividades mediante modelos y recursos configurables. | Depende de la ruta elegida |
 | 2026-11-14 | [openidea](fichas/openidea.md) | Entorno de desarrollo con editor, depurador, Git y herramientas para trabajar con código en distintos lenguajes. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [openfilm](fichas/openfilm.md) | Herramientas y skill para que un agente cree proyectos de video y permita editar después sus elementos. | API de IA opcional |
-| 2026-11-14 | [OpenDots](fichas/opendots.md) | Interfaz abierta de asistentes persistentes que requiere CopilotKit Intelligence, alojado, evaluado localmente o con licencia. | API de IA necesaria |
 | 2026-11-14 | [OpenCursor](fichas/opencursor.md) | Extensión abierta de VS Code con chat de agente, búsqueda semántica, herramientas y conexión a varios modelos. | API de IA opcional |
 | 2026-11-14 | [opencode-manager](fichas/opencode-manager.md) | Interfaz autoalojada para gestionar sesiones de OpenCode, repositorios, terminal y tareas desde web o móvil. | Depende de la ruta elegida |
 | 2026-11-14 | [open-sol-bot](fichas/open-sol-bot.md) | Bot abierto de Solana que reúne seguimiento de operaciones y funciones de trading automatizado. | Sin clave propia de API de IA en la ruta básica |
@@ -456,7 +455,6 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-11-14 | [obsidian-help](fichas/obsidian-help.md) | Documentación oficial de Obsidian para aprender sus funciones, configuración y formas de organizar una bóveda. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [obsidian-clipper](fichas/obsidian-clipper.md) | Extensión oficial para capturar páginas y fragmentos de la web y guardarlos como notas en Obsidian. | API de IA opcional |
 | 2026-11-14 | [nodeterm](fichas/nodeterm.md) | Gestor visual de terminales y sesiones de agentes sobre un lienzo de nodos con organización por proyecto. | API de IA opcional |
-| 2026-11-14 | [no-ai-slop](fichas/no-ai-slop.md) | Skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [server](fichas/nextcloud-server.md) | Servidor de Nextcloud para almacenar y compartir archivos, contactos y calendarios en infraestructura propia. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [nautilus_trader](fichas/nautilus-trader.md) | Motor de trading y backtesting con arquitectura orientada a eventos para investigar y desarrollar estrategias. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [motionmaxxing](fichas/motionmaxxing.md) | Skill para mejorar composición, ritmo y movimiento de videos creados con agentes y herramientas de código. | API de IA opcional |
@@ -571,7 +569,6 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-11-14 | [Bitwarden Clients](fichas/bitwarden-clients.md) | Clientes oficiales de Bitwarden para gestionar credenciales y utilizar funciones como compartir información con Send. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [bionemo-recipes](fichas/bionemo-recipes.md) | Recetas y checkpoints de NVIDIA para entrenar y adaptar modelos fundacionales de biología a escala. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [binance-trader](fichas/binance-trader.md) | Bot experimental de Python para estudiar estrategias y automatización con la API de Binance. | Sin clave propia de API de IA en la ruta básica |
-| 2026-11-14 | [backdoor](fichas/backdoor.md) | Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code. | API de IA opcional |
 | 2026-11-14 | [awesome-web-scraping](fichas/awesome-web-scraping.md) | Directorio de bibliotecas, herramientas y recursos para scraping web y procesamiento de datos. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [awesome-reverse-engineering](fichas/awesome-reverse-engineering.md) | Directorio de herramientas y recursos para aprender análisis de binarios, aplicaciones, firmware y protocolos. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [awesome-machine-learning](fichas/awesome-machine-learning.md) | Directorio de frameworks, bibliotecas y recursos de machine learning organizado por lenguaje y tema. | Sin clave propia de API de IA en la ruta básica |
@@ -938,7 +935,6 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-06-23 | [graphify](fichas/graphify.md) | CLI y skill que convierten código y documentos en un grafo consultable; el código se analiza localmente con AST y la extracción semántica tiene rutas separadas. | API de IA opcional |
 | 2026-06-23 | [gpt-researcher](fichas/gpt-researcher.md) | Agente autónomo que investiga en línea y consolida reportes citados y estructurados. | API de IA opcional |
 | 2026-06-23 | [GitNexus](fichas/gitnexus.md) | Herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar el onboarding en una base de código nueva. | Sin clave propia de API de IA en la ruta básica |
-| 2026-06-23 | [GEO-SEO Claude](fichas/geo-seo-claude.md) | Skill de Claude Code que audita webs para buscadores con IA (GEO) y SEO clásico, con citabilidad, schema, llms.txt e informes PDF. | API de IA opcional |
 | 2026-06-23 | [fluxer](fichas/fluxer.md) | Aplicación de mensajería instantánea y llamadas de voz para comunidades, con código abierto y opciones de alojamiento propio. | Sin clave propia de API de IA en la ruta básica |
 | 2026-06-23 | [firecrawl](fichas/firecrawl.md) | Plataforma y API para buscar, scrapear, mapear e interactuar con la web a escala, devolviendo contenido limpio y apto para agentes desde sitios complejos con JavaScript. | API de IA opcional |
 | 2026-06-23 | [faster-whisper](fichas/faster-whisper.md) | Runtime de transcripción que ejecuta Whisper con CTranslate2 y opciones de CPU, GPU y cuantización. | Sin clave propia de API de IA en la ruta básica |

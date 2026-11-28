@@ -3580,41 +3580,6 @@
    "fecha_metricas": "2026-11-16",
    "fecha_puntuacion": "2026-11-27"
   },
-  "backdoor": {
-   "puntuacion": 33.6,
-   "ejes": {
-    "adopcion": 1.8,
-    "mantenimiento": 2.2,
-    "madurez": 2.2,
-    "licencia": 15.0,
-    "respaldo": 5.0,
-    "seguridad": 2.5,
-    "encaje": 5.0
-   },
-   "percentiles": {
-    "estrellas_anio": 0.071,
-    "estrellas": 0.071,
-    "commits_90d": 0.087,
-    "releases_365d": 0.095,
-    "bus_factor": 0.071
-   },
-   "licencia": {
-    "clase": "osi_permisiva",
-    "detalle": "MIT"
-   },
-   "respaldo": "individual",
-   "encaje": [
-    "lenguaje Python",
-    "admite modelos locales/Ollama"
-   ],
-   "notas": [
-    "Adopción: sin dato de descargas_mes (se reparte el peso)",
-    "Mantenimiento: sin dato de primera_respuesta_dias, ratio_cerradas (se reparte el peso)",
-    "Sin OpenSSF Scorecard publicado: seguridad neutral"
-   ],
-   "fecha_metricas": "2026-11-16",
-   "fecha_puntuacion": "2026-11-27"
-  },
   "backtesting-py": {
    "puntuacion": 51.5,
    "ejes": {
@@ -11631,41 +11596,6 @@
    "encaje": [
     "lenguaje Python",
     "se ejecuta en local"
-   ],
-   "notas": [
-    "Adopción: sin dato de descargas_mes (se reparte el peso)",
-    "Sin OpenSSF Scorecard publicado: seguridad neutral"
-   ],
-   "fecha_metricas": "2026-11-16",
-   "fecha_puntuacion": "2026-11-27"
-  },
-  "geo-seo-claude": {
-   "puntuacion": 49.3,
-   "ejes": {
-    "adopcion": 8.8,
-    "mantenimiento": 9.5,
-    "madurez": 5.5,
-    "licencia": 15.0,
-    "respaldo": 5.0,
-    "seguridad": 2.5,
-    "encaje": 3.0
-   },
-   "percentiles": {
-    "estrellas_anio": 0.344,
-    "estrellas": 0.369,
-    "commits_90d": 0.469,
-    "releases_365d": 0.25,
-    "primera_respuesta_dias": 0.172,
-    "ratio_cerradas": 0.307,
-    "bus_factor": 0.819
-   },
-   "licencia": {
-    "clase": "osi_permisiva",
-    "detalle": "MIT"
-   },
-   "respaldo": "individual",
-   "encaje": [
-    "lenguaje Python"
    ],
    "notas": [
     "Adopción: sin dato de descargas_mes (se reparte el peso)",
@@ -20532,42 +20462,6 @@
    "fecha_metricas": "2026-11-16",
    "fecha_puntuacion": "2026-11-27"
   },
-  "no-ai-slop": {
-   "puntuacion": 55.2,
-   "ejes": {
-    "adopcion": 12.3,
-    "mantenimiento": 8.9,
-    "madurez": 6.5,
-    "licencia": 15.0,
-    "respaldo": 5.0,
-    "seguridad": 2.5,
-    "encaje": 5.0
-   },
-   "percentiles": {
-    "estrellas_anio": 0.556,
-    "estrellas": 0.34,
-    "commits_90d": 0.331,
-    "releases_365d": 0.683,
-    "primera_respuesta_dias": 0.311,
-    "ratio_cerradas": 0.124,
-    "bus_factor": 0.252
-   },
-   "licencia": {
-    "clase": "osi_permisiva",
-    "detalle": "MIT"
-   },
-   "respaldo": "individual",
-   "encaje": [
-    "lenguaje Python",
-    "se ejecuta en local"
-   ],
-   "notas": [
-    "Adopción: sin dato de descargas_mes (se reparte el peso)",
-    "Sin OpenSSF Scorecard publicado: seguridad neutral"
-   ],
-   "fecha_metricas": "2026-11-16",
-   "fecha_puntuacion": "2026-11-27"
-  },
   "nocodb": {
    "puntuacion": 70.5,
    "ejes": {
@@ -22306,41 +22200,6 @@
    ],
    "notas": [
     "Adopción: sin dato de descargas_mes (se reparte el peso)"
-   ],
-   "fecha_metricas": "2026-11-16",
-   "fecha_puntuacion": "2026-11-27"
-  },
-  "opendots": {
-   "puntuacion": 48.1,
-   "ejes": {
-    "adopcion": 8.2,
-    "mantenimiento": 6.8,
-    "madurez": 4.7,
-    "licencia": 15.0,
-    "respaldo": 8.0,
-    "seguridad": 2.5,
-    "encaje": 3.0
-   },
-   "percentiles": {
-    "estrellas_anio": 0.361,
-    "estrellas": 0.25,
-    "commits_90d": 0.194,
-    "releases_365d": 0.181,
-    "primera_respuesta_dias": 0.199,
-    "ratio_cerradas": 0.222,
-    "bus_factor": 0.806
-   },
-   "licencia": {
-    "clase": "osi_permisiva",
-    "detalle": "MIT"
-   },
-   "respaldo": "organizacion",
-   "encaje": [
-    "lenguaje TypeScript"
-   ],
-   "notas": [
-    "Adopción: sin dato de descargas_mes (se reparte el peso)",
-    "Sin OpenSSF Scorecard publicado: seguridad neutral"
    ],
    "fecha_metricas": "2026-11-16",
    "fecha_puntuacion": "2026-11-27"

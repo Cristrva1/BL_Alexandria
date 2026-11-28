@@ -4,7 +4,7 @@
 
 Servidores de inferencia, gateways, evaluación, trazas y control de contexto. Cada pieza cubre una etapa: ejecutar el modelo, observarlo o comprobar la calidad de sus respuestas.
 
-31 repos · 3 secciones
+30 repos · 3 secciones
 
 ## Puntos de partida
 
@@ -18,7 +18,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [Serving y gateways de LLM](#serving-y-gateways-de-llm) — 12 repos
+- [Serving y gateways de LLM](#serving-y-gateways-de-llm) — 11 repos
 - [Ahorro de contexto y tokens](#ahorro-de-contexto-y-tokens) — 5 repos
 - [Observabilidad, evaluación y guardrails](#observabilidad-evaluación-y-guardrails) — 14 repos
 
@@ -37,7 +37,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [Xinference](../fichas/xinference.md) | Plataforma abierta de inferencia para modelos de lenguaje, visión, embeddings, reranking, imagen, audio y vídeo, con API compatible con OpenAI y varios motores. | Tu objetivo encaja con estos ejemplos: servir un LLM, un modelo de embeddings y uno de voz desde un mismo servidor; conectar Dify, LangChain o LlamaIndex a modelos propios | Sin clave propia de API de IA en la ruta básica |
 | [BentoML](../fichas/bentoml.md) | Framework Python para convertir modelos y pipelines de IA en APIs de producción, con empaquetado en imágenes Docker y despliegue reproducible. | Tu objetivo encaja con estos ejemplos: publicar un modelo de Transformers como API REST; empaquetar un LLM servido con vLLM en una imagen desplegable | Sin clave propia de API de IA en la ruta básica |
 | [GPUStack](../fichas/gpustack.md) | Gestor de clústeres de GPU para servir modelos de IA: configura vLLM, SGLang o TensorRT-LLM, expone APIs compatibles con OpenAI y aprovisiona instancias GPU. | Tu objetivo encaja con estos ejemplos: servir varios modelos en las GPU de tu laboratorio con una sola consola; dar a tu equipo claves de API compatibles con OpenAI sobre modelos propios | Sin clave propia de API de IA en la ruta básica |
-| [backdoor](../fichas/backdoor.md) | Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code. | Tu objetivo encaja con estos ejemplos: Probar un backend local con Claude Code; Comparar proveedores compatibles | API de IA opcional |
 
 ## Ahorro de contexto y tokens
 

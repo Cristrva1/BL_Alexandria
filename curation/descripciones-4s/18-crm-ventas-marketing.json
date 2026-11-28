@@ -370,11 +370,6 @@
      "orden_instalacion": "Coolify en el servidor; crea el servicio desde el Compose de OpenSEO y protege el acceso."
     },
     {
-     "id": "geo-seo-claude",
-     "motivo": "Skill de SEO/GEO que puede apoyarse en los datos de OpenSEO para recomendaciones (combinación por arquitectura).",
-     "orden_instalacion": "Después de conectar el MCP de OpenSEO al agente."
-    },
-    {
      "id": "claude-seo",
      "motivo": "Combinación recíproca: claude-seo lo enlaza como «Datos de palabras clave y posiciones vía MCP (combinación por arquitectura)».",
      "orden_instalacion": "Orden indicado desde claude-seo: Conecta el MCP de OpenSEO al mismo agente.",

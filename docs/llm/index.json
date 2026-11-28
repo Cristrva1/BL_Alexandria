@@ -162,8 +162,8 @@
    "titulo": "Servidores MCP destacados",
    "repos": 17,
    "archivo": "categoria-5-servidores.md",
-   "caracteres": 30162,
-   "tokens_estimados": 8618
+   "caracteres": 30134,
+   "tokens_estimados": 8610
   },
   {
    "cat": 5,
@@ -180,8 +180,8 @@
    "titulo": "Conectar herramientas con MCP",
    "repos": 27,
    "archivo": "categoria-5.md",
-   "caracteres": 45415,
-   "tokens_estimados": 12976
+   "caracteres": 45387,
+   "tokens_estimados": 12968
   },
   {
    "cat": 6,
@@ -854,8 +854,8 @@
    "titulo": "Email, marketing y notificaciones",
    "repos": 7,
    "archivo": "categoria-18-marketing.md",
-   "caracteres": 14589,
-   "tokens_estimados": 4169
+   "caracteres": 14558,
+   "tokens_estimados": 4160
   },
   {
    "cat": 18,
@@ -872,8 +872,8 @@
    "titulo": "CRM, ventas y marketing",
    "repos": 19,
    "archivo": "categoria-18.md",
-   "caracteres": 33524,
-   "tokens_estimados": 9579
+   "caracteres": 33493,
+   "tokens_estimados": 9570
   },
   {
    "cat": 19,
@@ -960,10 +960,10 @@
    "cat": 21,
    "sub": "asistentes",
    "titulo": "Asistentes autónomos y equipos de agentes",
-   "repos": 13,
+   "repos": 12,
    "archivo": "categoria-21-asistentes.md",
-   "caracteres": 24973,
-   "tokens_estimados": 7136
+   "caracteres": 23178,
+   "tokens_estimados": 6623
   },
   {
    "cat": 21,
@@ -978,10 +978,10 @@
    "cat": 21,
    "sub": null,
    "titulo": "Asistentes e investigación con agentes",
-   "repos": 18,
+   "repos": 17,
    "archivo": "categoria-21.md",
-   "caracteres": 33664,
-   "tokens_estimados": 9619
+   "caracteres": 31856,
+   "tokens_estimados": 9102
   },
   {
    "cat": 22,
@@ -1032,10 +1032,10 @@
    "cat": 23,
    "sub": "serving",
    "titulo": "Serving y gateways de LLM",
-   "repos": 12,
+   "repos": 11,
    "archivo": "categoria-23-serving.md",
-   "caracteres": 21856,
-   "tokens_estimados": 6245
+   "caracteres": 19995,
+   "tokens_estimados": 5713
   },
   {
    "cat": 23,
@@ -1059,10 +1059,10 @@
    "cat": 23,
    "sub": null,
    "titulo": "Operar, evaluar y medir modelos de IA",
-   "repos": 31,
+   "repos": 30,
    "archivo": "categoria-23.md",
-   "caracteres": 52333,
-   "tokens_estimados": 14953
+   "caracteres": 50462,
+   "tokens_estimados": 14418
   },
   {
    "cat": 24,
@@ -1167,28 +1167,28 @@
    "cat": 27,
    "sub": "escritura",
    "titulo": "Escritura y calidad de texto",
-   "repos": 4,
+   "repos": 3,
    "archivo": "categoria-27-escritura.md",
-   "caracteres": 9043,
-   "tokens_estimados": 2584
+   "caracteres": 7534,
+   "tokens_estimados": 2153
   },
   {
    "cat": 27,
    "sub": "dominio",
    "titulo": "Skills de dominio: marketing, SEO y negocio",
-   "repos": 14,
+   "repos": 13,
    "archivo": "categoria-27-dominio.md",
-   "caracteres": 26021,
-   "tokens_estimados": 7435
+   "caracteres": 24225,
+   "tokens_estimados": 6922
   },
   {
    "cat": 27,
    "sub": null,
    "titulo": "Skills de diseño, contenido y especialidades",
-   "repos": 40,
+   "repos": 38,
    "archivo": "categoria-27.md",
-   "caracteres": 67487,
-   "tokens_estimados": 19283
+   "caracteres": 64160,
+   "tokens_estimados": 18332
   },
   {
    "cat": 28,

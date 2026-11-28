@@ -790,7 +790,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Elige un servidor de referencia y comprueba sus permisos sobre datos ficticios
 **Qué comprobar:** Entiendes qué herramientas expone y qué datos puede modificar
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `mcp-inspector`, `mcp-use`, `awesome-mcp-servers`, `opendots`
+**Combina con:** `mcp-inspector`, `mcp-use`, `awesome-mcp-servers`
 
 ## `unity-mcp`
 role=runtime · exec=local · setup=medium · mcp=True · prov=— · tags=servidores,mcp,c

@@ -1,7 +1,7 @@
 {
  "$schema_version": "1.2",
  "meta": {
-  "title": "Índice IA — 970 repos curados de IA, automatización y herramientas",
+  "title": "Índice IA — 966 repos curados de IA, automatización y herramientas",
   "purpose": "Que una persona o un agente elija repos útiles con bajo gasto de tokens. Empieza por AGENTS.md.",
   "how_to_use": [
    "1. Lee solo este JSON. Filtra por cat/sub/tags/role/exec/setup/prov y la frase one.",
@@ -225,7 +225,7 @@
      "awesome-claude-code",
      "awesome-claude-skills",
      "claude-mem",
-     "geo-seo-claude",
+     "claude-seo",
      "agency-agents"
     ],
     "note": "Skills en .claude/skills y plugins con /plugin marketplace."
@@ -867,7 +867,7 @@
      "title": "Agentes de research autónomo"
     }
    ],
-   "count": 18
+   "count": 17
   },
   {
    "num": 22,
@@ -917,7 +917,7 @@
      "title": "Observabilidad, evaluación y guardrails"
     }
    ],
-   "count": 31
+   "count": 30
   },
   {
    "num": 24,
@@ -1001,7 +1001,7 @@
      "title": "Skills de dominio: marketing, SEO y negocio"
     }
    ],
-   "count": 40
+   "count": 38
   },
   {
    "num": 28,
@@ -4159,8 +4159,7 @@
    "pick": true,
    "one": "Skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana.",
    "alt": [
-    "stop-slop",
-    "no-ai-slop"
+    "stop-slop"
    ],
    "doc": "human/fichas/humanizer.md",
    "github_id": 1136666433,
@@ -4202,8 +4201,7 @@
    "pick": false,
    "one": "Skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbrica de calidad.",
    "alt": [
-    "humanizer",
-    "no-ai-slop"
+    "humanizer"
    ],
    "doc": "human/fichas/stop-slop.md",
    "github_id": 1132137660,
@@ -4303,50 +4301,6 @@
    "source_archived": false,
    "puntuacion": 66,
    "complejidad": 1
-  },
-  {
-   "id": "geo-seo-claude",
-   "name": "GEO-SEO Claude",
-   "emoji": "🌍",
-   "cat": 27,
-   "sub": "dominio",
-   "role": "skill",
-   "exec": "cloud",
-   "setup": "easy",
-   "mcp": false,
-   "prov": [
-    "anthropic"
-   ],
-   "tags": [
-    "skills",
-    "search",
-    "pdf",
-    "python"
-   ],
-   "stars": 11685,
-   "gh": "zubair-trabzada/geo-seo-claude",
-   "lib": false,
-   "pick": false,
-   "one": "Skill de Claude Code que audita webs para buscadores con IA (GEO) y SEO clásico, con citabilidad, schema, llms.txt e informes PDF.",
-   "alt": [
-    "claude-seo"
-   ],
-   "doc": "human/fichas/geo-seo-claude.md",
-   "github_id": 1160693255,
-   "starred_by": "Cristrva1",
-   "added_at": "2026-06-23",
-   "goals": [
-    "skills"
-   ],
-   "routes": [
-    "no_api",
-    "claude",
-    "api"
-   ],
-   "source_archived": false,
-   "puntuacion": 49,
-   "complejidad": 1,
-   "grupo": "g-skills-de-seo-para-agentes"
   },
   {
    "id": "arcads-claude-code",
@@ -9808,8 +9762,7 @@
    "one": "Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI.",
    "alt": [
     "omniroute",
-    "claude-code-router",
-    "backdoor"
+    "claude-code-router"
    ],
    "doc": "human/fichas/litellm.md",
    "github_id": 671269505,
@@ -19091,53 +19044,6 @@
    "complejidad": 2
   },
   {
-   "id": "backdoor",
-   "name": "backdoor",
-   "emoji": "🧬",
-   "cat": 23,
-   "sub": "serving",
-   "role": "runtime",
-   "exec": "hybrid",
-   "setup": "medium",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "serving",
-    "ai",
-    "anthropic",
-    "claude",
-    "claude-code",
-    "deepseek",
-    "llm",
-    "ollama"
-   ],
-   "stars": 302,
-   "gh": "ajsai47/backdoor",
-   "github_id": 1241825396,
-   "lib": false,
-   "pick": false,
-   "one": "Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code.",
-   "alt": [
-    "omniroute",
-    "claude-code-router",
-    "litellm"
-   ],
-   "doc": "human/fichas/backdoor.md",
-   "starred_by": "Cristrva1",
-   "added_at": "2026-11-14",
-   "goals": [],
-   "routes": [
-    "no_api",
-    "claude",
-    "local_model",
-    "api"
-   ],
-   "source_archived": false,
-   "puntuacion": 34,
-   "complejidad": 2,
-   "grupo": "g-pasarelas-y-routers-de-proveedores-llm"
-  },
-  {
    "id": "rtk",
    "name": "rtk",
    "emoji": "🧬",
@@ -20721,9 +20627,7 @@
    "lib": false,
    "pick": false,
    "one": "Skills de Claude Code para revisar SEO técnico, contenido, presencia en buscadores de IA y otros aspectos de una web.",
-   "alt": [
-    "geo-seo-claude"
-   ],
+   "alt": [],
    "stars": 29424,
    "github_id": 1152014594,
    "gh": "AgriciDaniel/claude-seo",
@@ -20741,8 +20645,7 @@
    ],
    "source_archived": false,
    "puntuacion": 70,
-   "complejidad": 2,
-   "grupo": "g-skills-de-seo-para-agentes"
+   "complejidad": 2
   },
   {
    "id": "awesome-harness-engineering",
@@ -21452,7 +21355,6 @@
    "one": "Pasarela local para conectar proveedores de IA, enrutar solicitudes y gestionar cuotas y alternativas de acceso.",
    "alt": [
     "claude-code-router",
-    "backdoor",
     "litellm"
    ],
    "stars": 87518,
@@ -21635,43 +21537,6 @@
    "puntuacion": 74,
    "complejidad": 2,
    "grupo": "g-paneles-de-auto-hospedaje-y-paas-propios"
-  },
-  {
-   "id": "opendots",
-   "name": "OpenDots",
-   "cat": 21,
-   "sub": "asistentes",
-   "role": "app",
-   "exec": "hybrid",
-   "setup": "medium",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "asistentes",
-    "agent",
-    "typescript"
-   ],
-   "lib": false,
-   "pick": false,
-   "one": "Interfaz abierta de asistentes persistentes que requiere CopilotKit Intelligence, alojado, evaluado localmente o con licencia.",
-   "alt": [
-    "openbot"
-   ],
-   "stars": 6601,
-   "github_id": 1396117711,
-   "gh": "CopilotKit/OpenDots",
-   "lang": "TypeScript",
-   "license": "MIT",
-   "added_at": "2026-11-14",
-   "github_checked": "2026-11-14",
-   "routes": [
-    "api"
-   ],
-   "goals": [],
-   "source_archived": false,
-   "puntuacion": 48,
-   "complejidad": 2,
-   "grupo": "g-espacios-de-asistentes-de-copilotkit"
   },
   {
    "id": "unity-mcp",
@@ -24430,7 +24295,6 @@
    "one": "Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control local.",
    "alt": [
     "omniroute",
-    "backdoor",
     "litellm"
    ],
    "stars": 38150,
@@ -25256,49 +25120,6 @@
    "source_archived": false,
    "puntuacion": 48,
    "complejidad": 1
-  },
-  {
-   "id": "no-ai-slop",
-   "name": "no-ai-slop",
-   "cat": 27,
-   "sub": "escritura",
-   "role": "skill",
-   "exec": "local",
-   "setup": "medium",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "escritura",
-    "skill",
-    "python"
-   ],
-   "lib": false,
-   "pick": false,
-   "one": "Skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA.",
-   "alt": [
-    "humanizer",
-    "stop-slop"
-   ],
-   "stars": 13508,
-   "github_id": 1291783779,
-   "gh": "petergyang/no-ai-slop",
-   "lang": "Python",
-   "license": "MIT",
-   "added_at": "2026-11-14",
-   "github_checked": "2026-11-14",
-   "routes": [
-    "no_api",
-    "claude",
-    "codex",
-    "antigravity"
-   ],
-   "goals": [
-    "skills"
-   ],
-   "source_archived": false,
-   "puntuacion": 55,
-   "complejidad": 2,
-   "grupo": "g-skills-para-quitar-el-tono-de-ia-a-los-textos"
   },
   {
    "id": "planck-js",
@@ -27084,9 +26905,7 @@
    "lib": false,
    "pick": false,
    "one": "Espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y auditoría, conectables por AG-UI.",
-   "alt": [
-    "opendots"
-   ],
+   "alt": [],
    "doc": "human/fichas/openbot.md",
    "github_id": 1336502227,
    "lang": "TypeScript",
@@ -27103,8 +26922,7 @@
     "api"
    ],
    "puntuacion": 70,
-   "complejidad": 2,
-   "grupo": "g-espacios-de-asistentes-de-copilotkit"
+   "complejidad": 2
   },
   {
    "id": "hunyuanvideo-1-5",
@@ -41264,6 +41082,12 @@
      "interfaz",
      "ui",
      "frontend",
+     "sitio web",
+     "página web",
+     "app web",
+     "web app",
+     "aplicación web",
+     "panel web",
      "pagina",
      "aplicacion",
      "landing"
@@ -42585,10 +42409,9 @@
       "repos": [
        "marketingskills",
        "agency-agents",
-       "geo-seo-claude",
+       "claude-seo",
        "arcads-claude-code",
        "social-media-research-skills",
-       "claude-seo",
        "instagram-agent-skill",
        "linkedin-agent-skill",
        "minimalist-entrepreneur-skills"
@@ -42748,7 +42571,6 @@
       "description": "Revisar la visibilidad de una web en buscadores y respuestas de IA, y consultar datos para orientar el contenido.",
       "selectors": [],
       "repos": [
-       "geo-seo-claude",
        "claude-seo",
        "open-seo"
       ],
@@ -43757,7 +43579,6 @@
        "floorplan",
        "gemini-skills",
        "genjutsu",
-       "geo-seo-claude",
        "gitnexus",
        "google-skills",
        "gpt-researcher",
@@ -43786,7 +43607,6 @@
        "motion-design-skill",
        "motionmaxxing",
        "nemotron",
-       "no-ai-slop",
        "obsidian-second-brain",
        "obsidian-skills",
        "openfilm",
@@ -44011,9 +43831,8 @@
        "agentes-chat",
        "agentmemory",
        "autoskills",
-       "backdoor",
-       "claude-agent-sdk-python",
        "claude-code-router",
+       "claude-agent-sdk-python",
        "claude-code-usage-monitor",
        "claude-mem",
        "claude-task-master",
@@ -44271,13 +44090,6 @@
       "repo_id": "awesome-llm-apps",
       "source": "https://github.com/Shubhamsaboo/awesome-llm-apps/blob/main/README.md",
       "readme_blob_sha": "e18d321b33109e152c506b8efe894f0c7149e102",
-      "checked_at": "2026-11-15",
-      "usage": "documented_integration"
-     },
-     {
-      "repo_id": "backdoor",
-      "source": "https://github.com/ajsai47/backdoor/blob/main/README.md",
-      "readme_blob_sha": "1c4235799bfe8a942adafed7c160aa9ede72f310",
       "checked_at": "2026-11-15",
       "usage": "documented_integration"
      },
@@ -44677,13 +44489,6 @@
       "repo_id": "genjutsu",
       "source": "https://github.com/AThevon/genjutsu/blob/main/README.md",
       "readme_blob_sha": "9079745ccb957851f2cb1e812b7be1b3d186707f",
-      "checked_at": "2026-11-15",
-      "usage": "documented_integration"
-     },
-     {
-      "repo_id": "geo-seo-claude",
-      "source": "https://github.com/zubair-trabzada/geo-seo-claude/blob/main/README.md",
-      "readme_blob_sha": "22ca0b035622b6606d4b33879daa5519249bfec5",
       "checked_at": "2026-11-15",
       "usage": "documented_integration"
      },
@@ -45090,13 +44895,6 @@
       "repo_id": "nemotron",
       "source": "https://github.com/NVIDIA-NeMo/Nemotron/blob/main/README.md",
       "readme_blob_sha": "aa26fec62268cf52cb73cbad3a82da1982df8ba8",
-      "checked_at": "2026-11-15",
-      "usage": "documented_integration"
-     },
-     {
-      "repo_id": "no-ai-slop",
-      "source": "https://github.com/petergyang/no-ai-slop/blob/main/README.md",
-      "readme_blob_sha": "82f8b7af7e02918077afb447f8fc83c2d33483ba",
       "checked_at": "2026-11-15",
       "usage": "documented_integration"
      },
@@ -45864,7 +45662,6 @@
        "modern-web-guidance",
        "motion-design-skill",
        "motionmaxxing",
-       "no-ai-slop",
        "obsidian-second-brain",
        "obsidian-skills",
        "openfilm",
@@ -46947,13 +46744,6 @@
       "usage": "documented_integration"
      },
      {
-      "repo_id": "no-ai-slop",
-      "source": "https://github.com/petergyang/no-ai-slop/blob/main/README.md",
-      "readme_blob_sha": "82f8b7af7e02918077afb447f8fc83c2d33483ba",
-      "checked_at": "2026-11-15",
-      "usage": "documented_integration"
-     },
-     {
       "repo_id": "nodeterm",
       "source": "https://github.com/eneskirca/nodeterm/blob/main/README.md",
       "readme_blob_sha": "390e77a5c222ba1ed66606b3c508426ecac4bb4f",
@@ -47627,7 +47417,6 @@
        "modern-web-guidance",
        "motion-design-skill",
        "motionmaxxing",
-       "no-ai-slop",
        "obsidian-skills",
        "openfilm",
        "openmaic",
@@ -48435,13 +48224,6 @@
       "usage": "documented_integration"
      },
      {
-      "repo_id": "no-ai-slop",
-      "source": "https://github.com/petergyang/no-ai-slop/blob/main/README.md",
-      "readme_blob_sha": "82f8b7af7e02918077afb447f8fc83c2d33483ba",
-      "checked_at": "2026-11-15",
-      "usage": "documented_integration"
-     },
-     {
       "repo_id": "nodeterm",
       "source": "https://github.com/eneskirca/nodeterm/blob/main/README.md",
       "readme_blob_sha": "390e77a5c222ba1ed66606b3c508426ecac4bb4f",
@@ -48977,8 +48759,8 @@
    }
   ],
   "editorial_review": {
-   "total": 970,
-   "reviewed": 970,
+   "total": 966,
+   "reviewed": 966,
    "date": "2026-11-27",
    "report": "reports/drive-2026-11-27.md",
    "scope": "Documentación individual; ejemplos propuestos; sin pruebas de instalación de terceros."

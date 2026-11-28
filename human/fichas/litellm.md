@@ -43,7 +43,7 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (48). La lista se
 
 [activepieces](activepieces.md) · [Agent Development Kit (ADK)](adk-python.md) · [AgentScope](agentscope.md) · [Aider](aider.md) · [AnythingLLM](anything-llm.md) · [Baileys](baileys.md) · [chatbox](chatbox.md) · [ChatDev](chatdev.md) · [Cherry Studio](cherry-studio.md) · [crawl4ai](crawl4ai.md) · [daily_stock_analysis](daily-stock-analysis.md) · [DeepSeek Harness (DSH)](deepseek-harness.md) · [DeepSeek-V3](deepseek-v3.md) · [exo](exo.md) · [FreeToken](freetoken.md) · [garak](garak.md) · [graphrag](graphrag.md) · [headroom](headroom.md) · [Helicone](helicone.md) · [huginn](huginn.md) · [Khoj](khoj.md) · [LibreChat](librechat.md) · [llama.cpp](llama-cpp.md) · [llm-council](llm-council.md) · [LobeHub](lobehub.md) · [loguru](loguru.md) · [Mercury Agent](mercury-agent.md) · [mini-swe-agent](mini-swe-agent.md) · [MiroFish](mirofish.md) · [MLC LLM](mlc-llm.md) · [MLX LM](mlx-lm.md) · [NextChat](nextchat.md) · [onyx](onyx.md) · [OpenAI Agents SDK](openai-agents-python.md) · [openai-python](openai-python.md) · [OpenCode](opencode.md) · [openevolve](openevolve.md) · [OpenManus](openmanus.md) · [Opik](opik.md) · [PDFMathTranslate](pdfmathtranslate.md) · [Presenton](presenton.md) · [promptfoo](promptfoo.md) · [SGLang](sglang.md) · [smolagents](smolagents.md) · [STORM](storm.md) · [TensorRT-LLM](tensorrt-llm.md) · [txtai](txtai.md) · [vLLM](vllm.md)
 
-**Notas:** Alternativas (elige una): omniroute, claude-code-router, backdoor. Incidente de cadena de suministro de marzo de 2026 (PYSEC-2026-2): si instalaste 1.82.7 o 1.82.8, rota todos los secretos y busca `litellm_init.pth`.
+**Notas:** Alternativas (elige una): omniroute, claude-code-router. Incidente de cadena de suministro de marzo de 2026 (PYSEC-2026-2): si instalaste 1.82.7 o 1.82.8, rota todos los secretos y busca `litellm_init.pth`.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.109.1 (2026-11-12) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
@@ -51,14 +51,13 @@ Estado en GitHub: activo · último push 2026-11-16 · última versión publicad
 
 ## Ver similares
 
-Grupo **Pasarelas y routers de proveedores LLM**: litellm ocupa la posición 1 de 4 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+Grupo **Pasarelas y routers de proveedores LLM**: litellm ocupa la posición 1 de 3 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | **litellm** (esta ficha) ⭐ recomendado | 78 | Si necesitas una pasarela estándar para 100+ proveedores con presupuestos y claves. |
 | 2 | [OmniRoute](omniroute.md) | 76 | Si quieres una pasarela local que reparta cuotas y alternativas entre proveedores. |
 | 3 | [claude-code-router](claude-code-router.md) | 58 | Si quieres usar Claude Code con otros proveedores o modelos y enrutar por tarea. |
-| 4 | [backdoor](backdoor.md) | 34 | Si quieres adaptar otro proveedor al flujo de herramientas de Claude Code (proyecto pequeño de terceros). |
 
 ## Acceso, coste y equipo
 
@@ -138,7 +137,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 |---|---:|---|
 | [OmniRoute](omniroute.md) | 87.5k | Pasarela local para conectar proveedores de IA, enrutar solicitudes y gestionar cuotas y alternativas de acceso. |
 | [claude-code-router](claude-code-router.md) | 38.1k | Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control local. |
-| [backdoor](backdoor.md) | 302 | Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code. |
 
 ## Enlaces
 

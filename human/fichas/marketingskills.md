@@ -39,9 +39,9 @@ Skills en formato estándar instalables con `npx skills` (todas o una a una) par
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (3). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[no-ai-slop](no-ai-slop.md) · [skills](minimalist-entrepreneur-skills.md) · [Stop Slop](stop-slop.md)
+[skills](minimalist-entrepreneur-skills.md) · [Stop Slop](stop-slop.md)
 
 **Notas:** Algunas herramientas recomendadas son socios que financian el proyecto; lo declara en su registro.
 
